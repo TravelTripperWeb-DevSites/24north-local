@@ -16,7 +16,11 @@
 			'name': 'gallery',
 			'url': '/gallery/' 
 		},
-		
+		{
+			'title':'Blog',
+			'name': 'blog',
+			'url': '/blog/' 
+		},
 		{
 			'title':'Location',
 			'name': 'location',
