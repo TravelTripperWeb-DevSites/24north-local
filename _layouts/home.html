@@ -86,7 +86,7 @@ layout: default
 <section>
   <div class="container-fluid blue-bg">
     <div class="about-wrap">
-      {% region home_about %}
+      {% region intro %}
       <div class="btn-holder"><a href="/specials/" class="button-common">View Specials <i class="fa fa-play"></i></a></div>
     </div>
   </div>
@@ -107,8 +107,7 @@ layout: default
     <div class="col-sm-6 no-padding v-center"><img src="/images/two-col-2.jpg" alt="About the Hotel"/></div>
     <div class="col-sm-6 no-padding v-center">
       <div class="two-col-content">
-        <h3>About the hotel</h3>
-        <p>Key West International Airport is 1.3 miles from 24 North Hotel | Key West, and Duval Street is 3.1 miles away.</p>
+        {% region about %}
         <!--<div class="btn-holder"><a href="#" class="button-common btn-blue">View this suite<i class="fa fa-play"></i></a></div>-->
       </div>
     </div>
@@ -165,8 +164,7 @@ layout: default
             <div class="home-specials-item">
                 <img src="../images/home-special-1.jpg" alt=""/>
                 <div class="car-content">
-                    <h3>grand opening special</h3>
-                    <p>Book now and save 25% with this great offer for our grand opening!</p>
+				{% region grand_opening %}
                 </div>
                 <a href="https://bookings.ihotelier.com/bookings.jsp?hotelId=98358" target="_blank" class="button-common btn-top">View Special</a>
             </div>
@@ -177,8 +175,7 @@ layout: default
             <div class="home-specials-item">
                 <img src="../images/home-special-2.jpg" alt=""/>
                 <div class="car-content">
-                    <h3>book early & save!</h3>
-                    <p>Reserve your room now for next summer and save 35%</p>
+                    {% region book_early %}
                 </div>
                 <a href="https://bookings.ihotelier.com/bookings.jsp?hotelId=98358" target="_blank" class="button-common btn-top">View Special</a>
             </div>
