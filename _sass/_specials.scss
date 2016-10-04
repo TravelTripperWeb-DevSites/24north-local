@@ -235,6 +235,10 @@ section.models
 .specials-bannner {
 		background: url("/images/specials-banner.jpg") no-repeat center center;
 	}
+.attractions-bannner {
+		background: url("/images/attractions/attractions-banner.jpg") no-repeat center center;
+		background-size:cover;
+	}
 
 .grand-opening-banner {
 	background: url("/images/grand-opening-banner.jpg") no-repeat center center;
@@ -508,4 +512,16 @@ h2{
 }
 .text-center {
 	text-align: center;
+}
+.blog-detail{ position:relative;}
+.att-item{ position:relative;
+	.others{ position:fixed;
+		.other-attractions{ margin:0px; padding:5px 0;
+			li{ list-style:none;  padding:5px 0;
+				a{color: #A1A1A1;font-family: "brandon_grotesquebold";text-transform: uppercase;font-size: 11px; letter-spacing:2px;
+					&:hover{color: #3a9dc4;}
+				}
+			}
+		}
+	}
 }

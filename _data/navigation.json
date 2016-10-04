@@ -12,6 +12,11 @@
 			'url': '/specials/' 
 		},
 		{
+			'title':'Attractions',
+			'name': 'attractions',
+			'url': '/attractions/' 
+		},
+		{
 			'title':'Gallery',
 			'name': 'gallery',
 			'url': '/gallery/' 

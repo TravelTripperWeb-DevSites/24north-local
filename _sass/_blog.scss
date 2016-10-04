@@ -23,7 +23,7 @@
 			width: 100%;
 		}
 	}
-	h2{
+	h1,h2{
 		
 		font-size: 30px;
 		color: $tc-light-blue-1;
@@ -33,6 +33,9 @@
 				font-size: 20px;
 		}
 	}
+	h6{
+		padding-top:5px;
+		}
 	p{
 		color: $tc-ash-4;
 		letter-spacing: 1px;
@@ -65,4 +68,20 @@
 		color: $tc-black;
 		font-family: $main-font-light;
 	}
+}
+.divider-line {
+	border-bottom: solid 1px #f1f1f1;
+	margin: 0 0 15px 0;
+	@media(min-width:768px){
+	margin: 0 0 25px 0;
+	}
+}
+.bold-text{
+	font-weight: bold;
+}
+.blog-detail {
+	padding-top: 20px;
+}
+.italic-text {
+	font-style: italic;
 }

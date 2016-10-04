@@ -1,0 +1,76 @@
+.starbucks{
+	.landing{
+		.carousel-caption{
+			left:0;right:0; bottom: calc(50% - 235px); padding:0px;
+				@media (max-width: 767px){
+						bottom: calc(50% - 85px);
+				}
+				@media (min-width: 768px) and (max-width: 1024px){
+						bottom: calc(50% - 156px);
+				}
+			.caption-inner{position:relative; bottom:inherit;
+				img{width:150px; height:150px; margin-top:80px;
+					@media (max-width: 767px){
+						width:80px; height:80px;
+					}
+				}
+				p{font-family: 'FuturaStd-Heavy'; font-size:140px; color:#231f20; letter-spacing:25px;
+					@media (max-width: 767px){
+						font-size:24px; letter-spacing:8px;
+					}
+					@media (min-width: 768px) and (max-width: 1024px){
+						font-size:72px; letter-spacing:13px;
+					}
+				}
+				h1{ font-size:45px;color:#231f20; letter-spacing:8px; padding-top:0px;
+					@media (max-width: 767px){
+						font-size:12px; letter-spacing:1px;
+					}
+					@media (min-width: 768px) and (max-width: 1024px){
+						font-size:17px;
+					}
+				}
+				i{color:#333333; font-family: 'FuturaStd-Heavy'; font-size:18px; letter-spacing:2px; font-style:normal; text-transform:none;
+					@media (max-width: 767px){
+						font-size:8px;
+					}
+					@media (min-width: 768px) and (max-width: 1024px){
+						font-size:10px;
+					}
+				}
+			}
+		}
+	}
+	.about-wrap{
+			@media (max-width: 767px){
+				 padding-bottom:30px;
+			}
+		}
+	.blue-bg{ background-color:#006f49;}
+	.two-col-content{
+		img{ width: 200px; margin-bottom:90px;
+			@media (max-width: 767px){
+				 margin-bottom:30px;
+			}
+		}
+		.m-t-30{ padding-top:30px;}	
+	}
+	.home-rooms{ height:749px; background:url(../images/attractions/sb-01-large.jpg); background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.lifestyle{
+		 text-align:center; background:#fbf8ef;
+		 h3{font-size: 14px;
+			text-transform: uppercase;
+			font-family: "brandon_grotesquebold";
+			letter-spacing: 5px; padding:66px 0;
+		 }
+		 p{ font-size:32px; text-transform:uppercase; color:#006f49; font-family: 'brandon_grotesquelight'; letter-spacing:5px; padding-bottom:72px; max-width:980px; margin:0 auto;
+		 	@media (max-width: 767px){
+				 font-size:18px;
+			}
+		 }	
+	}
+}

@@ -102,3 +102,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'FuturaStd-Heavy';
+  src: url('/fonts/FuturaStd-Heavy.eot');
+  src: url('/fonts/FuturaStd-Heavy.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/FuturaStd-Heavy.woff') format('woff'),
+         url('/fonts/FuturaStd-Heavy.ttf') format('truetype'),
+         url('/fonts/FuturaStd-Heavy.svg#FuturaStd-Heavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
