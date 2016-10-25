@@ -1,0 +1,48 @@
+.meetings{
+	.meetings-wrap{
+		.owl-controls{ margin-top:0px; position:relative;
+			.owl-buttons{ position:absolute; bottom:0px; right:0px;
+				.owl-prev{ position:relative; left:15px; top:inherit; bottom:-6px;transform:translateY(0);}	
+				.owl-next{position:relative; right:0px; top:inherit; bottom:-6px;transform:translateY(0);}	
+			}
+		}
+		.item{
+		   img{ width:100%;}
+		   .carousel-caption{
+				.caption-inner{ position:relative; bottom:inherit;} 
+				@media (max-width: 480px){
+					 bottom:0px;
+				}
+			}
+		}
+		#sync2{
+			.owl-item{
+				opacity:0.8;
+				&:hover{ opacity:1;}
+				.item{
+					cursor: pointer; 
+				}
+				&.synced{opacity:1;}	
+			}
+		}
+		#sync2 .item h1{
+		  font-size: 18px;
+		}
+		#sync2 .synced .item{
+		  background: #0c83e7;
+		}
+	}
+	.lifestyle{
+		 text-align:center; background:#fbf8ef;
+		 h3{font-size: 14px;
+			text-transform: uppercase;
+			font-family: "brandon_grotesquebold";
+			letter-spacing: 5px; padding:66px 0;
+		 }
+		 p{ font-size:32px; text-transform:uppercase; color:#006f49; font-family: 'brandon_grotesquelight'; letter-spacing:5px; padding-bottom:72px; max-width:980px; margin:0 auto;
+		 	@media (max-width: 767px){
+				 font-size:18px;
+			}
+		 }	
+	}
+}

@@ -1,0 +1,71 @@
+.room-details{
+	.bt{ margin:60px 0;
+		@media (max-width: 767px){
+				 margin:20px 0;
+		}
+	 }
+	.align-center{ text-align:center;}
+	.p-b-25{ padding-bottom:25px;}
+	.p-b-80{ padding-bottom:80px;}
+	.p-t-35{ padding-top:35px;}
+	.p-l-0{ padding-left:0px !important;}
+	.rooms-banner{background: url(/images/rooms/room-details/room-details-banner.jpg) no-repeat center center;background-size: cover;}
+	.home-rooms-holder{ width:420px;
+		@media (max-width: 767px){
+				 padding-bottom:30px;
+				 width:320px;
+		}
+		h3{ padding-top:35px; color:#333333;}
+		p{ color:#3a9dc4; font-size:32px; padding-bottom:15px;}
+		.btn-holder{ padding:0px;}
+	}
+	.details-intro{ padding:45px; background:#1f4552; color:#fff;
+		h2{
+			font-size: 14px;
+			text-transform: uppercase;
+			font-family: "brandon_grotesquebold";
+			letter-spacing: 5px;	
+			vertical-align:middle; padding-top:70px;
+			@media (max-width: 767px){
+				 padding-top:0px; padding-bottom:20px;
+			}
+		}
+		li{
+			list-style:none; padding:5px 0;
+			font-family: 'brandon_grotesquelight';
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+	.information{ padding:33px;
+		img{
+				@media (max-width: 767px){
+					 width:90%; height:90%;
+				}
+		}
+		p{font-family: 'brandon_grotesquelight'; font-size: 18px; line-height: 24px;
+			&.highlight{font-family: "brandon_grotesqueregular"; padding-bottom:35px;}
+			span{ padding:0 15px;}
+		}	
+	}
+	.home-specials-item2{
+		background-color: #ffffff;
+		color: #333333;
+		text-align: center;
+		margin: 0 15px;
+		position: relative;
+		img{ width:100%;}
+	}
+	.cta-theme{
+		background-image: url(/images/rooms/room-details/banner-2.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover; height:533px;
+	}
+	.stamp{ width:150px; height:150px; position:absolute;bottom: 88px;left: -8px;
+			img{ width:100%;}
+			@media (max-width: 767px){
+					 width:80px; height:80px; left:0px; bottom:53px;
+			}
+	}
+}
