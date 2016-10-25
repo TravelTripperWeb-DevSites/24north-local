@@ -139,6 +139,10 @@ $('#homeCarousel,#specialsCarousel').carousel({
   cycle: true
 }); 
 
+$('#roomDetailsCarousel').carousel({
+  interval: 3000,
+  cycle: true
+}); 
 
   // title equal heights
   

@@ -1,4 +1,18 @@
 .room-details{
+	.more-spls{ position:relative;
+		.graphics{
+			position: absolute;
+			max-width: 1200px;
+			margin: 0 auto;
+			height: 18px;
+			top: -9px;
+			right: 0;
+			left: 0;
+			background-image: url(../images/floating/line-diagonal.png);
+			background-repeat: repeat-x;
+			background-position: center center;
+		}
+	}
 	.bt{ margin:60px 0;
 		@media (max-width: 767px){
 				 margin:20px 0;
@@ -10,10 +24,14 @@
 	.p-t-35{ padding-top:35px;}
 	.p-l-0{ padding-left:0px !important;}
 	.rooms-banner{background: url(/images/rooms/room-details/room-details-banner.jpg) no-repeat center center;background-size: cover;}
-	.home-rooms-holder{ width:420px;
+	.home-rooms-holder{ width:420px;position: absolute;z-index: 999;bottom: 70px;left: 70px;
+		@media (min-width: 768px) and (max-width:1024px){
+				bottom:20px; left:40px; width:320px;
+		}
 		@media (max-width: 767px){
 				 padding-bottom:30px;
 				 width:320px;
+				 position:relative; bottom:inherit; left:inherit;z-index: 0;
 		}
 		h3{ padding-top:35px; color:#333333;}
 		p{ color:#3a9dc4; font-size:32px; padding-bottom:15px;}
@@ -60,12 +78,17 @@
 		background-image: url(/images/rooms/room-details/banner-2.jpg);
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-size: cover; height:533px;
+		background-size: cover; padding: 180px 0;
 	}
 	.stamp{ width:150px; height:150px; position:absolute;bottom: 88px;left: -8px;
 			img{ width:100%;}
 			@media (max-width: 767px){
 					 width:80px; height:80px; left:0px; bottom:53px;
 			}
+	}
+	.room-details-carousel{ position:relative; margin-bottom:45px;
+		@media (max-width: 767px){
+				margin-bottom:20px;
+		}
 	}
 }
