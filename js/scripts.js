@@ -205,7 +205,7 @@ $(document).ready(function() {
   sync1.owlCarousel({
     singleItem : true,
     slideSpeed : 2000,
-    navigation: true,
+    navigation: false,
 	autoPlay: true,
 	navigationText : false,
     pagination:false,
@@ -214,10 +214,10 @@ $(document).ready(function() {
   });
  
   sync2.owlCarousel({
-    items : 9,
-    itemsDesktop      : [1199,5],
-    itemsDesktopSmall     : [979,5],
-    itemsTablet       : [768,5],
+    items : 6,
+    itemsDesktop      : [1199,6],
+    itemsDesktopSmall     : [979,6],
+    itemsTablet       : [768,6],
     itemsMobile       : [479,4],
     pagination:false,
 	autoPlay: true,
