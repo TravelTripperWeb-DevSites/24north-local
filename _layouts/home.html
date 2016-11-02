@@ -1,10 +1,10 @@
 ---
 layout: default
----  
- 
+---
+
 <section>
   <div class="home-banner-wrap">
-    <div id="homeCarousel" class="carousel slide"> 
+    <div id="homeCarousel" class="carousel slide">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
@@ -13,10 +13,10 @@ layout: default
         <li data-target="#homeCarousel" data-slide-to="3"></li>
         <li data-target="#homeCarousel" data-slide-to="4"></li>
       </ol>
-      
+
       <!-- Wrapper for Slides -->
-      <div class="carousel-inner" rt3-recent-bookings="recentBookings" rt3-rooms-browser="browser" rt3-search-form="search" on-search-changed="browser.tonightRate()" ng-cloak>
-      
+      <div class="carousel-inner" rt3-recent-bookings="recentBookings"  ng-cloak>
+
               <div class="item active"> <img src="../images/home-carousel-2.jpg" alt=""/>
           <div class="carousel-caption transparent-bg">
             <div class="caption-inner">
@@ -25,9 +25,9 @@ layout: default
               <div><a href="/specials/" class="button-common">View Specials <i class="fa fa-play"></i></a></div>
             </div>
           </div>
-          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder"><span>[[ browser.toNightsRate ]]</span>Tonight’s Rate</span></div>
+          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder" ng-hide="!browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
         </div>
-      
+
         <div class="item"> <img src="../images/home-carousel-1.jpg" alt=""/>
           <div class="carousel-caption transparent-bg">
             <div class="caption-inner">
@@ -36,10 +36,10 @@ layout: default
               <div><a href="/location/" class="button-common">Discover More <i class="fa fa-play"></i></a></div>
             </div>
           </div>
-         <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder"><span>[[ browser.toNightsRate ]]</span>Tonight’s Rate</span></div>
+         <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder" ng-hide="!browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
         </div>
-        
-        
+
+
          <div class="item"> <img src="../images/home-carousel-3.jpg" alt=""/>
           <div class="carousel-caption transparent-bg">
             <div class="caption-inner">
@@ -48,9 +48,9 @@ layout: default
               <div><a href="/rooms/" class="button-common">View Rooms<i class="fa fa-play"></i></a></div>
             </div>
           </div>
-           <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder"><span>[[ browser.toNightsRate ]]</span>Tonight’s Rate</span></div>
+           <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder" ng-hide="!browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
         </div>
-        
+
         <div class="item"> <img src="../images/home-carousel-4.jpg" alt=""/>
           <div class="carousel-caption transparent-bg">
             <div class="caption-inner">
@@ -59,9 +59,9 @@ layout: default
               <div><a href="/gallery/" class="button-common">View Gallery<i class="fa fa-play"></i></a></div>
             </div>
           </div>
-          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder"><span>[[ browser.toNightsRate ]]</span>Tonight’s Rate</span></div>
+          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder" ng-hide="!browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
         </div>
-        
+
         <div class="item"> <img src="../images/home-carousel-5.jpg" alt=""/>
           <div class="carousel-caption transparent-bg">
             <div class="caption-inner">
@@ -70,9 +70,9 @@ layout: default
               <div><a href="/location/" class="button-common">View Location<i class="fa fa-play"></i></a></div>
             </div>
           </div>
-          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder"><span>[[ browser.toNightsRate ]]</span>Tonight’s Rate</span></div>
+          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder" ng-hide="!browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
         </div>
-        
+
       </div>
     </div>
     <!--<div class="theme-left-panel">
@@ -87,7 +87,7 @@ layout: default
   <div class="container-fluid blue-bg">
     <div class="about-wrap">
       <h1>24 north hotel Key West</h1>
-      <p>24 North Hotel Key West offers boutique accommodations in Key West. All rooms are fitted with a flat-screen TV. Certain rooms feature a sitting area for your convenience. The rooms are equipped with a private bathroom equipped with a bathtub or shower. For your comfort, you will find free toiletries and a hairdryer.</p>
+      <p>Our hotel is located at the point of entry to Key West and convenient to everything in Old Town and across the island. Key West, also known as Cayo Hueso, is a 2-mile-by-4-mile island located at the southernmost tip of the continental U.S. at the tail end of the 120-mile-long Florida Keys island chain, just 90 miles from Cuba. Key West International Airport is a 10 minute drive to 24 North Hotel. Alternatively, guests can arrive by ferry from Fort Myers via Key West Express.</p>
       <div class="btn-holder"><a href="/specials/" class="button-common">View Specials <i class="fa fa-play"></i></a></div>
       <div class="graphic-1"><img src="/images/floating/stamp-1.png" alt=""/></div>
       <div class="graphic-2"><img src="/images/floating/curves-1.png" alt=""/></div>
@@ -99,7 +99,7 @@ layout: default
     <div class="col-sm-6 no-padding v-center">
       <div class="two-col-content">
         <h3>Paradise Found</h3>
-        <p>Relax by the outdoor pool, work out in the fitness center, or enjoy a drink at the bar.</p>
+        <p>Come to 24 North Hotel and soak in Key West. Our concierge can curate personalized experiences such as yoga, pilates, spa services, bicycle and scooter rentals, snorkeling and diving, seaplane tours, catamaran sailing, parasailing, deep sea fishing, and much more.</p>
         <div class="logo-icon"><img src="../images/logo-24.jpg" alt="24 North Hotel Key West"/></div>
       </div>
     </div>
@@ -112,7 +112,7 @@ layout: default
     <div class="col-sm-6 no-padding v-center">
       <div class="two-col-content">
         <h3>About the hotel</h3>
-        <p>Key West International Airport is 1.3 miles from 24 North Hotel | Key West, and Duval Street is 3.1 miles away.</p>
+        <p>24 North Hotel offers standard, pool view, and oceanfront rooms with premium features and in-room amenities. Rooms are equipped with a 48" LCD TV, microwave, refrigerator, oversized lounge chair and ottoman, bath with granite counter tops, and exceptionally comfortable and clean beds.</p>
         <!--<div class="btn-holder"><a href="#" class="button-common btn-blue">View this suite<i class="fa fa-play"></i></a></div>-->
       </div>
     </div>
@@ -124,37 +124,27 @@ layout: default
   <div class="container-fluid no-padding home-rooms-wrap">
     <div class="home-rooms">
       <div class="container">
-        
+
           <div class="home-rooms-holder">
           <div class="home-rooms-holder-inner">
-          <div id="carousel-bottom">
-            <div class="item">
+          <data-owl-carousel  class="owl-carousel" data-options="{navigation : false,
+                                                                                      slideSpeed : 500,
+                                                                                      paginationSpeed : 400,
+                                                                                      singleItem:true,
+                                                                            		  paginationNumbers: false,
+                                                                            		  autoPlay: false,
+                                                                            		  pagination: false,
+                                                                            		  navigation: true,
+                                                                            		  navigationText : false}">
+            <div class="item" owl-carousel-item="" ng-repeat ="room in browser.roomsList">
             <div>
               <h2>Rooms & Suites</h2>
-              <h3><span class="block-element">Premium </span>Ocean View</h3> 
+              <h3><span class="block-element">[[room.name]]</span></h3>
               <p></p>
               <div class="btn-holder extra padding"><a href="/rooms/" class="button-common btn-blue">View Rooms<i class="fa fa-play"></i></a></div>
-            </div>         
-			</div>
-            <div class="item">
-            <div>
-              <h2>Rooms & Suites</h2>
-              <h3><span class="block-element">Deluxe</span>Pool View</h3> 
-              <p></p>
-              <div class="btn-holder"><a href="/rooms/" class="button-common btn-blue">View Rooms<i class="fa fa-play"></i></a></div>
-            </div>         
-			</div>
-            <div class="item">
-            <div>
-              <h2>Rooms & Suites</h2>
-              <h3><span class="block-element">Standard</span></h3>  
-              <p></p>
-              <div class="btn-holder"><a href="/rooms/" class="button-common btn-blue">View Rooms<i class="fa fa-play"></i></a></div>
-            </div>         
-			</div>
-             
-           
-         </div>
+            </div>
+			       </div>
+          </data-owl-carousel >
         </div>
         </div>
       </div>
@@ -162,54 +152,15 @@ layout: default
   </div>
 </section>
 
-<section>
+<section rt3-special-rates= "offers">
 	<div class="container-fluid no-padding home-specials-wrap">
     	<div class="container">
        	  <h2 class="heading-large">Special Offers</h2>
-          
-          <div id="home-carousel-2">
-  				<div class="item">
-            <div class="home-specials-item">
-                <img src="../images/home-special-1.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>Advance Purchase Non-Refundable</h3>
-                    <p>Non-Refundable Offer. Full pre-payment required at the time of booking.</p>
-                </div>
-                <a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=ADV&offer_code=NONREFUNDABLE" target="_blank" class="button-common btn-top">View Special</a>
-            </div>
-            
-            </div>
-            
-            <div class="item">
-            <div class="home-specials-item">
-                <img src="../images/home-special-2.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>Hemingway House Package</h3>
-                    <p>Receive complimentary tickets to Hemingway House.</p>
-                </div>
-                <a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=HHPKG&offer_code=HEMINGWAY" target="_blank" class="button-common btn-top">View Special</a>
-            </div>
-            
-            </div>
-            
-            <div class="item">
-            <div class="home-specials-item">
-                <img src="../images/home-special-3.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>$50 Food & Beverage Package</h3>
-                    <p>Receive a $50 food & beverage credit to use at our Poolside Bar, minimum stay required.</p>
-                </div>
-                <a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=FB50&offer_code=POOLBAR" target="_blank" class="button-common btn-top">View Special</a>
-            </div>
-            
-            </div>
-  
-            </div>
-            
-            <div class="graphic"><img src="/images/floating/stamp-2.png" alt=""/></div>
-            
+          {%  include special-offers.html %}
+          <div class="graphic"><img src="/images/floating/stamp-2.png" alt=""/></div>
+
           <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue">View all Specials<i class="fa fa-play"></i></a></div>
-            
+
         </div>
     </div>
 </section>
@@ -233,7 +184,7 @@ layout: default
     	<div class="col-sm-4 no-padding v-center"><img src="../images/three-col-1.jpg" alt=""/></div>
         <div class="col-sm-4 v-center three-col-content">
         	<h3>Paradise Found</h3>
-            <h2><span class="block-element">National</span>Park</h2> 
+            <h2><span class="block-element">National</span>Park</h2>
         </div>
         <div class="col-sm-4 no-padding v-center"><img src="../images/three-col-2.jpg" alt=""/></div>
   </div>
@@ -241,17 +192,17 @@ layout: default
 
 <section>
   <div class="container-fluid no-padding three-col-wrap">
-    	
+
         <div class="col-sm-4 v-center three-col-content">
         	<h3>adventure</h3>
-            <h2><span class="block-element">playground</span>for all</h2> 
+            <h2><span class="block-element">playground</span>for all</h2>
         </div>
         <div class="col-sm-4 no-padding v-center seal"><img src="../images/three-col-3.jpg" alt=""/><div class="graphic"><img src="../images/floating/stamp-big.png" alt=""/></div></div>
          <div class="col-sm-4 v-center three-col-content">
         	<h3>explore</h3>
-            <h2><span class="block-element">natural</span>wonders</h2> 
+            <h2><span class="block-element">natural</span>wonders</h2>
         </div>
-        
+
   </div>
 </section>-->
 <!--
@@ -259,14 +210,14 @@ layout: default
 	<div class="container-fluid test-wrap">
     <div class="container">
     	<div class="test-wrap-inner">
-    <div id="testCarousel" class="carousel slide">  
+    <div id="testCarousel" class="carousel slide">
       <ol class="carousel-indicators">
         <li data-target="#testCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#testCarousel" data-slide-to="1"></li>
         <li data-target="#testCarousel" data-slide-to="2"></li>
         <li data-target="#testCarousel" data-slide-to="3"></li>
       </ol>
-       
+
       <div class="carousel-inner">
       <h2>Guestbook</h2>
         <div class="item active">
@@ -282,11 +233,11 @@ layout: default
         <div class="item">
             <p>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
         </div>
-        
+
       </div>
     </div>
-   
-   
+
+
   </div>
   </div>
     </div>
@@ -296,15 +247,15 @@ layout: default
 <section class="hlw">
 	<div class="hlw-inner">
 	<div class="container">
-   	  <div class="home-location-wrap"> 
-      
+   	  <div class="home-location-wrap">
+
       {% include location.html %}
-      
+
            <div><a href="/location/" class="button-common btn-blue">Explore location<i class="fa fa-play"></i></a></div>
-           
+
            <div class="graphic"><img src="/images/floating/stamp-3.png" alt=""/></div>
-           
-            
+
+
       </div>
     </div>
     </div>
@@ -326,4 +277,3 @@ layout: default
 	<div class="new-map">
     <img src="/images/new-map.jpg" alt=""/> </div>
 </section>
- 

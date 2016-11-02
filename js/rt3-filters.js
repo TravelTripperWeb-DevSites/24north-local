@@ -14,4 +14,22 @@ angular.module('rezTrip')
     return function(input){
         return input ? input.replace(/&amp;/, '&') : '';
     }
+})
+.filter('spacetohyphen', function () {
+    return function (value) {
+        return (!value) ? '' : value.replace(/\s+/g, '-');
+    };
+}).filter('nospace', function () {
+    return function (value) {
+        return (!value) ? '' : value.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+
+    };
+}).filter('replacePercent', function () {
+    return function (value) {
+        return (!value) ? '' : String(value).replace('%', 'percent');
+    };
+}).filter('replacePipe', function () {
+    return function (value) {
+        return (!value) ? '' : String(value).replace('|', '');
+    };
 });

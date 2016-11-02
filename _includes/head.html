@@ -22,18 +22,6 @@ ga('require', 'linker');
 ga('linker:autoLink', ['24northhotel.reztrip.com','24northhotel.reztripmobile.com']); 
 ga('send', 'pageview'); 
 </script>
-
-<script> 
-window.addEventListener('load',function(){ 
-for (var i=0;i<ga.getAll().length;i++) 
-{ 
-if(ga.getAll()[i].get('trackingId') == 'UA-74129016-1') 
-{ 
-var param = ga.getAll()[i].get('linkerParam').replace("_ga=",""); 
-jQuery('form[action="https://24northhotel.reztrip.com/search?"]').prepend('<input type="hidden" value="'+param+'" name="_ga" >'); 
-} 
-} 
-}) 
-</script>
+<script id="gtsgig-boot" data-hotel-id="24northhotel" src="https://widgets.gtsgig.com/boot.js" async defer></script>
   
 </head>

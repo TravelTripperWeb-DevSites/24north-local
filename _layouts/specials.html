@@ -9,172 +9,20 @@ layout: default
     </div>
   </div>
 </section>
-<section class="models">
+<section rt3-special-rates= "offers" >
+<section class="models" ng-repeat="offer in offers.special_rates">
   <div class="container">
     <div class=" two-col-wrap">
       <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="/images/specials/advance-purchase-non-refundable.jpg" alt=""> <a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=ADV&offer_code=NONREFUNDABLE" target="_blank"  class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
+        <div class="col-sm-6 sp-img v-center"> <img src="[[offer.lead_photo_url.yankee_large]]" alt=""> <a href="{{site.data.config.reztripUrl}}en/special_offer?rate_code=[[offer.rate_plan_code]]&offer_code=[[offer.offer_code]]" target="_blank"  class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
         <div class="col-sm-6 sp-content v-center">
-          <p class="title">Advance Purchase Non-Refundable</p>
-          <p class="desp">Non-Refundable Offer. Full pre-payment required at the time of booking.</p>
-          <div class="btn-holder"><a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=ADV&offer_code=NONREFUNDABLE" target="_blank" class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
+          <p class="title">[[offer.rate_plan_name]]</p>
+          <p class="desp">[[offer.short_description]]</p>
+          <div class="btn-holder"><a href="/specials/[[offer.rate_plan_name | lowercase | spacetohyphen ]]"  class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="models">
-  <div class="container">
-    <div class=" two-col-wrap">
-      <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="/images/specials/cayo-hueso-y-cuba.jpg" alt=""> <a href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=178259&vr=3"  target="_blank" class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
-        <div class="col-sm-6 sp-content v-center">
-          <p class="title">Cayo Hueso y Cuba</p>
-          <p class="desp">Enlivened by the vibrant Cuban heritage, experience Cuban craft and customs.</p>
 
-          <div class="btn-holder"><a href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=178259&vr=3" target="_blank" class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="models">
-  <div class="container">
-    <div class=" two-col-wrap">
-      <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="/images/specials/hemingway-house-package.jpg" alt=""> <a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=HHPKG&offer_code=HEMINGWAY"  target="_blank" class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
-        <div class="col-sm-6 sp-content v-center">
-          <p class="title">Hemingway House Package</p>
-          <p class="desp">Take a leisurely stroll through the tranquil studio, home and gardens where the late Nobel Prize winner</p>
-          <div class="btn-holder"><a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=HHPKG&offer_code=HEMINGWAY" target="_blank" class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="models">
-  <div class="container">
-    <div class=" two-col-wrap">
-      <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="/images/specials/50-food-beverage-package.jpg" alt=""> <a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=FB50&offer_code=POOLBAR"  target="_blank" class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
-        <div class="col-sm-6 sp-content v-center">
-          <p class="title">$50 Food & Beverage Package</p>
-          <p class="desp">Receive a $50 food & beverage credit to use at our Poolside Bar (or Rum Row after hours), minimum stay required.</p>
-          <div class="btn-holder"><a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=FB50&offer_code=POOLBAR" target="_blank" class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="models">
-  <div class="container">
-    <div class=" two-col-wrap">
-      <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="/images/specials/sunset-cruise-reef-eco-tour.jpg" alt=""> <a href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=156140&vr=3"  target="_blank" class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
-        <div class="col-sm-6 sp-content v-center">
-          <p class="title">SUNSET CRUISE & REEF ECO TOUR</p>
-          <p class="desp">Leave your worries behind and cruise off into Key West’s famous sunset aboard the climate controlled Fury Glass Bottom Boat.</p>
-          <div class="btn-holder"><a href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=156140&vr=3" target="_blank" class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="models">
-  <div class="container">
-    <div class=" two-col-wrap">
-      <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="/images/specials/key-west-snorkeling.jpg" alt=""> <a href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=156141&vr=3"  target="_blank" class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
-        <div class="col-sm-6 sp-content v-center">
-          <p class="title">KEY WEST SNORKELING</p>
-          <p class="desp">Snorkel into Key West’s most popular attractions: the reef and crystal blue waters surrounding our island paradise.</p>
-          <div class="btn-holder"><a href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=156141&vr=3" target="_blank" class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="models">
-  <div class="container">
-    <div class=" two-col-wrap">
-      <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="/images/specials/key-west-butterfly-and-nature-conservatory.jpg" alt=""> <a href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=156155&vr=3"  target="_blank" class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
-        <div class="col-sm-6 sp-content v-center">
-          <p class="title">KEY WEST BUTTERFLY AND NATURE CONSERVATORY</p>
-          <p class="desp">Feel your stress fade away as you enter a magical world of butterflies.</p>
-          <div class="btn-holder"><a href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=156155&vr=3" target="_blank" class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="models">
-  <div class="container">
-    <div class=" two-col-wrap">
-      <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="/images/specials/florida-resident-rate.jpg" alt=""> <a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=FLR&offer_code=FLORIDA"  target="_blank" class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
-        <div class="col-sm-6 sp-content v-center">
-          <p class="title">Florida Resident Rate</p>
-          <p class="desp">Save 15% with your Florida ID or Driver's License. Proof of residency required at check-in.</p>
-          <div class="btn-holder"><a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=FLR&offer_code=FLORIDA" target="_blank" class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="models">
-  <div class="container">
-    <div class=" two-col-wrap">
-      <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="/images/specials/aaa.jpg" alt=""> <a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=AAA&offer_code=AAA"  target="_blank" class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
-        <div class="col-sm-6 sp-content v-center">
-          <p class="title">AAA</p>
-          <p class="desp">AAA Special Offer. AAA card required at check in.</p>
-          <div class="btn-holder"><a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=AAA&offer_code=AAA" target="_blank" class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="models">
-  <div class="container">
-    <div class=" two-col-wrap">
-      <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="/images/specials/government-rate.jpg" alt=""> <a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=GOV&offer_code=GOVERNMENT"  target="_blank" class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
-        <div class="col-sm-6 sp-content v-center">
-          <p class="title">Government Rate</p>
-          <p class="desp">Federal or local government ID required at check-in. Save 15%, discount rate for government employees and military.</p>
-          <div class="btn-holder"><a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=GOV&offer_code=GOVERNMENT" target="_blank" class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="models">
-  <div class="container">
-    <div class=" two-col-wrap">
-      <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="/images/specials/government-per-diem-rates.jpg" alt=""> <a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=GPD&offer_code=GOVERNMENT"  target="_blank" class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
-        <div class="col-sm-6 sp-content v-center">
-          <p class="title">Government per Diem Rates</p>
-          <p class="desp">Federal Government per Diem rates. Federal or local government ID required at the time of check-in.</p>
-          <div class="btn-holder"><a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=GPD&offer_code=GOVERNMENT" target="_blank" class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="models">
-  <div class="container">
-    <div class=" two-col-wrap">
-      <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="/images/specials/iglta-special-offer.jpg" alt=""> <a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=IGLTA&offer_code=IGLTA"  target="_blank" class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
-        <div class="col-sm-6 sp-content v-center">
-          <p class="title">IGLTA Special Offer</p>
-          <p class="desp">IGLTA Special Offer.</p>
-          <div class="btn-holder"><a href="https://24northhotel.reztrip.com/en/special_offer?rate_code=IGLTA&offer_code=IGLTA" target="_blank" class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
