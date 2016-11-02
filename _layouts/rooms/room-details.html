@@ -29,7 +29,7 @@ layout: default
               <div>
                 <h2>Premium</h2>
                 <h3><span class="block-element">[[selectedRoom.name]]</h3>
-                <p>[[ selectedRoom.todayRate ]]</p>
+                <p><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" >[[ selectedRoom.todayRate ]]</a></p>
                 <div class="btn-holder extra padding"><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" class="button-common btn-blue">Book Now<i class="fa fa-play"></i></a></div>
               </div>
             </div>
