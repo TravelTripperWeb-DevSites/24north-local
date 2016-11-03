@@ -17,7 +17,7 @@
       <div class="home-specials-item">
           <img src="[[offer.lead_photo_url.yankee_large]]" alt=""/>
           <div class="car-content">
-              <h3>[[offer.rate_plan_name]]</h3>
+              <h3><a href="/specials/[[offer.rate_plan_name | lowercase | spacetohyphen ]]/" style="text-decoration:none;" >[[offer.rate_plan_name]]</a></h3>
               <p>[[offer.short_description | limitTo: 100]][[offer.short_description.length > 100 ? '...' : '']]</p>
           </div>
           <a href="/specials/[[offer.rate_plan_name | lowercase | spacetohyphen ]]/"  class="button-common btn-top">View Special</a>

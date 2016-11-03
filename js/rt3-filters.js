@@ -14,6 +14,7 @@ angular.module('rezTrip')
     return function(input){
         return input ? input.replace(/&amp;/, '&') : '';
     }
+
 })
 .filter('spacetohyphen', function () {
     return function (value) {
@@ -32,4 +33,5 @@ angular.module('rezTrip')
     return function (value) {
         return (!value) ? '' : String(value).replace('|', '');
     };
+
 });

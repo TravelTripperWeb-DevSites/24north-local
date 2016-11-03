@@ -2,12 +2,13 @@
   <div class="container-fluid no-padding home-specials-wrap">
     <div class="container">
       <h2 class="heading-large">More Rooms</h2>
+
       <div  class="owl-carousel" id="room-carousel-1" >
 
         <div class="item"  ng-repeat="room in browser.roomsList" >
           <div class="home-specials-item2" > <img src="[[room.photos[0].yankee_large]]" alt=""/>
             <div class="car-content">
-              <h3>[[room.name]]</h3>
+              <h3><a href="/rooms/[[room.name | lowercase | replacePipe  | spacetohyphen]]/" >[[room.name]]</a></h3>
               <p>[[room.short_description | limitTo: 150]][[room.short_description.length > 150 ? '...' : '']]</p>
             </div>
             <a href="/rooms/[[room.name | lowercase | replacePipe  | spacetohyphen]]/" class="button-common btn-top">View Room</a> </div>

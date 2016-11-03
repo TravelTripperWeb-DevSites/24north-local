@@ -1,4 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+<<<<<<< HEAD
 .DS_Store
+=======
+>>>>>>> upstream/master

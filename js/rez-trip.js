@@ -34,6 +34,7 @@
         }
       };
     })
+
     .directive("owlCarousel", function() {
       return {
         restrict: 'E',
@@ -103,6 +104,7 @@
         }, 2800);
 
     }])
+
     .controller('bookingWidget', ['$scope', 'rt3Search', 'rt3Browser', function($scope, rt3Search, rt3Browser) {
       var self = this;
 
@@ -134,6 +136,7 @@
           rt3Browser.getdiff=false;
 
 
+
         }
 
          if(target == 'depart')
@@ -143,11 +146,14 @@
          var date1 = new Date($scope.search.params.arrival_date);
         var date2 = new Date($scope.search.params.departure_date);
         var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+
         var diffDays = Math.ceil(timeDiff / (1000*3600*24));
+
         if(diffDays >=2)
         {
           rt3Browser.getdiff=true;
         }
+
         }
       }
     }]);

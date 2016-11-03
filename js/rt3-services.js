@@ -150,15 +150,18 @@ angular.module('rezTrip')
       this.rooms = [];
       this.toNigthsRate;
 
+
       this.errors = [];
       this.tonightErrors = [];
       this.searchParams = {};
+
 
 	  this.getdiff=false;
     }
 
     Browser.prototype.tonightRate=function()
     {
+
 
        var self = this;
        self.isRate= true;
@@ -199,6 +202,7 @@ angular.module('rezTrip')
                 });
 
              }
+
             //console.log(self.tonightErrors);
             self.loaded = true;
 
@@ -207,6 +211,7 @@ angular.module('rezTrip')
       });
 
     }
+
 
 
 
@@ -220,6 +225,7 @@ angular.module('rezTrip')
 
 
       this.thisDate = date.getFullYear() +'-'+ ('0' + (date.getMonth() + 1)).slice(-2) +'-'+ ('0' + date.getDate()).slice(-2);
+
 
       if(this.searchParams || this.storageContainer) {console.log(sessionStorage.ip_add);
         rt3api.getAllAvailableRooms(this.searchParams || this.storageContainer).then(function(response) {
@@ -252,6 +258,7 @@ angular.module('rezTrip')
 
             }
 
+
             self.errors = response.error_info.error_details;
             self.loaded = true;
             self.searchParams = self.searchParams || self.storageContainer;
@@ -271,26 +278,30 @@ angular.module('rezTrip')
       }
     };
 
-
     var browser = new Browser();
 
     browser.tonightRate();
 
+
   //  browser.search();
+
 
     return browser;
   }])
 
   .service('rt3SpecialRates', ['$rootScope', '$q', '$location','rt3api', function($rootScope, $q, $location, rt3api) {
     var specialRates = {
+
       loaded: false,
       locationHash:  angular.element('[data-offer-code]').data('offer-code') || null ,
       sRdetail: {},
       // locationHash: $location.search().name || null
+
     };
 
     specialRates.ready = $q(function(resolve) {
       rt3api.getAllSpecialRates().then(function(response) {
+
              $rootScope.$applyAsync(function() {
               var formatResponseValue;
               formatResponseValue = formatRespone(response);
@@ -308,6 +319,7 @@ angular.module('rezTrip')
               specialRates.loaded = true;
               resolve(specialRates);
           });
+
       });
     });
 
@@ -330,7 +342,9 @@ angular.module('rezTrip')
     RoomDetails.prototype.fetchRoomDetails = function() {
       var self = this;
       var searchParams = rt3Search.getParams();
+
       var dataRoomId = angular.element('[data-room-id]').data('room-id');
+
 
       var roomId = { room_id: dataRoomId || $location.path().substr(1) };
 

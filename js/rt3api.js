@@ -68,6 +68,7 @@ Rt3Api.prototype.availableRooms = function(searchParams) {
     return query(path, params);
 };
 
+
 Rt3Api.prototype.getAllAvailableRooms = function(searchParams) { console.log(sessionStorage.ip_add);
     var path = '/hotels/rooms.json';
     var newParams = {};
@@ -118,6 +119,7 @@ Rt3Api.prototype.getAllAvailableRooms = function(searchParams) { console.log(ses
     return query(path, params);
 };
 
+
 Rt3Api.prototype.availableRoomsTonight = function() {
     var path = '/hotels/roomRateList.json';
     var now = new Date();
@@ -130,7 +132,6 @@ Rt3Api.prototype.availableRoomsTonight = function() {
     var tomarrow=new Date(nextDay.setDate(nextDay.getDate() + 1));
     var depart=tomarrow.toISOString().slice(0,10);
     //console.log("cuurent"+today);
-
 
     var defaultParams = {
         hotel_id: this.config.hotelId,
