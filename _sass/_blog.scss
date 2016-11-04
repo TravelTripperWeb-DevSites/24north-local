@@ -1,6 +1,7 @@
 .blog-list {
 	padding: 60px 0 60px 0;
 	overflow: hidden;
+	hr{ margin-bottom:50px;}
 	@media(min-width:992px){
 	/*.border-right {
 		border-right: solid 1px #f1f1f1;
@@ -20,7 +21,7 @@
 	.post-image-holder {
 		padding: 0 0 30px 0;
 		img {
-			width: 50%;
+			width: 100%;
 		}
 	}
 	h1,h2{
@@ -81,6 +82,11 @@
 }
 .blog-detail {
 	padding-top: 20px;
+	.blog-item{ 
+		.post-image-holder{
+			img{ width:50%;}
+		}
+	}
 }
 .italic-text {
 	font-style: italic;
