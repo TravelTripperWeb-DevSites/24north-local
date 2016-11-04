@@ -34,4 +34,9 @@ angular.module('rezTrip')
         return (!value) ? '' : String(value).replace('|', '');
     };
 
+}).filter('renderHTMLCorrectly', function($sce){
+	return function(stringToParse)
+	{
+		return $sce.trustAsHtml(stringToParse);
+	}
 });

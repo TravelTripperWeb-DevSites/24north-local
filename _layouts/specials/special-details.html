@@ -28,7 +28,7 @@ layout: default
             <h3><span class="block-element">[[offers.sRdetail.rate_plan_name]]</h3>
             <div class="booknow"> <a href="[[offers.sRdetail.promo_url]]" target="_blank">Book Now</a> </div>
             <div class="btn-holder extra padding"><a href="#" class="button-common btn-blue">Contact Us</i></a></div>
-            <p>[[ offers.sRdetail.short_description]]</p>
+            <p ng-bind-html="offers.sRdetail.short_description | renderHTMLCorrectly"></p>
             <p>
                <strong><span ng-show="!offers.sRdetail.booking_end_date">Available From: </span>
                     [[offers.sRdetail.booking_start_date | date:"MM-dd-yyyy"]]
@@ -69,7 +69,7 @@ layout: default
         <div class="col-md-5">
           <ul>
 
-            <li>[[offers.sRdetail.long_description]]</li>
+            <li><p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p></li>
 
 
           </ul>

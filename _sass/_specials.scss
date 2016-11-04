@@ -235,6 +235,7 @@ section.models
 .specials-bannner {
 		background: url("/images/specials-banner.jpg") no-repeat center center;
 	}
+
 .attractions-bannner {
 		background: url("/images/attractions/attractions-banner.jpg") no-repeat center center;
 		background-size:cover;
@@ -524,4 +525,40 @@ h2{
 			}
 		}
 	}
+}
+.events{
+	.specials-bannner {
+		background: url("/images/events-banner.jpg") no-repeat center center;background-size: cover;
+	}
+	.models{
+		.container{
+			.row{ background:#1f4552;
+				.sp-content{ color:#fff;
+					h2{font-family: "brandon_grotesquelight"; font-size:28px; text-transform:uppercase;}
+					.title{ color:#fff !important;}
+					.desp{
+						@media(min-width: 769px) and (max-width: 1024px){
+						    font-size: 14px;
+							padding: 0px 10px 15px 10px;
+							line-height: 21px;
+						}
+						@media(min-width: 1025px) and (max-width: 1146px){
+						    font-size: 16px;
+							padding: 0px 55px 45px 55px;
+							line-height: 21px;
+						}
+						@media(min-width: 1147px) and (max-width: 1240px){ font-size:18px; padding: 25px 55px 45px 55px;}
+					}
+					@media(max-width: 768px){ padding:30px 15px;
+						h2{ font-size:24px;}
+					}
+				}
+				.btn-blue{ border-color:#fff; color:#fff;
+					&:hover{background-color: #3a9dc4; border-color:#3a9dc4;}
+					.fa-play{ color:#fff;}
+				}
+			}	
+		}	
+	}	
+	
 }
