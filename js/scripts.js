@@ -210,7 +210,7 @@ $(document).ready(function() {
     singleItem : true,
     slideSpeed : 2000,
     navigation: false,
-	autoPlay: true,
+	//autoPlay: true,
 	navigationText : false,
     pagination:false,
     afterAction : syncPosition,
