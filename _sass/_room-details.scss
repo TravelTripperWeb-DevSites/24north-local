@@ -42,7 +42,7 @@
 			font-size: 14px;
 			text-transform: uppercase;
 			font-family: "brandon_grotesquebold";
-			letter-spacing: 5px;	
+			letter-spacing: 5px;
 			vertical-align:middle; padding-top:70px;
 			@media (max-width: 767px){
 				 padding-top:0px; padding-bottom:20px;
@@ -68,8 +68,8 @@
 		.lst{
 			li{ list-style:none; font-family: 'brandon_grotesquelight'; font-size: 18px; line-height: 24px;position: relative;padding-left: 32px;
 				&:before{content: '\2022'; padding-right:30px; text-align:right;width:10px;width: 10px;position: absolute;left: 0;top: -0.2em;}
-			}	
-		}	
+			}
+		}
 	}
 	.home-specials-item2{
 		background-color: #ffffff;
@@ -102,9 +102,10 @@
 				margin-bottom:20px;
 		}
 	}
-	
+
 	&.special-details{
-		.home-rooms-holder{ position:relative; bottom:inherit; left:inherit;}	
+
+		.home-rooms-holder{ position:relative; bottom:inherit; left:inherit;}
 		.specials-banner{background: url(/images/specials/special-details/special-details-banner.jpg) no-repeat center -20px;background-size: cover;}
 		.spcl-lstng{ text-align:center;
 				h2 {
@@ -151,5 +152,35 @@
 					}
 				}
 			}
+		.details-intro{
+				&.style2{
+					text-align:center; padding:30px 0 60px; position:relative;
+					.holds{max-width:80%; margin:0 auto;
+						@media (max-width: 767px){
+							 max-width:90%;
+						}
+						.badger{ position:absolute; bottom:-20px; right:-10px;}
+						h2{ padding:40px 0;}
+						p{ font-family: 'brandon_grotesquelight';font-size: 16px;line-height: 24px; text-align:left;  margin:0 auto 20px;}
+						ul{ text-align:left; margin:0px;
+							li{ text-align:left; list-style:none; position:relative; padding-left:30px;font-family: 'brandon_grotesquelight';font-size: 16px;
+								&:before{
+									content: '\2022';
+									padding-right: 30px;
+									text-align: right;
+									width: 10px;
+									width: 10px;
+									position: absolute;
+									left: 0;
+									top: 0.1em;
+								}
+							  }
+						}
+					}
+				}
+		}
+	}
+	&.event-details{
+
 	}
 }
