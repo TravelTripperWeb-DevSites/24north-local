@@ -39,4 +39,8 @@ angular.module('rezTrip')
 	{
 		return $sce.trustAsHtml(stringToParse);
 	}
+}).filter('replaceNewline', function () {
+    return function (value) {
+        return (!value) ? '' : String(value).replace(/\n+/g, '<br>');
+    };
 });
