@@ -119,47 +119,54 @@ a:hover,a:focus {
 						top: 52px;
 					}
 	ul {
-		li{
-			list-style-type: none;
-			display: inline-block;
-				@media (max-width: 1023px){
-					display: block;
-					border-bottom: solid 1px #d3d3d3;
-				}
-			
-			a{
-				color: $tc-black;
-				font-size: 13px;
-				letter-spacing: 3px;
-				padding: 10px 19px;
-				&:hover {
-					color: $bg-blue-1;
-				}
-				
-				@media (max-width: 1240px){
-					padding: 10px 12px;
-					letter-spacing: 2px;
-					display: block;
-				}
+		&.nav{
+			li{
+				list-style-type: none;
+				display: inline-block;
 					@media (max-width: 1023px){
-					padding: 20px 15px;
-					&:focus{
-						background-color: $bg-blue-3;
-						color: $tc-white;
+						display: block;
+						border-bottom: solid 1px #d3d3d3;
+					}
+				
+				a{
+					color: $tc-black;
+					font-size: 13px;
+					letter-spacing: 3px;
+					padding: 10px 15px;
+					&:hover {
+						color: $bg-blue-1;
+						background:none;
+					}
+					&:focus {
+						background:none;
+					}
+					&.active{color: #3a9dc4;}
+					
+					@media (max-width: 1240px){
+						padding: 10px 12px;
+						letter-spacing: 2px;
+						display: block;
+					}
+						@media (max-width: 1023px){
+						padding: 20px 15px;
+						&:focus{
+							background-color: $bg-blue-3;
+							color: $tc-white;
+						}
+					}
+					@media (max-width: 767px){
+						padding: 16px 15px;
+					}
+					@media (max-height: 479px) and (max-width: 599px){
+						padding: 8px 15px;
+					}
+					
+					&:hover {
+					
 					}
 				}
-				@media (max-width: 767px){
-					padding: 16px 15px;
-				}
-				@media (max-height: 479px) and (max-width: 599px){
-					padding: 8px 15px;
-				}
 				
-				&:hover {
-				
-				}
 			}
-			
 		}
 	}
 }
