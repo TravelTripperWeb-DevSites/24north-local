@@ -561,4 +561,28 @@ h2{
 		}	
 	}	
 	
+	&.partners{
+		.partners-banner {
+			background: url("/images/partners/partners-banner.jpg") no-repeat center center;background-size: cover;
+		}
+		.models{
+			.container{
+				.row{
+					.sp-content{ text-align:left;
+						.desp{ padding:20px 0 30px;
+							@media(min-width: 769px) and (max-width: 1024px){
+									font-size: 14px;
+									padding:20px 0 30px;
+									line-height: 21px;
+							}
+							@media(min-width: 1025px) and (max-width: 1146px){
+								padding:20px 0 30px;
+							}
+							@media(min-width: 1147px) and (max-width: 1240px){ padding:20px 0 30px;}
+						}
+					}
+				}
+			}
+		}
+	}
 }
