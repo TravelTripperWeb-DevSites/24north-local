@@ -60,13 +60,20 @@ layout: default
       </div>
     </div>
   </section>
+  <section class="lifestyle">
+  	<div class="container-fluid">
+    	<h3>About the offer</h3>
+        <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
+    </div>
+  </section>
   <section>
     <div class="container-fluid">
 
       <div class="row details-intro style2">
       	<div class="holds">
-        <div class="col-md-12">
-          <h2>offer details</h2>
+        <div class="col-md-4" ng-show="offers.sRdetail.addons.length > 0">
+          <h2>this offer includes</h2>
+
           <!--<ul>
             <li>Round-trip airport transfers </li>
             <li>Daily Breakfast at The Lobby or Breakfast Buffet </li>
@@ -74,11 +81,14 @@ layout: default
             <li>Culinary Journey dining for two at our restaurants</li>
             <li>Flexible check-in and check-out times</li>
           </ul>-->
-          <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
-          <h2 ng-show="offers.sRdetail.addons.length > 0">This offer includes</h2>
-          <ul>
+
+        </div>
+        <div class="col-md-8" ng-show="offers.sRdetail.addons.length > 0">
+        	<ul>
             <li ng-repeat ="addon in offers.sRdetail.addons" >[[addon]]</li>
-          </ul>
+
+         </ul>
+
         </div>
         <div class="badger"><img src="../../images/rooms/room-details/logo-details.png" width="160" height="144" alt=""/></div>
       </div>

@@ -131,7 +131,7 @@ a:hover,a:focus {
 				a{
 					color: $tc-black;
 					font-size: 13px;
-					letter-spacing: 3px;
+					letter-spacing: 1px;
 					padding: 10px 15px;
 					&:hover {
 						color: $bg-blue-1;
@@ -143,12 +143,12 @@ a:hover,a:focus {
 					&.active{color: #3a9dc4;}
 					
 					@media (max-width: 1240px){
-						padding: 10px 12px;
-						letter-spacing: 2px;
+						padding: 10px 10px;
+						letter-spacing: 1px;
 						display: block;
 					}
 						@media (max-width: 1023px){
-						padding: 20px 15px;
+						padding: 20px 12px;
 						&:focus{
 							background-color: $bg-blue-3;
 							color: $tc-white;
