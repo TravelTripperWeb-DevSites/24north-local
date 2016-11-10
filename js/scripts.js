@@ -276,4 +276,17 @@ $(document).ready(function() {
 
   }
 
+
+});
+$(window).load(function(){
+  if( $(window).width() > 1254 ) {
+     jQuery('ul.nav li.dropdown a.dropdown-toggle').addClass('disable');
+     jQuery('ul.nav li.dropdown a.dropdown-toggle').removeAttr('data-toggle');
+   //Add Hover effect to menus
+        jQuery('ul.nav li.dropdown').hover(function() {
+          jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+        }, function() {
+          jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+        });
+  }
 });
