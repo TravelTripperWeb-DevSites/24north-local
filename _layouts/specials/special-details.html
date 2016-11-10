@@ -66,12 +66,12 @@ layout: default
         <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
     </div>
   </section>
-  <section>
+  <section ng-show="offers.sRdetail.addons.length > 0">
     <div class="container-fluid">
 
       <div class="row details-intro style2">
       	<div class="holds">
-        <div class="col-md-4" ng-show="offers.sRdetail.addons.length > 0">
+        <div class="col-md-4" >
           <h2>this offer includes</h2>
 
           <!--<ul>
@@ -83,7 +83,7 @@ layout: default
           </ul>-->
 
         </div>
-        <div class="col-md-8" ng-show="offers.sRdetail.addons.length > 0">
+        <div class="col-md-8">
         	<ul>
             <li ng-repeat ="addon in offers.sRdetail.addons" >[[addon]]</li>
 
