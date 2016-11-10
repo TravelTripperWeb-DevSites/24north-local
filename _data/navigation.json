@@ -21,12 +21,12 @@
 			
 		},
 		{
-			'title':'Events',
-			'name': 'events',
-			'url': '/events/',
+			'title':'Meetings',
+			'name': 'meetings-and-events-key-west',
+			'url': '/meetings-and-events-key-west/',
 			'submenu': 'true' ,
 			'subitems': [
-				{'title':'Request for Proposal','name': 'events','url': '/request-for-proposal/'}
+				{'title':'Request for Proposal','name': 'events','url': '/meetings-and-events-key-west/request-for-proposal/'}
 			] 
 		}, 
 		{
@@ -42,13 +42,20 @@
 			'submenu': 'false' 
 		},
 		{
+			'title':'Partners',
+			'name': 'partners',
+			'url': '/partners/',
+			'submenu': 'false' 
+		},
+		{
 			'title':'Location',
 			'name': 'location',
 			'url': '/location/',
 			'submenu': 'true' ,
 			'subitems': [
-				{'title':'Shuttle','name': 'location','url': '/shuttle/'},
-				{'title':'Starbucks','name': 'location','url': '/starbucks/'}
+				{'title':'Events','name': 'events','url': '/location/events/'},
+				{'title':'Shuttle','name': 'location','url': '/location/shuttle/'},
+				{'title':'Starbucks','name': 'location','url': '/location/starbucks/'}
 			] 
 		}, 
 		
