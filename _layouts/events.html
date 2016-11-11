@@ -10,83 +10,31 @@ layout: default
         </div>
       </div>
     </section>
+    {% assign events = site.data._models.events | sort : 'sort_order' %}
+    {% for e in events %}
+    {% capture cycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+
     <section class="models">
       <div class="container">
         <div class=" two-col-wrap">
           <div class="row no-gutters">
+            {% if cycle == 'even' %}
+            <div class="col-sm-6 sp-img "> <img src="{{e.image.url}}" alt=""></div>
+            {% endif %}
           	<div class="col-sm-6 sp-content">
-              <h2>Key West Film Festival</h2>
-              <p class="title">November 16th to 20th, 2016</p>
-              <p class="desp">Various locations around Key West Showcasing films that exhibit excellence in storytelling, the festival's lineup is to feature screenings and special events hosted at landmark venues</p>
-    		  <div class="btn-holder"><a href="/location/events/keywest-filmfestival/"  class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
+              <h2>{{e.name}}</h2>
+              <div class="title">{{e.schedule}}</div>
+              <div class="desp">{{e.description}}</div>
+    		  <div class="btn-holder"><a href="{{e.url}}"  class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
             </div>
-            <div class="col-sm-6 sp-img "> <img src="/images/events/film-festival.jpg" alt=""></div>
+            {% if cycle == 'odd' %}
+            <div class="col-sm-6 sp-img "> <img src="{{e.image.url}}" alt=""></div>
+            {% endif %}
           </div>
         </div>
       </div>
     </section>
-    <section class="models">
-      <div class="container">
-        <div class=" two-col-wrap">
-          <div class="row no-gutters">
-            <div class="col-sm-6 sp-img"> <img src="/images/events/expo.jpg" alt=""></div>
-            <div class="col-sm-6 sp-content">
-              <h2>Key West Triathlon and Expo: TRIKW Swim-Bike-Run in Paradise</h2>
-              <p class="title">December 1st to 3rd, 2016 - 7AM</p>
-              <p class="desp">Swim in the Atlantic Ocean, bike along US1 and run along Smathers Beach</p>
-              <div class="btn-holder"><a href="/location/events/keywest-triathlon-expo/"  class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="models">
-      <div class="container">
-        <div class=" two-col-wrap">
-          <div class="row no-gutters">
-          	<div class="col-sm-6 sp-content">
-              <h2>Key West Lighted Bike Ride</h2>
-              <p class="title">December 7th, 2016</p>
-              <p class="desp">The Lighted Bike Ride helps to gather the needed toys for the struggling, working families of Key West for the holidays</p>
-    		  <div class="btn-holder"><a href="/location/events/keywest-lighted-bike-ride/"  class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
-            </div>
-            <div class="col-sm-6 sp-img "> <img src="/images/events/light-bike.jpg" alt=""></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="models">
-      <div class="container">
-        <div class=" two-col-wrap">
-          <div class="row no-gutters">
-            <div class="col-sm-6 sp-img"> <img src="/images/events/holiday.jpg" alt=""></div>
-            <div class="col-sm-6 sp-content">
-              <h2>Holiday Historic Inn Tours</h2>
-              <p class="title">December 9th, 2016 - 6PM to 8PM</p><br>
-              <p class="desp">Enjoy an enchanted evening of five decorated inns and a sampling of holiday treats and cheer at each property. From 6-8 p.m., tours are self guided</p>
-              <div class="btn-holder"><a href="/location/events/holiday-historic-inn-tours/" class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="models">
-      <div class="container">
-        <div class=" two-col-wrap">
-          <div class="row no-gutters">
-          	<div class="col-sm-6 sp-content">
-              <h2>Nutcracker Key West</h2>
-              <p class="title">December 10th to 18th, 2016</p>
-              <p class="desp">Inspired by the unique and colorful environment of the Florida Keys, Clara and her young Prince encounter enchanted landscapes complete with snowy egrets</p>
-    		  <div class="btn-holder"><a href="/location/events/nutcracker-keywest/" class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
-            </div>
-            <div class="col-sm-6 sp-img "> <img src="/images/events/nut-cracker.jpg" alt=""></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
+
+
+    {% endfor %}
 </div>

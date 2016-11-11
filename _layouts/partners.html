@@ -10,77 +10,22 @@ layout: default
         </div>
       </div>
     </section>
+    {% assign partners = site.data._models.partners %}
+    {% for p in partners %}
     <section class="models">
       <div class="container">
         <div class=" two-col-wrap">
           <div class="row no-gutters">
-            <div class="col-sm-3 sp-img "> <img src="/images/partners/de-la-gallery.jpg" alt=""></div>
+            <div class="col-sm-3 sp-img "> <img src="{{p.image.url}}" alt=""></div>
           	<div class="col-sm-9 sp-content">
-              <h2>De La Gallery</h2>
-              <p class="desp">De La Gallery located on Duval Street in Key West, Florida exclusively represents the work of Jorge de la Torriente, a fine art landscape photographer.</p>
-    		  <div class="btn-holder"><a href="http://www.delagallery.com/" target="_blank" class="button-common btn-blue">View Partner Site<i class="fa fa-play"></i></a></div>
+              <h2>{{p.name}}</h2>
+              <div class="desp">{{p.description}}</div>
+    		  <div class="btn-holder"><a href="{{p.url}}" target="_blank" class="button-common btn-blue">View Partner Site<i class="fa fa-play"></i></a></div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="models">
-      <div class="container">
-        <div class=" two-col-wrap">
-          <div class="row no-gutters">
-            <div class="col-sm-3 sp-img "> <img src="/images/partners/coast.jpg" alt=""></div>
-          	<div class="col-sm-9 sp-content">
-              <h2>Coast Design</h2>
-              <p class="desp">COAST is, in a general sense, about life on the edge – where land meets sea and the spirit of exploration and unknowing meet the safety of the shoreline.</p>
-    		  <div class="btn-holder"><a href="http://www.coastprojects.com/home/" target="_blank" class="button-common btn-blue">View Partner Site<i class="fa fa-play"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="models">
-      <div class="container">
-        <div class=" two-col-wrap">
-          <div class="row no-gutters">
-            <div class="col-sm-3 sp-img "> <img src="/images/partners/rodriguez-cigar.jpg" alt=""></div>
-          	<div class="col-sm-9 sp-content">
-              <h2>Rodriguez Cigar</h2>
-              <p class="desp">Founded in 1984, it is the oldest operating cigar manufacturer in the Florida Keys. Rodriguez Cigars are exclusively constructed with vintage leaves that have been cured, aged and constructed through the traditional Cuban manufacturing process.</p>
-    		  <div class="btn-holder"><a href="http://www.rodriguezcigarskeywest.com/" target="_blank" class="button-common btn-blue">View Partner Site<i class="fa fa-play"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="models">
-      <div class="container">
-        <div class=" two-col-wrap">
-          <div class="row no-gutters">
-            <div class="col-sm-3 sp-img "> <img src="/images/partners/papaspillar-rum.jpg" alt=""></div>
-          	<div class="col-sm-9 sp-content">
-              <h2>Papa's Pilar Rum</h2>
-              
-              <p class="desp">Papa’s Pilar Dark and Blonde rums are crafted to reflect Hemingway’s passions on both land and sea.</p>
-    		  <div class="btn-holder"><a href="http://www.papaspilar.com/#/papaspilar/landing" target="_blank" class="button-common btn-blue">View Partner Site<i class="fa fa-play"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="models">
-      <div class="container">
-        <div class=" two-col-wrap">
-          <div class="row no-gutters">
-            <div class="col-sm-3 sp-img "> <img src="/images/partners/keywest-theatre.jpg" alt=""></div>
-          	<div class="col-sm-9 sp-content">
-              <h2>The Key West Theatre</h2>
-              <p class="desp">The Key West Theater is a newly-renovated performing arts center that presents top tier music, concerts, theatrical productions, comedy & variety specials and locally produced Key West events.</p>
-    		  <div class="btn-holder"><a href="http://www.thekeywesttheater.com/" target="_blank" class="button-common btn-blue">View Partner Site<i class="fa fa-play"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
- 
-    
+    {% endfor %}
+
 </div>
