@@ -13,14 +13,33 @@
     "url":
     {
       "required": true,
-      "type": "url",
-      "label": "text"
+      "type": "text",
+      "label": "URL"
     },
     "image":
     {
       "required": true,
       "type": "image",
       "label": "Upload Image"
+
+    },
+    "about":
+    {
+      "required": true,
+      "type": "richtext",
+      "label": "About Attraction "
+    },
+    "other_info":
+    {
+      
+      "type": "richtext",
+      "label": "Other Info"
+    },
+    "detail_image":
+    {
+      "required": true,
+      "type": "image",
+      "label": "Detail Page Image"
 
     },
     "sort_order":
