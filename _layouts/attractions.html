@@ -9,7 +9,7 @@ layout: default
     </div>
   </div>
 </section>
-{% assign attractions = site.data._models.attractions %}
+{% assign attractions = site.data._models.attractions | sort : 'sort_order' %}
 {% for a in attractions %}
 <section class="models">
   <div class="container">

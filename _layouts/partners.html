@@ -10,7 +10,7 @@ layout: default
         </div>
       </div>
     </section>
-    {% assign partners = site.data._models.partners %}
+    {% assign partners = site.data._models.partners | sort : 'sort_order' %}
     {% for p in partners %}
     <section class="models">
       <div class="container">
