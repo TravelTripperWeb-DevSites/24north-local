@@ -160,7 +160,7 @@
 							 max-width:90%;
 						}
 						.badger{ position:absolute; bottom:-20px; right:-10px;}
-						h2{ text-align:left; padding-top:calc(50% - 25px);
+						h2{ text-align:right; padding-top:36px; padding-right:20px;
 							@media (max-width: 992px){
 							 padding-top:50px;
 							}
@@ -199,7 +199,7 @@
 				font-size: 18px;
 				line-height: 24px;
 				padding:0 20% 10px;
-				text-align:center;
+				text-align:left;
 				@media (max-width: 768px){
 					 padding:0 20px 10px;
 				}
