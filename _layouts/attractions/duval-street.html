@@ -7,7 +7,12 @@ layout: default
       <div class="col-md-8 no-padding">
         <div class="blog-list-holder">
           <div class="blog-item">
-            {% assign att = site.data._models.attractions[1] %}
+            {% assign list = site.data._models.attractions  %}
+            {% for a in list %}
+            {% if (a.name == 'Duval Street' ) %}
+            {% assign att = a %}
+            {% endif %}
+            {% endfor %}
             <h1>{{att.name}}</h1>
             <span class="post-details">{{att.other_info}}</span>
             <div class="post-image-holder"><img src="{{att.detail_image.url}}" alt=""/>
