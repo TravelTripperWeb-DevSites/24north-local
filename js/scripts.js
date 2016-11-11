@@ -208,9 +208,11 @@ $(document).ready(function() {
 
   sync1.owlCarousel({
     singleItem : true,
-    slideSpeed : 2000,
+    slideSpeed : 1000,
     navigation: false,
-	//autoPlay: true,
+
+	autoPlay: false,
+
 	navigationText : false,
     pagination:false,
     afterAction : syncPosition,
@@ -224,7 +226,7 @@ $(document).ready(function() {
     itemsTablet       : [768,6],
     itemsMobile       : [479,4],
     pagination:false,
-	autoPlay: true,
+	autoPlay: false,
     responsiveRefreshRate : 100,
     afterInit : function(el){
       el.find(".owl-item").eq(0).addClass("synced");
