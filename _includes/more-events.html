@@ -11,7 +11,7 @@
             <div class="home-specials-item2"> <img src="{{e.large_image.url}}" alt=""/>
               <div class="car-content">
                 <h3>{{e.name}}</h3>
-                <p>{{e.short_description}}</p>
+                <p>{{e.short_description | truncate :80}}</p>
               </div>
               <a href="/location/events/{{e.url}}" class="button-common btn-top">View Event</a> </div>
           </div>
