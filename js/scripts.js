@@ -148,6 +148,11 @@ $('#roomDetailsCarousel11').carousel({
   cycle: true
 });
 
+$('#roomDetailsCarousel').carousel({
+  interval: 3000,
+  cycle: true
+});
+
   // title equal heights
 
 $(window).on('load resize', function () {
