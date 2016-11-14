@@ -42,7 +42,9 @@ $(".campaign-item").height(maxHeight);
 
 	 $(document).ready(function() {
      setTimeout(function(){
+
        $(" #home-carousel-2,#room-carousel-1").owlCarousel({
+
 
            navigation : false, // Show next and prev buttons
            slideSpeed : 500,
@@ -148,13 +150,13 @@ $('#roomDetailsCarousel11').carousel({
   cycle: true
 });
 
+
 setTimeout(function(){
   $('#roomDetailsCarousel').carousel({
     interval: 3000,
     cycle: true
   });
 },400);
-
 
 
   // title equal heights
