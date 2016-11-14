@@ -42,7 +42,7 @@ $(".campaign-item").height(maxHeight);
 
 	 $(document).ready(function() {
      setTimeout(function(){
-       $(" #room-carousel-1").owlCarousel({
+       $("#home-carousel-2,#room-carousel-1").owlCarousel({
 
            navigation : false, // Show next and prev buttons
            slideSpeed : 500,
