@@ -60,7 +60,6 @@
     {
      "required": true,
       "type": "image",
-      "multiple": true,
       "label": "Gallery Image 1"
 
     },

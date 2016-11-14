@@ -19,16 +19,16 @@ layout: default
         <div class=" two-col-wrap">
           <div class="row no-gutters">
             {% if cycle == 'even' %}
-            <div class="col-sm-6 sp-img "> <img src="{{e.image.url}}" alt=""></div>
+            <div class="col-sm-6 sp-img "> <img src="{{e.thumb_image.url}}" alt=""></div>
             {% endif %}
           	<div class="col-sm-6 sp-content">
               <h2>{{e.name}}</h2>
               <div class="title">{{e.schedule}}</div>
-              <div class="desp">{{e.description}}</div>
-    		  <div class="btn-holder"><a href="{{e.url}}"  class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
+              <div class="desp">{{e.short_description}}</div>
+    		  <div class="btn-holder"><a href="/location/events/{{e.url}}"  class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
             </div>
             {% if cycle == 'odd' %}
-            <div class="col-sm-6 sp-img "> <img src="{{e.image.url}}" alt=""></div>
+            <div class="col-sm-6 sp-img "> <img src="{{e.thumb_image.url}}" alt=""></div>
             {% endif %}
           </div>
         </div>

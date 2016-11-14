@@ -148,6 +148,15 @@ $('#roomDetailsCarousel11').carousel({
   cycle: true
 });
 
+setTimeout(function(){
+  $('#roomDetailsCarousel').carousel({
+    interval: 3000,
+    cycle: true
+  });
+},1000);
+
+
+
   // title equal heights
 
 $(window).on('load resize', function () {

@@ -16,31 +16,71 @@ layout: default
       <li><a href="#"  class="filter" >Book Early Special</a></li>
     </ul>
   </div>-->
+  {% assign list = site.data._models.events  %}
+  {% for a in list %}
+  {% if (a.name == 'Holiday Historic Inn Tours' ) %}
+  {% assign event = a %}
+  {% endif %}
+  {% endfor %}
   <section>
     <div class="container room-details-carousel">
-      <div class="row event-heading">	
+      <div class="row event-heading">
       <div class="col-sm-3 col-xs-12">
           <div class="spcl-lstng">
-          	<h3>Holiday Historic Inn Tours</h3>
+          	<h3><span class="block-element">{{event.name}}</h3>
             <div class="btn-holder m-b-20"><a href="#details" class="button-common btn-blue">View Details</a></div>
-            <h2>DECEMBER 9th, 2016 - 6pm to 8pm</h2>
+            <h2>{{event.schedule}}</h2>
           </div>
       </div>
       <div class="col-sm-9 col-xs-12 no-padding">
-          <div id="roomDetailsCarousel" class="carousel slide"> 
+          <div id="roomDetailsCarousel" class="carousel slide">
+              {% assign gallery = site.empty_array %}
+              {% if(event.g_image1 != null ) %}
+                {% assign gallery = gallery | push : event.g_image1.url %}
+              {% endif %}
+
+              {% if(event.g_image2 != null) %}
+              {% assign gallery = gallery | push : event.g_image2.url %}
+              {% endif %}
+
+              {% if(event.g_image3 != null ) %}
+              {% assign gallery = gallery | push : event.g_image3.url %}
+               {% endif %}
+
+              {% if(event.g_image4 != null ) %}
+              {% assign gallery = gallery | push : event.g_image4.url %}
+              {% endif %}
+
+              {% if(event.g_image5 != null ) %}
+              {% assign gallery = gallery | push : event.g_image5.url %}
+              {% endif %}
+
+              {% if(event.g_image6 != null) %}
+              {% assign gallery = gallery | push : event.g_image6.url %}
+              {% endif %}
+
+
+
+
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="#roomDetailsCarousel" data-slide-to="0" class="active"></li>
-             
+              {% for g in gallery %}
+
+              <li data-target="#roomDetailsCarousel" data-slide-to="{{forloop.index | minus:1}}" class="{% if forloop.first %}active{% endif %} "></li>
+
+              {% endfor %}
             </ol>
-            
+
             <!-- Wrapper for Slides -->
             <div class="carousel-inner">
-              
-              <div class="item  active">
-                <img src="/images/events/event-details/holiday03.jpg" alt=""/>
+              {% for g in gallery %}
+
+              <div class="item {% if forloop.first %}active{% endif %}">
+                <img src="{{g}}" alt=""/>
               </div>
-              
+
+              {% endfor %}
+
             </div>
           </div>
       </div>
@@ -50,14 +90,14 @@ layout: default
   <section id="details">
     <div class="container">
       <div class="row information">
-        <div class="col-md-4 align-center hidden-sm-down"><img src="../../../images/events/event-details/holiday02.jpg" alt=""/></div>
+        <div class="col-md-4 align-center hidden-sm-down"><img src="{{event.short_image.url}}" alt=""/></div>
         <div class="col-md-8 col-sm-12">
           <p class="highlight p-t-20">Event Details:</p>
-          <p class="">Enjoy an enchanted evening of five decorated inns and a sampling of holiday treats and cheer at each property. From 6-8 p.m., tours are self guided. Free trolley transportation is provided between inns but participants are welcome to bike or use their own transportation. Call the Lodging Association for tickets.</p>
-         <div class="btn-holder m-b-20 m-t-30"><a href="http://keywestinns.com/index.php/events/key-west-holiday-fest" target="_blank" class="button-common btn-blue">View Event Website</a></div> 
-         
+          <p class="">{{event.long_description}}</p>
+         <div class="btn-holder m-b-20 m-t-30"><a href="{{event.website_url}}" target="_blank" class="button-common btn-blue">View Event Website</a></div>
+
         </div>
-        
+
       </div>
     </div>
   </section>

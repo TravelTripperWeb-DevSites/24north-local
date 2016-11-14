@@ -1,1 +1,18 @@
-{"name":"Key West Film Festival","schedule":"November 16th to 20th, 2016","description":"<p>Various locations around Key West Showcasing films that exhibit excellence in storytelling, the festival's lineup is to feature screenings and special events hosted at landmark venues</p>","image":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/film-festival.jpg"},"sort_order":1,"url":"/location/events/keywest-filmfestival/"}
+{
+  "name":"Key West Film Festival",
+  "schedule":"November 16th to 20th, 2016",
+  "short_description":"<p>Various locations around Key West Showcasing films that exhibit excellence in storytelling, the festival's lineup is to feature screenings and special events hosted at landmark venues</p>",
+  "thumb_image":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/film-festival.jpg"},
+  "sort_order":1,
+  "url":"keywest-filmfestival/",
+  "website_url": "http://kwfilmfest.com/",
+
+  "long_description" :"Various locations around Key West Showcasing films that exhibit excellence in storytelling, the festival's lineup is to feature screenings and special events hosted at landmark venues throughout Key West, including the San Carlos Institute, Studios of Key West and Key West Theater. The four-day program is to include several films from multiple genres and categories as well as social events with filmmakers, actors and film lovers.",
+  
+  "large_image":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/05.jpg"},
+  "short_image":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/ff02.jpg"},
+  "g_image1":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/ff01.jpg"},
+  "g_image2":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/ff03.jpg"},
+  "g_image3":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/ff04.jpg"}
+
+}
