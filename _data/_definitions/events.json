@@ -9,23 +9,94 @@
       "required": true,
       "label": "Schedule"
     },
-    "description":
+    "short_description":
     {
       "required": true,
       "type": "richtext",
-      "label": "Description"
+      "label": "Events List Page Description"
+    },
+    "long_description":
+    {
+      "required": true,
+      "type": "richtext",
+      "label": "Events Detail Page Description"
     },
     "url":
     {
       "required": true,
-      "type": "url",
-      "label": "text"
+      "type": "text",
+      "label": "Events List Page URL"
     },
-    "image":
+    "website_url":
+    {
+      "required": true,
+      "type": "url",
+      "label": "Events Website URL"
+    },
+
+
+    "thumb_image":
     {
       "required": true,
       "type": "image",
-      "label": "Upload Image"
+      "label": "Events List Page Thumb Image"
+
+    },
+    "large_image":
+    {
+      "required": true,
+      "type": "image",
+      "label": "Events Detail Page Large Image"
+
+    },
+    "short_image":
+    {
+      "required": true,
+      "type": "image",
+      "label": "Events Detail Page Short Image"
+
+    },
+    "g_image1":
+    {
+     "required": true,
+      "type": "image",
+      "multiple": true,
+      "label": "Gallery Image 1"
+
+    },
+    "g_image2":
+    {
+
+      "type": "image",
+      "label": "Gallery Image 2"
+
+    },
+    "g_image3":
+    {
+
+      "type": "image",
+      "label": "Gallery Image 3"
+
+    },
+    "g_image4":
+    {
+
+      "type": "image",
+      "label": "Gallery Image 4"
+
+    },
+    "g_image5":
+    {
+
+      "type": "image",
+      "label": "Gallery Image 5"
+
+    },
+    "g_image6":
+    {
+
+      "type": "image",
+      "label": "Gallery Image 6"
 
     },
     "sort_order":
