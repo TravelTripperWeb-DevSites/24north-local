@@ -153,7 +153,7 @@ setTimeout(function(){
     interval: 3000,
     cycle: true
   });
-},1000);
+},400);
 
 
 
