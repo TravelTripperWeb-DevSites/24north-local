@@ -7,30 +7,18 @@ layout: default
       <div class="col-md-8 no-padding">
         <div class="blog-list-holder">
           <div class="blog-item">
-            <h1>Rodriguez Cigar Factory</h1>
-            <span class="post-details">
-            	113 Fitzpatrick Street<br>
-				Key West, Florida 33040<br>
-				Phone: 305-296-0167<br>
-				Open daily 9:30 a.m. – 4:30 p.m.
-			</span>
-            <div class="post-image-holder"><img src="/images/attractions/ciggar-lg.jpg" alt=""/>
+            {% assign list = site.data._models.attractions  %}
+            {% for a in list %}
+            {% if (a.name == 'Rodriguez Cigar Factory' ) %}
+            {% assign att = a %}
+            {% endif %}
+            {% endfor %}
+            <h1>{{att.name}}</h1>
+            <span class="post-details">{{att.other_info}}</span>
+            <div class="post-image-holder"><img src="{{att.detail_image.url}}" alt=""/>
               <!--<h6>Andy Newman/Florida Keys News Bureau</h6>-->
             </div>
-            <p>On a little side street off Duval, you’ll find the only cigars in Key West worthy of a Cuban name. That’s because <a href="http://www.rodriguezcigarskeywest.com/" target="_blank">Rodriguez Cigars</a> are, in fact, Cuban. </p>
-
-<p>The story of these cigars begins in Siguaney, Cuba, with Angel and Daniella Rodriguez. It was 1947, and Angel and Daniella had just planted their first tobacco crop on their private plantation, La Finca de Carmencita. As time went along, more and more cigar manufacturers began to buy their tobacco, and the business boomed. </p>
-
-<p>Then came the Cuban Revolution. The government nationalized the tobacco industry and La Finca de Carmencita with it, leaving Angel and Daniella without their business. However, that was not the end of the <a href="http://www.rodriguezcigarskeywest.com/our-story/" target="_blank">Rodriguez tobacco business</a>. In 1971, the family moved to the United States, and by 1984, they had opened the Rodriguez Cigar Factory in Key West, revitalizing the family’s tobacco heritage. </p>
-
-<p>Despite being based in Key West, the Rodriguez Cigar Factory still adheres to the same techniques practiced in the family’s native Cuba, making its cigars some of the finest cigars produced in the United States, if not the world. Although sourcing Cuban tobacco is still impossible in the United States, Rodriguez Cigars sources tobacco from Nicaragua, which has a climate and soil composition very similar to that of Cuba. By picking prime tobacco, carefully curing the leaves, and meticulously rolling each cigar by hand, Rodriguez Cigars are able to preserve the superb Cuban quality rarely found outside the island nation.</p>
-
-<p>Yet the factory’s heritage isn’t the only thing Cuban about the cigars. The Rodriguez Cigar Factory storefront offers just the type of hospitality you would expect from a family-run business. Run by Danny DiFabio, <a href="http://www.rodriguezcigarskeywest.com/family-integration/" target="_blank">grandson of Angel and Daniella</a>, the Rodriguez Cigar Factory is welcoming and laid-back, reminiscent of the hospitality you encounter in Cuba. In fact, the Rodriguez Cigar Factory has made a name for itself on the island because of its personal attention.</p>
-
-<p>Before you know it, Danny will have a Cuban coffee in your hand and a cigar in the other. As you browse the walls of cigars at the storefront, he’ll give you the personal tour, and he’ll explain the finer points of the cigar business. He’ll offer personal recommendations in the process, ensuring that you find the <a href="http://www.rodriguezcigarskeywest.com/cigar-collection/" target="_blank">perfect cigar to suit your tastes</a>. After all, there’s something to be said about a cigar that can make it through a revolution, and even more to be said about one that can thrive after one. And that’s Rodriguez Cigars, the oldest cigar factory in Key West.</p>
-
-<p>The Rodriguez Cigar Factory in Old Town is less of a lounge and more of a store. However, if you are looking for a lounge, there is one of our personal favorites, the <a href="http://www.gateshotelkeywest.com/gates-hotel-key-west-hotel-partnerships/rodriguez-cigar-lounge-key-west/" target="_blank">Rodriguez Cigar Lounge</a>, located at our sister hotel The Gates, next door to 24 North Hotel. </p>
-
+            {{att.about}}
           </div>
         </div>
       </div>
@@ -38,20 +26,21 @@ layout: default
       	<div class="others">
             <h2>Other Attractions</h2>
             <ul class="other-attractions">
-            	<li><a href="/attractions/dry-tortugas/">Dry Tortugas</a></li>
-                <li><a href="/attractions/duval-street/">Duval Street</a></li>
-                <li><a href="/attractions/fort-zachary/">Fort Zachary Taylor Historic State Park</a></li>
-                <li><a href="/attractions/ernest-hemingway/">Ernest Hemingway Home and Museum</a></li>
-                <li><a href="/attractions/sculpture-garden/">Key West Historic Memorial Sculpture Garden</a></li>
-                <li><a href="/attractions/mallory-square/">Mallory Square</a></li>
+              {% assign attractions = site.data._models.attractions | sort : 'sort_order' %}
+              {% for a in attractions %}
+              {% unless a.name == att.name %}
+            	<li><a href="{{a.url}}">{{a.name}}</a></li>
+              {% endunless %}
+              {% endfor %}
+
             </ul>
         </div>
       </div>
     </div>
-    <div class="col-md-4 no-padding"> 
+    <div class="col-md-4 no-padding">
       <!--<div class="recent-wrap">
           <div class="recent-title">Recent Posts</div>
-        </div>--> 
+        </div>-->
     </div>
   </div>
 </section>

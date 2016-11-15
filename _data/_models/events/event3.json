@@ -1,0 +1,16 @@
+{
+  "name":"Holiday Historic Inn Tours",
+  "schedule":"December 9th, 2016 - 6PM to 8PM",
+  "short_description":"<p>Enjoy an enchanted evening of five decorated inns and a sampling of holiday treats and cheer at each property. From 6-8 p.m., tours are self guided</p>",
+  "thumb_image":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/holiday.jpg"},
+  "sort_order":4,
+  "url":"holiday-historic-inn-tours/",
+
+  "long_description" :"Enjoy an enchanted evening of five decorated inns and a sampling of holiday treats and cheer at each property. From 6-8 p.m., tours are self guided. Free trolley transportation is provided between inns but participants are welcome to bike or use their own transportation. Call the Lodging Association for tickets.",
+
+  "website_url": "http://keywestinns.com/index.php/events/key-west-holiday-fest",
+
+  "large_image":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/03.jpg"},
+  "short_image":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/holiday02.jpg"},
+  "g_image1":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/holiday03.jpg"}
+}
