@@ -1220,11 +1220,7 @@ h2{
 }
 .rooms-holder{
 	padding: 55px 0 0 0;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-    align-content: flex-start;
-    flex: 0;
+	
 
 	@media (max-width: 767px){
 		padding: 20px 0 0 0;
