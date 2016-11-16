@@ -20,70 +20,25 @@ layout: default
       <!-- Wrapper for Slides -->
       <div class="carousel-inner" rt3-recent-bookings="recentBookings"  ng-cloak>
 
-              <div class="item active"> <img src="../images/home-carousel-2.jpg" alt=""/>
+            {% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
+            {% for slilderimages in slilder_images %}                                 
+            {% if forloop.first == true %}
+            <div class="item active">
+            {% else %}
+            <div class="item">
+            {% endif %} 
+             <img src="{{ slilderimages.slider_image.url }}" alt=""/>
           <div class="carousel-caption transparent-bg">
             <div class="caption-inner">
-              <p>Endless Summer</p>
-              <h1>Holiday dream come true</h1>
-              <div><a href="/specials/" class="button-common">View Specials <i class="fa fa-play"></i></a></div>
+               {{ slilderimages.carousel_caption }}
             </div>
           </div>
 
           <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder" ng-hide="!browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
         </div>
+ {% endfor %}
 
-
-        <div class="item"> <img src="../images/home-carousel-1.jpg" alt=""/>
-          <div class="carousel-caption transparent-bg">
-            <div class="caption-inner">
-              <p>Paradise Found</p>
-              <h1>24 north hotel key west</h1>
-              <div><a href="/location/" class="button-common">Discover More <i class="fa fa-play"></i></a></div>
-            </div>
-          </div>
-
-         <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder" ng-hide="!browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
-        </div>
-
-
-
-         <div class="item"> <img src="../images/home-carousel-3.jpg" alt=""/>
-          <div class="carousel-caption transparent-bg">
-            <div class="caption-inner">
-              <p>Perfect Stay</p>
-              <h1>Live in style and comfort</h1>
-              <div><a href="/rooms/" class="button-common">View Rooms<i class="fa fa-play"></i></a></div>
-            </div>
-          </div>
-
-           <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder" ng-hide="!browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
-        </div>
-
-
-        <div class="item"> <img src="../images/home-carousel-4.jpg" alt=""/>
-          <div class="carousel-caption transparent-bg">
-            <div class="caption-inner">
-              <p>Dive Into</p>
-              <h1>A world of adventure</h1>
-              <div><a href="/gallery/" class="button-common">View Gallery<i class="fa fa-play"></i></a></div>
-            </div>
-          </div>
-
-          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder" ng-hide="!browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
-        </div>
-
-
-        <div class="item"> <img src="../images/home-carousel-5.jpg" alt=""/>
-          <div class="carousel-caption transparent-bg">
-            <div class="caption-inner">
-              <p>Tranquil Haven</p>
-              <h1>Destination Divine</h1>
-              <div><a href="/location/" class="button-common">View Location<i class="fa fa-play"></i></a></div>
-            </div>
-          </div>
-
-          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder" ng-hide="!browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
-        </div>
+        
 
 
       </div>
