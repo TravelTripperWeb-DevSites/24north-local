@@ -187,8 +187,8 @@ $(".home-specials-item h3").each(function(){
 $(".home-specials-item p").height(maxHeight);
 
 // Rooms title equal heights
-
-$(".rooms-item h2").each(function(){
+setTimeout( function(){ 
+	$(".rooms-item h2").each(function(){
    if ($(this).height() > maxHeight) {
      maxHeight = $(this).height();
  }
@@ -205,6 +205,8 @@ $(".rooms-item p").each(function(){
 });
 
 $(".rooms-item p").height(maxHeight);
+}, 4000 );
+
 
 }
 
