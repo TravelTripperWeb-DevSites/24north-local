@@ -6,12 +6,8 @@ layout: default
   <div class="home-banner-wrap meetings-wrap">
    <div id="sync1" class="carousel">
    	       {% assign slilder_images = site.data._models.groups_slider_images  | sort : "sort_order" %}
-            {% for slilderimages in slilder_images %}                                 
-              {% if forloop.first == true %} 	  
-              <div class="item active">
-              {% else %}
-              <div class="item">
-              {% endif %} 
+            {% for slilderimages in slilder_images %}                                  
+              <div class="item">           
               <img src="{{ slilderimages.slider_image.url }}" alt="" class="banner"/>
               <div class="carousel-caption">
                 <div class="caption-inner">
@@ -23,25 +19,12 @@ layout: default
         
     </div>
     <div id="sync2" class="carousel">
-    	  <div class="item">
-          	<img src="../images/meetings/meetings-carousel-thumbnail-1.jpg" alt=""/>
-          </div>
+        {% assign slilder_images = site.data._models.groups_slider_images  | sort : "sort_order" %}
+        {% for slilderimages in slilder_images %}      	 
           <div class="item">
-          	<img src="../images/meetings/meetings-carousel-thumbnail-2.jpg" alt=""/>
+            <img src="{{ slilderimages.thumb_image.url }}" alt=""/>
           </div>
-          <div class="item">
-          	<img src="../images/meetings/meetings-carousel-thumbnail-3.jpg" alt=""/>
-          </div>
-          <div class="item">
-          	<img src="../images/meetings/meetings-carousel-thumbnail-4.jpg" alt=""/>
-          </div>
-          <div class="item">
-          	<img src="../images/meetings/meetings-carousel-thumbnail-5.jpg" alt=""/>
-          </div>
-          <div class="item">
-          	<img src="../images/meetings/meetings-carousel-thumbnail-6.jpg" alt=""/>
-          </div>
-          
+        {% endfor %}         
     </div>
     <!--<div class="theme-left-panel">
       <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
