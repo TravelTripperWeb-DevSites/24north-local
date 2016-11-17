@@ -11,6 +11,12 @@
       "type": "image",
       "label": "Upload Image"
     },
+    "thumb_image":
+    {
+      "required": true,
+      "type": "image",
+      "label": "Upload Thumb Image"
+    },
     "sort_order":
     {
       "type": "integer",
