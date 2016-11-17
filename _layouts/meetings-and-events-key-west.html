@@ -5,67 +5,22 @@ layout: default
 <section>
   <div class="home-banner-wrap meetings-wrap">
    <div id="sync1" class="carousel">
-   	  	  <div class="item">
-              <img src="../images/meetings/meetings-carousel-1.jpg" alt="" class="banner"/>
+   	       {% assign slilder_images = site.data._models.groups_slider_images  | sort : "sort_order" %}
+            {% for slilderimages in slilder_images %}                                 
+              {% if forloop.first == true %} 	  
+              <div class="item active">
+              {% else %}
+              <div class="item">
+              {% endif %} 
+              <img src="{{ slilderimages.slider_image.url }}" alt="" class="banner"/>
               <div class="carousel-caption">
                 <div class="caption-inner">
-                  <p>Key West Meetings</p>
-                  <h1>A Premier Destinations In The Tropics</h1>
-                  <div><a href="/meetings-and-events-key-west/request-for-proposal/" class="button-common">Request for Proposal <i class="fa fa-play"></i></a></div>
+                  {{ slilderimages.carousel_caption }}
                 </div>
               </div>
           </div>
-          <div class="item">
-              <img src="../images/meetings/meetings-carousel-2.jpg" alt="" class="banner"/>
-              <div class="carousel-caption">
-                <div class="caption-inner">
-                  <p>Family Reunions and Group Bookings</p>
-                  <h1>Reconnect and Celebrate In Style</h1>
-                  <div><a href="/meetings-and-events-key-west/request-for-proposal/" class="button-common">Request for Proposal <i class="fa fa-play"></i></a></div>
-                </div>
-              </div>
-          </div>
-          <div class="item">
-              <img src="../images/meetings/meetings-carousel-3.jpg" alt="" class="banner"/>
-              <div class="carousel-caption">
-                <div class="caption-inner">
-                  <p>Corporate Events</p>
-                  <h1>Adventure By Day, Relax At Night</h1>
-                  <div><a href="/meetings-and-events-key-west/request-for-proposal/" class="button-common">Request for Proposal <i class="fa fa-play"></i></a></div>
-                </div>
-              </div>
-          </div>
-          <div class="item">
-              <img src="../images/meetings/meetings-carousel-4.jpg" alt="" class="banner"/>
-              <div class="carousel-caption">
-                <div class="caption-inner">
-                  <p>Central Location</p>
-                  <h1>Explore The Best Of Key West</h1>
-                  <div><a href="/meetings-and-events-key-west/request-for-proposal/" class="button-common">Request for Proposal <i class="fa fa-play"></i></a></div>
-                </div>
-              </div>
-          </div>
-          <div class="item">
-              <img src="../images/meetings/meetings-carousel-5.jpg" alt="" class="banner"/>
-              <div class="carousel-caption">
-                <div class="caption-inner">
-                  <p>Beautiful Workspaces</p>
-                  <h1>Reliable Wifi and Secluded Spaces</h1>
-                  <div><a href="/meetings-and-events-key-west/request-for-proposal/" class="button-common">Request for Proposal <i class="fa fa-play"></i></a></div>
-                </div>
-              </div>
-          </div>
-          <div class="item">
-              <img src="../images/meetings/meetings-carousel-6.jpg" alt="" class="banner"/>
-              <div class="carousel-caption">
-                <div class="caption-inner">
-                  <p>Host Meetings or Just Relax</p>
-                  <h1>Poolside Views and Starbucks Brews</h1>
-                  <div><a href="/meetings-and-events-key-west/request-for-proposal/" class="button-common">Request for Proposal <i class="fa fa-play"></i></a></div>
-                </div>
-              </div>
-          </div>
-         
+          {% endfor %}
+        
     </div>
     <div id="sync2" class="carousel">
     	  <div class="item">
