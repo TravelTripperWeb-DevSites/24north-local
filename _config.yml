@@ -26,3 +26,15 @@ data_paginate:
   pagination_template: 'blog/index.html'
   sort_field: 'date'
   sort_reverse: true
+
+
+#paginate_path: "/page:num/"
+markdown: kramdown 
+
+page_gen:
+  - data: 'blog'
+    template: 'blog-details'
+    dir: 'blog'
+  - data: 'category'
+    template: 'category'
+    dir: 'categories'
