@@ -17,3 +17,12 @@ languages: ['en']
 
 exclude: ['sitemap.json']
 empty_array: []
+
+
+data_paginate: 
+  per_page: 5
+  data: 'blog'
+  path: 'blog/page:num'
+  pagination_template: 'blog/index.html'
+  sort_field: 'date'
+  sort_reverse: true
