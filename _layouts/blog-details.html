@@ -16,7 +16,7 @@ layout: default
                 <span class="post-details">{{blog.date  |  date: "%B %d, %Y"}}</span>
                 <div class="post-image-holder"><img src="{{blog.blogimage.url}}"  alt="{{blog.title}}" title="{{blog.title}}"  />
                   {% if blog.Image_caption != "" %}
-                      <h6>{{blog.Image_caption}}</h6>
+                      {{blog.Image_caption}}
                   {% endif %}
                 </div>
                  {{blog.more_content}}
