@@ -2,7 +2,6 @@
    "carousel_caption":
     {
       "required": true,  
-      "type": "richtext",
       "label": "Carousel Caption"
     },
     "slider_image":
