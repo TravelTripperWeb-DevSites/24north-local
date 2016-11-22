@@ -8,6 +8,8 @@
 	{"type":"date","required":true},
 "Posted_by":
 	{},
+"Image_caption":
+	{"required":false},	
 "short_description":
 	{"required":true,"type":"richtext"},
 "more_content":
