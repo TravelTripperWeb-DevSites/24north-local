@@ -9,7 +9,7 @@
 "Posted_by":
 	{},
 "Image_caption":
-	{"required":false},	
+	{"required":false,"type":"richtext"},	
 "short_description":
 	{"required":true,"type":"richtext"},
 "more_content":
