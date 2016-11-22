@@ -11,7 +11,7 @@
 "Image_caption":
 	{"required":false,"type":"richtext"},	
 "short_description":
-	{"required":true,"type":"richtext"},
+	{"required":false,"type":"richtext"},
 "more_content":
 	{"type":"richtext"}
 }
