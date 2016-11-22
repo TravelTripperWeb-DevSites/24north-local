@@ -22,7 +22,11 @@ excerpt: There's always plenty of activities taking place in Key West Florida, t
           <div class="blog-item">
             <div class="row">
               <div class="col-sm-4">
-                <div class="post-image-holder"> <a href="{{ post.id | permalink: model_dir: 'blog' }}"><img src="{{post.blogimage.url}}" alt="{{post.title}}"/></a> </div>
+                <div class="post-image-holder"> <a href="{{ post.id | permalink: model_dir: 'blog' }}"><img src="{{post.blogimage.url}}" alt="{{post.title}}"/></a> 
+                {% if post.Image_caption != "" %}
+                		<h6>{{post.Image_caption}}</h6>
+                {% endif %}
+                </div>
               </div>
               <div class="col-sm-8">
                 <h2><a href="{{ post.id | permalink: model_dir: 'blog' }}">{{post.title}}</a></h2>
