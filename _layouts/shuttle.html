@@ -7,7 +7,15 @@ layout: default
     <div id="homeCarousel" class="carousel slide"> 
       <!-- Wrapper for Slides -->
       <div class="carousel-inner" rt3-recent-bookings="recentBookings" rt3-rooms-browser="browser" rt3-search-form="search" on-search-changed="browser.tonightRate()" ng-cloak>
-        <div class="item active landing"> <img src="../../images/shuttle-carousel.jpg" alt="Old Town Shuttle Service"/></div>
+         {% assign slilder_images = site.data._models.shuttle_carousel  | sort : "sort_order" %}
+            {% for slilderimages in slilder_images %}                                 
+            {% if forloop.first == true %}
+            <div class="item active landing">
+            {% else %}
+            <div class="item">
+            {% endif %}        
+          <img src="{{ slilderimages.slider_image.url }}" alt="{{ slilderimages.carousel_caption }}"/>
+      {% endfor %}
       </div>
     </div>
     <!--<div class="theme-left-panel">
