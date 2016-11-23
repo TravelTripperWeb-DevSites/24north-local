@@ -92,6 +92,15 @@
 	font-style: italic;
 }
 
+.blog-detail {
+	&.attractions-details {
+		.blog-item{
+			.post-image-holder{
+				img{width:100%;}
+			}
+		}
+	}
+}
 
 /* Pagination */
 .pagination-wrapper {
