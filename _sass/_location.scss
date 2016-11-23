@@ -1,11 +1,25 @@
+.loc-main {
+	padding-top: 57px;
+	@media(max-width: $screen-xs-max){
+			padding-top: 30px;
+		}
+}
+.loc-con-inner {
+	padding-left: 80px;
+	
+	@media (max-width: 1240px){
+			padding-left: 0px;
+		}
+}
 .loc-content {
 	font-family: $main-font-light;
-	padding: 50px 80px 50px 80px;
 	color: $tc-ash-4;
+	padding: 50px 80px 0px 0px;
 	background-color: #f8f7f7;
-		@media (max-width: 1240px){
-			padding: 25px 0 25px 0;
+	@media (max-width: 1240px){
+			padding: 25px 0 0px 0;
 		}
+		
 	h2{
 		
 		font-size: 32px;
@@ -33,9 +47,9 @@
 		line-height: 30px;
 		font-size: 18px;
 		
-		&:last-child {
+		/*&:last-child {
 			padding: 0;
-		}
+		}*/
 		@media (max-width: $screen-sm-max){
 			padding: 0 0 30px 0;
 			
@@ -46,6 +60,9 @@
 				font-size: 16px;
 			}
 			
+	}
+	.loc-no-padding {
+		padding: 0;
 	}
 	h3{
 		font-family: $main-font-bold;
@@ -174,6 +191,7 @@
 	}
 }
 .empty-container {
+	
 	img {
 		width: 100%;
 	}
@@ -188,3 +206,53 @@
 .location-banner {
 	background: url("/images/location-banner.jpg") no-repeat center center;
 }
+.shuttle-graphic {
+	margin-left: -15px;
+	max-width: 721px;
+	padding: 40px 0 0 0;
+		@media(min-width: $screen-sm-min){
+			padding: 80px 0 0 0;
+		}
+	img {
+		width: 100%;
+	}
+	&.sg-mobile {
+		display: block;
+		@media(min-width: $screen-sm-min){
+			display: none;
+		}
+	}
+	&.sg-desktop {
+		display: none;
+		@media(min-width: $screen-sm-min){
+			display: block;
+		}
+	}
+}
+.loc-cuba {
+	img {
+		width: 100%;
+	}
+}
+.hdct {
+	position: relative;
+	.graphic {
+		position: absolute;
+		max-width: 1200px;
+		margin: 0 auto;
+		height: 18px;
+		top: -9px;
+		right: 0;
+		left: 0;
+		background-image: url(../images/floating/line-diagonal.png);
+		background-repeat: repeat-x;
+		background-position: center center;
+	}
+}
+.loc-map {
+	
+	img {
+		width: 100%;
+	}
+}
+.sb-img{ width:80%; display:inline-block;}

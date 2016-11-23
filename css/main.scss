@@ -82,13 +82,21 @@ $phone-max: 479px;
 @import
 		"bootstrap",
 		"fonts",
+		"jquery-ui", 
+		"datepicker", 
+		"booking-widget", 
 		"layout",
 		"header",
 		"footer",
 		"specials",
 		"location",
 		"gallery",
-		"blog"
+		"blog",
+		"starbucks",
+		"meetings",
+		"room-details",
+		"date-picker",
+		"rfp"
 		
 ;
 

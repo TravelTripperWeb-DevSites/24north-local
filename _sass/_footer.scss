@@ -9,6 +9,7 @@
 	
 	@media (max-width: 767px){
 			padding: 20px 0px;
+			text-align: center;
 		}
 		
 	.container {
@@ -72,6 +73,10 @@
 	font-size: 14px;
 	font-style: italic;
 	width: 100%;
+	border-radius: 0px;
+		@media (max-width: 767px){
+			text-align: center;
+		}
 }
 .input-text:focus {
 	outline: none;
@@ -80,6 +85,9 @@
 	width: auto;
 	@media (max-width: 992px){
 			width: 290px;
+		}
+		@media (max-width: 767px){
+			margin: 0 auto;
 		}
 }
 .form-btn {
@@ -93,6 +101,9 @@
 	padding: 12px 50px;
 	text-transform: uppercase;
 	margin-top: 17px;
+		@media (max-width: 767px){
+			width: 100%;
+		}
 	
 	&hover {
 	}
