@@ -7,7 +7,15 @@ layout: default
     <div id="homeCarousel" class="carousel slide"> 
       <!-- Wrapper for Slides -->
       <div class="carousel-inner" rt3-recent-bookings="recentBookings" rt3-rooms-browser="browser" rt3-search-form="search" on-search-changed="browser.tonightRate()" ng-cloak>
-        <div class="item active landing"> <img src="../../images/shuttle-carousel.jpg" alt="Old Town Shuttle Service"/></div>
+         {% assign slilder_images = site.data._models.shuttle_carousel  | sort : "sort_order" %}
+            {% for slilderimages in slilder_images %}                                 
+            {% if forloop.first == true %}
+            <div class="item active landing">
+            {% else %}
+            <div class="item">
+            {% endif %}        
+          <img src="{{ slilderimages.slider_image.url }}" alt="{{ slilderimages.carousel_caption }}"/>
+      {% endfor %}
       </div>
     </div>
     <!--<div class="theme-left-panel">
@@ -21,9 +29,7 @@ layout: default
 <section>
   <div class="container-fluid blue-bg">
     <div class="about-wrap">
-      <h1>OLD TOWN SHUTTLE SERVICE</h1>
-      <p>Complimentary shuttle service is provided daily to transport our guests to and from Old Town at regular increments. Please review the shuttle schedule to plan your trip.</p>
-      <div class="btn-holder"><a href="#schedule" class="button-common">View Schedule<i class="fa fa-play"></i></a></div>
+      {% region old-town-shuttle-text %}
     </div>
   </div>
 </section>
@@ -31,21 +37,18 @@ layout: default
   <div class="container-fluid no-padding two-col-wrap">
     <div class="col-sm-6 no-padding v-center">
       <div class="two-col-content">
-      	<h3>THE HEART OF THE CONCH REPUBLIC</h3>
-        <p class="m-t-30">Not that the Conch Republic is fond of an “official” anything, but few Conchs will debate Old Town’s reputation as downtown Key West. This is where you’ll find Key West’s most talked-about spots, restaurants, and bars, as well as the infamous Duval Street, a.k.a the Conch Republic’s “unofficial” meeting point.</p>
-        <div class="keywest-icon"><img src="../../images/keywest-logo.svg" alt=""/></div>
+      	{% region heart-of-republic %}
       </div>
     </div>
-    <div class="col-sm-6 no-padding v-center"><img src="../../images/shuttle-1.jpg" alt="Martello"/></div>
+    <div class="col-sm-6 no-padding v-center">{% region shuttle-image-1 %}</div>
   </div>
 </section>
 <section class="about-home">
   <div class="container-fluid no-padding two-col-wrap">
-    <div class="col-sm-6 no-padding v-center"><img src="../../images/shuttle-2.jpg" alt="Mac's Sea Garden"/></div>
+    <div class="col-sm-6 no-padding v-center">{% region shuttle-image-2 %}</div>
     <div class="col-sm-6 no-padding v-center">
       <div class="two-col-content">
-        <h3>EXPLORE THE OLD KEY WEST</h3>
-        <p>Although Old Town is often synonymous with Duval Street, there’s much more to Key West’s historic district than its main thoroughfare. Whether you’re interested in learning about the island’s rich wrecking history, Key West’s Cuban background, or simply can’t live without seeing the famous sunset at Mallory Square, you’ll find plenty to keep you entertained in Old Town.</p>
+        {% region explore-old-key %}
        <!-- <div class="btn-holder"><a href="#" class="button-common btn-blue">Discover More<i class="fa fa-play"></i></a></div>--> 
       </div>
     </div>
@@ -58,218 +61,27 @@ layout: default
 </section>
 <section class="lifestyle" id="schedule">
 	<div class="container-fluid no-padding">
-    	<h3>Shuttle SCHEDULE</h3>
-        <table class="table table-striped odd">
-         	<tr>
-            	<th></th>
-            	<th>24 North</th>
-                <th>The Gates</th>
-                <th>HILTON</th>
-                <th>Fairfield</th>
-                <th>Mallory Square</th>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 1</td>
-                <td>8:00 AM</td>
-                <td>8:00 AM</td>
-                <td>8:00 AM</td>
-                <td>8:00 AM</td>
-                <td>8:30 AM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 2</td>
-                <td>9:00 AM</td>
-                <td>9:00 AM</td>
-                <td>9:00 AM</td>
-                <td>9:00 AM</td>
-                <td>9:30 AM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 3</td>
-                <td>10:00 AM</td>
-                <td>10:00 AM</td>
-                <td>10:00 AM</td>
-                <td>10:00 AM</td>
-                <td>10:30 AM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 4</td>
-                <td>11:00 AM</td>
-                <td>11:00 AM</td>
-                <td>11:00 AM</td>
-                <td>11:00 AM</td>
-                <td>11:30 AM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 5</td>
-                <td>12:00 PM</td>
-                <td>12:00 PM</td>
-                <td>12:00 PM</td>
-                <td>12:00 PM</td>
-                <td>12:30 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 6</td>
-                <td>1:00 PM</td>
-                <td>1:00 PM</td>
-                <td>1:00 PM</td>
-                <td>1:00 PM</td>
-                <td>1:30 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 7</td>
-                <td>2:00 PM</td>
-                <td>2:00 PM</td>
-                <td>2:00 PM</td>
-                <td>2:00 PM</td>
-                <td>2:30 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 8</td>
-                <td>3:00 PM</td>
-                <td>3:00 PM</td>
-                <td>3:00 PM</td>
-                <td>3:00 PM</td>
-                <td>3:30 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 9</td>
-                <td>3:30 PM</td>
-                <td>3:30 PM</td>
-                <td>3:30 PM</td>
-                <td>3:30 PM</td>
-                <td>4:00 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 10</td>
-                <td>4:00 PM</td>
-                <td>4:00 PM</td>
-                <td>4:00 PM</td>
-                <td>4:00 PM</td>
-                <td>4:30 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 11</td>
-                <td>4:30 PM</td>
-                <td>4:30 PM</td>
-                <td>4:30 PM</td>
-                <td>4:30 PM</td>
-                <td>5:00 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 12</td>
-                <td>5:00 PM</td>
-                <td>5:00 PM</td>
-                <td>5:00 PM</td>
-                <td>5:00 PM</td>
-                <td>5:30 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 13</td>
-                <td>5:30 PM</td>
-                <td>5:30 PM</td>
-                <td>5:30 PM</td>
-                <td>5:30 PM</td>
-                <td>6:00 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 14</td>
-                <td>6:00 PM</td>
-                <td>6:00 PM</td>
-                <td>6:00 PM</td>
-                <td>6:00 PM</td>
-                <td>6:30 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 15</td>
-                <td>6:30 PM</td>
-                <td>6:30 PM</td>
-                <td>6:30 PM</td>
-                <td>6:30 PM</td>
-                <td>7:00 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 16</td>
-                <td>7:00 PM</td>
-                <td>7:00 PM</td>
-                <td>7:00 PM</td>
-                <td>7:00 PM</td>
-                <td>7:30 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 17</td>
-                <td>7:30 PM</td>
-                <td>7:30 PM</td>
-                <td>7:30 PM</td>
-                <td>7:30 PM</td>
-                <td>8:00 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 18</td>
-                <td>8:00 PM</td>
-                <td>8:00 PM</td>
-                <td>8:00 PM</td>
-                <td>8:00 PM</td>
-                <td>8:30 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 19</td>
-                <td>8:30 PM</td>
-                <td>8:30 PM</td>
-                <td>8:30 PM</td>
-                <td>8:30 PM</td>
-                <td>9:00 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 20</td>
-                <td>9:00 PM</td>
-                <td>9:00 PM</td>
-                <td>9:00 PM</td>
-                <td>9:00 PM</td>
-                <td>9:30 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 21</td>
-                <td>9:30 PM</td>
-                <td>9:30 PM</td>
-                <td>9:30 PM</td>
-                <td>9:30 PM</td>
-                <td>10:00 PM</td>
-            </tr>
-            <tr>
-            	<td class="heading">Loop 22</td>
-                <td>10:00 PM</td>
-                <td>10:00 PM</td>
-                <td>10:00 PM</td>
-                <td>10:00 PM</td>
-                <td>10:30 PM</td>
-            </tr>
-            <tr>
-            	<td colspan="5" class="none">No Hotel Pickup. Last Mallory Square Pickup.</td>
-                <td>11:00 PM</td>
-            </tr>
-        </table>
+    	{% region shuttle-schedule-head %}
+        {% region shuttle-table %}
         <div class="btn-holder extra padding m-80"><a href="/pdf/24N-Shuttle-Flyer.pdf" target="_blank" class="button-common btn-blue">Download Schedule<i class="fa fa-play"></i></a></div>
     </div>
 </section>
 <section>
 	<div class="container">
     	<div class="home-location-wrap">
-        	<h2>Shuttle Route Map</h2>
-            <h3>exploring key west</h3>
-            <div class="map-wrap"><img src="/images/shuttle-map.jpg" alt="Shuttle Map"/></div>
-            <div class="map-label"><img src="/images/floating/keywest-label.png" alt=""/></div>
-<h2>Driving Directions</h2>
-            <p><span class="cap">1.</span> Start at 24 North <span class="cap">2. </span>Additional Hotel Pickup <span class="cap">3.</span> Right on N Roosevelt <span class="cap">4.</span> Continue on S Roosevelt <span class="cap">5.</span> Right on Flagler <span class="cap">6.</span> Right on 5th Street <span class="cap">7.</span> Left on N Roosevelt (US 1. <span class="cap">8.</span> Right on Palm <span class="cap">9.</span> Merge/Left on Eaton <span class="cap">10.</span> Right on Whitehead <span class="cap">11.</span> Merge/Right on Front <span class="cap">12.</span> Drop off Mallory Square <span class="cap">13.</span> Continue on Front <span class="cap">14.</span> Right on Simonton <span class="cap">15.</span>  Left on Eaton <span class="cap">16.</span> Merge Palm <span class="cap">17.</span> Left on N Roosevelt <span class="cap">18.</span> 24 North</p>
+            {% region shuttle-rout-map-head %}
+            {% region shuttlemap-image %}
+            {% region keywestlabel-image %}
+            {% region driving-directions %}
         </div>
     </div>
 </section>
 <section>
   <div class="container-fluid show-case">
     <div class="row">
-      <div class="col-sm-4 no-padding"><img src="../../images/shuttle-4.jpg" alt=""/></div>
-      <div class="col-sm-4 no-padding"><img src="../../images/shuttle-5.jpg" alt=""/></div>
-      <div class="col-sm-4 no-padding"><img src="../../images/shuttle-6.jpg" alt=""/></div>
+      <div class="col-sm-4 no-padding">{% region shuttle-image-4 %}</div>
+      <div class="col-sm-4 no-padding">{% region shuttle-image-5 %}</div>
+      <div class="col-sm-4 no-padding">{% region shuttle-image-6 %}</div>
     </div>
   </div>
 </section>

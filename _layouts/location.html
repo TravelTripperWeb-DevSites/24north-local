@@ -8,12 +8,9 @@ layout: default
   <div class="container no-padding">
   <div class="page-banner location-banner">
     
-    <div class="graphic"><img src="/images/floating/stamp-1.png" alt=""/></div>
+    <div class="graphic">{% region stamp-image-1 %}</div>
 
-    <h1 class="page-title">
-      
-      Location
-    </h1>
+    {% region banner-heading %}
 
   </div>
 
@@ -28,73 +25,46 @@ layout: default
     		<div class="col-sm-7">
             <div class="loc-con-inner">
         		<div class="left-column">
-                	<h2 class="no-top-padding">ACCESSIBILITY</h2>
-                    <p>Key West International Airport is 1.3 miles from 24 North Hotel | Key West, and Duval Street is 3.1 miles away.
-</p>
+                	{% region accessability %}
                     
-                    <h2>OVERVIEW</h2>
-                    <p>24 North Hotel | Key West offers accommodations in Key West. The hotel has an outdoor pool and fitness center, and guests can enjoy a drink at the bar.<br />
-<br />
-All rooms are fitted with a flat-screen TV. Certain rooms feature a sitting area for your convenience. The rooms are equipped with a private bathroom equipped with a bathtub and bathtub or shower. For your comfort, you will find free toiletries and a hairdryer.
-<br />
-<br />
-
-                   You will find a 24-hour front desk at the property.</p>
+                    {% region overview %}
 
 
 <p>
-<span class="sb-img"><img src="../images/Starbucks_logo_2.png" class="img-responsive" alt=""/></span><br><br>
-<strong>Hours:</strong><br>
-Mon - Fri 6:30am - 8:00pm <br>
-Sat & Sun 7:00am - 7:00pm<br><br>
-<a href="/location/starbucks/" class="button-common btn-blue">Discover More<i class="fa fa-play"></i></a>
+
+<span class="sb-img">{% region starbucks-logo-image %}</span><br><br>
+
+{% region starbuck-section-1 %}
+
+<!--We’re not just passionate purveyors of coffee, but everything else that goes with a full and rewarding coffeehouse experience. We also offer a selection of premium Tazo® teas, fine pastries and other delectable treats to please the taste buds. And the music you hear in store is chosen for its artistry and appeal.<br><br>
+
+It’s not unusual to see people coming to Starbucks to chat, meet up or even work. We’re a neighborhood gathering place, a part of the daily routine – and we couldn’t be happier about it. Get to know us and you’ll see: we are so much more than what we brew.<br><br>-->
 </p>
-<h2>Cuban Inspired Walking Map</h2>
-<p>Just 90 miles apart, the islands of Key West (originally referred to as Cayo Hueso) and Cuba have been closely linked, both culturally and economically, for nearly two centuries, when the island began welcoming its Cuban neighbors in the 19th century. Enlivened by the vibrant Cuban heritage, Key West began to experience Cuban craft and customs, including a cigar boom, making the island the cigar manufacturing capital of the world by the mid- to late-1800's.<br><br>Take a self-guided tour of Key West’s vibrant Cuban history.<br><br>
-<a href="/pdf/24N-Walking-Map.pdf" target="_blank" class="button-common btn-blue">View Map<i class="fa fa-play"></i></a>
-</p>
-                 
-<h2>Old Town Shuttle Service</h2>
-<p>Complimentary <a href="/location/shuttle/"><strong>shuttle service</strong></a> is provided daily to transport our guests to and from Old Town at regular increments. Please review the <a href="/location/shuttle/#schedule" target="_blank"><strong>shuttle schedule</strong></a> to plan your trip.</p>
+
+{% region cuban-inspired-walkmap %}
+              
+
+{% region old-town-shuttle-service %}
 
 
                     
               </div>
               </div>
-              <div class="shuttle-graphic sg-desktop"><img src="/images/floating/shuttle-graphic.png" alt=""/></div>
+              <div class="shuttle-graphic sg-desktop">{% region shuttle-graphic-image %}</div>
         	</div>
         	<div class="col-sm-5">
         		<div class="right-column">
                 	<div class="address-wrap">
-                        <h3>Address</h3>
-                        <p>
-                            <span>3820 North Roosevelt Blvd</span>
-                            <span>Key West, FL 33040</span>
-                            <span>USA</span>
-                        </p>
-                    	<div class="loc-cuba"><img src="/images/floating/cuba-1.png" alt=""/></div> </div>
+                        {% region address %}
+                     </div>
                     <div class="address-wrap">
-                        <h3>Contact</h3>
-                        <p>
-                            <span>Tel	(305) 320-0940</span>
-                            <span><a href="mailto:reservations@hotel24north.com">reservations@hotel24north.com</a></span>
-                        </p>
+                        {% region contanct %}
                     </div>
                     <div class="address-wrap">
-                        <h3>Check - In</h3>
-                        <p>
-                            <span>Check-in time:</span>
-                            <span>16:00 hours / 4:00 pm </span>
-                            <span class="extra-padding">Check-out time:</span>
-                            <span>11:00 hours / 11:00 am</span>
-                        </p>
+                         {% region check-in %}
                     </div>
                     <div class="address-wrap">
-                        <h3>GPS</h3>
-                        <p>
-                            <span>24° 34' 16.8" N</span>
-                            <span>81° 45' 18.6" W</span>
-                        </p>
+                         {% region gps %}
                     </div>
                     <!--<div class="btn-wrap">
                        <div><a href="#" class="button-common btn-blue">Download Map<i class="fa fa-play"></i></a></div>
@@ -103,7 +73,7 @@ Sat & Sun 7:00am - 7:00pm<br><br>
                     </div>-->
                 </div>
         	</div>
-            <div class="shuttle-graphic sg-mobile"><img src="/images/floating/shuttle-graphic.png" alt=""/></div>
+            <div class="shuttle-graphic sg-mobile">{% region shuttle-graphic-image %}</div>
     </div>
     
     </div>
@@ -114,8 +84,7 @@ Sat & Sun 7:00am - 7:00pm<br><br>
     <div class="border-texture bt-2"><img src="/images/floating/border-textrure-2.png" alt=""/></div>
     	<div class="cta-theme cta-theme-location">
         <div class="pf-wrap">
-        	<h2>Paradise Found</h2>
-            <div><a href="https://24northhotel.reztrip.com/" target="_blank" class="button-common btn-white">Book Now<i class="fa fa-play"></i></a></div>
+        	{% region paradise-found-booknow %}
             </div>
         </div>
     </div>
@@ -140,7 +109,7 @@ Sat & Sun 7:00am - 7:00pm<br><br>
 <section class="hdct">
 	<div class="container-fluid no-padding">
     <div class="graphic"></div>
-    	<div class="empty-container"><img src="/images/loc-1.jpg" alt=""/></div>
+    	<div class="empty-container">{% region loc-1 %}</div>
         
     </div>
 </section>
@@ -149,7 +118,7 @@ Sat & Sun 7:00am - 7:00pm<br><br>
 
 <section>
 	<div class="loc-map">
-    <img src="/images/loc-map.jpg" alt=""/> </div>
+    {% region loc-map-img %} </div>
 </section>
 
 <!--<section>
