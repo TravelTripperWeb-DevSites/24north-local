@@ -7,7 +7,8 @@ layout: default
   <section>
     <div class="container no-padding">
       <div class="page-banner specials-banner">
-        {% region specials-banner %}
+        <div class="graphic"><img src="/images/floating/stamp-1.png" alt=""/></div>
+        <h1 class="page-title">Specials</h1>
       </div>
     </div>
   </section>
@@ -23,7 +24,7 @@ layout: default
       <div class="row">
       <div class="col-sm-3 col-xs-12">
           <div class="spcl-lstng">
-          	{% region special-offer-head %}
+          	<h2>Special Offer</h2>
             <h3><span class="block-element">[[offers.sRdetail.rate_plan_name]]</h3>
             <div class="booknow"> <a href="[[offers.sRdetail.promo_url]]" target="_blank">Book Now</a> </div>
             <div class="btn-holder extra padding"><a href="mailto:reservations@hotel24north.com" class="button-common btn-blue">Contact Us</i></a></div>
@@ -61,7 +62,7 @@ layout: default
   </section>
   <section class="lifestyle">
   	<div class="container-fluid">
-    	{% region about-offer %}
+    	<h3>About the offer</h3>
         <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
     </div>
   </section>
@@ -71,7 +72,7 @@ layout: default
       <div class="row details-intro style2">
       	<div class="holds">
 
-        {% region this-offer-includes %}
+        <h2>this offer includes</h2>
         <ul>
             <li ng-repeat ="addon in offers.sRdetail.addons" >[[addon]]</li>
          </ul>
@@ -84,18 +85,17 @@ layout: default
   <section>
     <div class="container">
       <div class="row information">
-        <div class="col-md-5 align-center">
-          {% region terms-cond-img %}
-
-        </div>
+        <div class="col-md-5 align-center"><img src="../../images/specials/special-details/photo-patch-spcls.png" width="296" height="386" alt=""/></div>
         <div class="col-md-7 p-l-0">
-          <p class="highlight p-t-35">{% region terms-cond-head %}</p>
+          <p class="highlight p-t-35">Terms & Conditions:</p>
           <ul class="lst p-b-25">
 
           	<li ng-repeat="terms in offers.sRdetail.policy_description " ng-bind-html="terms | replaceNewline | renderHTMLCorrectly">[[terms]]</li>
 
           </ul>
-          {% region terms-cond-text %}
+          <p class="highlight">Need assistance? Our dedicated reservations team is available around the clock:</p>
+          <p class="p-b-25">24 North Hotel Service Centre on <a href="tel:800-222-4828" >800-222-4828</a>  or <br>
+            e-mail <a href="mailto:reservations@hotel24north.com" >reservations@hotel24north.com</a></p>
         </div>
       </div>
     </div>
@@ -104,7 +104,7 @@ layout: default
     <!--<div class="graphics"></div>-->
     <div class="container-fluid no-padding home-specials-wrap">
       <div class="container">
-        {% region more-specials %}
+        <h2 class="heading-large">More Specials</h2>
 
         {%  include special-offers.html %}
 
