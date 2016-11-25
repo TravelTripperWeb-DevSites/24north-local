@@ -1,9 +1,15 @@
----
-layout: default
----
-
+<!DOCTYPE html>
+<html>
 {% assign blog = page %}
 {% assign model = page %}
+{% assign seo_title = blog.seo_title %}
+{% assign seo_description = blog.seo_description %}
+
+{% include head.html %}
+
+<body id="top" ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser" ng-cloak>
+
+{% include header.html %}
 
 <section>
   <div class="container">
@@ -36,3 +42,14 @@ layout: default
     </div>
   </div>
 </section>  
+
+
+
+{% include footer.html %}
+
+{% include scripts.html %}
+
+{% include booking-widget.html %}
+
+</body>
+</html>
