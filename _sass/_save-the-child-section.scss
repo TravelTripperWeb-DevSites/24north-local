@@ -48,7 +48,7 @@
 	}
 	}
 	.description-container{
-	width: 54%;
+	width: 56%;
 	padding: 0 40px;
 	@media (max-width: 1130px){
 	width: 50%;
@@ -60,51 +60,50 @@
 	.description-center{
 	
 
-	h2{
-	font-family: "brandon_grotesquebold";
-	font-size: 26px;
-	letter-spacing: .05ex;
-	text-transform: uppercase;
-	@media (max-width: 767px){
-		font-size: 20px;
+		h2{
+			font-family: "brandon_grotesquebold";
+			font-size: 26px;
+			letter-spacing: .05ex;
+			text-transform: uppercase;
+				@media (max-width: 767px){
+					font-size: 20px;
+				}
+		}
+			p{
+				font-family: "brandon_grotesquelight";
+				font-size: 18px;
+				line-height: 27px;
+				color: #000000;
+			}
+		}
 	}
-
-
-	}
-	p{
-	font-family: "brandon_grotesquelight";
-	font-size: 18px;
-	line-height: 27px;
-	color: #000000;
-	}
-	}
-	}
-	.button-container{
-	width: 20%;
-	text-align: right;
-	@media (max-width: 1066px){
-		width: 100%;
-		margin: 20px 0px;
-		text-align: center;
-	}
-	.button-common {
-	min-width: 232px;
-	color: #000;
-	border: solid 3px #1f4552;
-	padding: 10px 20px;
-	text-transform: uppercase;
-	font-family: "brandon_grotesquemedium";
-	letter-spacing: .01em;
-	font-size: 17px;
-	display: inline-block;
-	text-shadow: none;
-	transition: all 0.1s;
-	
-	&:hover{
-	background-color: #1f4552;
-	color: #fff;
-	}
-	}
+		.button-container{
+		width: 18%;
+		text-align: right;
+			@media (max-width: 1066px){
+				width: 100%;
+				margin: 20px 0px;
+				text-align: center;
+			}
+				.button-common {
+				min-width: 210px;
+				color: #000;
+				border: solid 3px #1f4552;
+				padding: 10px 10px;
+				text-transform: uppercase;
+				font-family: "brandon_grotesquemedium";
+				letter-spacing: .2em;
+				text-align: center;
+				font-size: 17px;
+				display: inline-block;
+				text-shadow: none;
+				transition: all 0.1s;
+				
+				&:hover{
+				background-color: #1f4552;
+				color: #fff;
+				}
+		}
 	}
 	}
 }
