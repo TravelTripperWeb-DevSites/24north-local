@@ -2,6 +2,10 @@
 	{"required":true},
 "blogimage":
 	{"type":"image","required":true},
+"seo_title":
+	{},
+"seo_description":
+	{},
 "url_friendly_name":
 	{"type":"url_slug"},
 "date":
