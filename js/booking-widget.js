@@ -14,9 +14,6 @@ $(function() {
       if (!sidebar.hasClass('-show')) {
         body.addClass('overflow');
         sidebar.addClass('-show');
-        if (iframe.attr('src')=="about:blank") {
-          iframe.attr('src', iframeURL);// + '?nocache=' + (new Date()).getTime());          
-        }
       }
     });
   });
