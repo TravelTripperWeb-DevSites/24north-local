@@ -1,6 +1,8 @@
 $(function() {
   var body = $('body');
   var sidebar = $('.booking-widget');
+  var iframe = sidebar.find("iframe");
+  var iframeURL = iframe.data('url')
   var closeButton = $('.booking-widget_close');
   var showButtons = $('[show-booking-widget]');
 
@@ -12,6 +14,9 @@ $(function() {
       if (!sidebar.hasClass('-show')) {
         body.addClass('overflow');
         sidebar.addClass('-show');
+        if (iframe.attr('src')=="about:blank") {
+          iframe.attr('src', iframeURL);// + '?nocache=' + (new Date()).getTime());          
+        }
       }
     });
   });

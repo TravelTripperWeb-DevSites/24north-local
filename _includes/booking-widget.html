@@ -1,11 +1,5 @@
-<script>
-$(document).ready(function() {
-  console.log('hi');
-  $('.booking-widget iframe').attr('src', '{{site.booking_widget_url}}')      
-})
-</script>
 <div class="booking-widget" ng-controller="bookingWidget as widget" rt3-search-form="search" on-search-changed="browser.search()" ng-cloak>
-  <iframe src="" ></iframe>  
+  <iframe src="about:blank" data-url="{{site.booking_widget_url}}"></iframe>  
   <div class="booking-widget_header">
     <div class="booking-widget_close">&times;</div>
     <h3 class="booking-widget_title">Your Booking</h3>
