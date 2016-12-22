@@ -1,6 +1,8 @@
 $(function() {
   var body = $('body');
   var sidebar = $('.booking-widget');
+  var iframe = sidebar.find("iframe");
+  var iframeURL = iframe.data('url')
   var closeButton = $('.booking-widget_close');
   var showButtons = $('[show-booking-widget]');
 
