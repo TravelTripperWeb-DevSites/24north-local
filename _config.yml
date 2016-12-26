@@ -18,6 +18,8 @@ languages: ['en']
 exclude: ['sitemap.json']
 empty_array: []
 
+booking_widget_url: https://24northhotel.reztrip.com/mobile
+
 
 data_paginate: 
   per_page: 5
