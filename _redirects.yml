@@ -1,0 +1,7 @@
+---
+- events: location/events/
+- events/: location/events/
+- Events: location/events/
+- Events/: location/events/
+- EVENTS: location/events/
+- EVENTS/: location/events/
