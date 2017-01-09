@@ -57,6 +57,12 @@
 				{'title':'Shuttle','name': 'location','url': '/location/shuttle/'},
 				{'title':'Starbucks','name': 'location','url': '/location/starbucks/'}
 			] 
+		},
+		{
+			'title':'Charities',
+			'name': 'charities',
+			'url': '/save-the-children/',
+			'submenu': 'false' 
 		}, 
 		
 		 
