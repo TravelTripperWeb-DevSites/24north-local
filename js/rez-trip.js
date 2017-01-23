@@ -67,14 +67,20 @@
         }
       };
     }])
-    .controller('roomDetail', ['$scope', 'rt3Search', 'rt3Browser','$timeout', function($scope, rt3Search, rt3Browser,$timeout) {
+    .controller('roomDetail', ['$scope', 'rt3Search', 'rt3Browser','$timeout','$filter', function($scope, rt3Search, rt3Browser,$timeout,$filter) {
+      window.onhashchange = function() {
+        window.location.reload();
+      }
+      $scope.reloadPage = function(){window.location.reload();}
         $timeout(function() {
            var roomsList = JSON.parse($("#roomList").val());
-           var roomId = $("#roomId").val();
+           var roomId = window.location.hash.substr(1).replace("%2F",""); //$("#roomId").val();
            var roomSizeSqm;
            var roomSizeSqft;
            for(var j= 0 ; j < roomsList.length ; j++){
-               if(roomsList[j].code.toLowerCase() == roomId.toLowerCase()){
+             rName = $filter('formatNameForLink')(roomId);
+             tmpName = $filter('formatNameForLink')(roomsList[j].name);
+               if(rName == tmpName ){
                   // find room size for diff size units
 
                   if(roomsList[j].room_size_units == 'sqft'){
@@ -99,6 +105,10 @@
                   }
                   break;
                }
+
+           }
+           if(!$scope.selectedRoom){ // if no room found then redirect to home page
+              window.location = "/";
            }
 
         }, 2800);
@@ -156,5 +166,13 @@
 
         }
       }
-    }]);
+    }]).controller('offerDetail', ['$scope', 'rt3Search', 'rt3Browser','$timeout','$filter', function($scope, rt3Search, rt3Browser,$timeout,$filter) {
+        window.onhashchange = function() {
+          window.location.reload();
+        }
+        $scope.reloadPage = function(){$window.location.reload();}
+
+
+
+    }])
 })();
