@@ -21,12 +21,12 @@ layout: default
       <div class="carousel-inner" rt3-recent-bookings="recentBookings"  ng-cloak>
 
             {% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
-            {% for slilderimages in slilder_images %}                                 
+            {% for slilderimages in slilder_images %}
             {% if forloop.first == true %}
             <div class="item active">
             {% else %}
             <div class="item">
-            {% endif %} 
+            {% endif %}
              <img src="{{ slilderimages.slider_image.url }}" alt=""/>
           <div class="carousel-caption transparent-bg">
             <div class="caption-inner">
@@ -34,11 +34,28 @@ layout: default
             </div>
           </div>
 
-          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder" ng-hide="!browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
+          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
+          <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
+                       <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
+             <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
+                <div class="boxes">
+                  <div class="tonight-rate ">
+                  <p>Best price available</p>
+                  <h4>Tonight's Rate <a href="#" class="homeTonightRate" ><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
+                  </div>
+                  <div class="ota-list" >
+                    <ul>
+                    <li ng-repeat = "(key, value) in browser.otaRates.brg">[[key]] <span>$[[value]]</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
         </div>
  {% endfor %}
 
-        
+
 
 
       </div>
