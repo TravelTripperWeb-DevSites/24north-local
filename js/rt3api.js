@@ -322,7 +322,7 @@ var defered = $.Deferred();
     }
 
     this.getRateShopping(searchParams).then(function(response) {
-        let errors = response.error_info;
+        var errors = response.error_info;
         if(errors && errors.error_details.length > 0){
            defered.reject(errors);
 
