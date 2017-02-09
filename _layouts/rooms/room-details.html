@@ -18,9 +18,9 @@ layout: default
   <div class="container">
     <ul class="gallery-nav">
 
-      <li ng-show="prevRoomName"><a href="/rooms/[[prevRoomName | lowercase | replacePipe  | spacetohyphen]]/"  ><i class="fa fa-angle-left"></i></a></li>
+      <li ng-show="prevRoomName"><a href="/room/#[[prevRoomName | formatNameForLink ]]"  ><i class="fa fa-angle-left"></i></a></li>
       <li><a href="#" class="active">[[selectedRoom.name]]</a></li>
-      <li ng-show="nextRoomName"><a href="/rooms/[[nextRoomName | lowercase | replacePipe  | spacetohyphen]]/"   ><i class="fa fa-angle-right"></i></a></li>
+      <li ng-show="nextRoomName"><a href="/room/#[[nextRoomName | formatNameForLink ]]"   ><i class="fa fa-angle-right"></i></a></li>
     </ul>
   </div>
   <section>
