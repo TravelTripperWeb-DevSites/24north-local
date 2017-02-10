@@ -210,11 +210,13 @@ angular.module('rezTrip')
             $q.when(rt3api.getOTARates()).then(function(response){
                 if(response.brgFound ){
                   if(Object.keys){
-                      var len = Object.keys(response.brg).length;
-                      var lastKey =  Object.keys(response.brg)[len-1];
-                      if (len > 4){
 
-                        delete response.brg[lastKey];
+                      var len, lastKey;
+
+                      while(Object.keys(response.brg).length > 4){
+                         len = Object.keys(response.brg).length;
+                         lastKey =  Object.keys(response.brg)[len-1];
+                         delete response.brg[lastKey];
                       }
 
                   }
