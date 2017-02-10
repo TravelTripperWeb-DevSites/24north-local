@@ -182,7 +182,7 @@ Rt3Api.prototype.getRateShopping = function(searchParams) {
        locale: this.config.defaultLocale,
        currency: this.config.defaultCurrency,
        popular_only: false,
-       num_rates_display: 5,
+       num_rates_display: 10,
        client_ip: sessionStorage.ip_add,
        lowest_rate: null,
        search_lowest: true

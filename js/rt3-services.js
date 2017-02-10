@@ -208,6 +208,18 @@ angular.module('rezTrip')
             //var par = rt3Search.getParams();
             angular.extend(self , {'otaRates' : {'brgFound' : false}});
             $q.when(rt3api.getOTARates()).then(function(response){
+                if(response.brgFound ){
+                  if(Object.keys){
+                      var len = Object.keys(response.brg).length;
+                      var lastKey =  Object.keys(response.brg)[len-1];
+                      if (len > 4){
+
+                        delete response.brg[lastKey];
+                      }
+
+                  }
+
+                }
                 angular.extend(self , {'otaRates' : response});
             }, function(response){
                 angular.extend(self , {'otaRates' : {'brgFound' : false}});
