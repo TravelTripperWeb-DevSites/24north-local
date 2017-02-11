@@ -205,6 +205,27 @@ angular.module('rezTrip')
 
             //console.log(self.tonightErrors);
             self.loaded = true;
+            //var par = rt3Search.getParams();
+            angular.extend(self , {'otaRates' : {'brgFound' : false}});
+            $q.when(rt3api.getOTARates()).then(function(response){
+                if(response.brgFound ){
+                  if(Object.keys){
+
+                      var len, lastKey;
+
+                      while(Object.keys(response.brg).length > 4){
+                         len = Object.keys(response.brg).length;
+                         lastKey =  Object.keys(response.brg)[len-1];
+                         delete response.brg[lastKey];
+                      }
+
+                  }
+
+                }
+                angular.extend(self , {'otaRates' : response});
+            }, function(response){
+                angular.extend(self , {'otaRates' : {'brgFound' : false}});
+            });
 
           });
 
