@@ -310,13 +310,13 @@ angular.module('rezTrip')
     return browser;
   }])
 
-  .service('rt3SpecialRates', ['$rootScope', '$q', '$location','rt3api', function($rootScope, $q, $location, rt3api) {
+  .service('rt3SpecialRates', ['$rootScope', '$q', '$location','rt3api','$filter', function($rootScope, $q, $location, rt3api, $filter) {
     var specialRates = {
 
       loaded: false,
-      locationHash:  angular.element('[data-offer-code]').data('offer-code') || null ,
+    //  locationHash:  angular.element('[data-offer-code]').data('offer-code') || null ,
       sRdetail: {},
-      // locationHash: $location.search().name || null
+      locationHash: window.location.hash.substr(1)
 
     };
 
@@ -324,12 +324,14 @@ angular.module('rezTrip')
       rt3api.getAllSpecialRates().then(function(response) {
 
              $rootScope.$applyAsync(function() {
-              var formatResponseValue;
+              var formatResponseValue,hashName, tmpName;
               formatResponseValue = formatRespone(response);
               if(specialRates.locationHash){
                   angular.forEach(response.special_rates, function(value, key) {
 
-                      if (value.rate_plan_code.toLowerCase() == specialRates.locationHash.toLowerCase()) {
+                    tmpName = $filter ('formatNameForLink')(value.rate_plan_name);
+                    hashName = $filter ('formatNameForLink')(specialRates.locationHash);
+                    if (tmpName == hashName) {
                           angular.extend(specialRates.sRdetail, value);
 
                       }
