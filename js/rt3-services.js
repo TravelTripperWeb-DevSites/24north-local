@@ -205,6 +205,27 @@ angular.module('rezTrip')
 
             //console.log(self.tonightErrors);
             self.loaded = true;
+            //var par = rt3Search.getParams();
+            angular.extend(self , {'otaRates' : {'brgFound' : false}});
+            $q.when(rt3api.getOTARates()).then(function(response){
+                if(response.brgFound ){
+                  if(Object.keys){
+
+                      var len, lastKey;
+
+                      while(Object.keys(response.brg).length > 4){
+                         len = Object.keys(response.brg).length;
+                         lastKey =  Object.keys(response.brg)[len-1];
+                         delete response.brg[lastKey];
+                      }
+
+                  }
+
+                }
+                angular.extend(self , {'otaRates' : response});
+            }, function(response){
+                angular.extend(self , {'otaRates' : {'brgFound' : false}});
+            });
 
           });
 
@@ -227,7 +248,7 @@ angular.module('rezTrip')
       this.thisDate = date.getFullYear() +'-'+ ('0' + (date.getMonth() + 1)).slice(-2) +'-'+ ('0' + date.getDate()).slice(-2);
 
 
-      if(this.searchParams || this.storageContainer) {console.log(sessionStorage.ip_add);
+      if(this.searchParams || this.storageContainer) {//console.log(sessionStorage.ip_add);
         rt3api.getAllAvailableRooms(this.searchParams || this.storageContainer).then(function(response) {
           $rootScope.$apply(function() {
             self.rooms = response.rooms;
@@ -289,13 +310,13 @@ angular.module('rezTrip')
     return browser;
   }])
 
-  .service('rt3SpecialRates', ['$rootScope', '$q', '$location','rt3api', function($rootScope, $q, $location, rt3api) {
+  .service('rt3SpecialRates', ['$rootScope', '$q', '$location','rt3api','$filter', function($rootScope, $q, $location, rt3api, $filter) {
     var specialRates = {
 
       loaded: false,
-      locationHash:  angular.element('[data-offer-code]').data('offer-code') || null ,
+    //  locationHash:  angular.element('[data-offer-code]').data('offer-code') || null ,
       sRdetail: {},
-      // locationHash: $location.search().name || null
+      locationHash: window.location.hash.substr(1)
 
     };
 
@@ -303,12 +324,14 @@ angular.module('rezTrip')
       rt3api.getAllSpecialRates().then(function(response) {
 
              $rootScope.$applyAsync(function() {
-              var formatResponseValue;
+              var formatResponseValue,hashName, tmpName;
               formatResponseValue = formatRespone(response);
               if(specialRates.locationHash){
                   angular.forEach(response.special_rates, function(value, key) {
 
-                      if (value.rate_plan_code.toLowerCase() == specialRates.locationHash.toLowerCase()) {
+                    tmpName = $filter ('formatNameForLink')(value.rate_plan_name);
+                    hashName = $filter ('formatNameForLink')(specialRates.locationHash);
+                    if (tmpName == hashName) {
                           angular.extend(specialRates.sRdetail, value);
 
                       }
