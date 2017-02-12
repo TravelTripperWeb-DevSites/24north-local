@@ -70,6 +70,9 @@ $(".campaign-item").height(maxHeight);
            // itemsMobile : false
 
        });
+       setTimeout(function(){
+             $(".price-wrap1").css('display' ,'block');
+          },2000);
      }, 2000);
 
 
@@ -187,7 +190,7 @@ $(".home-specials-item h3").each(function(){
 $(".home-specials-item p").height(maxHeight);
 
 // Rooms title equal heights
-setTimeout( function(){ 
+setTimeout( function(){
 	$(".rooms-item h2").each(function(){
    if ($(this).height() > maxHeight) {
      maxHeight = $(this).height();
