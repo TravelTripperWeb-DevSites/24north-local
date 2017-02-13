@@ -37,6 +37,3 @@ page_gen:
   - data: 'blog'
     template: 'blog-details'
     dir: 'blog'
-  - data: 'category'
-    template: 'category'
-    dir: 'categories'
