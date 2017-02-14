@@ -5,8 +5,8 @@
       $interpolateProvider.endSymbol(']]');
     })
     .value('rt3api', new Rt3Api({
-      portalId: '24northhotel',
-      hotelId: 'KEY24N',
+      portalId: '24northhotel', //'24northhotel',
+      hotelId: 'KEY24N',//'KEY24N',
       defaultLocale: 'en',
       defaultCurrency: 'USD'
     }))
