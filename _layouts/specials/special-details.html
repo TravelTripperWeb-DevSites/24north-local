@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div data-offer-code ="{{page.code}}" class="room-details special-details" rt3-special-rates= "offers" >
+<div  class="room-details special-details" rt3-special-rates= "offers" ng-controller="offerDetail" >
 
   <section>
     <div class="container no-padding">
@@ -15,7 +15,7 @@ layout: default
   <div class="container">
     <ul class="gallery-nav">
 
-      <li ng-repeat="o in offers.special_rates"><a ng-href="/specials/[[o.rate_plan_name | lowercase | spacetohyphen]]/" ng-class="{active: offers.sRdetail.rate_plan_code == o.rate_plan_code}" >[[o.rate_plan_name]]</a></li>
+      <li ng-repeat="o in offers.special_rates"><a ng-href="/special/#[[o.rate_plan_name | formatNameForLink]]" ng-class="{active: offers.sRdetail.rate_plan_code == o.rate_plan_code}" >[[o.rate_plan_name]]</a></li>
 
     </ul>
   </div>
@@ -26,7 +26,7 @@ layout: default
           <div class="spcl-lstng">
           	<h2>Special Offer</h2>
             <h3><span class="block-element">[[offers.sRdetail.rate_plan_name]]</h3>
-            <div class="booknow"> <a href="[[offers.sRdetail.promo_url]]" target="_blank">Book Now</a> </div>
+            <div class="booknow"> <a ng-href="[[offers.sRdetail.promo_url]]" target="_blank">Book Now</a> </div>
             <div class="btn-holder extra padding"><a href="mailto:reservations@hotel24north.com" class="button-common btn-blue">Contact Us</i></a></div>
             <p ng-bind-html="offers.sRdetail.short_description | renderHTMLCorrectly"></p>
             <p>
