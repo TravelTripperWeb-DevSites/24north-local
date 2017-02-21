@@ -9,11 +9,21 @@ layout: default
         </div>
       </div>
     </section>
+
+<ul class="gallery-nav events-filter-nav">
+    <li><a href="javascript:;" data-rel="all" class="filter active" data-filter="all">All</a></li>
+    {% assign catlist = site.data._models.event_category %} 
+
+    {% for cat in catlist %}
+    <li><a href="javascript:;" data-rel="{{cat.title}}" class="filter">{{cat.title}}</a></li>
+    {% endfor %}
+  </ul>
+
     {% assign events = site.data._models.events | sort : 'sort_order' %}
     {% for e in events %}
     {% capture cycle %}{% cycle 'odd', 'even' %}{% endcapture %}
 
-    <section class="models">
+    <section class="models fancybox" data-filter="{{e.category.title}}">
       <div class="container">
         <div class=" two-col-wrap">
           <div class="row no-gutters">
