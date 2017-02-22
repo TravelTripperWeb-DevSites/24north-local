@@ -4,6 +4,13 @@
       "required": true,
       "label": "Name"
     },
+    "category":
+    {
+      "label": "Choose Category",
+      "type":"model",
+      "display_field": "title", 
+      "model_name":"event_category"
+    },
     "schedule":
     {
       "required": true,
