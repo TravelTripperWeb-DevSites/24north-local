@@ -23,18 +23,18 @@ layout: default
             {% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
             {% for slilderimages in slilder_images %}
             {% if forloop.first == true %}
-            <div class="item active">
+            <div class="item active" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
             {% else %}
-            <div class="item">
+            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
             {% endif %}
-             <img src="{{ slilderimages.slider_image.url }}" alt=""/>
+            <!-- <img src="{{ slilderimages.slider_image.url }}" alt=""/>-->
           <div class="carousel-caption transparent-bg">
             <div class="caption-inner">
                {{ slilderimages.carousel_caption }}
             </div>
           </div>
 
-          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
+          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
           <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
                        <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
              <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
@@ -69,7 +69,7 @@ layout: default
   </div>
 </section>
 <section>
-  <div class="container-fluid blue-bg">
+  <div class="container-fluid blue-bg mo">
     <div class="about-wrap">
       {% region 24north-hotelkey-west %}
 

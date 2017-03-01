@@ -40,7 +40,21 @@ $(".campaign-item").height(maxHeight);
       });
     });
 
+	   $(document).ready(sizeContent);
+
+	   $(window).resize(sizeContent);
+	  
+	   function sizeContent() {
+		  var newHeight = $(window).height() - 123;
+		if($(window).width() >= 768){   
+			$("#homeCarousel .item").css("height", newHeight);
+		}
+	   }
+		
+		 
+
 	 $(document).ready(function() {
+		 
      setTimeout(function(){
 
        $(" #home-carousel-2,#room-carousel-1").owlCarousel({
