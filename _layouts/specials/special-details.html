@@ -26,15 +26,14 @@ layout: default
           <div class="spcl-lstng">
           	<h2>Special Offer</h2>
             <h3><span class="block-element">[[offers.sRdetail.rate_plan_name]]</h3>
-            <div class="booknow"> <a href="[[offers.sRdetail.promo_url]]" target="_blank">Book Now</a> </div>
+            <div class="booknow"> <a ng-href="[[offers.sRdetail.promo_url]]" target="_blank">Book Now</a> </div>
             <div class="btn-holder extra padding"><a href="mailto:reservations@hotel24north.com" class="button-common btn-blue">Contact Us</i></a></div>
             <p ng-bind-html="offers.sRdetail.short_description | renderHTMLCorrectly"></p>
             <p>
-               <strong><span ng-show="!offers.sRdetail.booking_end_date">Available From: </span>
+               <!--<strong><span ng-show="!offers.sRdetail.booking_end_date">Available From: </span>
                     [[offers.sRdetail.booking_start_date | date:"MM-dd-yyyy"]]
                     <span ng-show="[[offers.sRdetail.booking_end_date]]">until<br> [[offers.sRdetail.booking_end_date | date:"MM-dd-yyyy"]]</span>
-
-               </strong>
+               </strong>-->
             </p>
           </div>
       </div>
