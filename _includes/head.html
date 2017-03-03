@@ -34,7 +34,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.24northhotel.com{{page.url}}" />
-<meta property="og:image" content="https://www.24northhotel.com/images/logo.png" />
+<meta property="og:image" content="{% if blog.blogimage %}{{blog.blogimage.url}}{% else %} https://www.24northhotel.com/images/logo.png {% endif%}" />
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 {% endif %}
 </head>
