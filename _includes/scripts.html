@@ -57,7 +57,15 @@ function getIp(data){
 							$('.alternate-date-1').datepicker('setDate', minDate);
 						}
 					}
-				})
+				});
+
+		 var imgSrc = $('.post-image-holder').find('img:first').attr('src'); // image stored as variable
+       if(!imgSrc.match(/^https?:\/\//))
+			{
+			 $('meta[property="og:image"]').attr('content', 'https://www.24northhotel.com'+imgSrc); // assigns meta property
+			}else{
+			 $('meta[property="og:image"]').attr('content',  imgSrc); // assigns meta 
+			}
 	});
 
 </script>
