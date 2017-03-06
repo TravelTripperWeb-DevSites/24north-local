@@ -1,12 +1,12 @@
 .starbucks{
 	.landing{
 		.carousel-caption{
-			left:0;right:0; bottom: calc(50% - 235px); padding:0px;
+			left:0;right:0; bottom: calc(50% - 250px); padding:0px;
 				@media (max-width: 767px){
-						bottom: calc(50% - 85px);
+						bottom: calc(50% - 118px);
 				}
 				@media (min-width: 768px) and (max-width: 1024px){
-						bottom: calc(50% - 156px);
+						bottom: calc(50% - 205px);
 				}
 			.caption-inner{position:relative; bottom:inherit;
 				img{width:150px; height:150px; margin-top:80px;
@@ -14,15 +14,15 @@
 						width:80px; height:80px;
 					}
 				}
-				p{font-family: 'FuturaStd-Heavy'; font-size:140px; color:#231f20; letter-spacing:25px;
+				p{font-family: 'FuturaStd-Heavy'; font-size:100px; color:#231f20; letter-spacing:25px;
 					@media (max-width: 767px){
-						font-size:24px; letter-spacing:8px;
+						font-size:18px; letter-spacing:8px;
 					}
 					@media (min-width: 768px) and (max-width: 1024px){
-						font-size:72px; letter-spacing:13px;
+						font-size:64px; letter-spacing:13px;
 					}
 				}
-				h1{ font-size:45px;color:#231f20; letter-spacing:8px; padding-top:0px;
+				h1{ font-size:32px;color:#231f20; letter-spacing:8px; padding-top:0px;
 					@media (max-width: 767px){
 						font-size:12px; letter-spacing:1px;
 					}
@@ -38,6 +38,7 @@
 						font-size:10px;
 					}
 				}
+				h3{font-size:16px;}
 			}
 		}
 	}
@@ -46,7 +47,11 @@
 				 padding-bottom:30px;
 			}
 		}
-	.blue-bg{ background-color:#006f49;}
+	.blue-bg{ background-color:#006f49;
+		@media(max-width:768px){
+			margin-top:0px;
+		}
+	}
 	.two-col-content{
 		img{ width: 200px; margin-bottom:90px;
 			@media (max-width: 767px){
@@ -84,7 +89,7 @@
 				img{ width:100%; margin-bottom:0px;}
 			}
 			.home-rooms{
-				background:url(../images/shuttle-3.jpg);background-attachment: fixed;
+				background:url(../images/shuttle-8.jpg);background-attachment: fixed;
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: center center;
