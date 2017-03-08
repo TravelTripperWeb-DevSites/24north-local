@@ -64,8 +64,10 @@
 	width: auto;
 	text-align: left;
 
-	@media (max-width: 767px){
+	@media (max-width: 768px){
 		left: 15px;
+		bottom:inherit;
+		top:10px;
 	}
 }
 .home-banner-wrap .carousel-indicators li {
@@ -240,6 +242,7 @@
 	}
 }
 
+
 .caption-price {
 	position: absolute;
 	bottom: 130px;
@@ -248,11 +251,8 @@
 	right:0;
 	text-align:center;
 	text-transform: none;
-
-
-
-		@media (max-width: 1023px){
-		display: none;
+	@media(max-width:768px){
+		bottom:147px;
 	}
 
 }
@@ -266,7 +266,7 @@
 	letter-spacing: 1px;
 	display:inline-block;
 	margin-right: -2px;
-
+	
 	@media (max-width: 1023px){
 		    padding: 6px 10px;
 			font-size: 14px;
@@ -281,7 +281,17 @@
 		@media (max-width: 1023px){
 		    font-size: 25px;
 			padding-right: 8px;
+		}
 	}
+	@media(max-width:768px){
+		&.tonight{
+			margin-top:1px;
+		}
+	}
+}
+#homeCarousel {
+	.item {
+    	min-height: 450px;
 	}
 }
 .blue-bg {
@@ -1508,7 +1518,6 @@ h2{
 
 }
 
-
 .price-wrap1 {
 	position: absolute;
 	bottom: 26px;
@@ -1517,15 +1526,14 @@ h2{
 	margin: 0 auto;
   font-family: "brandon_grotesqueregular";
   z-index:100;
-  @media (max-width: 1023px){
-    bottom:21px;
+  @media (max-width: 768px){
+    bottom:0px;
   }
 	 .best-rate-ota{
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-
-    max-width: 600px;
-    width: 100%;
-    min-height: 80px;
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+		max-width: 600px;
+		width: 100%;
+		min-height: 80px;
 
         left: calc(50% - 300px);
         display: table;
@@ -1535,9 +1543,7 @@ h2{
          width: 100%;
          bottom: 0px;
         }
-         @media(max-width: 815px){
-         display: none;
-        }
+         
 
 
         .boxes{
@@ -1556,6 +1562,9 @@ h2{
             margin: 0px;
             padding: 0px;
             text-align: left;
+			@media(max-width:350px){
+				  display: none;
+			  }
           }
           h4{
             font-size: 18px;
@@ -1568,7 +1577,14 @@ h2{
                 color:#3a9dc4;
                 font-size: 30px;
                 float: right;
+				 @media(max-width:350px){
+				  display: inline-block;
+				  float: none; margin-top: 10px;
+			  	}
              }
+			  @media(max-width:350px){
+				  line-height:20px;
+			  }
           }
         }
         .ota-list{
@@ -1595,10 +1611,23 @@ h2{
               }
               &:nth-child(even){
                margin-left: 20px;
+			   @media(max-width:768px){
+						margin: 0px;
+			   }
               }
-            }
+			@media(max-width:768px){
+				width:inherit;
+			}
+            }	
           }
         }
       }
  }
+}
+@media(max-width:768px){
+	.blue-bg{
+		&.mo{
+			margin-top:0px;
+		}
+	}
 }
