@@ -1,1 +1,22 @@
-{"name":"Key West Lighted Bike Ride","schedule":"December 7th, 2016","short_description":"<p>The Lighted Bike Ride helps to gather the needed toys for the struggling, working families of Key West for the holidays</p>","thumb_image":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/bike01.jpg"},"sort_order":3,"url":"keywest-lighted-bike-ride/","long_description":"<p>The Lighted Bike Ride helps to gather the needed toys for the struggling, working families of Key West for the holidays. At the Holiday Helpers Store, eligible parents walk through the store, empowered by the ability to pick free, new toys their children will want instead of just allocating non-specific toys to parents. The ride is a family event beginning with a registration at 5:30 p.m. with the Lighted Bike Ride beginning at 7:00 p.m. Families and individuals with lighted and decorated bikes ride through the streets for the community to see. Registration for the ride is one unwrapped toy for the Key West Holiday Store.</p>\n<p>Registration begins at 5:30pm<br /><br /> For more information contact <strong>Claire Hiller</strong> at <strong>305-809-5000</strong> or <strong>Claire.hiller@wesleyhouse.org</strong></p>","website_url":"https://keystix.ticketforce.com/eventperformances.asp?evt=927","large_image":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/02.jpg"},"short_image":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/bike02.jpg"},"g_image1":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/bike01.jpg"},"g_image2":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/bike03.jpg"},"g_image3":{"url":"//cdn.traveltripper.io/site-assets/359_384_783/media/bike04.jpg"}}
+{
+	"name": "DJ Kyd",
+	"schedule": "Every Saturday, poolside from 1-4pm",
+	"short_description": "<p>Every Saturday, poolside from 1-4pm</p>",
+	"long_description": "<p>Every Saturday, poolside from 1-4pm</p>",
+	"url": "dj-kyd",
+	"website_url": "https://www.24northhotel.com/",
+	"thumb_image": {
+		"url": "https://cdn.traveltripper.io/site-assets/359_384_1766/media/2017-02-28-230556/kyd.jpg"
+	},
+	"large_image": {
+		"url": "https://cdn.traveltripper.io/site-assets/359_384_1766/media/2017-02-28-230556/kyd.jpg"
+	},
+	"sort_order": 5,
+	"category": "event_category1",
+	"g_image1": {
+		"url": "https://cdn.traveltripper.io/site-assets/359_384_1766/media/2017-02-28-230556/kyd.jpg"
+	},
+	"short_image": {
+		"url": "https://cdn.traveltripper.io/site-assets/359_384_1766/media/2017-02-28-230556/kyd.jpg"
+	}
+}
