@@ -52,6 +52,13 @@
 			margin-top:0px;
 		}
 	}
+	.coco-bg{ background-color:#00AE98;
+		margin-top: 50px;
+	    position: relative;
+		@media(max-width:768px){
+			margin-top:0px;
+		}
+	}
 	.two-col-content{
 		img{ width: 200px; margin-bottom:90px;
 			@media (max-width: 767px){
@@ -61,6 +68,12 @@
 		.m-t-30{ padding-top:30px;}	
 	}
 	.home-rooms{ height:749px; background:url(../images/attractions/sb-01-large.jpg); background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.toasted-coco{ height:749px; background:url(../images/attractions/tc-01-large.jpg); background-attachment: fixed;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -119,4 +132,49 @@
 				th{ color:#3a9dc4; font-weight:lighter; font-size:16px;font-family: "brandon_grotesquelight";}
 				}
 		}
+&.coco{
+	.landing{
+		.carousel-caption{
+			left:0;right:0; bottom: calc(50% - 250px); padding:0px;
+				@media (max-width: 767px){
+						bottom: calc(50% - 118px);
+				}
+				@media (min-width: 768px) and (max-width: 1024px){
+						bottom: calc(50% - 205px);
+				}
+			.caption-inner{position:relative; bottom:inherit;
+				img{width:280px; height:auto; margin-top:80px;
+					@media (max-width: 767px){
+						width:140px; height:auto;
+					}
+				}
+				p{font-family: 'FuturaStd-Heavy'; font-size:100px; color:#231f20; letter-spacing:25px;
+					@media (max-width: 767px){
+						font-size:18px; letter-spacing:8px;
+					}
+					@media (min-width: 768px) and (max-width: 1024px){
+						font-size:64px; letter-spacing:13px;
+					}
+				}
+				h1{ font-size:32px;color:#231f20; letter-spacing:8px; padding-top:0px;
+					@media (max-width: 767px){
+						font-size:12px; letter-spacing:1px;
+					}
+					@media (min-width: 768px) and (max-width: 1024px){
+						font-size:17px;
+					}
+				}
+				i{color:#333333; font-family: 'FuturaStd-Heavy'; font-size:18px; letter-spacing:2px; font-style:normal; text-transform:none;
+					@media (max-width: 767px){
+						font-size:8px;
+					}
+					@media (min-width: 768px) and (max-width: 1024px){
+						font-size:10px;
+					}
+				}
+				h3{font-size:16px;}
+			}
+		}
+	}
+ }
 }
