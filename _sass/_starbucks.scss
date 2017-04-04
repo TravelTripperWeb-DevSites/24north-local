@@ -135,12 +135,12 @@
 &.coco{
 	.landing{
 		.carousel-caption{
-			left:0;right:0; bottom: calc(50% - 250px); padding:0px;
+			left:0;right:0; bottom: calc(60% - 250px); padding:0px;
 				@media (max-width: 767px){
-						bottom: calc(50% - 118px);
+						bottom: calc(60% - 118px);
 				}
 				@media (min-width: 768px) and (max-width: 1024px){
-						bottom: calc(50% - 205px);
+						bottom: calc(60% - 205px);
 				}
 			.caption-inner{position:relative; bottom:inherit;
 				img{width:280px; height:auto; margin-top:80px;
