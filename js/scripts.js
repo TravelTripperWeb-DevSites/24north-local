@@ -40,7 +40,21 @@ $(".campaign-item").height(maxHeight);
       });
     });
 
+	   $(document).ready(sizeContent);
+
+	   $(window).resize(sizeContent);
+	  
+	   function sizeContent() {
+		  var newHeight = $(window).height() - 123;
+		if($(window).width() >= 768){   
+			$("#homeCarousel .item").css("height", newHeight);
+		}
+	   }
+		
+		 
+
 	 $(document).ready(function() {
+		 
      setTimeout(function(){
 
        $(" #home-carousel-2,#room-carousel-1").owlCarousel({
@@ -70,6 +84,9 @@ $(".campaign-item").height(maxHeight);
            // itemsMobile : false
 
        });
+       setTimeout(function(){
+             $(".price-wrap1").css('display' ,'block');
+          },2000);
      }, 2000);
 
 
@@ -187,7 +204,7 @@ $(".home-specials-item h3").each(function(){
 $(".home-specials-item p").height(maxHeight);
 
 // Rooms title equal heights
-setTimeout( function(){ 
+setTimeout( function(){
 	$(".rooms-item h2").each(function(){
    if ($(this).height() > maxHeight) {
      maxHeight = $(this).height();
