@@ -1055,6 +1055,7 @@
     "git_file_name": "_assets/image_data/site-assets_359_384_2170_media_2017-03-13-105726_conchtourtrain.jpg.json"
   },
   {
+<<<<<<< HEAD
     "name": "tostedcoco-carousel",
     "file_name": "tostedcoco-carousel.jpg",
     "file_type": "image/jpeg",
@@ -1063,6 +1064,36 @@
     "tags": "",
     "description": "",
     "git_file_name": "_assets/image_data/site-assets_359_384_2463_media_2017-04-03-092737_tostedcoco-carousel.jpg.json"
+=======
+    "name": "24-North-Bar-Toasted-Coconut",
+    "file_name": "24-North-Bar-Toasted-Coconut.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_2618/media/2017-04-11-032343/24-North-Bar-Toasted-Coconut.jpg",
+    "date_added": "2017-04-11-032343",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_359_384_2618_media_2017-04-11-032343_24-North-Bar-Toasted-Coconut.jpg.json"
+  },
+  {
+    "name": "24-North-Cheeseburger",
+    "file_name": "24-North-Cheeseburger.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_2618/media/2017-04-11-032344/24-North-Cheeseburger.jpg",
+    "date_added": "2017-04-11-032344",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_359_384_2618_media_2017-04-11-032344_24-North-Cheeseburger.jpg.json"
+  },
+  {
+    "name": "24-North-Tacos",
+    "file_name": "24-North-Tacos.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_2618/media/2017-04-11-032345/24-North-Tacos.jpg",
+    "date_added": "2017-04-11-032345",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_359_384_2618_media_2017-04-11-032345_24-North-Tacos.jpg.json"
+>>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
   },
   {
     "name": "01.jpg",
