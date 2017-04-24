@@ -14,7 +14,7 @@
     ],
     [
       {
-        "name": "Kino’s Sandal Factory",
+        "name": "KinoΓÇÖs Sandal Factory",
         "file": "attraction11.json"
       }
     ],
@@ -32,7 +32,7 @@
     ],
     [
       {
-        "name": "The Key West Lighthouse & Keeper’s Quarters Museum",
+        "name": "The Key West Lighthouse & KeeperΓÇÖs Quarters Museum",
         "file": "attraction14.json"
       }
     ],
@@ -142,41 +142,25 @@
   "blog": [
     [
       {
-<<<<<<< HEAD
         "title": "24 Things To Do in Key West ΓÇô 4 Must-See Attractions in Key West",
-=======
-        "title": "24 Things To Do in Key West – 4 Must-See Attractions in Key West",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
         "file": "24-things-to-do-in-key-west-4-must-see-attractions-in-key-west.json"
       }
     ],
     [
       {
-<<<<<<< HEAD
         "title": "24 Things to Do in Key West ΓÇô Historical Landmarks in Key West",
-=======
-        "title": "24 Things to Do in Key West – Historical Landmarks in Key West",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
         "file": "24-things-to-do-in-key-west-historical-landmarks-in-key-west.json"
       }
     ],
     [
       {
-<<<<<<< HEAD
         "title": "24 Things to Do in Key West ΓÇô Our Favorite Drinks in Key West",
-=======
-        "title": "24 Things to Do in Key West – Our Favorite Drinks in Key West",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
         "file": "24-things-to-do-in-key-west-our-favorite-drinks-in-key-west.json"
       }
     ],
     [
       {
-<<<<<<< HEAD
         "title": "24 Things to Do in Key West ΓÇô Where to Snorkel & Dive in Key West",
-=======
-        "title": "24 Things to Do in Key West – Where to Snorkel & Dive in Key West",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
         "file": "24-things-to-do-in-key-west-where-to-snorkel-dive-in-key-west.json"
       }
     ],
@@ -200,21 +184,13 @@
     ],
     [
       {
-<<<<<<< HEAD
         "title": "Fantasy Fest 2016 ΓÇô Bahama Village Goombay",
-=======
-        "title": "Fantasy Fest 2016 – Bahama Village Goombay",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
         "file": "bahama-village-goombay.json"
       }
     ],
     [
       {
-<<<<<<< HEAD
         "title": "The ΓÇ£BightΓÇ¥ Before Christmas and 2016 Key West Holiday Events",
-=======
-        "title": "The “Bight” Before Christmas and 2016 Key West Holiday Events",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
         "file": "blog1.json"
       }
     ],
@@ -256,37 +232,31 @@
     ],
     [
       {
-<<<<<<< HEAD
         "title": "Try StarbucksΓÇÖ Two New Drinks @ 24 North",
-=======
-        "title": "Try Starbucks’ Two New Drinks @ 24 North",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
         "file": "blog16.json"
       }
     ],
     [
       {
-<<<<<<< HEAD
-        "title": "New YearΓÇÖs Eve in Key West",
-=======
         "title": "24 North Picks: Toasted Coconut",
         "file": "blog17.json"
       }
     ],
     [
       {
-        "title": "New Year’s Eve in Key West",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
+        "title": "The Key West Songwriters Festival",
+        "file": "blog18.json"
+      }
+    ],
+    [
+      {
+        "title": "New YearΓÇÖs Eve in Key West",
         "file": "blog2.json"
       }
     ],
     [
       {
-<<<<<<< HEAD
         "title": "Shopping in Key West ΓÇô Christmas Edition",
-=======
-        "title": "Shopping in Key West – Christmas Edition",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
         "file": "blog3.json"
       }
     ],
@@ -328,11 +298,7 @@
     ],
     [
       {
-<<<<<<< HEAD
         "title": "Fantasy Fest 2016 ΓÇô Political Voodoo & Ballot-Box Barbarians",
-=======
-        "title": "Fantasy Fest 2016 – Political Voodoo & Ballot-Box Barbarians",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
         "file": "fantasy-fest-2016.json"
       }
     ],
@@ -356,11 +322,7 @@
     ],
     [
       {
-<<<<<<< HEAD
         "title": "Key West Events ΓÇô Hemingway Days 2016",
-=======
-        "title": "Key West Events – Hemingway Days 2016",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
         "file": "key-west-events-hemingway-days-2016.json"
       }
     ],
@@ -378,11 +340,7 @@
     ],
     [
       {
-<<<<<<< HEAD
         "title": "Key West Events ΓÇô Mini-Lobster Season 2016",
-=======
-        "title": "Key West Events – Mini-Lobster Season 2016",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
         "file": "mini-lobster-season.json"
       }
     ],
@@ -418,31 +376,19 @@
     ],
     [
       {
-<<<<<<< HEAD
         "title": "The Old Key West ΓÇô Key West's Cuban History",
-=======
-        "title": "The Old Key West – Key West's Cuban History",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
         "file": "the-old-key-west.json"
       }
     ],
     [
       {
-<<<<<<< HEAD
         "title": "The Sheriff's Animal Farm ΓÇô Key West",
-=======
-        "title": "The Sheriff's Animal Farm – Key West",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
         "file": "the-sheriffs-animal-farm.json"
       }
     ],
     [
       {
-<<<<<<< HEAD
         "title": "The Songwriter's Festival ΓÇô A Key West Classic",
-=======
-        "title": "The Songwriter's Festival – A Key West Classic",
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
         "file": "the-songwriters-festival-a-key-west-classic.json"
       }
     ],
@@ -462,20 +408,6 @@
       {
         "title": "Where to Go on Duval",
         "file": "where-to-go-on-duval.json"
-      }
-    ]
-  ],
-  "event_category": [
-    [
-      {
-        "title": "24 North Hotel Events",
-        "file": "event_category1.json"
-      }
-    ],
-    [
-      {
-        "title": "City Wide Events",
-        "file": "event_category2.json"
       }
     ]
   ],
@@ -516,7 +448,6 @@
         "file": "event16.json"
       }
     ],
-<<<<<<< HEAD
     [
       {
         "name": "DJ Chris Brown",
@@ -547,35 +478,12 @@
       {
         "title": "24 North Hotel Events",
         "file": "event_category1.json"
-=======
-    [
-      {
-        "name": "DJ Chris Brown",
-        "file": "event4.json"
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
       }
     ],
     [
       {
-<<<<<<< HEAD
         "title": "City Wide Events",
         "file": "event_category2.json"
-=======
-        "name": "DJ Kyd",
-        "file": "event5.json"
-      }
-    ],
-    [
-      {
-        "name": "Pool Deck Yoga",
-        "file": "event6.json"
-      }
-    ],
-    [
-      {
-        "name": "Trivia",
-        "file": "event7.json"
->>>>>>> 956fbb578fc19a4de6496cd9e2d49e3c26ad2445
       }
     ]
   ],
