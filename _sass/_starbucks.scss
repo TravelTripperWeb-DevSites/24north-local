@@ -62,32 +62,42 @@
 
 	.icons{
 
-	   position: absolute;
+	    position: absolute;
 	    left: 0;
-	    right: 0;
-	    margin: 0px auto;
-	    top: 35%;
-	    transform: translateY(-35%);
+	    margin: 0px ;
+	    top: 45%;
+	    transform: translateY(-45%);
 	    max-width: 150px;
+	     @media (max-width:1480px){
+		     width: 90px;
+		      text-align:center;
+		      top: 40%;
+		      transform: translateY(-40%);
+		      
+		    }
 	    @media (max-width:768px){
-		    max-width: 350px;
+		    max-width: 60px;
 		      text-align:center;
 		      top: 40%;
 		      transform: translateY(-40%);
 		    }
-		    @media (max-width:480px){
-		    	max-width: 320px;
-		    	   top: 40%;
-		    	     transform: translateY(-40%);
-		    	     text-align:center;
-		    }
+		   
 
 	    img{
-		    width:150px;
-		    margin:10px;
+		    width:100%;
+		    margin: 5px 0px 5px 10px;
 
+ 		@media (max-width:1480px){
+		   	width: 100%;
+		    margin: 5px 0px 5px 10px;
+		    }
+		   @media (max-width:768px){
+		   	width: 100%;
+		    margin: 5px 0px 5px 0px;
+		    }
 		     @media (max-width:480px){
-				width:80px;
+				width:100%;
+				 margin: 5px 0px 5px 0px;
 		     }
 		    
 	    }
