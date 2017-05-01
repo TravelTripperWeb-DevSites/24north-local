@@ -16,7 +16,7 @@
 		{
 			'title':'Dine & Drink',
 			'name': 'dine-drink',
-			'url': '/dine-drink/',
+			'url': '#',
 			'submenu': 'true' ,
 			'subitems': [
 				{'title':'Starbucks ','name': 'starbucks ','url': '/dine-drink/starbucks/'},
