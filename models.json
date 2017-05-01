@@ -244,6 +244,12 @@
     ],
     [
       {
+        "title": "The Key West Songwriters Festival",
+        "file": "blog18.json"
+      }
+    ],
+    [
+      {
         "title": "New Year’s Eve in Key West",
         "file": "blog2.json"
       }
@@ -858,6 +864,13 @@
     [
       {
         "file": "starbucks_carousel1.json"
+      }
+    ]
+  ],
+  "tc_carousel": [
+    [
+      {
+        "file": "tc_carousel1.json"
       }
     ]
   ]

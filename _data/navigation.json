@@ -14,11 +14,14 @@
 			'submenu': 'false' 
 		},
 		{
-			'title':'Attractions',
-			'name': 'attractions',
-			'url': '/attractions/',
-			'submenu': 'flase' 
-			
+			'title':'Dine & Drink',
+			'name': 'dine-drink',
+			'url': '/dine-drink/',
+			'submenu': 'true' ,
+			'subitems': [
+				{'title':'Starbucks ','name': 'starbucks ','url': '/dine-drink/starbucks/'},
+				{'title':'Toasted Coconut','name': 'toasted-coconut','url': '/dine-drink/toasted-coconut/'}
+			]  
 		},
 		{
 			'title':'Groups',
@@ -55,7 +58,7 @@
 			'subitems': [
 				{'title':'Events','name': 'events','url': '/location/events/'},
 				{'title':'Shuttle','name': 'location','url': '/location/shuttle/'},
-				{'title':'Starbucks','name': 'location','url': '/location/starbucks/'}
+				{'title':'Attractions','name': 'attractions','url': '/location/attractions/'}
 			] 
 		}
 		
