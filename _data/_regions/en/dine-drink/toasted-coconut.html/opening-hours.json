@@ -1,7 +1,7 @@
 [
 	{
 		"_template": "html",
-		"content": "<div><img src=\"/images/tc-logo.png\" /></div>\n<h3>Opening Hours</h3>\n<p class=\"m-t-30\">Daily | 8am &ndash; 9pm <br />Daily Happy Hours | 12pm &ndash; 4pm<br /></p>",
+		"content": "<div><img class=\"tc-logo\" src=\"/images/tc-logo.png\" /></div>\n<h3>Opening Hours</h3>\n<p class=\"m-t-30\">Daily | 8am &ndash; 9pm <br />Daily Happy Hours | 12pm &ndash; 4pm<br /></p>",
 		"rendered_height": 500
 	}
 ]
