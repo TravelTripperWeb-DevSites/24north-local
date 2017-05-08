@@ -59,7 +59,11 @@ class SitemapGenerator
 
   def save(sitemap)
     File.open('sitemap.json', 'w') do |f|
+<<<<<<< HEAD
       f.write(JSON.pretty_generate(sitemap, indent: "  "))
+=======
+      f.write(sitemap.to_json)
+>>>>>>> faec0d86e1d7045cb97cf8c620a2bf3041d3a039
     end
   end
 
