@@ -18,9 +18,9 @@ layout: default
   <div class="container">
     <ul class="gallery-nav">
 
-      <li ng-show="prevRoomName"><a href="/room/#[[prevRoomName | formatNameForLink ]]"  ><i class="fa fa-angle-left"></i></a></li>
+      <li ng-show="prevRoomName"><a ng-href="/room/#[[prevRoomName | formatNameForLink ]]"  ><i class="fa fa-angle-left"></i></a></li>
       <li><a href="#" class="active">[[selectedRoom.name]]</a></li>
-      <li ng-show="nextRoomName"><a href="/room/#[[nextRoomName | formatNameForLink ]]"   ><i class="fa fa-angle-right"></i></a></li>
+      <li ng-show="nextRoomName"><a ng-href="/room/#[[nextRoomName | formatNameForLink ]]"   ><i class="fa fa-angle-right"></i></a></li>
     </ul>
   </div>
   <section>
@@ -34,8 +34,8 @@ layout: default
                 <h2>Premium</h2>
 
                 <h3><span class="block-element">[[selectedRoom.name]]</h3>
-                <p><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" >[[ selectedRoom.todayRate ]]</a></p>
-                <div class="btn-holder extra padding"><a href="{{site.data.config.reztripUrl}}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" class="button-common btn-blue">Book Now<i class="fa fa-play"></i></a></div>
+                <p><a ng-href="{{site.data.config.reztripUrl}}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" >[[ selectedRoom.todayRate ]]</a></p>
+                <div class="btn-holder extra padding"><a ng-href="{{site.data.config.reztripUrl}}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" class="button-common btn-blue">Book Now<i class="fa fa-play"></i></a></div>
 
               </div>
             </div>
@@ -119,7 +119,7 @@ layout: default
           <p class="p-b-25">[[selectedRoom.description]]</p>
 
           <p class="highlight">Need assistance? Our dedicated reservations team is available around the clock:</p>
-          <p class="p-b-25">24 North Hotel Service Centre on <a href="tel:800-222-4828" >800-222-4828</a>  or <br>
+          <p class="p-b-25">24 North Hotel Service Centre on <a href="tel:305-320-0930">(305) 320-0930</a>  or <br>
             e-mail <a href="mailto:reservations@hotel24north.com">reservations@hotel24north.com</a></p>
         </div>
       </div>

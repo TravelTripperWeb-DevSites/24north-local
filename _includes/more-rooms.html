@@ -6,12 +6,12 @@
       <div  class="owl-carousel" id="room-carousel-1" >
 
         <div class="item"  ng-repeat="room in browser.roomsList" >
-          <div class="home-specials-item2" > <img src="[[room.photos[0].yankee_large]]" alt=""/>
+          <div class="home-specials-item2" > <img ng-src="[[room.photos[0].yankee_large]]" alt=""/>
             <div class="car-content">
-              <h3><a href="/room/#[[room.name | formatNameForLink]]" >[[room.name]]</a></h3>
+              <h3><a ng-href="/room/#[[room.name | formatNameForLink]]" >[[room.name]]</a></h3>
               <p>[[room.short_description | limitTo: 150]][[room.short_description.length > 150 ? '...' : '']]</p>
             </div>
-            <a href="/room/#[[room.name | formatNameForLink]]" class="button-common btn-top">View Room</a> </div>
+            <a ng-href="/room/#[[room.name | formatNameForLink]]" class="button-common btn-top">View Room</a> </div>
         </div>
 
       </div>
