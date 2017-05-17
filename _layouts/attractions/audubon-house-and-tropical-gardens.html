@@ -32,7 +32,7 @@ layout: default
               {% assign attractions = site.data._models.attractions | sort : 'sort_order' %}
               {% for a in attractions %}
               {% unless a.name == att.name %}
-            	<li><a href="{{a.url}}">{{a.name}}</a></li>
+            	<li><a href="/location{{a.url}}">{{a.name}}</a></li>
               {% endunless %}
               {% endfor %}
 
