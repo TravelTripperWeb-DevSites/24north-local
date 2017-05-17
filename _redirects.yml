@@ -203,7 +203,6 @@
 - Specials/Bed-&-Breakfast-Package/: specials
 - SPECIALS/BED-&-BREAKFAST-PACKAGE: specials
 - SPECIALS/BED-&-BREAKFAST-PACKAGE/: specials
-- specials/hemingway-house-package: specials
 - specials/hemingway-house-package/: specials
 - Specials/hemingway-house-package: specials
 - Specials/hemingway-house-package/: specials
@@ -218,7 +217,6 @@
 - Specials/Key-West-Butterfly-&-Nature-Conservatory: specials
 - Specials/Key-West-Butterfly-&-Nature-Conservatory/: specials
 - SPECIALS/KEY-WEST-BUTTERFLY-&-NATURE-CONSERVATORY: specials
-- SPECIALS/KEY-WEST-BUTTERFLY-&-NATURE-CONSERVATORY/: specials
 - specials/cayo-hueso-y-cuba: specials
 - specials/cayo-hueso-y-cuba/: specials
 - Specials/cayo-hueso-y-cuba: specials
@@ -263,7 +261,6 @@
 - de-de/specials.htm: specials/
 - de-de/specials/book-early-save.htm: specials/
 - de-de/specials/grand-opening-special.htm: specials/
-- dine-drink/toasted-coconut/: dine-drink/toasted-coconut/
 - en-us/reservation.htm: index.html
 - es-es/: index.html
 - es-es/food-drink/food-drink.htm: dine-drink/toasted-coconut/
@@ -299,7 +296,6 @@
 - pdf/24N-Shuttle-Flyer-v2.pdf: pdf/24N-Shuttle-Flyer.pdf
 - reservations: index.html
 - rooms.htm: rooms/
-- rooms/: rooms/
 - rooms/class/deluxe-pool-view-double-queen.htm: rooms/
 - rooms/class/deluxe-pool-view-king.htm: rooms/
 - rooms/class/oceanfront-junior-suite.htm: rooms/
@@ -316,7 +312,6 @@
 - rooms/standard-double-queen-ada/: rooms/
 - sitemap.htm: index.html
 - specials.htm: specials/
-- specials/: specials/
 - specials/aaa/: specials/
 - specials/book-direct-and-save-30%/: specials/
 - specials/book-early-save.htm: specials/
