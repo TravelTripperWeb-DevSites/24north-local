@@ -32,7 +32,14 @@ layout: default
               {% assign attractions = site.data._models.attractions | sort : 'sort_order' %}
               {% for a in attractions %}
               {% unless a.name == att.name %}
-            	<li><a href="/location/{{a.url}}">{{a.name}}</a></li>
+              {% capture link_url %}
+                {{ a.url }}
+              {% endcapture %}
+              {% if link_url contains "https" %}
+                <li><a href="{{a.url}}">{{a.name}}</a></li>
+              {% else %}
+                <li><a href="/location{{a.url}}">{{a.name}}</a></li>
+              {% endif %}
               {% endunless %}
               {% endfor %}
 
