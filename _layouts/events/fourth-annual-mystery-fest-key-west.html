@@ -18,7 +18,7 @@ layout: default
   </div>-->
   {% assign list = site.data._models.events  %}
   {% for a in list %}
-  {% if (a.name == 'Campfire Night' ) %}
+  {% if (a.name == 'Fourth Annual Mystery Fest Key West' ) %}
   {% assign event = a %}
   {% endif %}
   {% endfor %}
@@ -27,7 +27,7 @@ layout: default
       <div class="row event-heading">
       <div class="col-sm-3 col-xs-12">
           <div class="spcl-lstng">
-          	<h3><span class="block-element">{{event.name}}</h3>
+            <h3><span class="block-element">{{event.name}}</h3>
             <div class="btn-holder m-b-20"><a href="#details" class="button-common btn-blue">View Details</a></div>
             <h2>{{event.schedule}}</h2>
           </div>
@@ -94,7 +94,7 @@ layout: default
         <div class="col-md-8 col-sm-12">
           <p class="highlight p-t-20">Event Details:</p>
           <p class="">{{event.long_description}}</p>
-         <!--div class="btn-holder m-b-20 m-t-30"><a href="{{event.website_url}}" target="_blank" class="button-common btn-blue">View Event Website</a></div-->
+         <div class="btn-holder m-b-20 m-t-30"><a href="{{event.website_url}}" target="_blank" class="button-common btn-blue">View Event Website</a></div>
 
         </div>
 
