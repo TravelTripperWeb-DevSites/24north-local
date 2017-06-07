@@ -341,12 +341,68 @@
       "file": "events1.json"
     },
     {
-      "name": "Fourth Annual Mystery Fest Key West",
-      "file": "events3.json"
+      "name": "Eighth Annual Key West Brewfest",
+      "file": "events10.json"
+    },
+    {
+      "name": "WineDine Key West",
+      "file": "events11.json"
+    },
+    {
+      "name": "SoMo Marathon & Half Marathon",
+      "file": "events12.json"
+    },
+    {
+      "name": "38th Annual Key West Fantasy Fest",
+      "file": "events13.json"
+    },
+    {
+      "name": "36th Annual Key West World Championship Powerboat Races",
+      "file": "events14.json"
+    },
+    {
+      "name": "Key West Film Festival",
+      "file": "events15.json"
+    },
+    {
+      "name": "Key West Holiday Fest",
+      "file": "events16.json"
+    },
+    {
+      "name": "Inaugural Key West Grand Prix of the Sea",
+      "file": "events17.json"
+    },
+    {
+      "name": "Key West Triathlon and Expo",
+      "file": "events18.json"
+    },
+    {
+      "name": "New YearÔÇÖs Eve Shoe Drop Celebration",
+      "file": "events19.json"
     },
     {
       "name": "Fourth Annual Mystery Fest Key West",
       "file": "events4.json"
+    },
+    {
+      "name": "Key West Africana Festival",
+      "file": "events5.json"
+    },
+    {
+      "name": "Fifth Annual Key Lime Festival",
+      "file": "events6.json"
+    },
+    {
+      "name": "Mel Fisher Days",
+      "file": "events7.json"
+    },
+    {
+      "name": "Hemingway Days",
+      "file": "events8.json"
+    },
+    {
+      "name": "Key West Lobster Festival",
+      "file": "events9.json"
     }
   ],
   "event_category": [
