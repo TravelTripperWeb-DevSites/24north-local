@@ -45,9 +45,9 @@
 			'submenu': 'false' 
 		},
 		{
-			'title':'Partners',
-			'name': 'partners',
-			'url': '/partners/',
+			'title':'EVENT LAWN',
+			'name': 'event-lawn',
+			'url': '/event-lawn/',
 			'submenu': 'false' 
 		},
 		{
@@ -58,7 +58,8 @@
 			'subitems': [
 				{'title':'Events','name': 'events','url': '/location/events/'},
 				{'title':'Shuttle','name': 'location','url': '/location/shuttle/'},
-				{'title':'Attractions','name': 'attractions','url': '/location/attractions/'}
+				{'title':'Attractions','name': 'attractions','url': '/location/attractions/'},
+				{'title':'Partners','name': 'partners','url': '/location/partners/'}
 			] 
 		}
 		

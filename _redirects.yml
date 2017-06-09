@@ -1,4 +1,6 @@
 ---
+- partners/: location/partners/
+- partners: location/partners/
 - events: location/events/
 - events/: location/events/
 - Events: location/events/
