@@ -195,6 +195,10 @@
       "file": "blog24.json"
     },
     {
+      "title": "The History behind Key Lime Pie",
+      "file": "blog25.json"
+    },
+    {
       "title": "Shopping in Key West ÔÇô Christmas Edition",
       "file": "blog3.json"
     },
@@ -319,6 +323,10 @@
     {
       "name": "Key West Songwriters Festival",
       "file": "event15.json"
+    },
+    {
+      "name": "Key West Pride",
+      "file": "event16.json"
     },
     {
       "name": "DJ Chris Brown",
