@@ -23,9 +23,9 @@ layout: default
             {% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
             {% for slilderimages in slilder_images %}
             {% if forloop.first == true %}
-            <div class="item active" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
+            <div class="item active" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title={{slilderimages.alt_text}}  title={{slilderimages.alt_text}}>
             {% else %}
-            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
+            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title={{slilderimages.alt_text}}>
             {% endif %}
             <!-- <img src="{{ slilderimages.slider_image.url }}" alt=""/>-->
           <div class="carousel-caption transparent-bg">
@@ -151,7 +151,7 @@ layout: default
 
 <section class="bt">
 	<div class="container-fluid no-padding">
-    <div class="border-texture"><img src="/images/floating/border-textrure.png" alt=""/></div>
+    <div class="border-texture"><img src="/images/floating/border-textrure.png" alt="floating-border"/></div>
     	<div class="cta-theme">
         	<div class="pf-wrap">
         	{% region paradisefound %}

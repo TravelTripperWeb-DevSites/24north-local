@@ -16,6 +16,10 @@
       "type": "url",
       "label": "URL"
     },
+    "alt_text":
+    {
+      "label": "Image Alt text"
+    },
     "image":
     {
       "required": true,

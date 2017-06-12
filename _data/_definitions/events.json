@@ -40,7 +40,10 @@
       "type": "url",
       "label": "Events Website URL"
     },
-
+    "alt_text":
+    {
+      "label": "Image Alt text"
+    },
 
     "thumb_image":
     {
