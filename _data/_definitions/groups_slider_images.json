@@ -17,6 +17,10 @@
       "type": "image",
       "label": "Upload Thumb Image"
     },
+    "alt_text":
+    {
+      "label": "Image Alt text"
+    },
     "sort_order":
     {
       "type": "integer",

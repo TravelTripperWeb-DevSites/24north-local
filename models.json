@@ -195,6 +195,13 @@
       "file": "blog24.json"
     },
     {
+<<<<<<< HEAD
+=======
+      "title": "The History behind Key Lime Pie",
+      "file": "blog25.json"
+    },
+    {
+>>>>>>> e980db1ffa5ad7be40584211f6deed626186658f
       "title": "Shopping in Key West ÔÇô Christmas Edition",
       "file": "blog3.json"
     },
@@ -403,6 +410,16 @@
     {
       "name": "Key West Lobster Festival",
       "file": "events9.json"
+    }
+  ],
+  "event_category": [
+    {
+      "title": "24 North Hotel Events",
+      "file": "event_category1.json"
+    },
+    {
+      "title": "City Wide Events",
+      "file": "event_category2.json"
     }
   ],
   "event_category": [

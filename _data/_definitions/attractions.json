@@ -42,6 +42,10 @@
       "label": "Detail Page Image"
 
     },
+    "alt_text":
+    {
+      "label": "Image Alt text"
+    },
     "sort_order":
     {
       "type": "integer",
