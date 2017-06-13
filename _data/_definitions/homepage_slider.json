@@ -12,6 +12,10 @@
       "type": "richtext",
       "label": "Carousel Caption"
     },
+    "alt_text":
+    {
+      "label": "Image Alt text"
+    },
     "sort_order": 
     { 
       "type": "integer",

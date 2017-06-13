@@ -12,7 +12,7 @@ layout: default
             {% if forloop.first == true %}
             <div class="item active landing" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
             {% else %}
-            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
+            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title={{slilderimages.alt_text}}>
             {% endif %}        
           <!--<img src="{{ slilderimages.slider_image.url }}" alt="{{ slilderimages.carousel_caption }}"/>-->
       {% endfor %}
