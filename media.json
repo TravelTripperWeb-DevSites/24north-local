@@ -1824,6 +1824,19 @@
     "git_file_name": "_assets/image_data/site-assets_359_384_3910_media_2017-06-07-021540_history-of-key-lime-pie.jpg.json"
   },
   {
+    "name": "fishing-in-key-west",
+    "file_name": "fishing-in-key-west.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_4058/media/2017-06-13-011040/fishing-in-key-west.jpg",
+    "date_added": "2017-06-13-011040",
+    "tags": "",
+    "file_size": 810872.0,
+    "width": 1000,
+    "height": 662,
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_359_384_4058_media_2017-06-13-011040_fishing-in-key-west.jpg.json"
+  },
+  {
     "name": "01.jpg",
     "url": "//cdn.traveltripper.io/site-assets/359_384_783/media/01.jpg",
     "git_file_name": "_assets/image_data/site-assets_359_384_783_media_01.json"
