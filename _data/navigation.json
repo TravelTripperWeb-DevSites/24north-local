@@ -81,7 +81,7 @@
 		{
 			'title':'Attractions',
 			'name': 'attractions',
-			'url': '/attractions/',
+			'url': '/location/attractions/',
 			'submenu': 'flase' 
 			
 		},
@@ -109,7 +109,7 @@
 		{
 			'title':'Partners',
 			'name': 'partners',
-			'url': '/partners/',
+			'url': '/location/partners/',
 			'submenu': 'false' 
 		},
 		{
