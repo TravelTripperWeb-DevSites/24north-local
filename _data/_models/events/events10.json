@@ -9,15 +9,20 @@
   "expire_date": null,
   "isPublished": true,
   "thumb_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-06-075849/brewfest-3.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-06-075849/brewfest-3.jpg",
+    "alt": "image"
   },
   "large_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-06-075848/brewfest-2.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-06-075848/brewfest-2.jpg",
+    "alt": "image"
   },
   "short_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-06-075847/brewfest-1.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-06-075847/brewfest-1.jpg",
+    "alt": "image"
   },
   "g_image1": {
-    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-06-075849/brewfest-3.jpg"
-  }
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-06-075849/brewfest-3.jpg",
+    "alt": "image"
+  },
+  "publish_date": "Thu Aug 31 2017 00:00:00 GMT-0500 (CDT)"
 }
