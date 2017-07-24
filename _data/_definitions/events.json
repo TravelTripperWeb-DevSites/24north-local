@@ -11,7 +11,8 @@
   },
   "schedule": {
     "required": true,
-    "label": "Schedule"
+    "label": "Schedule",
+    "instructions": "This is a text display of the date. (e.g. 'May 3 - 5 2026' or 'Every Saturday, Poolside 1 - 4 PM')"
   },
   "publish_date": {
     "label": "Publish Date",
