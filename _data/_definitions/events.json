@@ -18,6 +18,10 @@
     "type": "date",
     "instructions": "This is the sort order date. Weekly events should be left blank and will output at the top of the list."
   },
+  "expire_date": {
+    "label": "Expiration Date",
+    "type": "date"
+  },
   "short_description": {
     "required": true,
     "type": "richtext",
@@ -80,10 +84,6 @@
   "g_image6": {
     "type": "image",
     "label": "Gallery Image 6"
-  },
-  "expire_date": {
-    "label": "Expiration Date",
-    "type": "date"
   },
   "isPublished": {
     "label": "Publish Event?",
