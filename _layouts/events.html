@@ -23,7 +23,46 @@ layout: default
     {% endfor %}
   </ul>
 
-  {% assign events = site.data._models.events | sort : 'sort_order' %}
+  {% assign events = site.data._models.events | sort: 'publish_date' %}
+
+  {% for event in events %}
+    {% if event.publish_date == null %}
+      {% capture cycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+      <!-- Check to see if the event has been published. -->
+      {% if event.isPublished == true %}
+        <!-- Capture the current date. -->
+        {% capture currentDate %}{{ 'now' | date: '%s' }}{% endcapture %}
+        <!-- Capture the event's expiration date. -->
+        {% capture expireDate %}{{ event.expire_date | date: '%s' }}{% endcapture %}
+        <!-- If the current date is less then the event's expiration date OR the event doesn't have a expiration date, show the event.  -->
+        {% if currentDate < expireDate or event.expire_date == null %}
+
+          <section class="models fancybox" data-filter="{{ event.category.title }}">
+            <div class="container">
+              <div class=" two-col-wrap">
+                <div class="row no-gutters">
+                  {% if cycle == 'even' %}
+                    <div class="col-sm-6 sp-img "><img src="{{ event.thumb_image.url }}" title="{{ event.alt_text }}"></div>
+                  {% endif %}
+                  <div class="col-sm-6 sp-content">
+                    <h2>{{ event.name }}</h2>
+                    <div class="title">{{ event.schedule }}</div>
+                    <div class="desp">{{ event.short_description }}</div>
+                    <div class="btn-holder"><a href="/location/events/{{ event.url }}" class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
+                  </div>
+                  {% if cycle == 'odd' %}
+                    <div class="col-sm-6 sp-img "><img src="{{ event.thumb_image.url }}" title="{{ event.alt_text }}"></div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </section>
+
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
   {% for event in events %}
     {% capture cycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     <!-- Check to see if the event has been published. -->

@@ -13,6 +13,11 @@
     "required": true,
     "label": "Schedule"
   },
+  "publish_date": {
+    "label": "Publish Date",
+    "type": "date",
+    "instructions": "This is the sort order date. Weekly events should be left blank and will output at the top of the list."
+  },
   "short_description": {
     "required": true,
     "type": "richtext",
