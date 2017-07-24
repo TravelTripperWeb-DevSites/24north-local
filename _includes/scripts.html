@@ -29,6 +29,8 @@ function getIp(data){
 <script src="/js/rt3-services.js"></script>
 <script src="/js/rt3-directives.js"></script>
 <script src="/js/rt3-filters.js"></script>
+<script src="/js/jquery.expire.js"></script>
+
 <script>
 	$(document).ready(function($) {
 		$(".main-date-1, .main-date-2").datepicker({
@@ -64,7 +66,7 @@ function getIp(data){
 			{
 			 $('meta[property="og:image"]').attr('content', 'https://www.24northhotel.com'+imgSrc); // assigns meta property
 			}else{
-			 $('meta[property="og:image"]').attr('content',  imgSrc); // assigns meta 
+			 $('meta[property="og:image"]').attr('content',  imgSrc); // assigns meta
 			}
 	});
 
