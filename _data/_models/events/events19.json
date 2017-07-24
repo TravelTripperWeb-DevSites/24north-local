@@ -7,17 +7,22 @@
   "short_description": "<p>The Southernmost City celebrates with a descending 6-foot red high heel shoe carrying drag queen Sushi at the Bourbon Street Pub/New Orleans House complex, 724 Duval St. Seconds before midnight,</p>",
   "schedule": "DECEMBER 31, 2017",
   "thumb_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-031231/nyeshoe1.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-031231/nyeshoe1.jpg",
+    "alt": "image"
   },
   "large_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-031230/nyeshoe-2.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-031230/nyeshoe-2.jpg",
+    "alt": "image"
   },
   "short_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-031232/nyeshoe3.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-031232/nyeshoe3.jpg",
+    "alt": "image"
   },
   "g_image1": {
-    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-031232/nyeshoe3.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-031232/nyeshoe3.jpg",
+    "alt": "image"
   },
-  "expire_date": null,
-  "isPublished": true
+  "expire_date": "Mon Jan 01 2018 00:00:00 GMT-0600 (CST)",
+  "isPublished": true,
+  "publish_date": "Sun Dec 31 2017 00:00:00 GMT-0600 (CST)"
 }
