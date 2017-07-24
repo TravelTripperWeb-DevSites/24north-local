@@ -18,18 +18,18 @@ layout: default
   </div>-->
   {% assign list = site.data._models.events  %}
   {% for a in list %}
-  {% if (a.name == '36th Annual Key West World Championship Powerboat Races' ) %}
-  {% assign event = a %}
-  {% endif %}
+    {% if (a.name == '36th Annual Key West World Championship Powerboat Races') %}
+      {% assign event = a %}
+    {% endif %}
   {% endfor %}
   <section>
     <div class="container room-details-carousel">
       <div class="row event-heading">
       <div class="col-sm-3 col-xs-12">
           <div class="spcl-lstng">
-          	<h3><span class="block-element">{{event.name}}</h3>
+          	<h3><span class="block-element">{{ event.name }}</h3>
             <div class="btn-holder m-b-20"><a href="#details" class="button-common btn-blue">View Details</a></div>
-            <h2>{{event.schedule}}</h2>
+            <h2>{{ event.schedule }}</h2>
           </div>
       </div>
       <div class="col-sm-9 col-xs-12 no-padding">
@@ -66,7 +66,7 @@ layout: default
             <ol class="carousel-indicators">
               {% for g in gallery %}
 
-              <li data-target="#roomDetailsCarousel" data-slide-to="{{forloop.index | minus:1}}" class="{% if forloop.first %}active{% endif %} "></li>
+              <li data-target="#roomDetailsCarousel" data-slide-to="{{ forloop.index | minus:1 }}" class="{% if forloop.first %}active{% endif %} "></li>
 
               {% endfor %}
             </ol>
@@ -76,7 +76,7 @@ layout: default
               {% for g in gallery %}
 
               <div class="item {% if forloop.first %}active{% endif %}">
-                <img src="{{g}}" alt=""/>
+                <img src="{{ g }}" alt=""/>
               </div>
 
               {% endfor %}
@@ -90,11 +90,11 @@ layout: default
   <section id="details">
     <div class="container">
       <div class="row information">
-        <div class="col-md-4 align-center hidden-sm-down"><img src="{{event.short_image.url}}" alt=""/></div>
+        <div class="col-md-4 align-center hidden-sm-down"><img src="{{ event.short_image.url }}" alt=""/></div>
         <div class="col-md-8 col-sm-12">
           <p class="highlight p-t-20">Event Details:</p>
-          <p class="">{{event.long_description}}</p>
-         <div class="btn-holder m-b-20 m-t-30"><a href="{{event.website_url}}" target="_blank" class="button-common btn-blue">View Event Website</a></div>
+          <p class="">{{ event.long_description }}</p>
+         <div class="btn-holder m-b-20 m-t-30"><a href="{{ event.website_url }}" target="_blank" class="button-common btn-blue">View Event Website</a></div>
 
         </div>
 
