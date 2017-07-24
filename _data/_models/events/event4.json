@@ -5,7 +5,8 @@
 	"long_description": "<p>Every Tuesday, poolside from 1-4pm</p>",
 	"url": "dj-chris-brown",
 	"website_url": "https://www.24northhotel.com/",
-	"sort_order": 4,
+  "expire_date": null,
+  "isPublished": true,
 	"category": "event_category1",
 	"alt_text":"Dj-Chris-Brown",
 	"thumb_image": {
