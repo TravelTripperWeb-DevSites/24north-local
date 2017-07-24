@@ -14,17 +14,17 @@ layout: default
   <div class="container">
     <div class=" two-col-wrap">
       <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="{{a.image.url}}" title={{a.alt_text}}></a> </div>
+        <div class="col-sm-6 sp-img v-center"> <img src="{{ a.image.url }}" title={{ a.alt_text }}></a> </div>
         <div class="col-sm-6 sp-content v-center">
-          <p class="title">{{a.name}}</p>
-          <div class="desp">{{a.description}}</div>
+          <p class="title">{{ a.name }}</p>
+          <div class="desp">{{ a.description }}</div>
           {% capture link_url %}
             {{ a.url }}
           {% endcapture %}
           {% if link_url contains "https" %}
-          <div class="btn-holder"><a href="{{a.url}}" class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
+          <div class="btn-holder"><a href="{{ a.url }}" class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
           {% else %}
-          <div class="btn-holder"><a href="{{a.url}}"  class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
+          <div class="btn-holder"><a href="{{ a.url }}"  class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
           {% endif %}
         </div>
       </div>
