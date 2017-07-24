@@ -23,9 +23,9 @@ layout: default
             {% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
             {% for slilderimages in slilder_images %}
             {% if forloop.first == true %}
-            <div class="item active" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title={{slilderimages.alt_text}}  title={{slilderimages.alt_text}}>
+            <div class="item active" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title={{ slilderimages.alt_text }}  title={{ slilderimages.alt_text }}>
             {% else %}
-            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title={{slilderimages.alt_text}}>
+            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title={{ slilderimages.alt_text }}>
             {% endif %}
             <!-- <img src="{{ slilderimages.slider_image.url }}" alt=""/>-->
           <div class="carousel-caption transparent-bg">
