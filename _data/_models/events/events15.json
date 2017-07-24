@@ -7,17 +7,22 @@
   "short_description": "<p>Showcasing films that exhibit excellence in storytelling, the festival&rsquo;s lineup is to feature screenings and special events hosted at landmark venues throughout Key West,</p>",
   "website_url": "http://kwfilmfest.com/",
   "thumb_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-022632/filmfestival-1.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-022632/filmfestival-1.jpg",
+    "alt": "image"
   },
   "large_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-022632/filmfestival-2.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-022632/filmfestival-2.jpg",
+    "alt": "image"
   },
   "short_image": {
-    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-022633/filmfestival-3.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-022633/filmfestival-3.jpg",
+    "alt": "image"
   },
   "g_image1": {
-    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-022632/filmfestival-1.jpg"
+    "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-022632/filmfestival-1.jpg",
+    "alt": "image"
   },
-  "expire_date": null,
-  "isPublished": true
+  "expire_date": "Mon Nov 20 2017 00:00:00 GMT-0600 (CST)",
+  "isPublished": true,
+  "publish_date": "Wed Nov 15 2017 00:00:00 GMT-0600 (CST)"
 }
