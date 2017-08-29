@@ -85,7 +85,7 @@ $(".campaign-item").height(maxHeight);
 
        });
        setTimeout(function(){
-             $(".price-wrap1").css('display' ,'block');
+             $(".price-wrap1, .caption-price").css('display' ,'block');
           },2000);
      }, 2000);
 
