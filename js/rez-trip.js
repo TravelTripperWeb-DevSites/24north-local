@@ -110,7 +110,7 @@
            if(!$scope.selectedRoom){ // if no room found then redirect to home page
               window.location = "/";
            }
-
+           $(".loading").css("display","none");
         }, 2800);
 
     }])
