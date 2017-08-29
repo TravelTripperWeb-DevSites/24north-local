@@ -38,6 +38,9 @@ $(".campaign-item").height(maxHeight);
       $(".homeTonightRate").on("click", function () {
             $(".booking-widget form").submit();
       });
+      setTimeout(function(){
+        $(".loading").css("display","none");
+      },3200);
     });
 
 	   $(document).ready(sizeContent);
@@ -85,7 +88,7 @@ $(".campaign-item").height(maxHeight);
 
        });
        setTimeout(function(){
-             $(".price-wrap1").css('display' ,'block');
+             $(".price-wrap1, .caption-price").css('display' ,'block');
           },2000);
      }, 2000);
 
