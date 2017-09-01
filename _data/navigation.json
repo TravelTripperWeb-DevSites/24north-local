@@ -45,9 +45,9 @@
 			'submenu': 'false' 
 		},
 		{
-			'title':'EVENT LAWN',
-			'name': 'event-lawn',
-			'url': '/event-lawn/',
+			'title':'Weddings & Events',
+			'name': 'weddings-and-events',
+			'url': '/weddings-and-events/',
 			'submenu': 'false' 
 		},
 		{
