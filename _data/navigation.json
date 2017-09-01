@@ -45,7 +45,7 @@
 			'submenu': 'false' 
 		},
 		{
-			'title':'WEDDINGS AND EVENTS',
+			'title':'Weddings and Events',
 			'name': 'weddings-and-events',
 			'url': '/weddings-and-events/',
 			'submenu': 'false' 
