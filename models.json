@@ -9,7 +9,7 @@
       "file": "attraction10.json"
     },
     {
-      "name": "KinoΓÇÖs Sandal Factory",
+      "name": "Kino’s Sandal Factory",
       "file": "attraction11.json"
     },
     {
@@ -21,7 +21,7 @@
       "file": "attraction13.json"
     },
     {
-      "name": "The Key West Lighthouse & KeeperΓÇÖs Quarters Museum",
+      "name": "The Key West Lighthouse & Keeper’s Quarters Museum",
       "file": "attraction14.json"
     },
     {
@@ -95,23 +95,23 @@
   ],
   "blog": [
     {
-      "name": "24 Things To Do in Key West ΓÇô 4 Must-See Attractions in Key West",
-      "title": "24 Things To Do in Key West ΓÇô 4 Must-See Attractions in Key West",
+      "name": "24 Things To Do in Key West – 4 Must-See Attractions in Key West",
+      "title": "24 Things To Do in Key West – 4 Must-See Attractions in Key West",
       "file": "24-things-to-do-in-key-west-4-must-see-attractions-in-key-west.json"
     },
     {
-      "name": "24 Things to Do in Key West ΓÇô Historical Landmarks in Key West",
-      "title": "24 Things to Do in Key West ΓÇô Historical Landmarks in Key West",
+      "name": "24 Things to Do in Key West – Historical Landmarks in Key West",
+      "title": "24 Things to Do in Key West – Historical Landmarks in Key West",
       "file": "24-things-to-do-in-key-west-historical-landmarks-in-key-west.json"
     },
     {
-      "name": "24 Things to Do in Key West ΓÇô Our Favorite Drinks in Key West",
-      "title": "24 Things to Do in Key West ΓÇô Our Favorite Drinks in Key West",
+      "name": "24 Things to Do in Key West – Our Favorite Drinks in Key West",
+      "title": "24 Things to Do in Key West – Our Favorite Drinks in Key West",
       "file": "24-things-to-do-in-key-west-our-favorite-drinks-in-key-west.json"
     },
     {
-      "name": "24 Things to Do in Key West ΓÇô Where to Snorkel & Dive in Key West",
-      "title": "24 Things to Do in Key West ΓÇô Where to Snorkel & Dive in Key West",
+      "name": "24 Things to Do in Key West – Where to Snorkel & Dive in Key West",
+      "title": "24 Things to Do in Key West – Where to Snorkel & Dive in Key West",
       "file": "24-things-to-do-in-key-west-where-to-snorkel-dive-in-key-west.json"
     },
     {
@@ -130,13 +130,13 @@
       "file": "an-interview-with-jorge-de-la-torriente-of-de-la-gallery.json"
     },
     {
-      "name": "Fantasy Fest 2016 ΓÇô Bahama Village Goombay",
-      "title": "Fantasy Fest 2016 ΓÇô Bahama Village Goombay",
+      "name": "Fantasy Fest 2016 – Bahama Village Goombay",
+      "title": "Fantasy Fest 2016 – Bahama Village Goombay",
       "file": "bahama-village-goombay.json"
     },
     {
-      "name": "The ΓÇ£BightΓÇ¥ Before Christmas and 2016 Key West Holiday Events",
-      "title": "The ΓÇ£BightΓÇ¥ Before Christmas and 2016 Key West Holiday Events",
+      "name": "The “Bight” Before Christmas and 2016 Key West Holiday Events",
+      "title": "The “Bight” Before Christmas and 2016 Key West Holiday Events",
       "file": "blog1.json"
     },
     {
@@ -170,8 +170,8 @@
       "file": "blog15.json"
     },
     {
-      "name": "Try StarbucksΓÇÖ Two New Drinks @ 24 North",
-      "title": "Try StarbucksΓÇÖ Two New Drinks @ 24 North",
+      "name": "Try Starbucks’ Two New Drinks @ 24 North",
+      "title": "Try Starbucks’ Two New Drinks @ 24 North",
       "file": "blog16.json"
     },
     {
@@ -190,8 +190,8 @@
       "file": "blog19.json"
     },
     {
-      "name": "New YearΓÇÖs Eve in Key West",
-      "title": "New YearΓÇÖs Eve in Key West",
+      "name": "New Year’s Eve in Key West",
+      "title": "New Year’s Eve in Key West",
       "file": "blog2.json"
     },
     {
@@ -245,8 +245,8 @@
       "file": "blog29.json"
     },
     {
-      "name": "Shopping in Key West ΓÇô Christmas Edition",
-      "title": "Shopping in Key West ΓÇô Christmas Edition",
+      "name": "Shopping in Key West – Christmas Edition",
+      "title": "Shopping in Key West – Christmas Edition",
       "file": "blog3.json"
     },
     {
@@ -260,8 +260,8 @@
       "file": "blog31.json"
     },
     {
-      "name": "ItΓÇÖs Official: Ridesharing Has Arrived in Key West",
-      "title": "ItΓÇÖs Official: Ridesharing Has Arrived in Key West",
+      "name": "It’s Official: Ridesharing Has Arrived in Key West",
+      "title": "It’s Official: Ridesharing Has Arrived in Key West",
       "file": "blog32.json"
     },
     {
@@ -325,6 +325,21 @@
       "file": "blog43.json"
     },
     {
+      "name": "Costume Tips for Fantasy Fest",
+      "title": "Costume Tips for Fantasy Fest",
+      "file": "blog44.json"
+    },
+    {
+      "name": "Best Things to do in New Town",
+      "title": "Best Things to do in New Town",
+      "file": "blog45.json"
+    },
+    {
+      "name": "Best Biker Bars in Key West",
+      "title": "Best Biker Bars in Key West",
+      "file": "blog46.json"
+    },
+    {
       "name": "Key West Race Week 2017",
       "title": "Key West Race Week 2017",
       "file": "blog5.json"
@@ -350,8 +365,8 @@
       "file": "blog9.json"
     },
     {
-      "name": "Fantasy Fest 2016 ΓÇô Political Voodoo & Ballot-Box Barbarians",
-      "title": "Fantasy Fest 2016 ΓÇô Political Voodoo & Ballot-Box Barbarians",
+      "name": "Fantasy Fest 2016 – Political Voodoo & Ballot-Box Barbarians",
+      "title": "Fantasy Fest 2016 – Political Voodoo & Ballot-Box Barbarians",
       "file": "fantasy-fest-2016.json"
     },
     {
@@ -370,8 +385,8 @@
       "file": "key-west-brewfest.json"
     },
     {
-      "name": "Key West Events ΓÇô Hemingway Days 2016",
-      "title": "Key West Events ΓÇô Hemingway Days 2016",
+      "name": "Key West Events – Hemingway Days 2016",
+      "title": "Key West Events – Hemingway Days 2016",
       "file": "key-west-events-hemingway-days-2016.json"
     },
     {
@@ -385,8 +400,8 @@
       "file": "lobster-fest.json"
     },
     {
-      "name": "Key West Events ΓÇô Mini-Lobster Season 2016",
-      "title": "Key West Events ΓÇô Mini-Lobster Season 2016",
+      "name": "Key West Events – Mini-Lobster Season 2016",
+      "title": "Key West Events – Mini-Lobster Season 2016",
       "file": "mini-lobster-season.json"
     },
     {
@@ -415,18 +430,18 @@
       "file": "rainy-day-in-key-west.json"
     },
     {
-      "name": "The Old Key West ΓÇô Key West's Cuban History",
-      "title": "The Old Key West ΓÇô Key West's Cuban History",
+      "name": "The Old Key West – Key West's Cuban History",
+      "title": "The Old Key West – Key West's Cuban History",
       "file": "the-old-key-west.json"
     },
     {
-      "name": "The Sheriff's Animal Farm ΓÇô Key West",
-      "title": "The Sheriff's Animal Farm ΓÇô Key West",
+      "name": "The Sheriff's Animal Farm – Key West",
+      "title": "The Sheriff's Animal Farm – Key West",
       "file": "the-sheriffs-animal-farm.json"
     },
     {
-      "name": "The Songwriter's Festival ΓÇô A Key West Classic",
-      "title": "The Songwriter's Festival ΓÇô A Key West Classic",
+      "name": "The Songwriter's Festival – A Key West Classic",
+      "title": "The Songwriter's Festival – A Key West Classic",
       "file": "the-songwriters-festival-a-key-west-classic.json"
     },
     {
@@ -443,6 +458,18 @@
       "name": "Where to Go on Duval",
       "title": "Where to Go on Duval",
       "file": "where-to-go-on-duval.json"
+    }
+  ],
+  "event_category": [
+    {
+      "name": "24 North Hotel Events",
+      "title": "24 North Hotel Events",
+      "file": "event_category1.json"
+    },
+    {
+      "name": "City Wide Events",
+      "title": "City Wide Events",
+      "file": "event_category2.json"
     }
   ],
   "events": [
@@ -523,7 +550,7 @@
       "file": "events18.json"
     },
     {
-      "name": "New YearΓÇÖs Eve Shoe Drop Celebration",
+      "name": "New Year’s Eve Shoe Drop Celebration",
       "file": "events19.json"
     },
     {
@@ -549,18 +576,6 @@
     {
       "name": "Key West Lobster Festival",
       "file": "events9.json"
-    }
-  ],
-  "event_category": [
-    {
-      "name": "24 North Hotel Events",
-      "title": "24 North Hotel Events",
-      "file": "event_category1.json"
-    },
-    {
-      "name": "City Wide Events",
-      "title": "City Wide Events",
-      "file": "event_category2.json"
     }
   ],
   "gallery_foodndrink_images": [
