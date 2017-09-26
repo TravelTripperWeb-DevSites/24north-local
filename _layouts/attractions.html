@@ -22,9 +22,9 @@ layout: default
             {{ a.url }}
           {% endcapture %}
           {% if link_url contains "https" %}
-          <div class="btn-holder"><a href="{{ a.url }}" class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
+          <div class="btn-holder"><a href="{{ a.url }}/" class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
           {% else %}
-          <div class="btn-holder"><a href="{{ a.url }}"  class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
+          <div class="btn-holder"><a href="{{ a.url }}/"  class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
           {% endif %}
         </div>
       </div>
