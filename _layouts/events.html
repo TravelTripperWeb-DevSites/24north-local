@@ -46,7 +46,7 @@ layout: default
                   <h2>{{ event.name }}</h2>
                   <div class="title">{{ event.schedule }}</div>
                   <div class="desp">{{ event.short_description }}</div>
-                  <div class="btn-holder"><a href="/location/events/{{ event.url }}" class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
+                  <div class="btn-holder"><a href="/location/events/{{ event.url }}/" class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
                 </div>
                 {% if cycle == 'odd' %}
                   <div class="col-sm-6 sp-img "><img src="{{ event.thumb_image.url }}" title="{{ event.alt_text }}"></div>
