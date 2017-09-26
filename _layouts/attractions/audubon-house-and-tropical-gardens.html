@@ -37,9 +37,9 @@ layout: default
                 {{ a.url }}
               {% endcapture %}
               {% if link_url contains "https" %}
-                <li><a href="{{ a.url }}">{{ a.name }}</a></li>
+                <li><a href="{{ a.url }}/">{{ a.name }}</a></li>
               {% else %}
-                <li><a href="{{ a.url }}">{{ a.name }}</a></li>
+                <li><a href="{{ a.url }}/">{{ a.name }}</a></li>
               {% endif %}
 
               {% endunless %}
