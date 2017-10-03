@@ -165,6 +165,9 @@ a:hover,a:focus {
 				}
 				ul{
 					&.dropdown-menu{
+						li{
+							display: block;
+						}
 						@media (max-width: 768px){
 							width:100%;
 						}	
