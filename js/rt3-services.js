@@ -316,7 +316,7 @@ angular.module('rezTrip')
       loaded: false,
     //  locationHash:  angular.element('[data-offer-code]').data('offer-code') || null ,
       sRdetail: {},
-      locationHash: window.location.hash.substr(1)
+      locationHash: window.location.hash.substr(1).replace("%2F","")
 
     };
 
