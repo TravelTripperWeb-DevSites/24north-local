@@ -1,5 +1,41 @@
 [
   {
+    "name": "best-wedding-colors-key-west",
+    "file_name": "best-wedding-colors-key-west.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_7942/media/2017-10-08-193514/best-wedding-colors-key-west.jpg",
+    "tags": "",
+    "file_size": 884019.0,
+    "width": 1000,
+    "height": 667,
+    "description": "",
+    "date_added": "2017-10-08-193514",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_7942/media/2017-10-08-193514/large_best-wedding-colors-key-west.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_7942/media/2017-10-08-193514/medium_best-wedding-colors-key-west.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_7942/media/2017-10-08-193514/small_best-wedding-colors-key-west.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_7942/media/2017-10-08-193514/xsmall_best-wedding-colors-key-west.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_7942/media/2017-10-08-193514/thumb_best-wedding-colors-key-west.jpg",
+    "git_file_name": "_assets/image_data/best-wedding-colors-key-west.json"
+  },
+  {
+    "name": "key-west-hurricane-irma",
+    "file_name": "key-west-hurricane-irma.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_7940/media/2017-10-08-184609/key-west-hurricane-irma.jpg",
+    "tags": "",
+    "file_size": 1348254.0,
+    "width": 1000,
+    "height": 667,
+    "description": "",
+    "date_added": "2017-10-08-184609",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_7940/media/2017-10-08-184609/large_key-west-hurricane-irma.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_7940/media/2017-10-08-184609/medium_key-west-hurricane-irma.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_7940/media/2017-10-08-184609/small_key-west-hurricane-irma.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_7940/media/2017-10-08-184609/xsmall_key-west-hurricane-irma.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_7940/media/2017-10-08-184609/thumb_key-west-hurricane-irma.jpg",
+    "git_file_name": "_assets/image_data/key-west-hurricane-irma.json"
+  },
+  {
     "name": "bight-before-christmas.jpg",
     "url": "//cdn.traveltripper.io/site-assets/359_384_1001/media/bight-before-christmas.jpg",
     "git_file_name": "_assets/image_data/site-assets_359_384_1001_media_bight-before-christmas.json"

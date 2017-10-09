@@ -1,0 +1,103 @@
+#offer-popup{
+	background:rgba(255,255,255,.8);
+	.modal-lg{
+		width:auto;
+		max-width:96%;
+		@media screen and (min-width:1200px){
+			max-width:91%;
+		}
+		@media screen and (min-width:1400px){
+			max-width:94%;
+		}
+		.modal-wrapper{
+			/* background:url("/images/offer-popup-bg.jpg") no-repeat center center; */
+			position:relative;
+		    background-size: cover;
+	        width: 100%;
+			height: inherit;
+			background-color:transparent;
+			.modal-content{
+				background-color:transparent;
+				border:none;
+				position:absolute;
+				text-align:center;
+				top:50%;
+				left:50%;
+				transform: translate(-50%, -50%);
+				-o-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+			    max-width: 650px;
+			    width: auto;
+			    background: rgba(255,255,255,.9);
+			    @media screen and (max-width:1024px){
+			    	max-width:auto;
+			    	width:90%;
+			    	margin:0 auto;
+			    }
+			    .modal-content-inner{
+			    	margin:18px;
+			    	border:1px solid #33a2cc;
+		    	    padding: 30px 50px 25px;
+		    	    @media screen and (max-width:1024px){
+					    padding: 30px 20px 25px;
+					}
+					h2{
+						font-family:$main-font-bold;
+						font-size:28px;
+						color:#008cc1;
+						letter-spacing:1px;
+						line-height:35px;
+						text-transform:uppercase;
+						padding-bottom:35px;
+						position:relative;
+						&:after{
+							content:"";
+							position:absolute;
+							width:61px;
+							height:1px;
+							background:#33a2cc;
+							top:54px;
+							left:50%;
+							transform: translate(-50%, 0%);
+							-o-transform: translate(-50%, 0%);
+							-ms-transform: translate(-50%, 0%);
+							-webkit-transform: translate(-50%, 0%);
+							-moz-transform: translate(-50%, 0%);
+							@media screen and (max-width:380px){
+						        top: 86px;
+							}
+						}
+					}
+					.close{
+						right:-9px;
+						color:#008cc1;
+					}
+					p{
+						font-family:$main-font-light;
+						font-size:18px;
+						color:#727b83;
+						letter-spacing:.5px;
+						line-height:32px;
+						padding-bottom:35px;
+					}
+					.btn-blue{
+						color:#008cc1;
+						border-color:#008cc1;
+						.fa-play {
+						    color: #008cc1;
+						}
+						&:hover{
+							background-color:#008cc1;
+							color:#fff;
+							.fa-play {
+							    color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

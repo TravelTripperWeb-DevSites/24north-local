@@ -1,0 +1,31 @@
+
+<div id="offer-popup" class="modal fade" role="dialog" >  <!-- add fade class here -->
+  <div class="modal-dialog modal-lg">
+    <div class="modal-wrapper">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <!-- <div class="modal-content">
+        <h2>EXCLUSIVE REOPENING OFFER</h2>
+        <p>We are back and ready to make your stay memorable. Take a load off your shoulder, kick back and relax with family and friends when you escape to the tropical paradise of Key West, Florida.</p>
+        <div><a class="button-common" href="/">Learn More <i class="fa fa-play"></i></a></div>
+      </div> -->
+      <div class="modal-content">
+        <h2>WE ARE OPEN</h2>
+        <p>We are back & ready to make your stay unforgettable. Click now and receive Exclusive Offers!</p>
+        <div><a class="button-common" href="/specials/">Learn More <i class="fa fa-play"></i></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>  
+
+  if(!Cookies.get('popup')){
+    $('#offer-popup').show();
+    $('#offer-popup').modal();
+    Cookies.set('popup', '1', { expires: 1 });
+  }
+
+  $(document).ready(function(){  
+    height = $(window).height();  //getting windows height
+    jQuery('#offer-popup .modal-lg').css('height', height-60+'px');  //and setting height of carousel
+  });
+</script>
