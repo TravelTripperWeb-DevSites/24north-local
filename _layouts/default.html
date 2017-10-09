@@ -16,6 +16,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 {% include footer.html %}
 
 {% include scripts.html %}
-<!-- {% include hurricane-popup.html %} -->
+
+{% unless page.url == '/specials/' or page.url == '/special/' %}
+	{% include offer-popup.html %}
+{% endunless %}	
 </body>
 </html>
