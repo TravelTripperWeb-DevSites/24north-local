@@ -71,11 +71,25 @@
 					}
 					p{
 						font-family:$main-font-light;
-						font-size:14px;
+						font-size:18px;
 						color:#727b83;
 						letter-spacing:.5px;
-						line-height:28px;
+						line-height:32px;
 						padding-bottom:35px;
+					}
+					.btn-blue{
+						color:#008cc1;
+						border-color:#008cc1;
+						.fa-play {
+						    color: #008cc1;
+						}
+						&:hover{
+							background-color:#008cc1;
+							color:#fff;
+							.fa-play {
+							    color: #fff;
+							}
+						}
 					}
 				}
 			}
