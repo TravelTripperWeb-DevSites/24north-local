@@ -10,11 +10,12 @@
 			max-width:94%;
 		}
 		.modal-wrapper{
-			background:url("/images/offer-popup-bg.jpg") no-repeat center center;
+			/* background:url("/images/offer-popup-bg.jpg") no-repeat center center; */
 			position:relative;
 		    background-size: cover;
 	        width: 100%;
 			height: inherit;
+			background-color:transparent;
 			.modal-content{
 				background-color:transparent;
 				border:none;
@@ -68,6 +69,10 @@
 						        top: 86px;
 							}
 						}
+					}
+					.close{
+						right:-9px;
+						color:#008cc1;
 					}
 					p{
 						font-family:$main-font-light;
