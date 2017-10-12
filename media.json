@@ -18,6 +18,24 @@
     "git_file_name": "_assets/image_data/best-wedding-colors-key-west.json"
   },
   {
+    "name": "fantasy-fest-5-tips",
+    "file_name": "fantasy-fest-5-tips.JPG",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_8027/media/2017-10-10-102539/fantasy-fest-5-tips.JPG",
+    "tags": "",
+    "file_size": 559137.0,
+    "width": 1228,
+    "height": 826,
+    "description": "",
+    "date_added": "2017-10-10-102539",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_8027/media/2017-10-10-102539/large_fantasy-fest-5-tips.JPG",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_8027/media/2017-10-10-102539/medium_fantasy-fest-5-tips.JPG",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_8027/media/2017-10-10-102539/small_fantasy-fest-5-tips.JPG",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_8027/media/2017-10-10-102539/xsmall_fantasy-fest-5-tips.JPG",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_8027/media/2017-10-10-102539/thumb_fantasy-fest-5-tips.JPG",
+    "git_file_name": "_assets/image_data/fantasy-fest-5-tips.json"
+  },
+  {
     "name": "key-west-hurricane-irma",
     "file_name": "key-west-hurricane-irma.jpg",
     "file_type": "image/jpeg",
@@ -34,6 +52,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_7940/media/2017-10-08-184609/xsmall_key-west-hurricane-irma.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_7940/media/2017-10-08-184609/thumb_key-west-hurricane-irma.jpg",
     "git_file_name": "_assets/image_data/key-west-hurricane-irma.json"
+  },
+  {
+    "name": "powerboat-international-key-west",
+    "file_name": "powerboat-international-key-west.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_8030/media/2017-10-10-104930/powerboat-international-key-west.jpg",
+    "tags": "",
+    "file_size": 875047.0,
+    "width": 1000,
+    "height": 629,
+    "description": "",
+    "date_added": "2017-10-10-104930",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_8030/media/2017-10-10-104930/large_powerboat-international-key-west.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_8030/media/2017-10-10-104930/medium_powerboat-international-key-west.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_8030/media/2017-10-10-104930/small_powerboat-international-key-west.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_8030/media/2017-10-10-104930/xsmall_powerboat-international-key-west.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_8030/media/2017-10-10-104930/thumb_powerboat-international-key-west.jpg",
+    "git_file_name": "_assets/image_data/powerboat-international-key-west.json"
   },
   {
     "name": "bight-before-christmas.jpg",
