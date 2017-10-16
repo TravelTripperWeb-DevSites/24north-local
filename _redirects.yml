@@ -411,7 +411,6 @@
 - XpOPZ/: index.html
 - specials/early-booker-sale/: specials/
 - rooms/[[room.name%20%7C%20lowercase%20%7C%20replacePipe%20%20%7C%20spacetohyphen]]/: rooms/
-- rooms/[[nextRoomName%20%7C%20lowercase%20%7C%20replacePipe%20%20%7C%20spacetohyphen]]/: rooms/
 - specials/stay-longer-and-save-more/: specials/
 - specials/we-are-open!/: specials/
 - VOQOZ/RPjcZ/: index.html
