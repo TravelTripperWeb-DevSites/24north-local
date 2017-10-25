@@ -135,8 +135,8 @@
       "file": "bahama-village-goombay.json"
     },
     {
-      "name": "The ΓÇ£BightΓÇ¥ Before Christmas and 2016 Key West Holiday Events",
-      "title": "The ΓÇ£BightΓÇ¥ Before Christmas and 2016 Key West Holiday Events",
+      "name": "The History of the Key West Theater",
+      "title": "The History of the Key West Theater",
       "file": "blog1.json"
     },
     {
@@ -365,6 +365,21 @@
       "file": "blog50.json"
     },
     {
+      "name": "Get to Fantasy Fest Early for Goombay",
+      "title": "Get to Fantasy Fest Early for Goombay",
+      "file": "blog51.json"
+    },
+    {
+      "name": "Parrot Heads Unite: Meeting of the Minds 2017",
+      "title": "Parrot Heads Unite: Meeting of the Minds 2017",
+      "file": "blog52.json"
+    },
+    {
+      "name": "Best of Fantasy Fest",
+      "title": "Best of Fantasy Fest",
+      "file": "blog53.json"
+    },
+    {
       "name": "Hens and Roosters in Key West",
       "title": "Hens and Roosters in Key West",
       "file": "blog6.json"
@@ -560,6 +575,10 @@
     {
       "name": "New YearΓÇÖs Eve Shoe Drop Celebration",
       "file": "events19.json"
+    },
+    {
+      "name": "Pre-Parade Pin-Up Party",
+      "file": "events20.json"
     },
     {
       "name": "Fourth Annual Mystery Fest Key West",
