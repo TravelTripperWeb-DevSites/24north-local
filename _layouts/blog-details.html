@@ -1,11 +1,29 @@
 ---
 layout: default
 ---
-
+{% assign post = site.data._models.blog  %}
 {% assign blog = page %}
-{% assign model = page %}
 {% assign seo_title = blog.seo_title %}
 {% assign seo_description = blog.seo_description %}
+
+{% for p in post %}
+    {% if p.url_friendly_name == blog.url_friendly_name %}
+        {% assign pInd = forloop.index0 | minus: 1 %}
+        {% assign nInd = forloop.index0 | plus: 1 %}
+        {% if forloop.first != true %}
+            {% assign prevPostTitle = post[pInd].title %}
+            {% assign prevPostUrl = post[pInd].url_friendly_name %}
+        {% endif %}
+        {% if forloop.last != true %}
+            {% assign nextPostTitle = post[nInd].title %}
+            {% assign nextPostUrl = post[nInd].url_friendly_name %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+
+{% assign model = page %}
+
 
 <section>
     <div class="container no-padding">

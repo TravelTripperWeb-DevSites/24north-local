@@ -273,9 +273,17 @@
     	text-transform: uppercase;
     	.prev{
     		margin-right: 10px;
+            &.not-active{
+                color: $grey-color;
+                cursor: default;
+            }
     	}
     	.next{
     		margin-left: 10px;
+            &.not-active{
+                color: $grey-color;
+                cursor: default;
+            }
     	}
 	}
 }
