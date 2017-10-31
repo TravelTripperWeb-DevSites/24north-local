@@ -95,7 +95,8 @@ a:hover,a:focus {
 }
 .main-menu {
 	float: left;
-	padding: 29px 0 0 30px;
+	/*padding: 29px 0 0 30px;*/
+	padding: 29px 0 0 24px;
 	background-color: $bg-white;
 	
 	@media (max-width: 1240px){
@@ -133,6 +134,9 @@ a:hover,a:focus {
 					font-size: 12.5px;
 					letter-spacing: 1px;
 					padding: 10px 10px;
+					@media (max-width: 1200px){
+						font-size: 9.5px;
+					}
 					&:hover {
 						color: $bg-blue-1;
 						background:none;
