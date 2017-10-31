@@ -157,6 +157,24 @@
     "git_file_name": "_assets/image_data/keywest.json"
   },
   {
+    "name": "meet-banner",
+    "file_name": "meet-banner.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_8898/media/2017-10-31-014447/meet-banner.jpg",
+    "tags": "",
+    "file_size": 140303.0,
+    "width": 1000,
+    "height": 511,
+    "description": "",
+    "date_added": "2017-10-31-014447",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_8898/media/2017-10-31-014447/large_meet-banner.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_8898/media/2017-10-31-014447/medium_meet-banner.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_8898/media/2017-10-31-014447/small_meet-banner.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_8898/media/2017-10-31-014447/xsmall_meet-banner.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_8898/media/2017-10-31-014447/thumb_meet-banner.jpg",
+    "git_file_name": "_assets/image_data/meet-banner.json"
+  },
+  {
     "name": "parrotheads-key-west",
     "file_name": "parrotheads-key-west.jpg",
     "file_type": "image/jpeg",

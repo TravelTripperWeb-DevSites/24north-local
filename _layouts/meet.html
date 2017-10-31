@@ -8,15 +8,21 @@ layout: default
             <div class="graphic">
               <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
             </div>
+            {% regionblock meet_header, type:header %}
             <h1 class="page-title">Meet In<br/>Key West</h1>
+            {% endregionblock %}
           </div>
       </div>
     </section>
     <section class="meetinkw">
       <div class="container">
         <div class="row">
+          {% regionblock meet_contenthead, type:text %}
            <p class="desp">Meet In Key West</p>
+           {% endregionblock %}
+           {% regionblock meet_content1, type:text %}
           <p class="rfp-callus text-center">Our flexible indoor meeting space comes prepared with Wi-Fi internet access, flat screen televisions, blackout blinds and central air-conditioning.<br/><br/>Conveniently located in the lobby of 24 North Hotel, with 145 guestrooms, retail, a shuttle to Old Town, and plenty of food & beverage options, your attendees will have everything they need to meet and enjoy their time in Key West.<br/><br/>Our Group Sales Department is eager to plan your meetings and events from beginning to end.<br/><br/>To find out more, complete an RFP or contact <a href="mailto:Sales@thekeyscollection.com">Sales@thekeyscollection.com.</a></p>
+          {% endregionblock %}
         </div>
       </div>
     </section>
