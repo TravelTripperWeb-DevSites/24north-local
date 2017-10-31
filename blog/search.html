@@ -4,24 +4,27 @@ title: Search
 description:
 parent: blog
 ---
-<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/contact-hero.jpg);">
-    <div class="banner-text">
-      {% regionblock blog_banner_heading, type:header %}
-        <h1>Blog</h1>
-        {% endregionblock %}
+<section>
+    <div class="container no-padding">
+        <div class="page-banner blog-banner">
+            <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"></div>
+            <h1 class="page-title">Blog</h1>
+        </div>
     </div>
 </section>
 
-<section class="blog-container">
-    <div class="blog-row">
-        <div class="blog-col">
-            <div class="post search-result">
-                <h2> SEARCH RESULT: </h2>
-                <ul id="search-results"></ul>
+<section class="blog-section">
+    <div class="container">        
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="post search-result">
+                    <h2> SEARCH RESULT: </h2>
+                    <ul id="search-results"></ul>
+                </div>
             </div>
-        </div> 
-        <div class="blog-right-block">
-            {% include blog-aside.html %}
+            <div class="col-sm-4">
+                <div class="blog-right-block"> {% include blog-aside.html %} </div>
+            </div>    
         </div>   
     </div>
 </section>
