@@ -2,6 +2,14 @@
 /* Scss Document */
 
 .rfp {
+	&.meet{
+		.page-banner { padding:5% 0;
+	 &.rooms-banner {
+		background: url(//cdn.traveltripper.io/site-assets/359_384_8898/media/2017-10-31-014447/meet-banner.jpg) no-repeat center center;
+		background-size: cover;
+		}
+	}
+}
  .page-banner { padding:5% 0;
 	 &.rooms-banner {
 		background: url(/images/rfp-banner.jpg) no-repeat center center;
@@ -229,3 +237,9 @@ label {
 	}
 }
 
+/*Meet In Key West*/
+.meetinkw{
+	.container{
+		max-width: 70%;
+	}
+}

@@ -24,6 +24,12 @@
 			]  
 		},
 		{
+			'title':'Gallery',
+			'name': 'gallery',
+			'url': '/gallery/' ,
+			'submenu': 'false'
+		},
+		{
 			'title':'Groups',
 			'name': 'meetings-and-events-key-west',
 			'url': '/meetings-and-events-key-west/',
@@ -31,18 +37,12 @@
 			'subitems': [
 				{'title':'Request for Proposal','name': 'events','url': '/meetings-and-events-key-west/request-for-proposal/'}
 			] 
-		}, 
-		{
-			'title':'Gallery',
-			'name': 'gallery',
-			'url': '/gallery/' ,
-			'submenu': 'false'
 		},
 		{
-			'title':'Blog',
-			'name': 'blog',
-			'url': '/blog/',
-			'submenu': 'false' 
+			'title':'Meet',
+			'name': 'meet',
+			'url': '/meet/' ,
+			'submenu': 'false'
 		},
 		{
 			'title':'Weddings & Events',
@@ -61,6 +61,12 @@
 				{'title':'Attractions','name': 'attractions','url': '/location/attractions/'},
 				{'title':'Partners','name': 'partners','url': '/location/partners/'}
 			] 
+		},
+		{
+			'title':'Blog',
+			'name': 'blog',
+			'url': '/blog/',
+			'submenu': 'false' 
 		}
 		
 		 
