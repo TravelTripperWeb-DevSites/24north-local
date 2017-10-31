@@ -380,6 +380,26 @@
       "file": "blog53.json"
     },
     {
+      "name": "Starbucks Fall Drinks",
+      "title": "Starbucks Fall Drinks",
+      "file": "blog54.json"
+    },
+    {
+      "name": "3 Reasons to Stay in New Town",
+      "title": "3 Reasons to Stay in New Town",
+      "file": "blog55.json"
+    },
+    {
+      "name": "The Rum Runner: A Florida Keys Staple",
+      "title": "The Rum Runner: A Florida Keys Staple",
+      "file": "blog56.json"
+    },
+    {
+      "name": "Why Key West is the Best Place to Renew Your Vows",
+      "title": "Why Key West is the Best Place to Renew Your Vows",
+      "file": "blog57.json"
+    },
+    {
       "name": "Hens and Roosters in Key West",
       "title": "Hens and Roosters in Key West",
       "file": "blog6.json"
@@ -493,6 +513,28 @@
       "name": "Where to Go on Duval",
       "title": "Where to Go on Duval",
       "file": "where-to-go-on-duval.json"
+    }
+  ],
+  "category": [
+    {
+      "name": "New Orleans Events",
+      "title": "New Orleans Events",
+      "file": "category1.json"
+    },
+    {
+      "name": "New Orleans History",
+      "title": "New Orleans History",
+      "file": "category10.json"
+    },
+    {
+      "name": "Food & Dining",
+      "title": "Food & Dining",
+      "file": "category3.json"
+    },
+    {
+      "name": "Bars & Nightlife",
+      "title": "Bars & Nightlife",
+      "file": "category7.json"
     }
   ],
   "events": [
