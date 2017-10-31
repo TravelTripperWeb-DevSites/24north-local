@@ -296,3 +296,22 @@
         }
     }
 }
+
+.social-wrapper{
+    .share-heading{
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    ul {
+        display: inline-block;
+        margin:0px;
+        li{
+            display: inline-block;
+            margin:0px;
+            a{
+                color: $grey-color;
+                padding: 0 0.5rem 0 0.5rem;
+            }
+        }
+    }
+}

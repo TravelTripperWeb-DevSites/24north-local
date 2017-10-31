@@ -517,14 +517,19 @@
   ],
   "category": [
     {
-      "name": "New Orleans Events",
-      "title": "New Orleans Events",
+      "name": "Key West Events & Festivals",
+      "title": "Key West Events & Festivals",
       "file": "category1.json"
     },
     {
-      "name": "New Orleans History",
-      "title": "New Orleans History",
+      "name": "History",
+      "title": "History",
       "file": "category10.json"
+    },
+    {
+      "name": "Weddings",
+      "title": "Weddings",
+      "file": "category11.json"
     },
     {
       "name": "Food & Dining",
