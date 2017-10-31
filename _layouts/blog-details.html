@@ -34,29 +34,28 @@ layout: default
                 </div>
                 <div class="blog-list blog-detail">
                     <div class="col-md-12 no-padding">
-                        <div>
-                            <div class="blog-item">
-                                <h1 class="blog-heading">{{ blog.title }}</h1>
-                                <div class="post-details">
-                                    <span class="date"> {% assign d = blog.date | date: "%-d" %}
-                        {{ blog.date | date: "%B" }} 
-                        {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, 
-                        {{ blog.date | date: "%Y" }} </span> | <span class="category"><a href="{{blog.category.url_friendly_name}}">{{blog.category.title}}</a></span></div>
-                                <div class="post-image-holder"><img src="{{ blog.blogimage.url }}"  alt="{{ blog.title }}" title="{{ blog.title }}" class="hero-img" />
-                                    {% if blog.Image_caption != "" %}
-                                    {{ blog.Image_caption }}
-                                    {% endif %}
-                                </div>
-                                <div class="blog-description">
-                                    {{ blog.more_content }}
-                                </div>    
-                                <hr>
-                                    {% include social-share.html %}
-                                <hr>  
-
-                                <div><a href="/blog/" class="button-common btn-blue">See all Blog Posts<i class="fa fa-play"></i></a></div>
+                        <div class="blog-item">
+                            <h1 class="blog-heading">{{ blog.title }}</h1>
+                            <div class="post-details">
+                                <span class="date"> {% assign d = blog.date | date: "%-d" %} {{ blog.date | date: "%B" }} {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ blog.date | date: "%Y" }} </span> | <span class="category"><a href="{{blog.category.url_friendly_name}}">{{blog.category.title}}</a></span>
                             </div>
+                            <div class="post-image-holder"><img src="{{ blog.blogimage.url }}"  alt="{{ blog.title }}" title="{{ blog.title }}" class="hero-img" />
+                                {% if blog.Image_caption != "" %}
+                                {{ blog.Image_caption }}
+                                {% endif %}
+                            </div>
+                            <div class="blog-description">
+                                {{ blog.more_content }}
+                            </div>    
+                            <hr>
+                                {% include social-share.html %}
+                            <hr>  
+
+                            <div><a href="/blog/" class="button-common btn-blue">See all Blog Posts<i class="fa fa-play"></i></a></div>
                         </div>
+                        <hr>
+                        <h2>Share your opinion on this article</h2>
+                        <div class="fb-comments" data-href="https://blog-setup---24northhotel-8901.traveltripper.io/" data-numposts="5"></div>
                     </div>
                 </div>
             </div>
