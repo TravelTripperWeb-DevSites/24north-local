@@ -332,3 +332,50 @@ $(window).load(function(){
 	   //jQuery('ul.nav li.dropdown a.dropdown-toggle').removeAttr('data-toggle');
   }
 });
+
+
+function pinterestShare(img, desc) {
+    window.open("//www.pinterest.com/pin/create/button/" +
+        "?url=" + window.location.href +
+        "&media=" + img +
+        "&description=" + desc, "pinIt", "toolbar=no, scrollbars=no, resizable=no, top=0, right=0");
+    return false;
+}
+
+var fbAppId = '365089850612373';
+
+if(document.location.hostname.indexOf('www.24northhotel.com') > -1){
+    fbAppId = '138329020223916';
+}
+
+window.fbAsyncInit = function() {
+    FB.init({appId: fbAppId, status: true, cookie: true,
+    xfbml: true});
+};
+
+
+(function() {
+    var e = document.createElement('script'); e.async = true;
+    e.src = document.location.protocol +
+    '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+}());
+
+
+$('.fa-facebook').click(function(e){ 
+    e.preventDefault();
+    FB.ui({
+        method: 'share_open_graph',
+        action_type: 'og.shares',
+        action_properties: JSON.stringify({
+            object : {
+               'og:url': window.location.href,
+               'og:title': $("h1.blog-heading").text(),
+               'og:description': $(".blog-description").text(),
+               'og:image:width': '1200',
+               'og:image:height': '650',
+               'og:image': "http:"+$("img.hero-img").attr("src")
+            }
+        })
+    });
+});

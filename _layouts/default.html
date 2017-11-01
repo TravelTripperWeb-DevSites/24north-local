@@ -4,7 +4,14 @@
 {% include head.html %}
 
 <body id="top" ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser" ng-cloak>
-
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=365089850612373';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <!-- Google Tag Manager (noscript) -->
   <noscript>
   <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGT6Z3J"
