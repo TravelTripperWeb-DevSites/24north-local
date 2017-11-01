@@ -515,6 +515,33 @@
       "file": "where-to-go-on-duval.json"
     }
   ],
+  "category": [
+    {
+      "name": "Key West Events & Festivals",
+      "title": "Key West Events & Festivals",
+      "file": "category1.json"
+    },
+    {
+      "name": "History",
+      "title": "History",
+      "file": "category10.json"
+    },
+    {
+      "name": "Weddings",
+      "title": "Weddings",
+      "file": "category11.json"
+    },
+    {
+      "name": "Food & Dining",
+      "title": "Food & Dining",
+      "file": "category3.json"
+    },
+    {
+      "name": "Bars & Nightlife",
+      "title": "Bars & Nightlife",
+      "file": "category7.json"
+    }
+  ],
   "events": [
     {
       "name": "Conch Shell Blowing Contest",
