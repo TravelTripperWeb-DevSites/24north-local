@@ -1,21 +1,29 @@
-{"title":
+{
+	"category":
+	{
+	  "label": "Choose Category",
+	  "type":"model",
+	  "display_field": "title", 
+	  "model_name":"category"
+	},
+	"title":
 	{"required":true},
-"blogimage":
+	"blogimage":
 	{"type":"image","required":true},
-"seo_title":
+	"seo_title":
 	{},
-"seo_description":
+	"seo_description":
 	{},
-"url_friendly_name":
+	"url_friendly_name":
 	{"type":"url_slug"},
-"date":
+	"date":
 	{"type":"date","required":true},
-"Posted_by":
+	"Posted_by":
 	{},
-"Image_caption":
+	"Image_caption":
 	{"required":false,"type":"richtext"},	
-"short_description":
+	"short_description":
 	{"required":false,"type":"richtext"},
-"more_content":
+	"more_content":
 	{"type":"richtext"}
 }
