@@ -73,9 +73,9 @@ layout: default
     <div class="container">
       <div class="row information">
         <div class="col-md-5 align-center"><img src="../../images/specials/special-details/photo-patch-spcls.png" width="296" height="386" alt=""/></div>
-        {% regionblock tripadvisor_content3, type:text %}
+        
         <div class="col-md-7 p-l-0">
-          
+          {% regionblock tripadvisor_content3, type:text %}
           <p class="highlight p-t-35">Terms & Conditions:</p>
           
           <ul class="lst p-b-25">
@@ -87,8 +87,9 @@ layout: default
           <p class="highlight">Need assistance? Our dedicated reservations team is available around the clock:</p>
           <p class="p-b-25">24 North Hotel Service Centre on <a href="tel:305-320-0930">(305) 320-0930</a>  or <br>
             e-mail <a href="mailto:reservations@hotel24north.com" >reservations@hotel24north.com</a></p>
+            {% endregionblock %}
         </div>
-        {% endregionblock %}
+
       </div>
     </div>
   </section>
