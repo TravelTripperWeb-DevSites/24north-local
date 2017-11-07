@@ -26,9 +26,15 @@ layout: default
             {% regionblock tripadvisor_heading3, type:header %}
             <h3><span class="block-element">We Are Open!</h3>
             {% endregionblock %}
+            {% regionblock tripadvisor_button1, type:text %}
             <div class="booknow"> <a href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=278014&vr=3" target="_blank">Book Now</a> </div>
+            {% endregionblock %}
+            {% regionblock tripadvisor_button2, type:text %}
             <div class="btn-holder extra padding"><a href="mailto:reservations@hotel24north.com" class="button-common btn-blue">Contact Us</i></a></div>
+            {% endregionblock %}
+            {% regionblock tripadvisor_content1, type:text %}
             <p>Welcome back!! We are open and ready for you!!  Limited Time offer available until November 12th only.</p>
+            {% endregionblock %}
           </div>
       </div>
       <div class="col-sm-9 col-xs-12">
@@ -58,15 +64,20 @@ layout: default
       {% regionblock tripadvisor_heading4, type:header %}
     	<h3>About the offer</h3>
       {% endregionblock %}
+      {% regionblock tripadvisor_content2, type:text %}
         <p>We are back and ready to make your stay memorable.  Take a load off your shoulder, kick back and relax with family and friends when you escape to the tropical paradise of Key West, Florida.<br><br>Enjoy your savings and a 7 day cancellation policy with this special offer. Limited Time offer available until November 12th. Blackout dates apply.<br><br>.Terms and Conditions:Deposit of 1 night room and tax is required for all confirmed reservations and will be charged 7 days prior to check in time and becomes non-refundable when charged.  Notification of cancellation 21 days prior to arrival is required for Fantasy Fest, Christmas and New Year's.</p>
+      {% endregionblock %}
     </div>
   </section>
   <section>
     <div class="container">
       <div class="row information">
         <div class="col-md-5 align-center"><img src="../../images/specials/special-details/photo-patch-spcls.png" width="296" height="386" alt=""/></div>
+        {% regionblock tripadvisor_content3, type:text %}
         <div class="col-md-7 p-l-0">
+          
           <p class="highlight p-t-35">Terms & Conditions:</p>
+          
           <ul class="lst p-b-25">
 
           	<li>Deposit of 1 night room and tax is required for all confirmed reservations and will be charged 7 days prior to check in time and becomes non-refundable when charged.</li>
@@ -77,6 +88,7 @@ layout: default
           <p class="p-b-25">24 North Hotel Service Centre on <a href="tel:305-320-0930">(305) 320-0930</a>  or <br>
             e-mail <a href="mailto:reservations@hotel24north.com" >reservations@hotel24north.com</a></p>
         </div>
+        {% endregionblock %}
       </div>
     </div>
   </section>
