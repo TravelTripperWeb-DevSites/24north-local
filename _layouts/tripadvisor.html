@@ -6,11 +6,16 @@ layout: default
 
   <section>
     <div class="container no-padding">
-      <div class="page-banner specials-banner">
+      <div class="page-banner tripadvisor-banner">
         <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"/></div>
         {% regionblock tripadvisor_heading1, type:header %}
         <h1 class="page-title">tripadvisor</h1>
         {% endregionblock %}
+        <div class="m-b-60">
+          {% regionblock tripadvisor_button3, type:text %}
+          <a class="button-common" href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=278014&vr=3">Book Now</a>
+          {% endregionblock %}
+        </div>
       </div>
     </div>
   </section>
@@ -26,9 +31,9 @@ layout: default
             {% regionblock tripadvisor_heading3, type:header %}
             <h3><span class="block-element">We Are Open!</h3>
             {% endregionblock %}
-            {% regionblock tripadvisor_button1, type:text %}
+            <!-- {% regionblock tripadvisor_button1, type:text %}
             <div class="booknow"> <a href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=278014&vr=3" target="_blank">Book Now</a> </div>
-            {% endregionblock %}
+            {% endregionblock %} -->
             {% regionblock tripadvisor_button2, type:text %}
             <div class="btn-holder extra padding"><a href="mailto:reservations@hotel24north.com" class="button-common btn-blue">Contact Us</i></a></div>
             {% endregionblock %}
