@@ -265,6 +265,24 @@
     "git_file_name": "_assets/image_data/parrotheads-key-west.json"
   },
   {
+    "name": "pirate-wench",
+    "file_name": "pirate-wench.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_9228/media/2017-11-10-115235/pirate-wench.jpg",
+    "tags": "",
+    "file_size": 277472.0,
+    "width": 800,
+    "height": 566,
+    "description": "",
+    "date_added": "2017-11-10-115235",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_9228/media/2017-11-10-115235/large_pirate-wench.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_9228/media/2017-11-10-115235/medium_pirate-wench.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_9228/media/2017-11-10-115235/small_pirate-wench.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_9228/media/2017-11-10-115235/xsmall_pirate-wench.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_9228/media/2017-11-10-115235/thumb_pirate-wench.jpg",
+    "git_file_name": "_assets/image_data/pirate-wench.json"
+  },
+  {
     "name": "powerboat-international-key-west",
     "file_name": "powerboat-international-key-west.jpg",
     "file_type": "image/jpeg",
