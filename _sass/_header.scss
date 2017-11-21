@@ -107,7 +107,7 @@ a:hover,a:focus {
 .main-menu {
 	float: left;
 	/*padding: 29px 0 0 30px;*/
-	padding: 29px 0 0 24px;
+	padding: 22px 0 0 24px;
 	background-color: $bg-white;
 	
 	@media (max-width: 1240px){
@@ -246,12 +246,40 @@ a:hover,a:focus {
 	padding: 0;
 }
 .nav-reserve{
-	display: none;
+	display: block;
+    float: right;
+    margin-right: 30px;
+    margin-top: -36px;
 	h2{
-		font-size: 15px;
+		font-size: 13px;
 	}
 	@media (max-width: 1023px){
 		display: inline-block;
+		float: left;
+		margin-top: 10px;
+    	margin-left: 15px;
+	}
+	@media (max-width: 480px){
+		margin-top: 0px;
+		margin-left: 5px;
+		h2{
+			font-size: 12px;
+		}
+		a{
+			font-size: 12px;
+		}
+	}
+}
+.nav-reserve2{
+	display: block;
+    float: right;
+    margin-right: 30px;
+    margin-top: -36px;
+	h2{
+		font-size: 13px;
+	}
+	@media (max-width: 1023px){
+		display: none;
 		margin-top: 10px;
     	margin-left: 15px;
 	}
