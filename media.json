@@ -211,6 +211,24 @@
     "git_file_name": "_assets/image_data/key-west-theater.json"
   },
   {
+    "name": "key-west-wedding",
+    "file_name": "key-west-wedding.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_9419/media/2017-11-17-113647/key-west-wedding.jpg",
+    "tags": "",
+    "file_size": 932694.0,
+    "width": 1000,
+    "height": 750,
+    "description": "",
+    "date_added": "2017-11-17-113647",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_9419/media/2017-11-17-113647/large_key-west-wedding.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_9419/media/2017-11-17-113647/medium_key-west-wedding.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_9419/media/2017-11-17-113647/small_key-west-wedding.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_9419/media/2017-11-17-113647/xsmall_key-west-wedding.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_9419/media/2017-11-17-113647/thumb_key-west-wedding.jpg",
+    "git_file_name": "_assets/image_data/key-west-wedding.json"
+  },
+  {
     "name": "keywest",
     "file_name": "keywest.JPG",
     "file_type": "image/jpeg",
@@ -263,6 +281,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_8399/media/2017-10-17-205128/xsmall_parrotheads-key-west.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_8399/media/2017-10-17-205128/thumb_parrotheads-key-west.jpg",
     "git_file_name": "_assets/image_data/parrotheads-key-west.json"
+  },
+  {
+    "name": "pirate-wench",
+    "file_name": "pirate-wench.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_9228/media/2017-11-10-115235/pirate-wench.jpg",
+    "tags": "",
+    "file_size": 277472.0,
+    "width": 800,
+    "height": 566,
+    "description": "",
+    "date_added": "2017-11-10-115235",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_9228/media/2017-11-10-115235/large_pirate-wench.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_9228/media/2017-11-10-115235/medium_pirate-wench.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_9228/media/2017-11-10-115235/small_pirate-wench.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_9228/media/2017-11-10-115235/xsmall_pirate-wench.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_9228/media/2017-11-10-115235/thumb_pirate-wench.jpg",
+    "git_file_name": "_assets/image_data/pirate-wench.json"
   },
   {
     "name": "powerboat-international-key-west",
