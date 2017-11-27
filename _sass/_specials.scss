@@ -157,9 +157,17 @@ section.models
 				padding-bottom:55px;
 				letter-spacing:5px;
 				text-transform:uppercase;
+
+				a {
+					color: $tc-ash-1;
+					&:hover {
+						color: $tc-ash-1;
+					}
+				}
 				
 				@media (max-width: 1240px) {
 				padding-bottom: 30px;
+
 				
 			}
 				

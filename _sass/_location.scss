@@ -293,3 +293,12 @@
 		}
 	}
 }
+a{
+	&.link-heading{
+		color: $bg-white;
+		display: block;
+		&:hover{
+			color: $bg-white;
+		}
+	}
+}
