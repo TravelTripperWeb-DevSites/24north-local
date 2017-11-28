@@ -30,22 +30,17 @@
 			'submenu': 'false'
 		},
 		{
-			'title':'Groups',
-			'name': 'meetings-and-events-key-west',
-			'url': '/meetings-and-events-key-west/',
-			'submenu': 'true' ,
+			'title':'Meet',
+			'name': 'meet',
+			'url': '/meet/' ,
+			'submenu': 'true',
 			'subitems': [
+				{'title':'Groups','name': 'meetings-and-events-key-west','url': '/meetings-and-events-key-west/'},
 				{'title':'Request for Proposal','name': 'events','url': '/meetings-and-events-key-west/request-for-proposal/'}
 			] 
 		},
 		{
-			'title':'Meet',
-			'name': 'meet',
-			'url': '/meet/' ,
-			'submenu': 'false'
-		},
-		{
-			'title':'Weddings & Events',
+			'title':'Weddings',
 			'name': 'weddings-and-events',
 			'url': '/weddings-and-events/',
 			'submenu': 'false' 
@@ -56,7 +51,6 @@
 			'url': '/location/',
 			'submenu': 'true' ,
 			'subitems': [
-				{'title':'Events','name': 'events','url': '/location/events/'},
 				{'title':'Shuttle','name': 'location','url': '/location/shuttle/'},
 				{'title':'Attractions','name': 'attractions','url': '/location/attractions/'},
 				{'title':'Partners','name': 'partners','url': '/location/partners/'}
@@ -67,6 +61,16 @@
 			'name': 'blog',
 			'url': '/blog/',
 			'submenu': 'false' 
+		},
+		{
+			'title':'Concerts & Events',
+			'name': 'concerts-and-events',
+			'url': '#',
+			'submenu': 'true',
+			'subitems': [
+				{'title':'Concerts','name': 'concerts','url': '/concerts/'},
+				{'title':'Events','name': 'events','url': '/location/events/'}
+			] 
 		}
 		
 		 
