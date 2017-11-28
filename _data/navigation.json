@@ -45,6 +45,16 @@
 			'url': '/weddings-and-events/',
 			'submenu': 'false' 
 		},
+		 		{
+			'title':'Concerts & Events',
+			'name': 'concerts-and-events',
+			'url': '#',
+			'submenu': 'true',
+			'subitems': [
+				{'title':'Concerts','name': 'concerts','url': '/concerts/'},
+				{'title':'Events','name': 'events','url': '/location/events/'}
+			] 
+		},
 		{
 			'title':'Location',
 			'name': 'location',
@@ -62,16 +72,6 @@
 			'url': '/blog/',
 			'submenu': 'false' 
 		},
-		{
-			'title':'Concerts & Events',
-			'name': 'concerts-and-events',
-			'url': '#',
-			'submenu': 'true',
-			'subitems': [
-				{'title':'Concerts','name': 'concerts','url': '/concerts/'},
-				{'title':'Events','name': 'events','url': '/location/events/'}
-			] 
-		}
 		
 		 
 	],
