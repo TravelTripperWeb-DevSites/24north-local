@@ -14,9 +14,10 @@ layout: default
   <div class="container">
     <div class=" two-col-wrap">
       <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="{{ a.image.url }}" title={{ a.alt_text }}></a> </div>
+        <div class="col-sm-6 sp-img v-center"><a href="{{ a.url }}/"><img src="{{ a.image.url }}" title={{ a.alt_text }}></a> 
+        </div>
         <div class="col-sm-6 sp-content v-center">
-          <p class="title">{{ a.name }}</p>
+          <p class="title"><a href="{{ a.url }}/">{{ a.name }}</a></p>
           <div class="desp">{{ a.description }}</div>
           {% capture link_url %}
             {{ a.url }}
