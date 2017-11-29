@@ -121,6 +121,24 @@
     "git_file_name": "_assets/image_data/christmas-key-west.json"
   },
   {
+    "name": "dry-tortugas",
+    "file_name": "dry-tortugas.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_9649/media/2017-11-28-134212/dry-tortugas.jpg",
+    "tags": "",
+    "file_size": 952822.0,
+    "width": 1000,
+    "height": 667,
+    "description": "",
+    "date_added": "2017-11-28-134212",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_9649/media/2017-11-28-134212/large_dry-tortugas.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_9649/media/2017-11-28-134212/medium_dry-tortugas.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_9649/media/2017-11-28-134212/small_dry-tortugas.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_9649/media/2017-11-28-134212/xsmall_dry-tortugas.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_9649/media/2017-11-28-134212/thumb_dry-tortugas.jpg",
+    "git_file_name": "_assets/image_data/dry-tortugas.json"
+  },
+  {
     "name": "fantasy-fest-5-tips",
     "file_name": "fantasy-fest-5-tips.JPG",
     "file_type": "image/jpeg",
@@ -263,6 +281,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_8898/media/2017-10-31-014447/xsmall_meet-banner.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_8898/media/2017-10-31-014447/thumb_meet-banner.jpg",
     "git_file_name": "_assets/image_data/meet-banner.json"
+  },
+  {
+    "name": "MichaelMcDonaldFBevent",
+    "file_name": "MichaelMcDonaldFBevent.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_9630/media/2017-11-28-152603/MichaelMcDonaldFBevent.jpg",
+    "tags": "",
+    "file_size": 57397.0,
+    "width": 768,
+    "height": 349,
+    "description": "",
+    "date_added": "2017-11-28-152603",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_9630/media/2017-11-28-152603/large_MichaelMcDonaldFBevent.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_9630/media/2017-11-28-152603/medium_MichaelMcDonaldFBevent.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_9630/media/2017-11-28-152603/small_MichaelMcDonaldFBevent.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_9630/media/2017-11-28-152603/xsmall_MichaelMcDonaldFBevent.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_9630/media/2017-11-28-152603/thumb_MichaelMcDonaldFBevent.jpg",
+    "git_file_name": "_assets/image_data/MichaelMcDonaldFBevent.json"
   },
   {
     "name": "parrotheads-key-west",
