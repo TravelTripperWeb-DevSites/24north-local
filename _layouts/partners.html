@@ -18,7 +18,7 @@ layout: default
           <div class="row no-gutters">
             <div class="col-sm-3 sp-img "> <img src="{{ p.image.url }}" title={{ p.alt_text }}></div>
           	<div class="col-sm-9 sp-content">
-              <h2>{{ p.name }}</h2>
+            <a class="link-heading" href="{{ p.url }}" ><h2>{{p.name}}</h2></a>
               <div class="desp">{{ p.description }}</div>
     		  <div class="btn-holder"><a href="{{ p.url }}" target="_blank" class="button-common btn-blue">View Partner Site<i class="fa fa-play"></i></a></div>
             </div>
