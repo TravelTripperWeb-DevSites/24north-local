@@ -89,3 +89,21 @@
 
 
 }
+/*Only for Concerts page*/
+.blue-button{
+  text-align: center;
+  margin: 25px auto;
+  a{
+    &.button-common{
+      background-color: #3a9dc4;
+      border: solid 2px #3a9dc4;
+      min-width: 200px;
+      letter-spacing: 3px;
+      &:hover{
+        background-color: #1086b4;
+        color: white;
+      }
+    }
+  }
+}
+/*Ended Here*/
