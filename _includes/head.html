@@ -67,4 +67,72 @@ fbq('track', 'PageView');
   <meta property="og:image" content="{% if blog.blogimage %}{{ blog.blogimage.url }}{% else %} https://www.24northhotel.com/images/logo.png {% endif%}" />
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 {% endif %}
+  
+  <script type='application/ld+json'>
+{
+  "@context": "http://www.schema.org",
+  "@type": "Organization",
+  "name": "24 North Hotel Key West",
+  "url": "https://www.24northhotel.com/",
+  "logo": "https://www.24northhotel.com/images/logo.png",
+  "description": "24 North Hotel Key West offers boutique accommodations in Key West Florida. Book your Ocean-View accommodation here on the Official Website of 24 North Hotel!",
+     "sameAs": [
+    "https://plus.google.com/113708528927471967794"
+   
+  ]
+  }
+}
+</script>	
+<script type='application/ld+json'>
+{
+  "@context": "http://schema.org",
+  "@type": "Hotel",
+  "image": "https://cdn.traveltripper.io/site-assets/359_384_818/media/gallery-23-large.jpg",
+  "starRating" : { "@type" : "Rating",
+                   "ratingValue" : "4"},
+  "priceRange" : "Best Rate Guaranteed",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3820 N Roosevelt Blvd, Key West",
+    "addressLocality": "Key West",
+    "addressRegion": "Florida",
+    "postalCode": "FL 33040",
+    "addressCountry": "United States"
+  },
+   "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.1",
+    "bestRating": "5",
+    "ratingCount": "414"
+    },
+  
+  "description": "24 North Hotel Key West offers boutique accommodations in Key West Florida. Book your Ocean-View accommodation here on the Official Website of 24 North Hotel!",
+  "name": "24 North Hotel Key West",
+  "alternateName":"24 North Hotel",
+  "telephone": "+1 305-320-0940",
+  "email": "reservations@hotel24north.com",
+  "url": "https://www.24northhotel.com/",
+   "sameAs" : ["https://twitter.com/24NorthHotel","https://www.facebook.com/24-North-Hotel-190785077925312/","https://www.instagram.com/24northhotel","https://www.tripadvisor.com/Hotel_Review-g34345-d8776712-Reviews-24_North_Hotel-Key_West_Florida_Keys_Florida.html"]
+    },   
+   "hasMap": "https://goo.gl/maps/iA7ibELytNE2"
+ },
+ 
+  "potentialAction":{
+   "@type":"ReserveAction",
+   "target":{
+   "@type":"EntryPoint",
+   "urlTemplate":"https://24northhotel.reztrip.com/classic/en/searches/5a16ff94a433a81eb148bc18/hotels/KEY24N/rooms?controller=landings&starting_page=search","actionPlatform":[
+   "http://schema.org/DesktopWebPlatform",
+   "http://schema.org/IOSPlatform",
+    "http://schema.org/AndroidPlatform"
+]
+},
+   "result":{
+   "@type":"LodgingReservation",
+   "name":"Book Now"
+  }
+ }
+}
+</script>
+  
 </head>
