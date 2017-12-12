@@ -1,9 +1,10 @@
 .offer-promo-tile {
-    margin: 0px 55px;
+    margin: 0px auto 2px;
     text-align: center;
     padding: 10px 0;
     background-color: #1f4552;
     color:#fff;
+    max-width: 1210px;
     h3,a {
         display: inline-block;
         margin: 0px 15px;
@@ -16,7 +17,34 @@
         i {padding-right:5px;}
     }
 }
-
+.promo-code-reminder {
+    margin: 0px auto 2px;
+    text-align: center;
+    padding: 10px 0;
+    max-width: 550px;
+    .reminder-text {
+        display: inline-block;
+        text-align: right;
+        float: left;
+        h4 {
+        font-family: $main-font-light;
+            span {
+                font-size: 20px;
+                color:#ed1c25;
+            }
+        }
+        i {
+            color:#999999;
+            text-align: right;
+            sup {
+                color:#ed1c25;
+            }
+        }
+    }
+    .button-common {
+        display: inline-block;
+    }
+}
 #offer-promo-popup {
     .modal-dialog {
         top: 48%;
