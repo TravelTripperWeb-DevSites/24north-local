@@ -52,4 +52,29 @@ angular.module('rezTrip')
         retString = retString.replace(/^--s*/, '').replace(/--*$/, ''); // replace leading and trailing hyphen
         return (!value) ? '' : retString;
     };
+}).filter('addDayInDate', function () {
+    return function (value, days) {
+        var newDate, retDate;
+        if(value) {
+            newDate = new Date(value);
+            retDate = new Date(newDate.setDate(newDate.getDate() +days));
+            retDate = retDate.toISOString().slice(0,10)
+        }
+        return (!value) ? '' : retDate;
+    };
+}).filter('ifOldRetTodayDate', function () {
+    return function (value, leadDay) {
+        var newDate, retDate, today = new Date();
+        if(value) {
+            newDate = new Date(value);
+            if(newDate < today) {
+                today   = leadDay != null ? new Date(today.setDate(today.getDate() + leadDay)) : today;
+                retDate = today.toISOString().slice(0,10) ;
+            } else {
+                retDate = value;
+            }
+
+        }
+        return (!value) ? '' : retDate;
+    };
 });
