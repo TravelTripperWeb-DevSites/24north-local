@@ -85,6 +85,24 @@
     "git_file_name": "_assets/image_data/active-in-key-west.json"
   },
   {
+    "name": "bahama-village",
+    "file_name": "bahama-village.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_10708/media/2018-01-03-164033/bahama-village.jpg",
+    "tags": "",
+    "file_size": 1051392.0,
+    "width": 1000,
+    "height": 665,
+    "description": "",
+    "date_added": "2018-01-03-164033",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_10708/media/2018-01-03-164033/large_bahama-village.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_10708/media/2018-01-03-164033/medium_bahama-village.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_10708/media/2018-01-03-164033/small_bahama-village.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_10708/media/2018-01-03-164033/xsmall_bahama-village.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_10708/media/2018-01-03-164033/thumb_bahama-village.jpg",
+    "git_file_name": "_assets/image_data/bahama-village.json"
+  },
+  {
     "name": "best-wedding-colors-key-west",
     "file_name": "best-wedding-colors-key-west.jpg",
     "file_type": "image/jpeg",
