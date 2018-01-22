@@ -8,21 +8,29 @@
   "website_url": "http://www.p1aquax.com/",
   "thumb_image": {
     "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-025624/grandprix-3.jpg",
-    "alt": "image"
+    "alt": "image",
+    "caption": "",
+    "description": ""
   },
   "large_image": {
     "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-025623/grandprix-1.jpg",
-    "alt": "image"
+    "alt": "image",
+    "caption": "",
+    "description": ""
   },
   "short_image": {
     "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-025624/grandprix-3.jpg",
-    "alt": "image"
+    "alt": "image",
+    "caption": "",
+    "description": ""
   },
   "g_image1": {
     "url": "https://cdn.traveltripper.io/site-assets/359_384_3611/media/2017-06-07-025623/grandprix-1.jpg",
-    "alt": "image"
+    "alt": "image",
+    "caption": "",
+    "description": ""
   },
-  "expire_date": null,
+  "expire_date": "2017-12-10T05:00:00.000Z",
   "isPublished": true,
   "publish_date": "Fri Dec 08 2017 00:00:00 GMT-0600 (CST)"
 }
