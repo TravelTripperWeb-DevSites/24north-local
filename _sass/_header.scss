@@ -92,7 +92,8 @@ a:hover,a:focus {
 	float:left;
 	width: 204px;
 	@media (max-width: 1240px){
-		width: 160px;
+		/*width: 160px;*/
+		width: 120px;
 	}
 	@media (max-width: 480px){
 		width: 110px;
@@ -158,7 +159,8 @@ a:hover,a:focus {
 					&.active{color: #3a9dc4;}
 					
 					@media (max-width: 1240px){
-						padding: 10px 9px;
+						/*padding: 10px 9px;*/
+						padding: 10px 5px;
 						letter-spacing: 1px;
 						display: block;
 					}
@@ -227,11 +229,21 @@ a:hover,a:focus {
 			padding: 29px 20px;
 		}
 		@media (max-width: 1240px){
+					padding: 26px 20px;
 					top:-8px;
 				}
 	}
 	.main-menu {
 		padding: 20px 0 0 20px;
+	}
+	.nav-reserve{
+		
+
+		margin-right: 100px;
+		margin-top: 10px;
+		@media (max-width: 480px){
+			margin-right: 0;
+		}
 	}
 }
 
@@ -246,12 +258,18 @@ a:hover,a:focus {
 	padding: 0;
 }
 .nav-reserve{
+	font-family: $main-font-regular;
+	font-weight: bold;
 	display: block;
     float: right;
     margin-right: 30px;
     margin-top: -36px;
 	h2{
 		font-size: 13px;
+		font-weight: bold;
+	}
+	@media (max-width: 1240px){
+		margin-right: 100px;
 	}
 	@media (max-width: 1023px){
 		display: inline-block;
@@ -336,6 +354,14 @@ a:hover,a:focus {
 	left:0;
 	right:0;
 	z-index:20;
+		.nav-reserve {
+			margin-right: 139px;
+			margin-top: 10px;
+			@media (max-width: 480px){
+				margin-right: 10px;
+				margin-left: 0px;
+			}
+		}
 }
 .main-content-wrapper {
 }

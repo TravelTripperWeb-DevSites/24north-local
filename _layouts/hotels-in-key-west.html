@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<input type="hidden" id="roomId"  value="{{ page.code }}" />
-<input type="hidden" id="roomList" value="[[ browser.roomsList ]]"   />
+<input type="hidden" id="roomId"  value="{{ page.code }}" aria-label="hidden" title="hidden" />
+<input type="hidden" id="roomList" value="[[ browser.roomsList ]]" aria-label="roomlist" title="roomlist"   />
 <div class="room-details" ng-controller ="roomDetail" >
 
   <section>

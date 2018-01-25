@@ -1,23 +1,19 @@
 <nav class="header-wrapper">
   <div class="container">
-    <div class="logo"> <a href="/"><img src="/images/logo.png" alt="24 North Hotel"/></a> </div>
-    <div class="logo1"> <a href="/"><img src="/images/logo-24.jpg" alt="24 North Hotel"/></a> </div>
+    <div class="logo"> <a href="/" title="24 North Hotel"><img src="/images/logo.png" alt="24 North Hotel"/></a> </div>
+    <div class="logo1"> <a href="/" title="24 North Hotel"><img src="/images/logo-24.jpg" alt="24 North Hotel"/></a> </div>
     <div class="nav-reserve">
         <h2>Reservations</h2>
-        <span class="block-element"><a href="tel:786-485-1046"> 786 485 1046</a></span>
+        <span class="block-element"><a href="tel:1-305-320-0940" title="305-320-0940"> 305-320-0940</a></span>
     </div>
-    <!-- <div class="nav-reserve2">
-        <h2>Reservations</h2>
-        <span class="block-element"><a href="tel:786-485-1046"> 786 485 1046</a></span>
-    </div> -->
     <div class="main-menu">
       <ul class="nav">
       {% for items in site.data.navigation.mainnav %}
-     	<li {% if items.submenu == "true" %} class="dropdown" {% endif %}><a href="{{ items.url }}" {% if items.name == page.pagename %} class="active" {% endif %} {% if items.submenu == "true" %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}>{{ items.title }}</a>
+     	<li {% if items.submenu == "true" %} class="dropdown" {% endif %}><a href="{{ items.url }}" title="{{ items.title }}" {% if items.name == page.pagename %} class="active" {% endif %} {% if items.submenu == "true" %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}>{{ items.title }}</a>
         	{% if items.submenu == "true" %}
             <ul class="dropdown-menu">
             	{% for dropdown in items.subitems %}
-                	<li><a href="{{ dropdown.url }}">{{ dropdown.title }}</a></li>
+                	<li><a href="{{ dropdown.url }}" title="{{ dropdown.title }}">{{ dropdown.title }}</a></li>
                 {% endfor %}
             </ul>
             {% endif %}
@@ -26,7 +22,7 @@
       </ul>
     </div>
     <div class="menu-btn"></div>
-    <div class="booknow"> <a href="javascript:void(0)" show-booking-widget>Book Now</a> </div>
+    <div class="booknow"> <a href="javascript:void(0)" title="Book Now" show-booking-widget>Book Now</a> </div>
   </div>
 </nav>
 
