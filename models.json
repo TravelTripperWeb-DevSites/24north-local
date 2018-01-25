@@ -485,6 +485,11 @@
       "file": "blog76.json"
     },
     {
+      "name": "Upcoming Shows at the Key West Theater You DonΓÇÖt Want to Miss",
+      "title": "Upcoming Shows at the Key West Theater You DonΓÇÖt Want to Miss",
+      "file": "blog77.json"
+    },
+    {
       "name": "Key West Food & Wine Festival 2017",
       "title": "Key West Food & Wine Festival 2017",
       "file": "blog8.json"
@@ -639,15 +644,11 @@
       "file": "event15.json"
     },
     {
-      "name": "DJ Chris Brown",
-      "file": "event4.json"
-    },
-    {
       "name": "DJ Kyd",
       "file": "event5.json"
     },
     {
-      "name": "Aqua Yoga",
+      "name": "Yoga",
       "file": "event6.json"
     },
     {
@@ -701,6 +702,10 @@
     {
       "name": "Pre-Parade Pin-Up Party",
       "file": "events20.json"
+    },
+    {
+      "name": "Big Game Tailgate & Watch Party",
+      "file": "events21.json"
     },
     {
       "name": "Fourth Annual Mystery Fest Key West",
