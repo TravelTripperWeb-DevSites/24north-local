@@ -33,7 +33,7 @@
         <ul class="categories">
             {% assign categories = site.data._models.category | sort:'order' %} 
             {% for categorylist in categories %} 
-            <li><a href="/blog/category/{{categorylist.url_friendly_name}}/" title="{{categorylist.title}}"> {{categorylist.title}} 
+            <li><a href="/blog/category/{{categorylist.url_friendly_name}}" title="{{categorylist.title}}"> {{categorylist.title}} 
                 {% assign count = 0 %}
                 {% for postcount in site.data._models.blog %}
                 {% if postcount.category.title == categorylist.title%}
