@@ -52,7 +52,7 @@
 			'submenu': 'true',
 			'subitems': [
 				{'title':'Concerts','name': 'concerts','url': '/concerts/'},
-				{'title':'Events','name': 'events','url': '/location/events/'}
+				{'title':'Events','name': 'events','url': '/events/'}
 			] 
 		},
 		{
