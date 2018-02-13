@@ -14,11 +14,12 @@ layout: default
   <div class="container">
     <div class=" two-col-wrap">
       <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt="Special-offers"> <a ng-href="{{ site.data.config.reztripUrl }}en/special_offer?rate_code=[[offer.rate_plan_code]]&offer_code=[[offer.offer_code]]" target="_blank"  class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
+        <div class="col-sm-6 sp-img v-center"> 
+          <a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink]]/"><img ng-src="[[offer.lead_photo_url.yankee_large]]" alt="Special-offers"> </a> <!-- <a ng-href="{{ site.data.config.reztripUrl }}en/special_offer?rate_code=[[offer.rate_plan_code]]&offer_code=[[offer.offer_code]]" target="_blank"  class="rate-btn">Check Rate<i class="fa fa-play"></i></a> --> </div>
         <div class="col-sm-6 sp-content v-center">
           <p class="title">[[offer.rate_plan_name]]</p>
           <p class="desp">[[offer.short_description]]</p>
-          <div class="btn-holder"><a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink]]/"  class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
+          <!-- <div class="btn-holder"><a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink]]/"  class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div> -->
           <div class="btn-holder extra padding"><a ng-href="{{site.data.config.reztripUrl}}search?rate_code=[[offer.rate_plan_code]]&arrival_date=[[offer.stay_start_date | ifOldRetTodayDate:offer.min_lead_time]]&departure_date=[[offer.stay_start_date | ifOldRetTodayDate:offer.min_lead_time | addDayInDate:2 ]]" target="_blank" class="button-common btn-blue top-margin">Book Now<i class="fa fa-play"></i></a></div>
 
         </div>
