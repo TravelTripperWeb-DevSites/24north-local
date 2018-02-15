@@ -27,7 +27,7 @@ layout: default
           	<h2>Special Offer</h2>
             <h3><span class="block-element">[[offers.sRdetail.rate_plan_name]]</h3>
             <div class="booknow"> <a ng-href="{{site.data.config.reztripUrl}}search?rate_code=[[offers.sRdetail.rate_plan_code]]&arrival_date=[[offers.sRdetail.stay_start_date | ifOldRetTodayDate:offers.sRdetail.min_lead_time ]]&departure_date=[[offers.sRdetail.stay_start_date | ifOldRetTodayDate:offers.sRdetail.min_lead_time  | addDayInDate:2 ]]" target="_blank">Book Now</a> </div>
-            <div class="btn-holder extra padding"><a href="mailto:reservations@hotel24north.com" class="button-common btn-blue">Contact Us</i></a></div>
+           <!--  <div class="btn-holder extra padding"><a href="mailto:reservations@hotel24north.com" class="button-common btn-blue">Contact Us</i></a></div> -->
             <p ng-bind-html="offers.sRdetail.short_description | renderHTMLCorrectly"></p>
             <p>
                <!--<strong><span ng-show="!offers.sRdetail.booking_end_date">Available From: </span>
