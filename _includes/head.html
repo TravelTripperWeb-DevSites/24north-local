@@ -10,6 +10,11 @@
       <meta name="description" content="{% if page.meta_description %}{{ page.meta_description | strip_html | strip_newlines | truncate: 320 }}{% elsif page.description %}{{ page.description | strip_html | strip_newlines | truncate: 320 }}{% else %}{{ site.description }}{% endif %}">
   {% endif %}
 
+
+  {% if page.meta_tags !="" %}
+   <meta name="robots" content="{{ page.meta_tags }}">
+  {% endif %}
+
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 <link rel="stylesheet" href="/css/owl.carousel.css" >
