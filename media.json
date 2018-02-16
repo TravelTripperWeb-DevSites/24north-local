@@ -139,6 +139,24 @@
     "git_file_name": "_assets/image_data/beach-time-fun.json"
   },
   {
+    "name": "beaches-key-west",
+    "file_name": "beaches-key-west.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-130555/beaches-key-west.jpg",
+    "tags": "",
+    "file_size": 1046788.0,
+    "width": 1000,
+    "height": 667,
+    "description": "",
+    "date_added": "2018-02-14-130555",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-130555/large_beaches-key-west.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-130555/medium_beaches-key-west.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-130555/small_beaches-key-west.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-130555/xsmall_beaches-key-west.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-130555/thumb_beaches-key-west.jpg",
+    "git_file_name": "_assets/image_data/beaches-key-west.json"
+  },
+  {
     "name": "best-wedding-colors-key-west",
     "file_name": "best-wedding-colors-key-west.jpg",
     "file_type": "image/jpeg",
@@ -265,6 +283,24 @@
     "git_file_name": "_assets/image_data/crab-time.json"
   },
   {
+    "name": "dry-tortugas-beach-snorkel",
+    "file_name": "dry-tortugas-beach-snorkel.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-130942/dry-tortugas-beach-snorkel.jpg",
+    "tags": "",
+    "file_size": 949013.0,
+    "width": 1000,
+    "height": 668,
+    "description": "",
+    "date_added": "2018-02-14-130942",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-130942/large_dry-tortugas-beach-snorkel.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-130942/medium_dry-tortugas-beach-snorkel.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-130942/small_dry-tortugas-beach-snorkel.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-130942/xsmall_dry-tortugas-beach-snorkel.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-130942/thumb_dry-tortugas-beach-snorkel.jpg",
+    "git_file_name": "_assets/image_data/dry-tortugas-beach-snorkel.json"
+  },
+  {
     "name": "dry-tortugas",
     "file_name": "dry-tortugas.jpg",
     "file_type": "image/jpeg",
@@ -317,6 +353,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_10159/media/2017-12-11-145344/xsmall_flip-flops-sunset-key-west.png",
     "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_10159/media/2017-12-11-145344/thumb_flip-flops-sunset-key-west.png",
     "git_file_name": "_assets/image_data/flip-flops-sunset-key-west.json"
+  },
+  {
+    "name": "fort-zach",
+    "file_name": "fort-zach.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-131410/fort-zach.jpg",
+    "tags": "",
+    "file_size": 1146788.0,
+    "width": 1000,
+    "height": 666,
+    "description": "",
+    "date_added": "2018-02-14-131410",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-131410/large_fort-zach.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-131410/medium_fort-zach.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-131410/small_fort-zach.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-131410/xsmall_fort-zach.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-131410/thumb_fort-zach.jpg",
+    "git_file_name": "_assets/image_data/fort-zach.json"
   },
   {
     "name": "goombay-key-west",
@@ -515,6 +569,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_8497/media/2017-10-19-220717/xsmall_keywest.JPG",
     "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_8497/media/2017-10-19-220717/thumb_keywest.JPG",
     "git_file_name": "_assets/image_data/keywest.json"
+  },
+  {
+    "name": "kid-party",
+    "file_name": "kid-party.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_12294/media/2018-02-14-143756/kid-party.jpg",
+    "tags": "",
+    "file_size": 781910.0,
+    "width": 1000,
+    "height": 667,
+    "description": "",
+    "date_added": "2018-02-14-143756",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_12294/media/2018-02-14-143756/large_kid-party.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_12294/media/2018-02-14-143756/medium_kid-party.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_12294/media/2018-02-14-143756/small_kid-party.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_12294/media/2018-02-14-143756/xsmall_kid-party.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_12294/media/2018-02-14-143756/thumb_kid-party.jpg",
+    "git_file_name": "_assets/image_data/kid-party.json"
   },
   {
     "name": "maria-elena-milagro-de-hoya",
@@ -4066,6 +4138,24 @@
     "name": "smp-lst.jpg",
     "url": "//cdn.traveltripper.io/site-assets/359_384_820/media/smp-lst.jpg",
     "git_file_name": "_assets/image_data/site-assets_359_384_820_media_smp-lst.json"
+  },
+  {
+    "name": "smathers-beach-key-west",
+    "file_name": "smathers-beach-key-west.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-131157/smathers-beach-key-west.jpg",
+    "tags": "",
+    "file_size": 1074878.0,
+    "width": 1000,
+    "height": 665,
+    "description": "",
+    "date_added": "2018-02-14-131157",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-131157/large_smathers-beach-key-west.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-131157/medium_smathers-beach-key-west.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-131157/small_smathers-beach-key-west.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-131157/xsmall_smathers-beach-key-west.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_12195/media/2018-02-14-131157/thumb_smathers-beach-key-west.jpg",
+    "git_file_name": "_assets/image_data/smathers-beach-key-west.json"
   },
   {
     "name": "stone-crab-season-florida",
