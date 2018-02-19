@@ -4194,24 +4194,6 @@
     "git_file_name": "_assets/image_data/stone-crabs-are-delicious.json"
   },
   {
-    "name": "trip_advisor_logo",
-    "file_name": "trip_advisor_logo.png",
-    "file_type": "image/png",
-    "url": "//cdn.traveltripper.io/site-assets/359_384_9106/media/2017-11-07-215533/trip-advisor-logo.png",
-    "tags": "",
-    "file_size": 49175.0,
-    "width": 2000,
-    "height": 944,
-    "description": "",
-    "date_added": "2017-11-07-215533",
-    "url_large": "//cdn.traveltripper.io/site-assets/359_384_9106/media/2017-11-07-215533/large_trip_advisor_logo.png",
-    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_9106/media/2017-11-07-215533/medium_trip_advisor_logo.png",
-    "url_small": "//cdn.traveltripper.io/site-assets/359_384_9106/media/2017-11-07-215533/small_trip_advisor_logo.png",
-    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_9106/media/2017-11-07-215533/xsmall_trip_advisor_logo.png",
-    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_9106/media/2017-11-07-215533/thumb_trip_advisor_logo.png",
-    "git_file_name": "_assets/image_data/trip_advisor_logo.json"
-  },
-  {
     "name": "tripadvisor-resized-600",
     "file_name": "tripadvisor-resized-600.jpg",
     "file_type": "image/jpeg",
@@ -4228,6 +4210,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_9106/media/2017-11-07-215450/xsmall_tripadvisor-resized-600.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_9106/media/2017-11-07-215450/thumb_tripadvisor-resized-600.jpg",
     "git_file_name": "_assets/image_data/tripadvisor-resized-600.json"
+  },
+  {
+    "name": "trip_advisor_logo",
+    "file_name": "trip_advisor_logo.png",
+    "file_type": "image/png",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_9106/media/2017-11-07-215533/trip-advisor-logo.png",
+    "tags": "",
+    "file_size": 49175.0,
+    "width": 2000,
+    "height": 944,
+    "description": "",
+    "date_added": "2017-11-07-215533",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_9106/media/2017-11-07-215533/large_trip_advisor_logo.png",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_9106/media/2017-11-07-215533/medium_trip_advisor_logo.png",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_9106/media/2017-11-07-215533/small_trip_advisor_logo.png",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_9106/media/2017-11-07-215533/xsmall_trip_advisor_logo.png",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_9106/media/2017-11-07-215533/thumb_trip_advisor_logo.png",
+    "git_file_name": "_assets/image_data/trip_advisor_logo.json"
   },
   {
     "name": "vow-renewal",
