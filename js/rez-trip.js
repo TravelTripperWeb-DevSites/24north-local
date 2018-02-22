@@ -83,14 +83,14 @@
                if(rName == tmpName ){
                   // find room size for diff size units
 
-                  if(roomsList[j].room_size_units == 'sqft'){
+                  if(roomsList[j].room_size_units == 'ft<sup>2</sup>'){
                       roomSizeSqm = roomsList[j].room_size / 10.764 ;
-                      roomsList[j]['room_size_sqm'] = Math.round(roomSizeSqm) + " sq m";
-                      roomsList[j]['room_size_sqft'] = roomsList[j].room_size + " " + " sq ft";
-                  }else if(roomsList[j].room_size_units == 'sqm'){
+                      roomsList[j]['room_size_sqm'] = Math.round(roomSizeSqm) + " m<sup>2</sup>" ;
+                      roomsList[j]['room_size_sqft'] = roomsList[j].room_size + " " + roomsList[j].room_size_units;
+                  }else {
                       roomSizeSqft = roomsList[j].room_size * 10.764 ;
-                      roomsList[j]['room_size_sqft'] = Math.round(roomSizeSqft) + " sq ft";
-                      roomsList[j]['room_size_sqm'] = roomsList[j].room_size + " sq m" ;
+                      roomsList[j]['room_size_sqft'] = Math.round(roomSizeSqft) +  " ft<sup>2</sup>" ;
+                      roomsList[j]['room_size_sqm'] = roomsList[j].room_size +  " " + roomsList[j].room_size_units ;
                   }
 
                   $scope.selectedRoom = roomsList[j];
