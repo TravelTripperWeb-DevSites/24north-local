@@ -283,6 +283,24 @@
     "git_file_name": "_assets/image_data/crab-time.json"
   },
   {
+    "name": "cuban-sandwich-key-west",
+    "file_name": "cuban-sandwich-key-west.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_13536/media/2018-03-14-123317/cuban-sandwich-key-west.jpg",
+    "tags": "",
+    "file_size": 804854.0,
+    "width": 1000,
+    "height": 667,
+    "description": "",
+    "date_added": "2018-03-14-123317",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_13536/media/2018-03-14-123317/large_cuban-sandwich-key-west.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_13536/media/2018-03-14-123317/medium_cuban-sandwich-key-west.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_13536/media/2018-03-14-123317/small_cuban-sandwich-key-west.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_13536/media/2018-03-14-123317/xsmall_cuban-sandwich-key-west.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_13536/media/2018-03-14-123317/thumb_cuban-sandwich-key-west.jpg",
+    "git_file_name": "_assets/image_data/cuban-sandwich-key-west.json"
+  },
+  {
     "name": "dry-tortugas-beach-snorkel",
     "file_name": "dry-tortugas-beach-snorkel.jpg",
     "file_type": "image/jpeg",
@@ -425,6 +443,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_11460/media/2018-01-19-135106/xsmall_hemingway-6-toed-cat.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_11460/media/2018-01-19-135106/thumb_hemingway-6-toed-cat.jpg",
     "git_file_name": "_assets/image_data/hemingway-6-toed-cat.json"
+  },
+  {
+    "name": "hemingway-days-key-west",
+    "file_name": "hemingway-days-key-west.JPG",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_13485/media/2018-03-13-120553/hemingway-days-key-west.JPG",
+    "tags": "",
+    "file_size": 990343.0,
+    "width": 2291,
+    "height": 1571,
+    "description": "",
+    "date_added": "2018-03-13-120553",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_13485/media/2018-03-13-120553/large_hemingway-days-key-west.JPG",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_13485/media/2018-03-13-120553/medium_hemingway-days-key-west.JPG",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_13485/media/2018-03-13-120553/small_hemingway-days-key-west.JPG",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_13485/media/2018-03-13-120553/xsmall_hemingway-days-key-west.JPG",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_13485/media/2018-03-13-120553/thumb_hemingway-days-key-west.JPG",
+    "git_file_name": "_assets/image_data/hemingway-days-key-west.json"
   },
   {
     "name": "hemingway-house-cats-key-west-travel",
@@ -4228,6 +4264,24 @@
     "name": "smp-lst.jpg",
     "url": "//cdn.traveltripper.io/site-assets/359_384_820/media/smp-lst.jpg",
     "git_file_name": "_assets/image_data/site-assets_359_384_820_media_smp-lst.json"
+  },
+  {
+    "name": "sloppy-joe",
+    "file_name": "sloppy-joe.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_13485/media/2018-03-13-124300/sloppy-joe.jpg",
+    "tags": "",
+    "file_size": 952821.0,
+    "width": 1000,
+    "height": 667,
+    "description": "",
+    "date_added": "2018-03-13-124300",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_13485/media/2018-03-13-124300/large_sloppy-joe.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_13485/media/2018-03-13-124300/medium_sloppy-joe.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_13485/media/2018-03-13-124300/small_sloppy-joe.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_13485/media/2018-03-13-124300/xsmall_sloppy-joe.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_13485/media/2018-03-13-124300/thumb_sloppy-joe.jpg",
+    "git_file_name": "_assets/image_data/sloppy-joe.json"
   },
   {
     "name": "smathers-beach-key-west",
