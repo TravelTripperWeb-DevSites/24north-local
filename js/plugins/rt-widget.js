@@ -91,13 +91,13 @@ var css = __webpack_require__(2);
 			currency: 'USD',
 			offer_popup_widget: {
 				show: true,
-				header_title: 'LIMITED TIME OFFER',
+				header_title: 'BREW & BEATS PACKAGE',
 				primary_color: '#33a1cc',
 				secondary_color: '#616161',
 				overlay_text_color: '#ffffff',
 				offer_popup_type: 'reztrip',
 				offer_data_url: 'http://localhost:3000/special-offer-popup.json',
-				offer_btn_label: "Book Now",
+				offer_btn_label: "RESERVE",
 				rt_offer_code: 'DISAP',
 				show_detail: false,
 				timeout: 5000
