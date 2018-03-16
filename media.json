@@ -157,6 +157,24 @@
     "git_file_name": "_assets/image_data/beaches-key-west.json"
   },
   {
+    "name": "beer-fest",
+    "file_name": "beer-fest.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_13617/media/2018-03-16-064737/beer-fest.jpg",
+    "tags": "",
+    "file_size": 127613.0,
+    "width": 900,
+    "height": 500,
+    "description": "",
+    "date_added": "2018-03-16-064737",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_13617/media/2018-03-16-064737/large_beer-fest.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_13617/media/2018-03-16-064737/medium_beer-fest.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_13617/media/2018-03-16-064737/small_beer-fest.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_13617/media/2018-03-16-064737/xsmall_beer-fest.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_13617/media/2018-03-16-064737/thumb_beer-fest.jpg",
+    "git_file_name": "_assets/image_data/beer-fest.json"
+  },
+  {
     "name": "best-wedding-colors-key-west",
     "file_name": "best-wedding-colors-key-west.jpg",
     "file_type": "image/jpeg",
