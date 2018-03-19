@@ -400,7 +400,7 @@ $(document).ready(function () {
     } else {
         $('.message').css('display', 'none');
         $('.promo-code-reminder').css('display', 'none');
-        $('.unlock').css('display', 'none');
+        $('.unlock').css('display', 'block');
     } 
     /*$('#mclose').click(function(){
         document.location.href = '/';

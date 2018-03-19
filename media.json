@@ -157,6 +157,24 @@
     "git_file_name": "_assets/image_data/beaches-key-west.json"
   },
   {
+    "name": "beer-fest",
+    "file_name": "beer-fest.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_13617/media/2018-03-16-064737/beer-fest.jpg",
+    "tags": "",
+    "file_size": 127613.0,
+    "width": 900,
+    "height": 500,
+    "description": "",
+    "date_added": "2018-03-16-064737",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_13617/media/2018-03-16-064737/large_beer-fest.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_13617/media/2018-03-16-064737/medium_beer-fest.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_13617/media/2018-03-16-064737/small_beer-fest.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_13617/media/2018-03-16-064737/xsmall_beer-fest.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_13617/media/2018-03-16-064737/thumb_beer-fest.jpg",
+    "git_file_name": "_assets/image_data/beer-fest.json"
+  },
+  {
     "name": "best-wedding-colors-key-west",
     "file_name": "best-wedding-colors-key-west.jpg",
     "file_type": "image/jpeg",
@@ -497,6 +515,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_11460/media/2018-01-19-135151/xsmall_hemingway-meow.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_11460/media/2018-01-19-135151/thumb_hemingway-meow.jpg",
     "git_file_name": "_assets/image_data/hemingway-meow.json"
+  },
+  {
+    "name": "key-west-fitness-running",
+    "file_name": "key-west-fitness-running.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/359_384_13598/media/2018-03-15-155846/key-west-fitness-running.jpg",
+    "tags": "",
+    "file_size": 433114.0,
+    "width": 1000,
+    "height": 563,
+    "description": "",
+    "date_added": "2018-03-15-155846",
+    "url_large": "//cdn.traveltripper.io/site-assets/359_384_13598/media/2018-03-15-155846/large_key-west-fitness-running.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/359_384_13598/media/2018-03-15-155846/medium_key-west-fitness-running.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/359_384_13598/media/2018-03-15-155846/small_key-west-fitness-running.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_13598/media/2018-03-15-155846/xsmall_key-west-fitness-running.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_13598/media/2018-03-15-155846/thumb_key-west-fitness-running.jpg",
+    "git_file_name": "_assets/image_data/key-west-fitness-running.json"
   },
   {
     "name": "key-west-hurricane-irma",
