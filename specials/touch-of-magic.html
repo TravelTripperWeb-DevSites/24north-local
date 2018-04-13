@@ -1,0 +1,144 @@
+---
+layout: default
+---
+<div  class="room-details special-details">
+
+  <section>
+    <div class="container no-padding">
+      <div class="page-banner specials-banner">
+        <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"/></div>
+        <h1 class="page-title">Specials</h1>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <ul class="gallery-nav">
+      <li></li>
+    </ul>
+  </div>
+  <section>
+    <div class="container room-details-carousel" >
+      <div class="row">
+      <div class="col-sm-3 col-xs-12">
+          <div class="spcl-lstng">
+          	<h2>Special Offer</h2>
+            <h3><span class="block-element">Touch Of Magic</h3>
+            <div class="booknow"> <a ng-href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=287793&vr=3" target="_blank">Book Now</a> </div>
+            <p>Rumors are confirmed! You've uncovered an opportunity for the 24 North Hotel.</p>
+          </div>
+      </div>
+      <div class="col-sm-9 col-xs-12">
+
+          <div id="roomDetailsCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators" ng-show="offers.sRdetail.images.length>1">
+              <li data-target="#roomDetailsCarousel" ng-repeat ="photo in offers.sRdetail.images" data-slide-to="[[$index]]"  ng-class="{'active': $index == 0}"></li>
+
+            </ol>
+
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="/images/specials/touch-magic-1.jpg" alt="Touch Of Magic"/>
+              </div>
+              <div class="item">
+                <img src="/images/specials/touch-magic-2.jpg" alt="Touch Of Magic"/>
+              </div>
+              <div class="item">
+                <img src="/images/specials/touch-magic-3.jpg" alt="Touch Of Magic"/>
+              </div>
+              <div class="item">
+                <img src="/images/specials/touch-magic-4.jpg" alt="Touch Of Magic"/>
+              </div>
+              <div class="item">
+                <img src="/images/specials/touch-magic-5.jpg" alt="Touch Of Magic"/>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="lifestyle">
+  	<div class="container-fluid">
+    	<h3>About the offer</h3>
+        <p>Located 10 minutes from Smathers Beach, our hotel features a year-round outdoor pool where you can (and will) enjoy a drink (or some) at the bar!</p>
+        <p>Relax by the pool and enjoy the beautiful blue sky and warm sun. If you need some refreshments you are only steps away from cool delicious cocktails.</p>
+        <p>Unwind in the comfort of your room, which comes with a flat-screen TV, coffee machine and the best beds you've ever slept on! As part of the resort fee, our complimentary shuttles with friendly, recognized drivers take you to Mallory Square. You can choose to rent a bike to explore the Keys if you wish to.</p>
+        <p>With a touch of magic we make your moment, one to remember!</p>
+    </div>
+  </section>
+  <section>
+    <div class="container-fluid">
+
+      <div class="row details-intro style2">
+      	<div class="holds">
+
+        <h2>this offer includes</h2>
+        <ul>
+            <li>Shuttle service loop to old town.</li>
+            <li>Onsite concierge.</li>
+            <li>Access to fitness center and 2 pools.</li>
+            <li>Newspaper available in lobby.</li>
+            <li>Resort activities and entertainment.</li>
+            <li>Daily water in room.</li>
+            <li>Keepsake luggage tags.</li>
+            <li>Wireless high speed internet access.</li>
+            <li>Local calls.</li>
+            <li>Onsite parking.</li>
+         </ul>
+
+        <div class="badger"><img src="/images/rooms/room-details/logo-details.png" width="160" height="144" alt=""/></div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row information">
+        <div class="col-md-5 align-center"><img src="../../images/specials/special-details/photo-patch-spcls.png" width="296" height="386" alt=""/></div>
+        <div class="col-md-7 p-l-0">
+          <p class="highlight p-t-35">Terms & Conditions:</p>
+          <ul class="lst p-b-25">
+
+          	<li ng-repeat="terms in offers.sRdetail.policy_description " ng-bind-html="terms | replaceNewline | renderHTMLCorrectly">[[terms]]</li>
+
+          </ul>
+         <p>Guests have up to 14 days prior to check in date to change or cancel a reservation.</p>
+         <p>Deposit of 1 night room and tax is required for all confirmed reservations.</p>
+         <p>Please note that changing arrival /departure date may result in rate changes and /or loss of special offer availability if any.</p>
+         <p>A hold of $100 will be placed on the guest credit card at check-in for incidentals. This hold will be released upon check-out pending any incidental charges.</p>
+         <p>Early Departure will be charged 100% on the applicable rate plus taxes.</p>
+         <p>Exceptions :<br>
+          Notification of 21 days prior to check in to change or cancel a reservation for the dates 10/24, 10/25, 10/26, 10/27, 10/28, 12/26, 12/27, 12/28, 12/29, 12/30, 12/31, 1/1.</p>
+         <p>Resort Fee: $30.00 plus tax, per room, per night provides guests the following services</p>
+         <ul class="lst">
+          <li>Shuttle service loop to old town.</li>
+          <li>Onsite concierge.</li>
+          <li>Access to fitness center and 2 pools.</li>
+          <li>Newspaper available in lobby.</li>
+          <li>Resort activities and entertainment.</li>
+          <li>Daily water in room.</li>
+          <li>Keepsake luggage tags.</li>
+          <li>Wireless high speed internet access.</li>
+          <li>Local calls.</li>
+          <li>Onsite parking.</li>
+         </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="more-spls">
+    <!--<div class="graphics"></div>-->
+    <div class="container-fluid no-padding home-specials-wrap">
+      <div class="container">
+        <h2 class="heading-large">More Specials</h2>
+
+        {%  include special-offers.html %}
+
+        <div class="stamp-blue"><img src="../../images/specials/special-details/stamp-blue.png" alt="24North-stamp"/></div>
+        <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue">View all Specials<i class="fa fa-play"></i></a></div>
+      </div>
+    </div>
+  </section>
+</div>
