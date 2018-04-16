@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div  class="room-details special-details">
+<div  class="room-details special-details" rt3-special-rates= "offers" ng-controller="offerDetail" >
 
   <section>
     <div class="container no-padding">
@@ -13,7 +13,7 @@ layout: default
   </section>
   <div class="container">
     <ul class="gallery-nav">
-      <li></li>
+      <li ng-repeat="o in offers.special_rates"><a ng-href="/special/#[[o.rate_plan_name | formatNameForLink]]" ng-class="{active: offers.sRdetail.rate_plan_code == o.rate_plan_code}" >[[o.rate_plan_name]]</a></li>
     </ul>
   </div>
   <section>
