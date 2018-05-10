@@ -109,9 +109,10 @@ var css = __webpack_require__(2);
 		var popup_widget = new _rt_offer_popup_widget2.default(widget_settings);
 		if (widget_settings.offer_popup_widget.show) {
 			//if popup offer widget true
-			popup_widget.show_widget();
+			             popup_widget.show_widget();
+
 		} else {
-			popup_widget.show_widget();
+		//	popup_widget.show_widget();
 		}
 	};
 })(jQuery);
@@ -183,11 +184,17 @@ var rt_offer_popup_widget = function () {
                 if (_this.settings.offer_popup_widget.show_detail) {
                   detail_offer = '<div class="popup-detail-offer">' + item.short_description + '</div>';
                 }
-                var view_template = '<div class="rt-guest-widget pop_offer">\n\t\t\t\t\t\t\t\t\t\t\t\t    <div class="rt-widget-header">\n\t\t\t\t\t\t\t\t\t\t\t\t    \t<h3>' + _this.settings.offer_popup_widget.header_title + '</h3>\n\t\t\t\t\t\t\t\t\t\t\t\t    \t<span class="widget_popup_close" id="rt_pop_close">&times;</span>\n\t\t\t\t\t\t\t\t\t\t\t\t    </div> \n\t\t\t\t\t\t\t\t\t\t\t\t    ' + detail_offer + '\n\t\t\t\t\t\t\t\t\t\t\t\t    <div class="body_content" style="background-image: url(\'' + item.lead_photo_url.yankee_large + '\');"><div class="rt-overlay_widget"><div class="popup_detail"><a href="' + item.promo_url + '" target="_blank">' + item.rate_plan_name + '</a></div></div></div><a href="' + item.promo_url + '" class="widget-booknow-link" target="_blank">' + _this.settings.offer_popup_widget.btn_label + '</a></div><div class="rt-guest-widget open-offer-popup"><span>&rarr;</span></div>';
+								var nvhide='';
+								var nvshow ='';
+								if($.cookie('versopup') ==='closed'){
+                  nvhide = 'style="display:none;"';
+									nvshow = 'active-open'
+								}
+                var view_template = '<div class="rt-guest-widget pop_offer" '+ nvhide +'>\n\t\t\t\t\t\t\t\t\t\t\t\t    <div class="rt-widget-header">\n\t\t\t\t\t\t\t\t\t\t\t\t    \t<h3>' + _this.settings.offer_popup_widget.header_title + '</h3>\n\t\t\t\t\t\t\t\t\t\t\t\t    \t<span class="widget_popup_close" id="rt_pop_close">&times;</span>\n\t\t\t\t\t\t\t\t\t\t\t\t    </div> \n\t\t\t\t\t\t\t\t\t\t\t\t    ' + detail_offer + '\n\t\t\t\t\t\t\t\t\t\t\t\t    <div class="body_content" style="background-image: url(\'' + item.lead_photo_url.yankee_large + '\');"><div class="rt-overlay_widget"><div class="popup_detail"><a href="' + item.promo_url + '" target="_blank">' + item.rate_plan_name + '</a></div></div></div><a href="' + item.promo_url + '" class="widget-booknow-link" target="_blank">' + _this.settings.offer_popup_widget.btn_label + '</a></div><div class="rt-guest-widget open-offer-popup '+nvshow+'"><span>&rarr;</span></div>';
 
                 setTimeout(function () {
                   return $('body').append(view_template);
-                }, _this.settings.offer_popup_widget.timeout);
+								}, _this.settings.offer_popup_widget.timeout);
               }
             });
           }
@@ -195,13 +202,17 @@ var rt_offer_popup_widget = function () {
       });
 
       $(document).on('click', '#rt_pop_close', function (e) {
+				$.cookie('versopup', 'closed', {path:'/'});
         $('.rt-guest-widget.pop_offer').hide('slow');
         $('.rt-guest-widget.open-offer-popup').addClass('active-open');
       });
       $(document).on('click', '.open-offer-popup', function (e) {
+				$.cookie('versopup','open', {path:'/'});
         $('.rt-guest-widget.pop_offer').show('slow');
         $('.rt-guest-widget.open-offer-popup').removeClass('active-open');
       });
+
+
     }
   }]);
 
