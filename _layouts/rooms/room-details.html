@@ -86,18 +86,21 @@ layout: default
     </div>-->
 
   <section ng-show="selectedRoom.amenities.length > 0">
-    <div class="container-fluid">
-      <div class="row details-intro style2">
-        <!-- <div class="col-md-5">
-          <h2>enjoy the following privileges</h2>
-        </div>
+    <div class="container">
+      <div class="details-intro">
         <div class="col-md-5">
+          <h2 class="style-2">enjoy the following privileges</h2>
           <ul>
             <li ng-repeat="amenity in selectedRoom.amenities">[[amenity]] </li>
           </ul>
-        </div> -->
-        <!-- <div class="col-md-2"><img src="../../images/rooms/room-details/logo-details.png" width="160" height="144" alt=""/></div> -->
-        <div class="holds">
+        </div>
+        <div class="col-md-7 room-img" style="background-image:url(//cdn.traveltripper.io/site-assets/359_384_818/media/gallery-13-large.jpg);">
+          <div class="badger">
+              <img src="../../images/rooms/room-details/logo-details.png" width="160" height="144" alt="24 North Hotel"/>
+          </div>
+        </div>
+
+        <!--div class="holds">
              <h2>enjoy the following privileges</h2>
             <ul>
                 <li ng-repeat="amenity in selectedRoom.amenities">[[amenity]] </li>
@@ -105,9 +108,11 @@ layout: default
             <div class="badger">
                 <img src="../../images/rooms/room-details/logo-details.png" width="160" height="144" alt="24 North Hotel"/>
             </div>
-        </div>
+        </div-->
+        <div class="clearfix"></div>
       </div>
-    </div>
+
+  </div>
   </section>
   <section>
     <div class="container">
@@ -116,7 +121,7 @@ layout: default
         <div class="col-md-7 p-l-0">
           <p class="highlight p-t-35">Information:</p>
 
-          <p class="p-b-25">| <span ng-bind-html="selectedRoom.room_size_sqm | renderHTMLCorrectly"></span> | <span ng-bind-html="selectedRoom.room_size_sqft | renderHTMLCorrectly"></span></p>
+          <p class="p-b-25"><!--| <span ng-bind-html="selectedRoom.room_size_sqm | renderHTMLCorrectly"></span> |--> <span ng-bind-html="selectedRoom.room_size_sqft | renderHTMLCorrectly"></span></p>
           <p class="p-b-25">[[selectedRoom.description]]</p>
 
           <!-- <p class="highlight">Need assistance? Our dedicated reservations team is available around the clock:</p>
