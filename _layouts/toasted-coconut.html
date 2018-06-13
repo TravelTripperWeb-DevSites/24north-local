@@ -4,17 +4,17 @@ layout: default
 <div class="starbucks coco">
 <section>
   <div class="home-banner-wrap">
-    <div id="homeCarousel" class="carousel slide"> 
+    <div id="homeCarousel" class="carousel slide">
       <!-- Wrapper for Slides -->
       <div class="carousel-inner" rt3-recent-bookings="recentBookings" rt3-rooms-browser="browser" rt3-search-form="search" on-search-changed="browser.tonightRate()" ng-cloak>
-        
+
  {% assign slilder_images = site.data._models.tc_carousel  | sort : "sort_order" %}
-            {% for slilderimages in slilder_images %}                                 
+            {% for slilderimages in slilder_images %}
             {% if forloop.first == true %}
             <div class="item active landing" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title={{ slilderimages.alt_text }}>
             {% else %}
             <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title={{ slilderimages.alt_text }}>
-            {% endif %}        
+            {% endif %}
            <!-- <img src="{{ slilderimages.slider_image.url }}" alt=""/>-->
           <div class="carousel-caption">
             <div class="caption-inner">
@@ -30,7 +30,7 @@ layout: default
       <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
     </div>-->
     <div class="theme-right-panel">
-      <div class="social-right"> <!--<a href="#"><i class="fa fa-instagram"></i></a>--> <a href="" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a> --></div>
+      <div class="social-right"> <!--<a href="#"><i class="fa fa-instagram"></i></a>--> <a href="" target="_blank" title="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a> --></div>
     </div>
   </div>
 </section>
@@ -45,9 +45,9 @@ layout: default
   <div class="container-fluid no-padding two-col-wrap">
     <div class="col-sm-6 no-padding v-center">
       <div class="two-col-content">
-        {% region opening-hours %} 
+        {% region opening-hours %}
 
-        
+
       </div>
     </div>
     {% region sb-1-img %}
@@ -62,7 +62,7 @@ layout: default
       <div class="two-col-content ">
 
       <!--  {% region allin-detail %} -->
-        <!-- <div class="btn-holder"><a href="#" class="button-common btn-blue">Discover More<i class="fa fa-play"></i></a></div>--> 
+        <!-- <div class="btn-holder"><a href="#" class="button-common btn-blue">Discover More<i class="fa fa-play"></i></a></div>-->
         <h3>Menu details</h3>
 
         <div class="icons">
@@ -72,7 +72,7 @@ layout: default
 
         <div class="icon-menu">
         <ul><li><h5> Breakfast</h5></li><li><p>Daily<br>8:00 AM to 11:00 AM</p></li><li><a href="/images/toasted-coconut-breakfast-menus.pdf" target="blank" title="PDF Link"></a></li></ul><ul><li><h5> Lunch & Dinner</h5></li><li><p>Daily<br>11:00 AM to 9:00 PM</p></li><li><a href="/images/toasted-coconut-lunch-menu.pdf" target="blank" title="Menu PDF"></a></li></ul><ul><li><h5> Cocktail</h5></li><li><p>Daily<br>11:00 AM to 10:00 PM</p></li><li><a href="/images/toasted-coconut-cocktail-menu.pdf" target="blank" title="Cocktail Menu PDF"></a></li></ul>
-      </div> 
+      </div>
       </div>
       </div>
     </div>
