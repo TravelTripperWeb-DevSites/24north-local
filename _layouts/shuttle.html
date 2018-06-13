@@ -4,16 +4,16 @@ layout: default
 <div class="starbucks shuttle">
 <section>
   <div class="home-banner-wrap">
-    <div id="homeCarousel" class="carousel slide"> 
+    <div id="homeCarousel" class="carousel slide">
       <!-- Wrapper for Slides -->
       <div class="carousel-inner" rt3-recent-bookings="recentBookings" rt3-rooms-browser="browser" rt3-search-form="search" on-search-changed="browser.tonightRate()" ng-cloak>
          {% assign slilder_images = site.data._models.shuttle_carousel  | sort : "sort_order" %}
-            {% for slilderimages in slilder_images %}                                 
+            {% for slilderimages in slilder_images %}
             {% if forloop.first == true %}
             <div class="item active landing" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
             {% else %}
             <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title={{ slilderimages.alt_text }}>
-            {% endif %}        
+            {% endif %}
           <!--<img src="{{ slilderimages.slider_image.url }}" alt="{{ slilderimages.carousel_caption }}"/>-->
       {% endfor %}
       </div>
@@ -22,7 +22,7 @@ layout: default
       <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
     </div>-->
     <div class="theme-right-panel">
-      <div class="social-right"> <!--<a href="#"><i class="fa fa-instagram"></i></a>--> <a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a> --></div>
+      <div class="social-right"> <!--<a href="#"><i class="fa fa-instagram"></i></a>--> <a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank" title="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a> --></div>
     </div>
   </div>
 </section>
@@ -49,7 +49,7 @@ layout: default
     <div class="col-sm-6 no-padding v-center">
       <div class="two-col-content">
         {% region explore-old-key %}
-       <!-- <div class="btn-holder"><a href="#" class="button-common btn-blue">Discover More<i class="fa fa-play"></i></a></div>--> 
+       <!-- <div class="btn-holder"><a href="#" class="button-common btn-blue">Discover More<i class="fa fa-play"></i></a></div>-->
       </div>
     </div>
   </div>
