@@ -1,4 +1,4 @@
-{% capture page_url %} {{ page.url }} {% endcapture %} 
+{% capture page_url %} {{ page.url }} {% endcapture %}
 {% if page_url contains "save-the-children" %}
 
 {% else %}
@@ -60,9 +60,16 @@
                     <h2>Newsletter</h2>
                     <form class="jotform-form" action="https://web2.cendynhub.com/FormPost/FormPost.ashx" method="post" name="form_82EC76A7-C9EB-4A62-8065-EEF08FF74540" id="82EC76A7-C9EB-4A62-8065-EEF08FF74540" accept-charset="utf-8">
                         <input type="hidden" name="formID" value="82EC76A7-C9EB-4A62-8065-EEF08FF74540" aria-label="form ID" title="form ID" />
-                        <div class="form-holder">
+                        <div class="form-holder email">
                             <input type="email" class="form-textbox validate[required] input-text" data-type="input-textbox" id="input_32" name="emailAddress" size="21" value="" placeholder="Enter Your Email..." required="required" aria-label="Email" title="Email" />
-                            <button type="submit" class="form-submit-button form-btn" aria-label="Send">Send</button>
+                        </div>
+                        <div class="checkbox tnc">
+                          <label>
+                            <input type="checkbox" required checked> I agree to the <a href="/terms-of-use/" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.
+                          </label>
+                        </div>
+                        <div class="form-holder">
+                          <button type="submit" class="form-submit-button form-btn" aria-label="Send">Send</button>
                         </div>
                     </form>
                     {% if page_url contains "save-the-children" %}
@@ -72,9 +79,8 @@
                         <h2 class="top-space">Reservations</h2>
                         <span class="block-element"><a href="tel:13053200940" title="305 320 0940"> 305 320 0940</a></span>
 
-
                     {% endif %}
-                   
+
                 </div>
             </div>
             <div class="col-md-2 col-xs-12 no-padding v-top foot-v-center no-border">
