@@ -539,16 +539,16 @@ $(document)
 
     //Show TNC checkbox on focus of email field
 
-    $('.email input')
-      .keyup(function () {
-        if ($.trim($(this)
-            .val()) != '')
-          $('.tnc')
-          .show();
-        else
-          $('.tnc')
-          .hide();
-      });
+    // $('.email input')
+    //   .keyup(function () {
+    //     if ($.trim($(this)
+    //         .val()) != '')
+    //       $('.tnc')
+    //       .show();
+    //     else
+    //       $('.tnc')
+    //       .hide();
+    //   });
 
     // $('[data-toggle="popover"]')
     //   .popover()

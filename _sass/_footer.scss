@@ -206,20 +206,9 @@ h2{
 }
 
 .tnc {
-
-  display: none;
   margin-bottom: 0;
   letter-spacing: normal;
   a {
     text-decoration: underline;
-  }
-
-  .popover {
-    position: absolute !important;
-    display: block !important;
-    width: 300px;
-    font-family: $main-font-light;
-    font-size: 12px;
-    color: #000;
   }
 }
