@@ -2,7 +2,9 @@
   "title": "The Cuban Key West: Where to Go for a Cuban Experience in Key West",
   "blogimage": {
     "url": "https://cdn.traveltripper.io/site-assets/359_384_1345/media/2017-02-15-181752/shutterstock_360818015.jpg",
-    "alt": "The Cuban Key West"
+    "alt": "The Cuban Key West",
+    "caption": "",
+    "description": ""
   },
   "seo_title": "where to go for a cuban experience in key west",
   "date": "Wed Feb 08 2017 00:00:00 GMT-0600 (CST)",
@@ -10,6 +12,6 @@
   "short_description": "<p>Key West is the closest you&rsquo;ll get to Cuba without leaving the country. It&rsquo;s also a hidden gem for Cuban culture, thanks to its shared history with the island nation. Whether you&rsquo;re looking for some of the best Cuban sandwiches in the country, or simply want to dance a little salsa, Key West is ripe with Cuban experiences. Here are our picks for the Cuban Key West:</p>",
   "Image_caption": "",
   "seo_description": "Key West is a hidden gem for Cuban culture and ripe with Cuban experiences. Here are our picks for the Cuban Key West:",
-  "url_friendly_name": "cuban-experience-key-west/",
-  "category": "category1"
+  "url_friendly_name": "cuban-experience-key-west",
+  "category": "category12"
 }
