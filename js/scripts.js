@@ -537,6 +537,26 @@ $(document)
       }
     }
 
+    // $(function() {
+    //     $('#sbtbtn').attr('disabled', 'disabled');
+    // });
+
+    $('input[type=email],input[type=checkbox]')
+      .on('change keyup', function () {
+
+        if ($('#email')
+          .val() != '' &&
+          $('#agree')
+          .is(':checked')) {
+
+          $('#send')
+            .removeAttr('disabled');
+        } else {
+          $('#send')
+            .attr('disabled', 'disabled');
+        }
+      });
+
     //Show TNC checkbox on focus of email field
 
     // $('.email input')
@@ -554,3 +574,5 @@ $(document)
     //   .popover()
 
   });
+
+// Diable Form Submission untill all fields filled

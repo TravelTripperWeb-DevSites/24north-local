@@ -4,3 +4,7 @@ a{
 	color: $bg-blue-1;
 	}
 }
+
+html input[disabled] {
+  opacity: .5;
+}
