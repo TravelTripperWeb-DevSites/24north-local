@@ -58,11 +58,18 @@
             <div class="col-md-4 col-xs-12 no-padding v-top">
                 <div class="footer-grid">
                     <h2>Newsletter</h2>
-                    <form class="jotform-form" action="https://web2.cendynhub.com/FormPost/FormPost.ashx" method="post" name="form_82EC76A7-C9EB-4A62-8065-EEF08FF74540" id="82EC76A7-C9EB-4A62-8065-EEF08FF74540" accept-charset="utf-8">
+                    <form class="jotform-form signup" action="https://web2.cendynhub.com/FormPost/FormPost.ashx" method="post" name="form_82EC76A7-C9EB-4A62-8065-EEF08FF74540" id="82EC76A7-C9EB-4A62-8065-EEF08FF74540" accept-charset="utf-8">
                         <input type="hidden" name="formID" value="82EC76A7-C9EB-4A62-8065-EEF08FF74540" aria-label="form ID" title="form ID" />
+                        <div class="form-holder email">
+                            <input type="email" id="email" class="form-textbox validate[required] input-text" data-type="input-textbox" id="input_32" name="emailAddress" size="21" value="" placeholder="Enter Your Email..." required="required" aria-label="Email" title="Email" />
+                        </div>
+                        <div class="checkbox tnc">
+                          <label>
+                            <input type="checkbox" id="agree" value="agree" required> I agree to the <a href="/terms-of-use/" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.
+                          </label>
+                        </div>
                         <div class="form-holder">
-                            <input type="email" class="form-textbox validate[required] input-text" data-type="input-textbox" id="input_32" name="emailAddress" size="21" value="" placeholder="Enter Your Email..." required="required" aria-label="Email" title="Email" />
-                            <button type="submit" class="form-submit-button form-btn" aria-label="Send">Send</button>
+                          <input type="submit" id="send" value="Send" class="form-submit-button form-btn" aria-label="Send" disabled/>
                         </div>
                     </form>
                     {% if page_url contains "save-the-children" %}
@@ -71,7 +78,6 @@
 
                         <h2 class="top-space">Reservations</h2>
                         <span class="block-element"><a href="tel:13053200940" title="305 320 0940"> 305 320 0940</a></span>
-
 
                     {% endif %}
 
