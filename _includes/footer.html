@@ -61,15 +61,15 @@
                     <form class="jotform-form signup" action="https://web2.cendynhub.com/FormPost/FormPost.ashx" method="post" name="form_82EC76A7-C9EB-4A62-8065-EEF08FF74540" id="82EC76A7-C9EB-4A62-8065-EEF08FF74540" accept-charset="utf-8">
                         <input type="hidden" name="formID" value="82EC76A7-C9EB-4A62-8065-EEF08FF74540" aria-label="form ID" title="form ID" />
                         <div class="form-holder email">
-                            <input type="email" id="email" class="form-textbox validate[required] input-text" data-type="input-textbox" id="input_32" name="emailAddress" size="21" value="" placeholder="Enter Your Email..." required="required" aria-label="Email" title="Email" />
+                            <input type="email" class="form-textbox validate[required] input-text" data-type="input-textbox" id="input_32" name="emailAddress" size="21" value="" placeholder="Enter Your Email..." required="required" aria-label="Email" title="Email" />
                         </div>
                         <div class="checkbox tnc">
                           <label>
-                            <input type="checkbox" id="agree" value="agree" required> I agree to the <a href="/terms-of-use/" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.
+                            <input type="checkbox" name="agree" value="agree" id="agree" required="required"> I agree to the <a href="/terms-of-use/" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.
                           </label>
                         </div>
                         <div class="form-holder">
-                          <input type="submit" id="send" value="Send" class="form-submit-button form-btn" aria-label="Send" disabled/>
+                          <input type="submit" value="Send" class="form-submit-button form-btn" aria-label="Send" disabled/>
                         </div>
                     </form>
                     {% if page_url contains "save-the-children" %}
