@@ -443,28 +443,26 @@ window.fbAsyncInit = function () {
     .appendChild(e);
 }());
 
+// The below social share script has been commented out as it is no longer being used.
+// Delete it if you wish, it is unlikely we will ever use it again.
 
-$('.fa-facebook')
-  .click(function (e) {
-    e.preventDefault();
-    FB.ui({
-      method: 'share_open_graph',
-      action_type: 'og.shares',
-      action_properties: JSON.stringify({
-        object: {
-          'og:url': window.location.href,
-          'og:title': $("h1.blog-heading")
-            .text(),
-          'og:description': $(".blog-description")
-            .text(),
-          'og:image:width': '1200',
-          'og:image:height': '650',
-          'og:image': "http:" + $("img.hero-img")
-            .attr("src")
-        }
-      })
-    });
-  });
+// $('.social-share .fa-facebook').click(function(e) {
+//   e.preventDefault();
+//   FB.ui({
+//     method: 'share_open_graph',
+//     action_type: 'og.shares',
+//     action_properties: JSON.stringify({
+//       object: {
+//         'og:url': window.location.href,
+//         'og:title': $("h1.blog-heading").text(),
+//         'og:description': $(".blog-description").text(),
+//         'og:image:width': '1200',
+//         'og:image:height': '650',
+//         'og:image': "http:" + $("img.hero-img").attr("src")
+//       }
+//     })
+//   });
+// });
 
 //Offer Promo Popup
 
