@@ -443,28 +443,26 @@ window.fbAsyncInit = function () {
     .appendChild(e);
 }());
 
+// The below social share script has been commented out as it is no longer being used.
+// Delete it if you wish, it is unlikely we will ever use it again.
 
-$('.fa-facebook')
-  .click(function (e) {
-    e.preventDefault();
-    FB.ui({
-      method: 'share_open_graph',
-      action_type: 'og.shares',
-      action_properties: JSON.stringify({
-        object: {
-          'og:url': window.location.href,
-          'og:title': $("h1.blog-heading")
-            .text(),
-          'og:description': $(".blog-description")
-            .text(),
-          'og:image:width': '1200',
-          'og:image:height': '650',
-          'og:image': "http:" + $("img.hero-img")
-            .attr("src")
-        }
-      })
-    });
-  });
+// $('.social-share .fa-facebook').click(function(e) {
+//   e.preventDefault();
+//   FB.ui({
+//     method: 'share_open_graph',
+//     action_type: 'og.shares',
+//     action_properties: JSON.stringify({
+//       object: {
+//         'og:url': window.location.href,
+//         'og:title': $("h1.blog-heading").text(),
+//         'og:description': $(".blog-description").text(),
+//         'og:image:width': '1200',
+//         'og:image:height': '650',
+//         'og:image': "http:" + $("img.hero-img").attr("src")
+//       }
+//     })
+//   });
+// });
 
 //Offer Promo Popup
 
@@ -537,42 +535,56 @@ $(document)
       }
     }
 
-    // $(function() {
-    //     $('#sbtbtn').attr('disabled', 'disabled');
-    // });
-
-    $('input[type=email],input[type=checkbox]')
-      .on('change keyup', function () {
-
-        if ($('#email')
-          .val() != '' &&
-          $('#agree')
-          .is(':checked')) {
-
-          $('#send')
-            .removeAttr('disabled');
-        } else {
-          $('#send')
-            .attr('disabled', 'disabled');
-        }
-      });
-
-    //Show TNC checkbox on focus of email field
-
-    // $('.email input')
-    //   .keyup(function () {
-    //     if ($.trim($(this)
-    //         .val()) != '')
-    //       $('.tnc')
-    //       .show();
-    //     else
-    //       $('.tnc')
-    //       .hide();
-    //   });
-
-    // $('[data-toggle="popover"]')
-    //   .popover()
-
   });
 
-// Diable Form Submission untill all fields filled
+
+// Restrict Form Submission by disbling Submit button untill all required fields are filled (W.r.t GDPR Guidelines)
+
+function checkForm() {
+  // here, "this" is an input element
+  var isValidForm = true;
+  $(this.form)
+    .find(':input[required]:visible')
+    .each(function () {
+      if (!this.value.trim()) {
+        isValidForm = false;
+      }
+    });
+  $(this.form)
+    .find('input[type="checkbox"]:required')
+    .each(function () {
+      if (!$(this)
+        .is(':checked')) {
+        isValidForm = false;
+      }
+    });
+  $(this.form)
+    .find('select:required')
+    .each(function () {
+      if (!$(this)
+        .find('option:selected')
+        .val()
+        .trim()) {
+        isValidForm = false;
+      }
+    });
+
+  $(this.form)
+    .find('.form-submit-button, .rfp-btn, .meet-btn') // Button class names should be unique for every form
+    .prop('disabled', !isValidForm);
+  return isValidForm;
+}
+
+$('.form-submit-button, .rfp-btn, .meet-btn') // Button class names should be unique for every form
+  .closest('form')
+  // indirectly bind the handler to form
+  .submit(function () {
+    return checkForm.apply($(this)
+      .find(':input')[0]);
+  })
+  // look for input elements
+  .find(':input[required]:visible')
+  // bind the handler to input elements
+  .on('change keyup', checkForm)
+  // immediately fire it to initialize buttons state
+  .keyup();

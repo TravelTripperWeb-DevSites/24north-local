@@ -212,3 +212,7 @@ h2{
     text-decoration: underline;
   }
 }
+
+button[disabled], html input[disabled] {
+  opacity: .4;
+}
