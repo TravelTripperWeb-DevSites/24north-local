@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <section>
   <div class="home-banner-wrap">
     <div id="homeCarousel" class="carousel slide">
@@ -26,21 +25,20 @@ layout: default
             {% else %}
             <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title={{ slilderimages.alt_text }}>
             {% endif %}
-            <!-- <img src="{{ slilderimages.slider_image.url }}" alt=""/>-->
           <div class="carousel-caption transparent-bg">
             <div class="caption-inner">
                {{ slilderimages.carousel_caption }}
             </div>
           </div>
 
-          <div class="caption-price" style="display:none"> <span class="price-holder" ng-show="recentBookings.totalBookings > 5"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
+          <div class="caption-price" style="display:none"> <span class="price-holder" ng-show="recentBookings.totalBookings > 5"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" title="Tonight’s Rate" ><span>[[ browser.toNightsRate ]]</span>Tonight’s Rate</a></span></div>
           <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
                        <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
              <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
                 <div class="boxes">
                   <div class="tonight-rate ">
                   <p>Best Price Available</p>
-                  <h4>Tonight's Rate <a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" ><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
+                  <h4>Tonight's Rate <a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" title="Browse Rates" ><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
                   </div>
                   <div class="ota-list" >
                     <ul>
@@ -59,11 +57,8 @@ layout: default
 
       </div>
     </div>
-    <!--<div class="theme-left-panel">
-      <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
-    </div>-->
     <div class="theme-right-panel">
-      <div class="social-right"><!-- <a href="#"><i class="fa fa-instagram"></i></a> --><a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a> --></div>
+      <div class="social-right"><a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank" title="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a></div>
     </div>
   </div>
 </section>
@@ -92,13 +87,14 @@ layout: default
     <div class="col-sm-6 no-padding v-center">
       <div class="two-col-content">
         {% region about-hotel-text %}
-        <!--<div class="btn-holder"><a href="#" class="button-common btn-blue">View this suite<i class="fa fa-play"></i></a></div>-->
       </div>
     </div>
   </div>
   <div class="graphic">{% region curve2-image %}</div>
 </section>
-
+<!-- Flip to river code starts here -->
+<div id="fliptoRiver"></div>
+<!-- Flip to river code ends here -->
 <section>
   <div class="container-fluid no-padding home-rooms-wrap">
     <div class="home-rooms">
@@ -121,7 +117,7 @@ layout: default
               <h2>Rooms & Suites</h2>
               <h3><span class="block-element">[[room.name]]</span></h3>
               <p></p>
-              <div class="btn-holder extra padding"><a href="/rooms/" class="button-common btn-blue">View Rooms<i class="fa fa-play"></i></a></div>
+              <div class="btn-holder extra padding"><a href="/rooms/" class="button-common btn-blue" title="View Rooms">View Rooms<i class="fa fa-play"></i></a></div>
             </div>
 			       </div>
           </data-owl-carousel >
@@ -141,7 +137,7 @@ layout: default
           {%  include special-offers.html %}
           <div class="graphic">{% region stamp2-image %}</div>
 
-          <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue">View all Specials<i class="fa fa-play"></i></a></div>
+          <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue" title="View all Specials">View all Specials<i class="fa fa-play"></i></a></div>
 
 
         </div>
@@ -154,7 +150,7 @@ layout: default
     	<div class="cta-theme">
         	<div class="pf-wrap">
         	{% region paradisefound %}
-            <div><a href="/gallery/" class="button-common btn-white">View Gallery<i class="fa fa-play"></i></a></div>
+            <div><a href="/gallery/" class="button-common btn-white" title="View Gallery">View Gallery<i class="fa fa-play"></i></a></div>
         	</div>
         </div>
     </div>
@@ -172,7 +168,7 @@ layout: default
 
       {% include location.html %}
 
-           <div><a href="/location/" class="button-common btn-blue">Explore location<i class="fa fa-play"></i></a></div>
+           <div><a href="/location/" class="button-common btn-blue" title="Explore location">Explore location<i class="fa fa-play"></i></a></div>
 
            <div class="graphic">{% region stamp3-image %}</div>
 
@@ -199,5 +195,3 @@ layout: default
 	<div class="new-map">
     {% region new-map-image %} </div>
 </section>
-
-

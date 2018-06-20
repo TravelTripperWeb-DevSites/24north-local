@@ -5,7 +5,7 @@
 	&.meet{
 		.page-banner { padding:5% 0;
 	 &.rooms-banner {
-		background: url(//cdn.traveltripper.io/site-assets/359_384_8898/media/2017-10-31-014447/meet-banner.jpg) no-repeat center center;
+		background: url(//cdn.traveltripper.io/site-assets/359_384_15889/media/2018-05-16-061151/stamp-1.jpg) no-repeat center center;
 		background-size: cover;
 		}
 	}
@@ -19,6 +19,7 @@ margin-bottom:0px;
  .page-title {
 font-size:48px;
 padding:40px 0;
+position: relative;
 }
 }
 .desp {
@@ -212,8 +213,8 @@ label {
 }
 }
 }
-	.btn-lt-blue{ 
-		background-color: #3a9dc4;
+	.btn-lt-blue{
+		background-color: $tc-dark-blue;
 		display: inline-block;
 		font-size: 14px;
 		letter-spacing: 4px;
@@ -241,5 +242,22 @@ label {
 .meetinkw{
 	.container{
 		max-width: 70%;
+
+		.meet-img{
+			    padding: 50px 0 30px;
+			img{
+				width:100%;
+			}
+		}
+	}
+}
+
+.contest{
+	text-align: center;
+	h4{
+		margin: 15px 0;
+	}
+	h5{
+		margin: 10px 0;
 	}
 }

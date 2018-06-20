@@ -37,31 +37,60 @@
 		p{ color:#3a9dc4; font-size:32px; padding-bottom:15px;}
 		.btn-holder{ padding:0px;}
 	}
+  .room-img {
+    min-height: 400px;
+    background-size: cover;
+    @media (max-width: 767px){
+        min-height: 220px;
+    }
+    .badger{ position:absolute; bottom:-20px; right:10px;}
+  }
 	.details-intro{ padding:45px; background:#1f4552; color:#fff;
 		h2{
 			font-size: 14px;
 			text-transform: uppercase;
 			font-family: "brandon_grotesquebold";
 			letter-spacing: 5px;
-			vertical-align:middle; padding-top:70px;
+			vertical-align:middle; padding-top:70px;padding-bottom: 70px;
 			@media (max-width: 767px){
-				 padding-top:0px; padding-bottom:20px;
+				 padding-top: 20px;
+         padding-bottom:20px;
 			}
 		}
-		li{
-			list-style:none; padding:5px 0;
-			font-family: 'brandon_grotesquelight';
-			font-size: 18px;
-			line-height: 24px;
-		}
-	}
+    ul {
+      padding-bottom: 30px;
+  		li {
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        padding: 5px 30px;
+        font-family: 'brandon_grotesquelight';
+        font-size: 18px;
+        line-height: 24px;
+        list-style: none;
+        @media (max-width: 480px) {
+          width: 100%;
+        }
+        &:before {
+          position: absolute;
+          top: .1em;
+          left: 0;
+          width: 10px;
+          height: 10px;
+          padding-right: 30px;
+          text-align: right;
+          content: '\2022';
+        }
+  		}
+    }
+}
 	.information{ padding:33px;
 		img{
 				@media (max-width: 767px){
 					 width:90%; height:90%;
 				}
 		}
-		p{font-family: 'brandon_grotesquelight'; font-size: 18px; line-height: 24px;
+		p{font-family: 'brandon_grotesquelight'; font-size: 18px; line-height: 24px; margin-bottom: 30px;
 			&.highlight{font-family: "brandon_grotesqueregular"; padding-bottom:25px;}
 			span{ padding:0 15px;}
 		}
@@ -109,7 +138,7 @@
 						@media (max-width: 767px){
 							 max-width:90%;
 						}
-						.badger{ position:absolute; bottom:-20px; right:-10px;}
+						.badger{ position:absolute; bottom:20px; right:0px;}
 						h2{ text-align:center; padding-top:36px; padding-right:20px;
 							@media (max-width: 992px){
 							 padding-top:50px;
@@ -145,7 +174,6 @@
 				h2 {
 					font-size: 14px;
 					text-transform: uppercase;
-					font-family: "brandon_grotesquebold";
 					letter-spacing: 5px;
 					padding-top:25px;
 				}
@@ -162,7 +190,8 @@
 				}
 				p{
 					color: #333333;
-					font-family: 'brandon_grotesquelight'; font-size: 18px; line-height: 24px;
+					font-size: 18px;
+					line-height: 24px;
 					padding-top:47px;
 					@media (max-width: 767px){
 							padding-bottom:20px; padding-top:20px;
@@ -174,7 +203,6 @@
 						display: inline-block;
 						font-size: 14px;
 						letter-spacing: 2px;
-						font-family: "brandon_grotesquemedium";
 						color: #ffffff;
 						padding: 12px 26px;
 						text-align: center;
@@ -186,7 +214,7 @@
 					}
 				}
 			}
-		
+
 		.lifestyle{ padding-bottom:50px;
 			background: #fbf8ef;
 			h3{
@@ -204,6 +232,7 @@
 				line-height: 24px;
 				padding:0 16% 10px;
 				text-align:left;
+				margin-bottom: 15px;
 				@media (max-width: 768px){
 					 padding:0 20px 10px;
 				}

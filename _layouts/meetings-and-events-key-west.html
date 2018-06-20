@@ -6,9 +6,9 @@ layout: default
   <div class="home-banner-wrap meetings-wrap">
    <div id="sync1" class="carousel">
    	       {% assign slilder_images = site.data._models.groups_slider_images  | sort : "sort_order" %}
-            {% for slilderimages in slilder_images %}                                  
-              <div class="item">           
-              <img src="{{ slilderimages.slider_image.url }}" title={{ slilderimages.alt_text }} class="banner"/>
+            {% for slilderimages in slilder_images %}
+              <div class="item">
+              <img src="{{ slilderimages.slider_image.url }}" title="{{ slilderimages.alt_text }}" alt="{{ slilderimages.alt_text }}" class="banner"/>
               <div class="carousel-caption">
                 <div class="caption-inner">
                   {{ slilderimages.carousel_caption }}
@@ -16,21 +16,21 @@ layout: default
               </div>
           </div>
           {% endfor %}
-        
+
     </div>
     <div id="sync2" class="carousel">
         {% assign slilder_images = site.data._models.groups_slider_images  | sort : "sort_order" %}
-        {% for slilderimages in slilder_images %}      	 
+        {% for slilderimages in slilder_images %}
           <div class="item">
-            <img src="{{ slilderimages.thumb_image.url }}" title={{ slilderimages.alt_text }}>
+            <img src="{{ slilderimages.thumb_image.url }}" title="{{ slilderimages.alt_text }}" alt="{{ slilderimages.alt_text }}">
           </div>
-        {% endfor %}         
+        {% endfor %}
     </div>
     <!--<div class="theme-left-panel">
       <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
     </div>-->
     <div class="theme-right-panel">
-      <div class="social-right"><!-- <a href="#"><i class="fa fa-instagram"></i></a> --><a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a> --></div>
+      <div class="social-right"><!-- <a href="#"><i class="fa fa-instagram"></i></a> --><a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank" title="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a> --></div>
     </div>
   </div>
 </section>
@@ -46,7 +46,7 @@ layout: default
   </div>
 </section>
 <section>
-  <div class="container-fluid no-padding two-col-wrap">
+  <div class="container-fluid no-padding two-col-wrap group-accomodation">
     <div class="col-md-5 no-padding v-center blue-bg">
       <div class="two-col-content">
         {% region group-accom %}
@@ -60,7 +60,7 @@ layout: default
     <div class="col-sm-7 no-padding v-center">{% region meeting-image-2 %}</div>
     <div class="col-sm-5 no-padding v-center blue-bg">
       <div class="two-col-content">
-        {% region work-fun %} 
+        {% region work-fun %}
       </div>
     </div>
   </div>
@@ -70,7 +70,7 @@ layout: default
 	{% region stamp2-blue-image %}
 	<div class="container-fluid">
     	{% region nomatter %}
-      
+
   </div>
 </section>
 

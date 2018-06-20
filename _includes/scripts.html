@@ -24,7 +24,7 @@ function getIp(data){
 <script src="/js/rt3-directives.js"></script>
 <script src="/js/rt3-filters.js"></script>
 <script src="/js/jquery.expire.js"></script>
-<script src="/js/utm-tracking.js"></script>
+<!-- <script src="/js/utm-tracking.js"></script> -->
 <script src="/js/lunr.js"></script>
 <script src="/js/search.js"></script>
 
@@ -41,7 +41,7 @@ function getIp(data){
       defaultCurrency: 'USD',
     });
     $("[show-booking-widget]").bookingWidget({
-         showRateCalendar: true,
+         showRateCalendar: false,
          showOfferCode: true
     });
 </script>
@@ -85,4 +85,28 @@ function getIp(data){
 			}
 	});
 
+</script>
+<script src="/js/plugins/rt-widget.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('body').RTwidgets(
+{% if site.data.special-popup-modal.publish == 'true' %}
+       {
+              offer_popup_widget: {
+                  show: true,
+                       offer_data_url: '/js/api/special-offer-popup.json',
+                        timeout: 3000
+              }
+          }
+{% else %}
+          {
+              offer_popup_widget: {
+                  show: false,
+                  timeout: 3000
+              }
+          }
+{% endif %}
+          );
+    });
 </script>

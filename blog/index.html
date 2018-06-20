@@ -2,7 +2,8 @@
 layout: default
 pagename: blog
 title: News & Events in Key West Florida | Events at 24 North Hotel
-excerpt: There's always plenty of activities taking place in Key West Florida, take a look at some of the events happening near our accommodationa & find things to do.
+meta_description: There's always plenty of activities taking place in Key West Florida, take a look at some of the events happening near our accommodationa & find things to do.
+meta_tags: noindex, follow  
 ---
 <section>
     <div class="container no-padding">
@@ -29,7 +30,7 @@ excerpt: There's always plenty of activities taking place in Key West Florida, t
                         <span class="date"> {% assign d = post.date | date: "%-d" %}
                         {{ post.date | date: "%B" }} 
                         {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, 
-                        {{ post.date | date: "%Y" }} </span> | <span class="category"><a href="{{post.category.url_friendly_name}}">{{post.category.title}}</a></span></div>
+                        {{ post.date | date: "%Y" }} </span> | <span class="category"><a href="/blog/category/{{post.category.url_friendly_name}}">{{post.category.title}}</a></span></div>
                         {% if post.short_description != "" %}
                         {{ post.short_description }}
                         {% endif %}
