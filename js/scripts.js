@@ -572,12 +572,12 @@ function checkForm() {
     });
 
   $(this.form)
-    .find('.form-submit-button, .rfp-btn, .meet-btn') // Button class names should be unique for every form
+    .find('.form-submit-button, .rfp-btn, .meet-btn, #wedding-rfp, #contest-btn') // Button class names should be unique for every form
     .prop('disabled', !isValidForm);
   return isValidForm;
 }
 
-$('.form-submit-button, .rfp-btn, .meet-btn') // Button class names should be unique for every form
+$('.form-submit-button, .rfp-btn, .meet-btn, #wedding-rfp, #contest-btn') // Button class names should be unique for every form
   .closest('form')
   // indirectly bind the handler to form
   .submit(function () {
