@@ -200,7 +200,8 @@ var rt_offer_popup_widget = function() {
             data.special_rates.forEach(function(item) {
 
               var detail_offer = '';
-              if (item.rate_plan_code == _this.settings.offer_popup_widget.rt_offer_code) {
+              // The below conditional has been removed as there is only one popup widget. Why would you need to do this check? It causes more problems that it solves. If you want to add it back, explain your reasoning to Brad, because if he gets another ticket about this shitty plugin he's going to lose his mind.
+              // if (item.rate_plan_code == _this.settings.offer_popup_widget.rt_offer_code) {
                 if (_this.settings.offer_popup_widget.show_detail) {
                   detail_offer = '<div class="popup-detail-offer">' + item.short_description + '</div>';
                 }
@@ -215,7 +216,7 @@ var rt_offer_popup_widget = function() {
                 setTimeout(function() {
                   return $('body').append(view_template);
                 }, _this.settings.offer_popup_widget.timeout);
-              }
+              // }
             });
           }
         }
