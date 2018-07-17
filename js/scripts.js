@@ -14,6 +14,12 @@ $(".campaign-item").height(maxHeight);
 $(document)
   .ready(function () {
 
+    // Blog categories
+        $(".toggle-arrow").click(function(){
+          $(this).toggleClass('rotate');
+          $(".categories").stop().slideToggle();
+        });
+
     $("#carousel-bottom")
       .owlCarousel({
 
@@ -588,3 +594,13 @@ $('.form-submit-button, .rfp-btn, .meet-btn, #wedding-rfp, #contest-btn') // But
   .on('change keyup', checkForm)
   // immediately fire it to initialize buttons state
   .keyup();
+
+
+  $(window).on('scroll',function() {
+       $('.fixed-sidebar').affix({
+         offset: {
+           top: $('.fixed-sidebar').offset().top - 80,
+           bottom: $('.total-footer').outerHeight(true)
+         }
+       });
+  });

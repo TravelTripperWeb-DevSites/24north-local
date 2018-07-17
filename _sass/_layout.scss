@@ -1259,6 +1259,28 @@ h2{
 .page-banner.blog-banner {
 	background: url("/images/blog-banner.jpg") no-repeat center bottom;
 	background-size: cover;
+  position: relative;
+  h1 {
+    padding-bottom: 0;
+    z-index: 9;
+    position: relative;
+  }
+  p {
+    color: $white;
+    padding: 0 20px 110px 20px;
+    font-size: 20px;
+    z-index: 9;
+    position: relative;
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0, 0, 0, .6);
+  }
 }
 
 .row-equal-height{

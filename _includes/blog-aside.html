@@ -2,13 +2,13 @@
     <div class="widget-box">
         <h4 class="mb-3">Search</h4>
         <form class="search-form" action="/blog/search/" method="get">
-            <input type="text" id="search-box" class="input-grey" name="query" placeholder="Type Here..." aria-label="Search Field" title="Search Field" /> 
+            <input type="text" id="search-box" class="input-grey" name="query" placeholder="Type Here..." aria-label="Search Field" title="Search Field" />
             <button class="submit-btn" aria-label="Search" title="Search"><i class="fa fa-search"></i></button>
         </form>
-    </div>    
+    </div>
     <hr>
     <div class="widget-box">
-        <h4 class="my-3">Recent Posts</h4>
+        <h4 class="my-3 recent-title">Recent Posts</h4>
         <ul class="recent-posts">
             {% for recentpost in site.data._models.blog | limit: 5 %}
             <li>
@@ -17,33 +17,33 @@
                     <p> <a href="/blog/{{recentpost.url_friendly_name }}/" title="{{ recentpost.title }}">{{recentpost.title  | truncate: 25 }} </a> </p>
                     <div class="post-details">
                         <span class="date"> {% assign d = recentpost.date | date: "%-d" %}
-                        {{ recentpost.date | date: "%B" }} 
-                        {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, 
+                        {{ recentpost.date | date: "%B" }}
+                        {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
                         {{ recentpost.date | date: "%Y" }} </span>
                     </div>
                 </div>
                 <div class="clear-float"></div>
             </li>
-            {% endfor %} 
+            {% endfor %}
         </ul>
     </div>
-    <hr>
+    <hr class="sup-line">
     <div class="widget-box">
-        <h4 class="mb-3">Categories</h4>
+        <h4 class="mb-3">Categories <span class="toggle-arrow"><i class="fa fa-angle-down"></i></span></h4>
         <ul class="categories">
-            {% assign categories = site.data._models.category | sort:'order' %} 
-            {% for categorylist in categories %} 
-            <li><a href="/blog/category/{{categorylist.url_friendly_name}}" title="{{categorylist.title}}"> {{categorylist.title}} 
+            {% assign categories = site.data._models.category | sort:'order' %}
+            {% for categorylist in categories %}
+            <li><a href="/blog/category/{{categorylist.url_friendly_name}}" title="{{categorylist.title}}"> {{categorylist.title}}
                 {% assign count = 0 %}
                 {% for postcount in site.data._models.blog %}
                 {% if postcount.category.title == categorylist.title%}
-                {% capture count  %}{{ count  | plus: '1' }}{% endcapture %} 
-                {%endif%} 
-                {%endfor%} 
+                {% capture count  %}{{ count  | plus: '1' }}{% endcapture %}
+                {%endif%}
+                {%endfor%}
                 <span>({{count}})</span>
                 </a>
             </li>
-            {%endfor%} 
+            {%endfor%}
         </ul>
     </div>
 </div>

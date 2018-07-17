@@ -6,14 +6,23 @@ layout: default
     <div class="container no-padding">
         <div class="page-banner blog-banner">
             <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"></div>
-            <h1 class="page-title">Blog</h1>
+            <h1 class="page-title">24 North Hotel Blog</h1>
+            <p>The island of Key West packs a lot of punch in its relatively small surface area. To keep tabs on Duval Street nightlife, seasonal seafood, event guides, watersport adventures and more, bookmark the 24 North Hotel Blog.</p>
         </div>
     </div>
 </section>
 <section class="blog-section">
     <div class="container">
         <div class="row">
+
+            <div class="col-sm-4 scrollspy">
+                <div class="blog-right-block fixed-sidebar"> {% include blog-aside.html %} </div>
+            </div>
             <div class="col-sm-8">
+              <div class="blog-main-head">
+                <h2>{{ page.title }}</h2>
+                <p>{{ page.description }}</p>
+              </div>
                 <div class="blog-list">
                     {% for post in site.data._models.blog %} {% if post.category.url_friendly_name == page.url_friendly_name %}
                     <div class="blog-item">
@@ -22,8 +31,8 @@ layout: default
                         <h2><a href="{{ post.id | permalink: model_dir: 'blog' }}">{{ post.title }}</a></h2>
                         <div class="post-details">
                             <span class="date"> {% assign d = post.date | date: "%-d" %}
-                            {{ post.date | date: "%B" }} 
-                            {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, 
+                            {{ post.date | date: "%B" }}
+                            {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
                             {{ post.date | date: "%Y" }} </span> | <span class="category"><a href="/blog/category/{{post.category.url_friendly_name}}">{{post.category.title}}</a></span></div>
                         {% if post.short_description != "" %} {{ post.short_description }} {% endif %}
                         <div class="blog-btn"><a href="{{ post.id | permalink: model_dir: 'blog' }}" class="button-common btn-blue">Read More<i class="fa fa-play"></i></a></div>
@@ -31,9 +40,6 @@ layout: default
                     <div class="clearfix"></div>
                     <hr> {% endif %} {% endfor %}
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="blog-right-block"> {% include blog-aside.html %} </div>
             </div>
         </div>
     </div>

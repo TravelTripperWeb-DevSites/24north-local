@@ -1,5 +1,15 @@
 .blog-section {
     padding: 60px 0 60px 0;
+    .col-sm-4 {
+      @media(min-width:768px) {
+        float: right;
+      }
+    }
+    .col-sm-8 {
+      @media(min-width:768px) {
+        float: left;
+      }
+    }
 }
 
 .blog-list {
@@ -225,6 +235,7 @@
     ul {
         &.categories {
         	list-style: none;
+          display: none;
             li {
             	margin-bottom: 5px;
                 a {
@@ -233,9 +244,17 @@
                 }
             }
         }
+        @media (min-width: 768px) {
+          display: block !important;
+        }
     }
+
     .recent-posts {
     	list-style: none;
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
         li {
             margin-bottom: 2.5rem;
             .thumb {
@@ -322,4 +341,68 @@
             }
         }
     }
+}
+.blog-main-head {
+  padding-top: 30px;
+  @media (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+.recent-title, .sup-line {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+.fixed-sidebar {
+  background-color: $white;
+}
+.affix-top {
+  position: relative;
+}
+.affix {
+  position: relative;
+  top: auto;
+  max-width: none;
+  @media (min-width: 768px) {
+    position: fixed;
+    top: 90px;
+    bottom: 0;
+  }
+}
+.affix-bottom {
+  width: 100%;
+  max-width: none;
+  @media (min-width: $screen-md-min) {
+    position: absolute;
+    max-width: 310px;
+  }
+  @media (min-width: 1300px) {
+    max-width: 410px;
+  }
+}
+
+.toggle-arrow {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 30px;
+  line-height: 17px;
+  cursor: pointer;
+  transition: all .5s;
+  @media (min-width: 768px) {
+    display: none;
+  }
+  .fa {
+    line-height: 17px;
+  }
+  &.rotate {
+    transform: rotate(180deg);
+  }
 }
