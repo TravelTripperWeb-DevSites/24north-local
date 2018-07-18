@@ -1275,14 +1275,14 @@ h2{
   position: relative;
   h1 {
     padding-bottom: 0;
-    z-index: 9;
+    z-index: 1;
     position: relative;
   }
   p {
     color: $white;
     padding: 0 20px 110px 20px;
     font-size: 20px;
-    z-index: 9;
+    z-index: 1;
     position: relative;
   }
   &:after {

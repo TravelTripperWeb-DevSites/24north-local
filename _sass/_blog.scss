@@ -349,8 +349,18 @@
     padding-bottom: 30px;
   }
   p {
-    font-size: 16px;
-    line-height: 26px;
+    font-family: 'brandon_grotesquelight';
+    font-size: 18px;
+    line-height: 30px;
+    color: #444;
+    letter-spacing: 1px;
+  }
+  h2 {
+    padding: 0 0 15px;
+    font-family: 'brandon_grotesquelight';
+    font-size: 30px;
+    color: #115e7c;
+    text-transform: uppercase;
   }
 }
 .recent-title, .sup-line {
