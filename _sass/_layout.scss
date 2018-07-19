@@ -1285,15 +1285,6 @@ h2{
     z-index: 1;
     position: relative;
   }
-  &:after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: '';
-    background-color: rgba(0, 0, 0, .6);
-  }
 }
 
 .row-equal-height{
@@ -1550,6 +1541,15 @@ h2{
     		width: 164px;
 		}
 	}
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0, 0, 0, .4);
+  }
 }
 .bt {
 	position: relative;
@@ -1730,4 +1730,8 @@ h2{
 		background-image: url("//cdn.traveltripper.io/site-assets/359_384_15889/media/2018-05-16-071045/Sunset-Green-Table-Setup-1.jpg") !important;
 		background-attachment: fixed  !important;
 
+}
+
+.mb-60 {
+  margin-bottom: 60px;
 }

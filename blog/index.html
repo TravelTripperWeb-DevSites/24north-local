@@ -48,7 +48,7 @@ meta_tags: noindex, follow
                       {% endfor %}
                   </div>
                   <div class="pagination-wrapper">
-                      <div class="pagination">
+                      <!-- <div class="pagination">
                           <p><span class="page_number ">Page: {{ data_paginator.page }} of {{ data_paginator.total_pages }}</span></p>
                           <ul class="pagination">
                               {% if data_paginator.previous_page %}
@@ -60,7 +60,45 @@ meta_tags: noindex, follow
 
                               {% endif %}
                           </ul>
+                      </div> -->
+                      {% if data_paginator.total_pages > 1 %}
+
+                    <div class="pagination">
+                      {% if data_paginator.previous_page %}
+                        <a href="{{ data_paginator.previous_page_path}}{% if data_paginator.previous_page_path != '/blog/' %}/{% endif %}" class="previous" title="previous">Previous</a>
+                      {% endif %}
+
+                      <div class="page-numbers">
+
+                        {% assign start_page = data_paginator.page %}
+                        {% assign end_page = data_paginator.page | plus:4 %}
+
+                        {% if end_page > data_paginator.total_pages %}
+                          {% assign end_page = data_paginator.total_pages %}
+                        {% endif %}
+
+                        {% assign pageDiff = data_paginator.total_pages | minus:data_paginator.page %}
+
+                        {% if pageDiff < 4 %}
+                          {% assign start_page = data_paginator.total_pages | minus:4 %}
+                        {% endif %}
+
+                        {% for page in (start_page..end_page) %}
+                            {% if page == 1 %}
+                              <a href="/blog/" class="{% if page == data_paginator.page %} current {% endif %}"> 1 </a>
+                            {% else %}
+                              <a href="/blog{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="{% if page == data_paginator.page %} current {% endif %}">{{ page }}</a>
+                            {% endif %}
+                        {% endfor %}
+
                       </div>
+
+                      {% if data_paginator.next_page %}
+                        <a href="{{ data_paginator.next_page_path }}{% if data_paginator.next_page_path !='/blog/' %}/{%endif%}" class="next" title="Next">Next</a>
+                      {% endif %}
+                    </div>
+
+                  {% endif %}
                   </div>
               </div>
           </div>
