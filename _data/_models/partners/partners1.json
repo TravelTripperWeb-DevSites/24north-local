@@ -1,10 +1,53 @@
 {
-  "name": "De La Gallery-copy",
-  "description": "<p>De La Gallery located on Duval Street in Key West, Florida exclusively represents the work of Jorge de la Torriente, a fine art landscape photographer.</p>",
+  "name": "Fury Water Adventures",
+  "description": "<p>For almost three decades, visitors &amp; locals alike have been choosing Fury Water Adventures as their #1 excursion in &amp; on the water. From sunset cruises, glass bottom boat rides, kayaking to the ever popular all-day Ultimate Adventure, there's something for everyone!</p>",
   "image": {
-    "url": "//cdn.traveltripper.io/site-assets/359_384_783/media/de-la-gallery.jpg"
+    "name": "fury-logo-stacked-kw-rgb-full-color",
+    "file_name": "fury-logo-stacked-kw-rgb-full-color.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-101350/fury-logo-stacked-kw-rgb-full-color.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-19-101350",
+    "file_type": "image/jpeg",
+    "width": 825,
+    "height": 600,
+    "file_size": 215221,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-101350/large_fury-logo-stacked-kw-rgb-full-color.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-101350/medium_fury-logo-stacked-kw-rgb-full-color.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-101350/small_fury-logo-stacked-kw-rgb-full-color.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-101350/xsmall_fury-logo-stacked-kw-rgb-full-color.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-101350/thumb_fury-logo-stacked-kw-rgb-full-color.jpg",
+    "git_file_name": "_assets/image_data/fury-logo-stacked-kw-rgb-full-color.json",
+    "path": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-101350/fury-logo-stacked-kw-rgb-full-color.jpg",
+    "alt": "fury-logo-stacked-kw-rgb-full-color",
+    "crop": {
+      "origin": {
+        "x": 40,
+        "y": 0
+      },
+      "width": 741,
+      "height": 600
+    },
+    "croppedImage": {
+      "name": "fury-logo-stacked-kw-rgb-full-color",
+      "file_name": "fury-logo-stacked-kw-rgb-full-color.jpg",
+      "url": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-124346/fury-logo-stacked-kw-rgb-full-color.jpg",
+      "tags": "",
+      "description": "",
+      "date_added": "2018-07-19-124346",
+      "file_type": "image/jpeg",
+      "width": 741,
+      "height": 600,
+      "file_size": 199185,
+      "url_large": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-124346/large_fury-logo-stacked-kw-rgb-full-color.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-124346/medium_fury-logo-stacked-kw-rgb-full-color.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-124346/small_fury-logo-stacked-kw-rgb-full-color.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-124346/xsmall_fury-logo-stacked-kw-rgb-full-color.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-124346/thumb_fury-logo-stacked-kw-rgb-full-color.jpg"
+    },
+    "caption": ""
   },
-  "alt_text": "De-La-Gallery",
-  "sort_order": 1,
-  "url": "http://www.delagallery.com/"
+  "alt_text": "Fury-Water-Adventures",
+  "sort_order": 2,
+  "url": "https://www.furycat.com/key-west/highgate "
 }
