@@ -159,8 +159,7 @@ a:hover,a:focus {
 					&.active{color: $tc-dark-blue;}
 
 					@media (max-width: 1240px){
-						/*padding: 10px 9px;*/
-						padding: 10px 5px;
+						padding: 10px 4px;
 						letter-spacing: 1px;
 						display: block;
 					}
