@@ -347,6 +347,10 @@
     {
       "name": "Coast Design",
       "file": "partner2.json"
+    },
+    {
+      "name": "Fury Water Adventures",
+      "file": "partners1.json"
     }
   ],
   "category": [
@@ -625,6 +629,11 @@
       "file": "blog65.json"
     },
     {
+      "name": "Animals & Critters Native to the Florida Keys",
+      "title": "Animals & Critters Native to the Florida Keys",
+      "file": "blog118.json"
+    },
+    {
       "name": "Your Key West Cigar Guide",
       "title": "Your Key West Cigar Guide",
       "file": "blog101.json"
@@ -708,6 +717,16 @@
       "name": "5 Essential Tips for Your Outdoor Wedding",
       "title": "5 Essential Tips for Your Outdoor Wedding",
       "file": "blog63.json"
+    },
+    {
+      "name": "The Dos and Don’ts of FL Keys Mini Lobster Season",
+      "title": "The Dos and Don’ts of FL Keys Mini Lobster Season",
+      "file": "blog117.json"
+    },
+    {
+      "name": "Roosters, Iguanas & Pythons - Oh My! 3 Weird Animals in the FL Keys",
+      "title": "Roosters, Iguanas & Pythons - Oh My! 3 Weird Animals in the FL Keys",
+      "file": "blog119.json"
     },
     {
       "name": "10 Reasons You Can't Get Married w/o a Wedding Planner",

@@ -292,6 +292,7 @@
     	text-transform: uppercase;
     	.prev{
     		margin-right: 10px;
+        display: inline-block;
             &.not-active{
                 color: $tc-ash-2;
                 cursor: default;
@@ -299,6 +300,7 @@
     	}
     	.next{
     		margin-left: 10px;
+        display: inline-block;
             &.not-active{
                 color: $tc-ash-2;
                 cursor: default;
