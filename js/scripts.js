@@ -597,10 +597,12 @@ $('.form-submit-button, .rfp-btn, .meet-btn, #wedding-rfp, #contest-btn') // But
 
 
   $(window).on('scroll',function() {
+    if(window.location.href.indexOf("/search/") == -1) {
        $('.fixed-sidebar').affix({
          offset: {
            top: $('.fixed-sidebar').offset().top - 80,
-           bottom: $('.total-footer').outerHeight(true)
+           bottom: $('.total-footer').outerHeight(true)+350
          }
        });
+     }
   });
