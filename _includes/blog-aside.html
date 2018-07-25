@@ -12,7 +12,9 @@
         <ul class="recent-posts">
             {% for recentpost in site.data._models.blog | limit: 5 %}
             <li>
-                <a href="/blog/{{recentpost.url_friendly_name }}/" title="Blog friendly Name"><div class="thumb" style="background-image: url({{recentpost.blogimage.url}});"></div></a>
+                <a href="/blog/{{recentpost.url_friendly_name }}/" title="Blog friendly Name">
+                  <div class="thumb" style="background-image: url({{recentpost.blogimage.url}});"></div>
+                </a>
                 <div class="text">
                     <p> <a href="/blog/{{recentpost.url_friendly_name }}/" title="{{ recentpost.title }}">{{recentpost.title  | truncate: 25 }} </a> </p>
                     <div class="post-details">

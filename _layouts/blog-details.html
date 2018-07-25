@@ -71,14 +71,22 @@ layout: default
               <hr>
               <div class="pagination blog-detail-pagination">
                 {% if prevPostUrl %}
-                  <a class="prev" href="/blog/{{prevPostUrl}}" title="Prev Blog"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Prev </a> |
+                  <a class="prev" href="/blog/{{prevPostUrl}}" title="Prev Blog">
+                    <!-- <i class="fa fa-long-arrow-left" aria-hidden="true"></i>  -->
+                    Previous </a>
                 {% else %}
-                  <a class="prev not-active" href="/blog/{{prevPostUrl}}" title="Current Blog"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Prev </a> |
+                  <a class="prev not-active" href="/blog/{{prevPostUrl}}" title="Current Blog">
+                    <!-- <i class="fa fa-long-arrow-left" aria-hidden="true"></i>  -->
+                    Previous </a> 
                 {% endif %}
                 {% if nextPostUrl %}
-                  <a class="next" href="/blog/{{nextPostUrl}}" title="Next Blog">Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                  <a class="next" href="/blog/{{nextPostUrl}}" title="Next Blog">Next
+                    <!-- <i class="fa fa-long-arrow-right" aria-hidden="true"></i> -->
+                  </a>
                 {% else %}
-                  <a class="next not-active" href="/blog/{{nextPostUrl}}" title="Next Blog">Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                  <a class="next not-active" href="/blog/{{nextPostUrl}}" title="Next Blog">Next
+                    <!-- <i class="fa fa-long-arrow-right" aria-hidden="true"></i> -->
+                  </a>
                 {% endif %}
               </div>
               <hr>
