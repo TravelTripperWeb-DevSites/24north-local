@@ -3,7 +3,7 @@ layout: default
 ---
 <section>
   <div class="home-banner-wrap">
-    <div id="homeCarousel" class="carousel slide">
+    <div id="homeCarousel" class="carousel slide" tabindex="-1">
 
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -21,9 +21,9 @@ layout: default
             {% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
             {% for slilderimages in slilder_images %}
             {% if forloop.first == true %}
-            <div class="item active" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title={{ slilderimages.alt_text }}  title={{ slilderimages.alt_text }}>
+            <div class="item active" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title="{{ slilderimages.alt_text }}">
             {% else %}
-            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title={{ slilderimages.alt_text }}>
+            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title="{{ slilderimages.alt_text }}">
             {% endif %}
           <div class="carousel-caption transparent-bg">
             <div class="caption-inner">
@@ -58,19 +58,18 @@ layout: default
       </div>
     </div>
     <div class="theme-right-panel">
-      <div class="social-right"><a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank" title="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a></div>
+      <div class="social-right"><a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank" title="facebook" aria-label="Facebook" tabindex="-1"><i class="fa fa-facebook"></i></a></div>
     </div>
   </div>
 </section>
-<section>
+<section tabindex="0">
   <div class="container-fluid blue-bg mo">
     <div class="about-wrap">
       {% region 24north-hotelkey-west %}
-
     </div>
   </div>
 </section>
-<section>
+<section tabindex="0">
   <div class="container-fluid no-padding two-col-wrap">
     <div class="col-sm-6 no-padding v-center">
       <div class="two-col-content">
@@ -81,7 +80,7 @@ layout: default
     <div class="col-sm-6 no-padding v-center">{% region paradisefound-image %}</div>
   </div>
 </section>
-<section class="about-home">
+<section class="about-home" tabindex="0">
   <div class="container-fluid no-padding two-col-wrap">
     <div class="col-sm-6 no-padding v-center">{% region abouthotel-image %}</div>
     <div class="col-sm-6 no-padding v-center">
@@ -99,30 +98,19 @@ layout: default
   <div class="container-fluid no-padding home-rooms-wrap">
     <div class="home-rooms">
       <div class="container">
-
-
-          <div class="home-rooms-holder">
+        <div class="home-rooms-holder">
           <div class="home-rooms-holder-inner">
-          <data-owl-carousel  class="owl-carousel" data-options="{navigation : false,
-                                                                                      slideSpeed : 500,
-                                                                                      paginationSpeed : 400,
-                                                                                      singleItem:true,
-                                                                            		  paginationNumbers: false,
-                                                                            		  autoPlay: false,
-                                                                            		  pagination: false,
-                                                                            		  navigation: true,
-                                                                            		  navigationText : false}">
-            <div class="item" owl-carousel-item="" ng-repeat ="room in browser.roomsList">
-            <div>
-              <h2>Rooms & Suites</h2>
-              <h3><span class="block-element">[[room.name]]</span></h3>
-              <p></p>
-              <div class="btn-holder extra padding"><a href="/rooms/" class="button-common btn-blue" title="View Rooms">View Rooms<i class="fa fa-play"></i></a></div>
-            </div>
-			       </div>
-          </data-owl-carousel >
-
-        </div>
+            <data-owl-carousel  class="owl-carousel" data-options="{navigation : false, slideSpeed : 500,vpaginationSpeed : 400,singleItem:true, paginationNumbers: false,autoPlay: false,pagination: false, navigation: true,navigationText : false}" role="listbox">
+              <div class="item" owl-carousel-item="" ng-repeat ="room in browser.roomsList" role="option">
+                <div tabindex="0">
+                  <h2>Rooms & Suites</h2>
+                  <h3><span class="block-element">[[room.name]]</span></h3>
+                  <p></p>
+                  <div class="btn-holder extra padding"><a href="/rooms/" class="button-common btn-blue" title="View Rooms">View Rooms<i class="fa fa-play"></i></a></div>
+                </div>
+		          </div>
+            </data-owl-carousel >
+          </div>
         </div>
       </div>
     </div>
@@ -130,7 +118,7 @@ layout: default
 </section>
 
 
-<section rt3-special-rates= "offers">
+<section rt3-special-rates= "offers" tabindex="0">
 	<div class="container-fluid no-padding home-specials-wrap">
     	<div class="container">
        	  {% region special-offer-head %}
@@ -144,7 +132,7 @@ layout: default
     </div>
 </section>
 
-<section class="bt">
+<section class="bt" tabindex="0">
 	<div class="container-fluid no-padding">
     <div class="border-texture"><img src="/images/floating/border-textrure.png" alt="floating-border"/></div>
     	<div class="cta-theme">
@@ -164,7 +152,7 @@ layout: default
 	<div class="hlw-inner">
 	<div class="container">
 
-   	  <div class="home-location-wrap">
+   	  <div class="home-location-wrap" tabindex="0">
 
       {% include location.html %}
 
