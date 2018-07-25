@@ -19,9 +19,14 @@
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <!-- This is for accessibility compliance -->
+  <a class="skip-main" href="#main">Skip to main content</a>
+
   {% include header.html %}
 
-	{{ content }}
+  <div id="main">
+    {{ content }}
+  </div>
 
   {% include footer.html %}
   {% include scripts.html %}
