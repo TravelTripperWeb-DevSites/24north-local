@@ -604,3 +604,15 @@ $(document)
         .show();
     }
   });
+
+//GTSGIG Iframe title fix for Accessibility
+var iframeFound = setInterval(function () {
+  console.log("not found");
+  if ($("#gtsgig")
+    .length > 0) {
+    $("#gtsgig")
+      .attr("title", "gts gig");
+    clearInterval(iframeFound);
+    console.log("found");
+  }
+}, 60);
