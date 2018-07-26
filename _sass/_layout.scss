@@ -508,6 +508,12 @@
 	vertical-align: middle;
 	float: none;
 }
+.v-top {
+		display: table-cell;
+		vertical-align: top;
+		float: none;
+		border: none;
+		}
 	}
 
 
@@ -1708,4 +1714,19 @@ h2{
 		background-image: url("//cdn.traveltripper.io/site-assets/359_384_15889/media/2018-05-16-071045/Sunset-Green-Table-Setup-1.jpg") !important;
 		background-attachment: fixed  !important;
 
+}
+
+
+.concert-content-display{
+	p{
+		font-family: $main-font-light;
+		padding: 10px 0 0 0;
+		font-size: 17px;
+		line-height: 30px;
+		width: auto;
+		margin: 5px auto;
+		@media (max-width: 1240px){
+			width: 90%;
+		}
+	}
 }
