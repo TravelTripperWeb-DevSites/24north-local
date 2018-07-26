@@ -9,7 +9,7 @@
     <div class="main-menu">
       <ul class="nav">
       {% for items in site.data.navigation.mainnav %}
-     	<li {% if items.submenu == "true" %} class="dropdown" {% endif %}><a href="{{ items.url }}" title="{{ items.title }}" {% if items.name == page.pagename %} class="active" {% endif %} {% if items.submenu == "true" %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}>{{ items.title }}</a>
+     	<li  class="parent {% if items.submenu == "true" %} dropdown {% endif %}" ><a href="{{ items.url }}" title="{{ items.title }}" {% if items.name == page.pagename %} class="active" {% endif %} {% if items.submenu == "true" %} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% endif %}>{{ items.title }}</a>
         	{% if items.submenu == "true" %}
             <ul class="dropdown-menu">
             	{% for dropdown in items.subitems %}
@@ -25,6 +25,3 @@
     <div class="booknow"> <a href="javascript:void(0)" title="Book Now" show-booking-widget>Book Now</a> </div>
   </div>
 </nav>
-
-<!-- Special Banner Bar -->
-{% include special-banner-bar.html %}

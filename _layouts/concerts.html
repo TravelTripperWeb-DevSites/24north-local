@@ -19,7 +19,7 @@ layout: default
   <div class="container no-padding two-col-wrap m-t-60">
 
         <div class="col-sm-6 no-padding v-center">
-          <div class="two-col-content">
+          <div class="two-col-content" tabindex="0">
             <h3>Rick Springfield</h3>
             <h4>Sunset Green Event Lawn,9/9/18</h4>
             <br><br>
@@ -40,13 +40,12 @@ layout: default
 </section>
 {% endregionblock %}
 
-{% regionblock concerts_content2, type:text %}
+<section tabindex="0">
+  {% regionblock concerts_content2, type:text %}
 
-<section>
 
-
+  {% endregionblock %}
 </section>
-{% endregionblock %}
 
 
 <section>
@@ -54,7 +53,7 @@ layout: default
 <div class="container no-padding two-col-wrap m-t-60">
 
       <div class="col-sm-6 no-padding v-center">
-        <div class="two-col-content concert-content-display">
+        <div class="two-col-content concert-content-display" tabindex="0">
           {% regionblock concerts_title3, type:header %}
           <h1><strong>AIR SUPPLY</strong></h1>
           {% endregionblock %}
