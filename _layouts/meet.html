@@ -17,7 +17,7 @@ layout: default
     </section>
     <section class="meetinkw">
       <div class="container">
-        <div class="row">
+        <div class="row" tabindex="0">
           {% regionblock meet_contenthead, type:text %}
            <p class="desp">Meet In Key West</p>
            {% endregionblock %}
@@ -38,7 +38,7 @@ layout: default
     </section>
   <section>
         <div class="container-fluid">
-          <div class="row">
+          <div class="row" tabindex="0">
            <p class="desp">Contact Details<br/><br/>
             <span class="rfp-callus">For inquiries, please call the Sales Office at<br/></span>
             <a class="rfp-phone" href="tel:3056001425" title="(305) 600-1425">(305) 600-1425</a>&nbsp;<span class="rfp-callus">or fill out the form below.</span>
@@ -95,17 +95,17 @@ layout: default
                       </div>
                     </div>
                   </div>
-                  <div class="checkbox-holder">
+                  <div class="checkbox-holder" id="flexible">
                     <div class="col-sm-4">
                       <div class="row option-label">Are the dates flexible?</div>
                     </div>
                     <div class="col-sm-8">
                       <div class="row">
                         <label class="radio-inline">
-                          <input type="radio" value="Yes" id="input_28_0" name="q28_areThe[]" title="Yes" aria-label="Yes">
+                          <input type="radio" value="Yes" id="yes" name="q28_areThe[]" title="Yes" aria-label="Yes" aria-labelledby="flexible yes">
                           Yes </label>
                         <label class="radio-inline">
-                          <input type="radio" value="No" id="input_28_1" name="q28_areThe[]" title="No" aria-label="No">
+                          <input type="radio" value="No" id="no" name="q28_areThe[]" title="No" aria-label="No" aria-labelledby="flexible no">
                           No </label>
                       </div>
                     </div>
@@ -118,7 +118,7 @@ layout: default
                     </div>
                     <div class="col-sm-6 no-padding">
                       <div class="form-group left-space">
-                        <input type="text" class="form-control main-date-1" id="input_15" name="q15_eventDate" placeholder="Event Date" title="Event date" aria-label="Event Date" required>
+                        <input type="text" class="form-control main-date-1" id="input_15" name="q15_eventDate" placeholder="Event Date" title="Enter event date in YYYY-M M-DD format" aria-label="Enter event date in YYYY-M M-DD format" required>
                       </div>
                     </div>
                   </div>

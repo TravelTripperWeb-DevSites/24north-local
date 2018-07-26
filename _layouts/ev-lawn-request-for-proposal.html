@@ -11,7 +11,7 @@ layout: default
     </section>
 	<section>
         <div class="container-fluid">
-          <div class="row">
+          <div class="row" tabindex="0">
            {% region contact-details-txt %}
             <div class="rfp-wrapper">
               <div class="contact-form">
@@ -50,7 +50,7 @@ layout: default
                   <div class="two-fields-holder">
                     <div class="col-sm-6 no-padding">
                       <div class="form-group right-space">
-                        <input type="text" class="form-control main-date-1" id="input_15" name="q15_eventDate" placeholder="event Date" title="event date" aria-label="event date">
+                        <input type="text" class="form-control main-date-1" id="input_15" name="q15_eventDate" placeholder="event Date" title="Enter event date in YYYY-M M-DD format" aria-label="Enter event date in YYYY-M M-DD format">
                       </div>
                     </div>
                     <div class="col-sm-6 no-padding">
@@ -59,17 +59,17 @@ layout: default
                       </div>
                     </div>
                   </div>
-                  <div class="checkbox-holder">
+                  <div class="checkbox-holder" id="flexible">
                     <div class="col-sm-4">
                       <div class="row option-label">Are these dates flexible?</div>
                     </div>
                     <div class="col-sm-8">
                       <div class="row">
                         <label class="radio-inline">
-                          <input type="radio" value="Yes" id="input_42_0" name="q42_areYour42" aria-label="Yes" title="Yes">
+                          <input type="radio" value="Yes" id="yes" name="q42_areYour42" aria-label="Yes" title="Yes" aria-labelledby="flexible yes">
                           Yes </label>
                         <label class="radio-inline">
-                          <input type="radio" value="No" id="input_42_1" name="q42_areYour42" aria-label="No" title="No">
+                          <input type="radio" value="No" id="no" name="q42_areYour42" aria-label="No" title="No" aria-labelledby="flexible no">
                           No </label>
                       </div>
                     </div>

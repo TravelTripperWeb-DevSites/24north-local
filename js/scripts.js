@@ -588,3 +588,19 @@ $('.form-submit-button, .rfp-btn, .meet-btn, #wedding-rfp, #contest-btn') // But
   .on('change keyup', checkForm)
   // immediately fire it to initialize buttons state
   .keyup();
+
+
+// For Accessibility of Dropdown menus
+$(document)
+  .on("focus", '.nav .parent > a', function () {
+    $('.dropdown-menu')
+      .hide();
+    var parentListItem = $(this)
+      .closest("li");
+    if (parentListItem.hasClass("dropdown")) {
+      $(this)
+        .closest(".dropdown")
+        .find('.dropdown-menu')
+        .show();
+    }
+  });
