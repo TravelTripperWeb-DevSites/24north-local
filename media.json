@@ -487,6 +487,17 @@
     "git_file_name": "_assets/image_data/site-assets_359_384_783_media_papaspillar-rum.json"
   },
   {
+    "name": "Toasted-Coconut-Lunch-Menu (3)",
+    "file_name": "Toasted-Coconut-Lunch-Menu (3).pdf",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_17619/media/2018-07-25-023255/Toasted-Coconut-Lunch-Menu--3-.pdf",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-25-023255",
+    "file_size": 1192830,
+    "file_type": "application/pdf",
+    "git_file_name": "_assets/image_data/Toasted-Coconut-Lunch-Menu--3-.json"
+  },
+  {
     "name": "24-North-Ushape",
     "file_name": "24-North-Ushape.jpg",
     "url": "//cdn.traveltripper.io/site-assets/359_384_15889/media/2018-05-16-071937/24-North-Ushape.jpg",
@@ -1906,6 +1917,17 @@
     "tags": "",
     "description": "",
     "git_file_name": "_assets/image_data/site-assets_359_384_1117_media_2017-01-30-024734_cigar-01.jpg.json"
+  },
+  {
+    "name": "Toasted-Coconut-Breakfast-Menus (2)",
+    "file_name": "Toasted-Coconut-Breakfast-Menus (2).pdf",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_17619/media/2018-07-25-023059/Toasted-Coconut-Breakfast-Menus--2-.pdf",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-07-25-023059",
+    "file_size": 1148573,
+    "file_type": "application/pdf",
+    "git_file_name": "_assets/image_data/Toasted-Coconut-Breakfast-Menus--2-.json"
   },
   {
     "name": "gallery-3.jpg",
