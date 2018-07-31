@@ -152,6 +152,12 @@
 			'name': 'terms-of-use',
 			'url': '/terms-of-use/',
 			'submenu': 'false'
+		},
+		{
+			'title':'Accessibility Statement',
+			'name': 'accessibility',
+			'url': '/accessibility/',
+			'submenu': 'false'
 		}
 	],
 	'social':[
