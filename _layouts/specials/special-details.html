@@ -15,7 +15,7 @@ layout: default
   <div class="container">
     <ul class="gallery-nav">
 
-      <li ng-repeat="o in offers.special_rates"><a ng-href="/special/#[[o.rate_plan_name | formatNameForLink]]" ng-class="{active: offers.sRdetail.rate_plan_code == o.rate_plan_code}" >[[o.rate_plan_name]]</a></li>
+      <li ng-repeat="o in offers.special_rates"><a ng-href="/special/#[[o.rate_plan_name | formatNameForLink]]" ng-class="{active: offers.sRdetail.rate_plan_code == o.rate_plan_code}" tabindex="-1">[[o.rate_plan_name]]</a></li>
 
     </ul>
   </div>
@@ -23,7 +23,7 @@ layout: default
     <div class="container room-details-carousel" >
       <div class="row">
       <div class="col-sm-3 col-xs-12">
-          <div class="spcl-lstng">
+          <div class="spcl-lstng" tabindex="0">
           	<h2>Special Offer</h2>
             <h3><span class="block-element">[[offers.sRdetail.rate_plan_name]]</h3>
             <div class="booknow"> <a ng-href="{{site.data.config.reztripUrl}}search?rate_code=[[offers.sRdetail.rate_plan_code]]&arrival_date=[[offers.sRdetail.stay_start_date | ifOldRetTodayDate:offers.sRdetail.min_lead_time ]]&departure_date=[[offers.sRdetail.stay_start_date | ifOldRetTodayDate:offers.sRdetail.min_lead_time  | addDayInDate:2 ]]" target="_blank">Book Now</a> </div>
@@ -60,7 +60,7 @@ layout: default
     </div>
   </section>
   <section class="lifestyle">
-  	<div class="container-fluid">
+  	<div class="container-fluid" tabindex="0">
     	<h3>About the offer</h3>
         <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
     </div>
@@ -69,7 +69,7 @@ layout: default
     <div class="container-fluid">
 
       <div class="row details-intro style2">
-      	<div class="holds">
+      	<div class="holds" tabindex="0">
 
         <h2>this offer includes</h2>
         <ul>
@@ -85,7 +85,7 @@ layout: default
     <div class="container">
       <div class="row information">
         <div class="col-md-5 align-center"><img src="../../images/specials/special-details/photo-patch-spcls.png" width="296" height="386" alt=""/></div>
-        <div class="col-md-7 p-l-0">
+        <div class="col-md-7 p-l-0" tabindex="0">
           <p class="highlight p-t-35">Terms & Conditions:</p>
           <ul class="lst p-b-25">
 
@@ -103,7 +103,7 @@ layout: default
     <!--<div class="graphics"></div>-->
     <div class="container-fluid no-padding home-specials-wrap">
       <div class="container">
-        <h2 class="heading-large">More Specials</h2>
+        <h2 class="heading-large" tabindex="0">More Specials</h2>
 
         {%  include special-offers.html %}
 

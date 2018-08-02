@@ -63,7 +63,7 @@ layout: default
                 {{ blog.Image_caption }}
               {% endif %}
               </div>
-              <div class="blog-description">
+              <div class="blog-description" tabindex="0">
                 {{ blog.more_content }}
               </div>
               <hr>
@@ -76,7 +76,7 @@ layout: default
                     Previous </a>
                 {% else %}
                   <a class="button-common btn-blue not-active" href="/blog/{{prevPostUrl}}" title="Current Blog">
-                    <i class="fa fa-caret-left" aria-hidden="true"></i> 
+                    <i class="fa fa-caret-left" aria-hidden="true"></i>
                     Previous </a>
                 {% endif %}
                 {% if nextPostUrl %}

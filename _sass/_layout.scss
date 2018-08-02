@@ -508,6 +508,12 @@
 	vertical-align: middle;
 	float: none;
 }
+.v-top {
+		display: table-cell;
+		vertical-align: top;
+		float: none;
+		border: none;
+		}
 	}
 
 
@@ -1734,4 +1740,18 @@ h2{
 
 .mb-60 {
   margin-bottom: 60px;
+}
+
+.concert-content-display{
+	p{
+		font-family: $main-font-light;
+		padding: 10px 0 0 0;
+		font-size: 17px;
+		line-height: 30px;
+		width: auto;
+		margin: 5px auto;
+		@media (max-width: 1240px){
+			width: 90%;
+		}
+	}
 }
