@@ -126,10 +126,29 @@
 					 width:120px; left:-30px; bottom:15px;
 			}
 	}
-	.room-details-carousel{ position:relative; margin-bottom:45px;
+	.room-details-carousel {
+    position:relative;
+    margin-bottom:45px;
 		@media (max-width: 767px){
-				margin-bottom:20px;
+			margin-bottom:20px;
 		}
+    .carousel-indicators {
+      li {
+        width: 7px;
+        height: 7px;
+        background-color: #fff;
+        border: 0;
+        border-radius: 7px;
+        &.active {
+          width: 10px;
+          height: 10px;
+          margin-top: 12px;
+          background-color: transparent;
+          border: 2px solid #fff;
+          border-radius: 10px;
+        }
+      }
+    }
 	}
 	.details-intro{
 				&.style2{
@@ -246,7 +265,7 @@
 					 display:none;
 				}
 		}
-		.room-details-carousel{ margin-bottom:0px;}
+		.room-details-carousel{ margin-bottom: 0px;}
 		.information{ padding:50px 0; max-width:1000px; margin:0 auto;}
 		.m-b-20{ margin-bottom:20px;}
 		.m-t-30{ margin-top:30px;}

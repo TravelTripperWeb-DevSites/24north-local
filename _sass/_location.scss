@@ -6,7 +6,7 @@
 }
 .loc-con-inner {
 	padding-left: 80px;
-	
+
 	@media (max-width: 1240px){
 			padding-left: 0px;
 		}
@@ -19,9 +19,9 @@
 	@media (max-width: 1240px){
 			padding: 25px 0 0px 0;
 		}
-		
+
 	h2{
-		
+
 		font-size: 32px;
 		text-transform: uppercase;
 		color: $tc-light-blue-1;
@@ -29,7 +29,7 @@
 		line-height: normal;
 		letter-spacing: 5px;
 		margin: 0;
-		
+
 		@media (max-width: $screen-sm-max){
 			padding: 0px 0 25px 0;
 			font-size: 24px;
@@ -46,21 +46,31 @@
 		letter-spacing: 1px;
 		line-height: 30px;
 		font-size: 18px;
-		
+
 		/*&:last-child {
 			padding: 0;
 		}*/
 		@media (max-width: $screen-sm-max){
 			padding: 0 0 30px 0;
-			
+
 		}
 			@media (max-width: $screen-xs-max){
 				padding: 0 0 20px 0;
 				line-height: 24px;
 				font-size: 16px;
 			}
-			
+
 	}
+  h5 {
+    padding: 2px 0;
+    font-size: 18px;
+    line-height: normal;
+  }
+  h4 {
+    img {
+      margin-bottom: 16px;
+    }
+  }
 	.loc-no-padding {
 		padding: 0;
 	}
@@ -70,11 +80,11 @@
 		letter-spacing: 5px;
 		text-transform: uppercase;
 		position:relative;
-		
+
 		@media (max-width: $screen-xs-max){
 		letter-spacing: 3px;
 		}
-		
+
 		&:after{
 			content: "";
 		position:absolute;
@@ -86,8 +96,8 @@
 		}
 	}
 	.left-column{
-		
-		
+
+
 	/*	@media (max-width: $screen-sm-max){
 			width: 90%;
 		}*/
@@ -96,9 +106,9 @@
 		}
 	}
 	.right-column{
-		
+
 		padding: 0 0 0 20%;
-		
+
 		@media (max-width: $screen-sm-max){
 			padding: 0 0 0 10%;
 		}
@@ -115,8 +125,8 @@
 }
 .address-wrap {
 	padding: 0 0 55px 0;
-	
-	
+
+
 	a{
 		color: $tc-ash-4;
 		&:hover {
@@ -125,15 +135,15 @@
 	}
 	@media (max-width: $screen-xs-max){
 		padding: 20px 0 0 0;
-		
-		
-	
+
+
+
 }
 }
 
 .btn-wrap {
 	padding: 55px 0 0 0;
-	
+
 	@media (max-width: $screen-xs-max){
 		padding: 20px 0 0 0;
 
@@ -149,10 +159,10 @@
 	}
 }
 .btn-wrapper {
-	
+
 	padding: 0 0 30px 0;
 	@media (max-width: $screen-xs-max){
-		padding-bottom: 15px; 
+		padding-bottom: 15px;
 	}
 }
 .common-btn {
@@ -164,34 +174,34 @@
 	font-size: 12px;
 	transition: all 0.3s;
 	letter-spacing: 1px;
-	
+
 	&:hover {
 		text-decoration: none;
 		color: #000;
-		
+
 	}
 	.fa-long-arrow-right {
 		color: #000;
 			text-indent: 14px;
 	}
-	
+
 }
 
 .cta-theme-location {
 	background-image: url(../images/cta-theme-location.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
-	
+
 	h2{
 		padding: 86px 0 60px 0;
-		
+
 		@media (max-width: 1023px){
-		padding: 30px 0px; 
+		padding: 30px 0px;
 	}
 	}
 }
 .empty-container {
-	
+
 	img {
 		width: 100%;
 	}
@@ -250,7 +260,7 @@
 	}
 }
 .loc-map {
-	
+
 	img {
 		width: 100%;
 	}
@@ -311,5 +321,5 @@ a{
  .bg{
  	.row{
  		background-color: transparent !important;
-	 } 	
+	 }
 	}
