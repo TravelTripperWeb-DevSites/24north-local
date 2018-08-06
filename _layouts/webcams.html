@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+<section>
+  <div class="container no-padding">
+    <div class="page-banner location-banner">
+      <div class="overlay-bg"></div>
+      <div class="graphic">
+        <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
+      </div>
+      <h1 class="page-title">LIVE WEBCAMS IN KEY WEST</h1>
+    </div>
+  </div>
+</section>
+
+<section class="loc-main">
+  <div class="loc-main-inner">
+    <div class="container">
+      <div class="col-sm-12">
+        <!--Front Cam-->
+        <div id="frontcam" class="flowplayer-wrap"></div>
+        <script type="text/javascript">
+        WowzaPlayer.create('frontcam',
+            {
+            "license":"PLAY1-mYPu4-ydY4t-GNkET-Fkr4M-wbxCz",
+            "title":"24 North ",
+            "description":"",
+            "sourceURL":"https://56eaaf2a94c81.streamlock.net/24north/24north.stream/playlist.m3u8",
+            "autoPlay":false,
+            "volume":"75",
+            "mute":false,
+            "loop":false,
+            "audioOnly":false,
+            "uiShowQuickRewind":false,
+            "posterFrameURL":"https://www.floridakeyswebcams.tv/axiscam/24North/24North-ocean.jpg",
+            "endPosterFrameURL":"",
+            "uiPosterFrameFillMode":"fill"
+            }
+        );
+        </script>
+
+        <!--PTZ Cam-->
+        <div id="ptzcam" class="flowplayer-wrap"></div>
+        <script type="text/javascript">
+          WowzaPlayer.create('ptzcam',
+              {
+              "license":"PLAY1-mYPu4-ydY4t-GNkET-Fkr4M-wbxCz",
+              "title":"24 North PTZ",
+              "description":"",
+              "sourceURL":"https://56eaaf2a94c81.streamlock.net:443/24northptz/24northptz.stream/playlist.m3u8",
+              "autoPlay":false,
+              "volume":"75",
+              "mute":false,
+              "loop":false,
+              "audioOnly":false,
+              "uiShowQuickRewind":false,
+              "posterFrameURL":"https://www.floridakeyswebcams.tv/axiscam/24North/24North-ptz.jpg",
+              "endPosterFrameURL":"",
+              "uiPosterFrameFillMode":"fill"
+              }
+          );
+          </script>
+
+          <!--Pool Cam-->
+          <div id="poolcam" class="flowplayer-wrap"></div>
+          <script type="text/javascript">
+            WowzaPlayer.create('poolcam',
+                {
+                "license":"PLAY1-mYPu4-ydY4t-GNkET-Fkr4M-wbxCz",
+                "title":"24 North Pool",
+                "description":"",
+                "sourceURL":"https://56eaaf2a94c81.streamlock.net:443/24northpool/24northpool.stream/playlist.m3u8",
+                "autoPlay":false,
+                "volume":"75",
+                "mute":false,
+                "loop":false,
+                "audioOnly":false,
+                "uiShowQuickRewind":false,
+                "posterFrameURL":"https://www.floridakeyswebcams.tv/axiscam/24North/24Northpool.jpg",
+                "endPosterFrameURL":"",
+                "uiPosterFrameFillMode":"fill"
+                }
+            );
+            </script>
+      </div>
+    </div>
+  </div>
+</section>
