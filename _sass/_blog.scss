@@ -274,7 +274,7 @@
             .text {
 
                 float: left;
-                padding: 0.625rem 0 0 1rem;
+                padding: 0.625rem 0 0 .8rem;
                 a {
                     color: $tc-light-blue-1;
                     font-size: 18px;
@@ -427,7 +427,6 @@
 .affix {
   position: relative;
   top: auto;
-  max-width: none;
   @media (min-width: 768px) {
     position: fixed;
     top: 90px;
@@ -435,14 +434,8 @@
   }
 }
 .affix-bottom {
-  width: 100%;
-  max-width: none;
   @media (min-width: $screen-md-min) {
     position: absolute;
-    max-width: 310px;
-  }
-  @media (min-width: 1300px) {
-    max-width: 410px;
   }
 }
 
@@ -502,3 +495,25 @@
         color: #fff;
     }
   }
+.blog-right-block {
+  .widget-box {
+    @media (max-width: 1230px) {
+      width: 300px;
+    }
+    @media (max-width: 1064px) {
+      width: 270px;
+    }
+    @media (max-width: 980px) {
+      width: 250px;
+    }
+    @media (max-width: 900px) {
+      width: 220px;
+    }
+    @media (max-width: 900px) {
+      width: 200px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
