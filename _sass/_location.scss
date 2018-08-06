@@ -323,3 +323,15 @@ a{
  		background-color: transparent !important;
 	 }
 	}
+
+.flowplayer-wrap{
+		width: 70%;
+    height: 500px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+		@media (max-width: 767px){
+			width: 100%;
+			height: 350px;
+		}
+}
