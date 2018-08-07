@@ -18,6 +18,14 @@
 	background-color: $bg-white;
 	text-align: center;
 }*/
+section{
+           .side-img{
+						            img{
+													display: block;
+													margin-bottom: 300px;
+												}
+					 }
+}
 
 .languages {
 		position: absolute;
@@ -454,6 +462,7 @@
 			padding: 60px 0 50px 0;
 			font-size: 17px;
 			line-height: 30px;
+			text-align: justify;
 			width: auto;
 			margin: -25px auto;
 			@media (max-width: 1240px){
