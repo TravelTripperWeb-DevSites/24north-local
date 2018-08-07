@@ -9,23 +9,25 @@ parent: blog
         <div class="page-banner blog-banner">
             <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"></div>
             <h1 class="page-title">Blog</h1>
+            <p>The island of Key West packs a lot of punch in its relatively small surface area. To keep tabs on Duval Street nightlife, seasonal seafood, event guides, watersport adventures and more, bookmark the 24 North Hotel Blog.</p>
         </div>
     </div>
 </section>
 
 <section class="blog-section">
-    <div class="container">        
+    <div class="container">
         <div class="row">
+
+            <div class="col-sm-4 scrollspy">
+                <div class="blog-right-block fixed-sidebar"> {% include blog-aside.html %} </div>
+            </div>
             <div class="col-sm-8">
                 <div class="post search-result">
                     <h2> SEARCH RESULT: </h2>
                     <ul id="search-results"></ul>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="blog-right-block"> {% include blog-aside.html %} </div>
-            </div>    
-        </div>   
+        </div>
     </div>
 </section>
 
@@ -33,7 +35,7 @@ parent: blog
   window.store = {
     {% for post in site.data._models.blog %}
       "{{ post.url_friendly_name }}": {
-        "title": "{{ post.title | xml_escape }}", 
+        "title": "{{ post.title | xml_escape }}",
         "category": "{{ post.category.title | xml_escape }}",
         "content": {{ post.short_description | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url_friendly_name | xml_escape }}"
