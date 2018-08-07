@@ -1279,6 +1279,19 @@ h2{
 .page-banner.blog-banner {
 	background: url("/images/blog-banner.jpg") no-repeat center bottom;
 	background-size: cover;
+  position: relative;
+  h1 {
+    padding-bottom: 0;
+    z-index: 1;
+    position: relative;
+  }
+  p {
+    color: $white;
+    padding: 0 20px 110px 20px;
+    font-size: 20px;
+    z-index: 1;
+    position: relative;
+  }
 }
 
 .row-equal-height{
@@ -1544,6 +1557,15 @@ h2{
     		width: 164px;
 		}
 	}
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0, 0, 0, .4);
+  }
 }
 .bt {
 	position: relative;
@@ -1726,6 +1748,9 @@ h2{
 
 }
 
+.mb-60 {
+  margin-bottom: 60px;
+}
 
 .concert-content-display{
 	p{

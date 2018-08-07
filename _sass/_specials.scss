@@ -15,11 +15,6 @@
 		color:#fff;
 		padding: 114px 0;
 		position: relative;
-/*    	top: 50%;
-    	transform: translateY(-50%);
-    	-webkit-transform: translateY(-50%);
-    	-ie-transform: translateY(-50%);
-    	-moz-transform: translateY(-50%);*/
 
     	@media(max-width:$phone-max)
 		{
@@ -44,8 +39,6 @@
 
 section.models
 {
-
-	//margin-top:60px;
 	margin-bottom:30px;
 
 	@media(max-width:$screen-xs-max)
@@ -219,7 +212,6 @@ section.models
 				    line-height: 24px;
 				    padding-bottom: 20px;
 				}
-
 
 
 
@@ -617,6 +609,6 @@ h2{
 		}
 	}
 }
-.top-margin{
+.top-margin {
 	margin-top: 10px;
 }
