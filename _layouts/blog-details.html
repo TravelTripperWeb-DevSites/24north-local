@@ -28,6 +28,7 @@ layout: default
     <div class="page-banner blog-banner">
       <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"></div>
       <h1 class="page-title">Blog</h1>
+      <p>The island of Key West packs a lot of punch in its relatively small surface area. To keep tabs on Duval Street nightlife, seasonal seafood, event guides, watersport adventures and more, bookmark the 24 North Hotel Blog.</p>
     </div>
   </div>
 </section>
@@ -35,20 +36,12 @@ layout: default
 <section class="blog-section">
   <div class="container">
     <div class="row">
-
-      <div class="col-sm-8">
-        <div class="pagination blog-detail-pagination">
-          {% if prevPostUrl %}
-            <a class="prev" href="/blog/{{prevPostUrl}}/" title="Prev Blog"><i class="fa fa-long-arrow-left" aria-hidden="true" tabindex="-1"></i> Prev </a> |
-          {% else %}
-            <a class="prev not-active" href="/blog/{{prevPostUrl}}" title="Current Blog" tabindex="-1"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Prev </a> |
-          {% endif %}
-          {% if nextPostUrl %}
-            <a class="next" href="/blog/{{nextPostUrl}}/" title="Next Blog" tabindex="-1">Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-          {% else %}
-            <a class="next not-active" href="/blog/{{nextPostUrl}}" title="Next Blog" tabindex="-1">Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-          {% endif %}
+      <div class="col-sm-4 scrollspy">
+        <div class="blog-right-block fixed-sidebar">
+          {% include blog-aside.html %}
         </div>
+      </div>
+      <div class="col-sm-8">
         <div class="blog-list blog-detail">
           <div class="col-md-12 no-padding">
             <div class="blog-item">
@@ -76,6 +69,27 @@ layout: default
               <hr>
               {% include social-share.html %}
               <hr>
+              <div class="pagination blog-detail-pagination">
+                {% if prevPostUrl %}
+                  <a class="button-common btn-blue" href="/blog/{{prevPostUrl}}" title="Prev Blog">
+                    <i class="fa fa-caret-left" aria-hidden="true"></i>
+                    Previous </a>
+                {% else %}
+                  <a class="button-common btn-blue not-active" href="/blog/{{prevPostUrl}}" title="Current Blog">
+                    <i class="fa fa-caret-left" aria-hidden="true"></i>
+                    Previous </a>
+                {% endif %}
+                {% if nextPostUrl %}
+                  <a class="button-common btn-blue" href="/blog/{{nextPostUrl}}" title="Next Blog">Next
+                    <i class="fa fa-caret-right" aria-hidden="true"></i></i>
+                  </a>
+                {% else %}
+                  <a class="button-common btn-blue not-active" href="/blog/{{nextPostUrl}}" title="Next Blog">Next
+                    <i class="fa fa-caret-right" aria-hidden="true"></i></i>
+                  </a>
+                {% endif %}
+              </div>
+              <hr>
 
               <div><a href="/blog/" class="button-common btn-blue" title="See all Blog Posts">See all Blog Posts<i class="fa fa-play"></i></a></div>
             </div>
@@ -83,12 +97,6 @@ layout: default
             <h2>Share your opinion on this article</h2>
             <div class="fb-comments" expr:href='data:post.url' data-numposts="5"></div>
           </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <div class="blog-right-block">
-          {% include blog-aside.html %}
         </div>
       </div>
 

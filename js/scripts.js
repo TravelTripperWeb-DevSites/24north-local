@@ -14,6 +14,12 @@ $(".campaign-item").height(maxHeight);
 $(document)
   .ready(function () {
 
+    // Blog categories
+        $(".toggle-arrow").click(function(){
+          $(this).toggleClass('rotate');
+          $(".categories").stop().slideToggle();
+        });
+
     $("#carousel-bottom")
       .owlCarousel({
 
@@ -589,7 +595,16 @@ $('.form-submit-button, .rfp-btn, .meet-btn, #wedding-rfp, #contest-btn') // But
   // immediately fire it to initialize buttons state
   .keyup();
 
-
+  $(window).on('scroll',function() {
+    if(window.location.href.indexOf("/search/") == -1) {
+       $('.fixed-sidebar').affix({
+         offset: {
+           top: $('.fixed-sidebar').offset().top - 80,
+           bottom: $('.total-footer').outerHeight(true)+350
+         }
+       });
+     }
+  });
 // For Accessibility of Dropdown menus
 $(document)
   .on("focus", '.nav .parent > a', function () {
