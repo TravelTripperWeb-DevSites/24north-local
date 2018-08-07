@@ -4808,6 +4808,24 @@
     "git_file_name": "_assets/image_data/site-assets_359_384_6651_media_2017-08-28-024151_lobster-key-west.jpg.json"
   },
   {
+    "name": "wedding-planner-key-west",
+    "file_name": "wedding-planner-key-west.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_17955/media/2018-08-06-180033/wedding-planner-key-west.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-08-06-180033",
+    "file_type": "image/jpeg",
+    "width": 1000,
+    "height": 667,
+    "file_size": 862402,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_384_17955/media/2018-08-06-180033/large_wedding-planner-key-west.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_384_17955/media/2018-08-06-180033/medium_wedding-planner-key-west.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_384_17955/media/2018-08-06-180033/small_wedding-planner-key-west.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_17955/media/2018-08-06-180033/xsmall_wedding-planner-key-west.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_17955/media/2018-08-06-180033/thumb_wedding-planner-key-west.jpg",
+    "git_file_name": "_assets/image_data/wedding-planner-key-west.json"
+  },
+  {
     "name": "mini-lobster-season",
     "file_name": "mini-lobster-season.jpg",
     "url": "//cdn.traveltripper.io/site-assets/192_384_17474/media/2018-07-17-140024/mini-lobster-season.jpg",
