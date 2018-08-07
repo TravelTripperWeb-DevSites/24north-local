@@ -1,51 +1,151 @@
 {
+  "tc_carousel": [
+    {
+      "file": "tc_carousel1.json"
+    }
+  ],
+  "events": [
+    {
+      "name": "New Year’s Eve Shoe Drop Celebration",
+      "file": "events19.json"
+    },
+    {
+      "name": "Key West Africana Festival",
+      "file": "events5.json"
+    },
+    {
+      "name": "38th Annual Key West Fantasy Fest",
+      "file": "events13.json"
+    },
+    {
+      "name": "Eighth Annual Key West Brewfest",
+      "file": "events10.json"
+    },
+    {
+      "name": "Mel Fisher Days",
+      "file": "events7.json"
+    },
+    {
+      "name": "Fourth Annual Mystery Fest Key West",
+      "file": "events4.json"
+    },
+    {
+      "name": "Fourth Annual Cow Key Channel Bridge Run",
+      "file": "event12.json"
+    },
+    {
+      "name": "Hemingway Days",
+      "file": "events8.json"
+    },
+    {
+      "name": "Conch Shell Blowing Contest",
+      "file": "event11.json"
+    },
+    {
+      "name": "36th Annual Key West World Championship Powerboat Races",
+      "file": "events14.json"
+    },
+    {
+      "name": "DJ Kyd",
+      "file": "event5.json"
+    },
+    {
+      "name": "SoMo Marathon & Half Marathon",
+      "file": "events12.json"
+    },
+    {
+      "name": "Papio Kinetic Sculpture Parade",
+      "file": "event14.json"
+    },
+    {
+      "name": "Yoga",
+      "file": "event6.json"
+    },
+    {
+      "name": "Pre-Parade Pin-Up Party",
+      "file": "events20.json"
+    },
+    {
+      "name": "Key West Triathlon and Expo",
+      "file": "events18.json"
+    },
+    {
+      "name": "Key West Film Festival",
+      "file": "events15.json"
+    },
+    {
+      "name": "Trivia",
+      "file": "event7.json"
+    },
+    {
+      "name": "Big Game Tailgate & Watch Party",
+      "file": "events21.json"
+    },
+    {
+      "name": "Key West Holiday Fest",
+      "file": "events16.json"
+    },
+    {
+      "name": "Key West Lobster Festival",
+      "file": "events9.json"
+    },
+    {
+      "name": "WineDine Key West",
+      "file": "events11.json"
+    },
+    {
+      "name": "35th Annual Conch Republic Independence Celebration",
+      "file": "event13.json"
+    },
+    {
+      "name": "Key West Pride",
+      "file": "events1.json"
+    },
+    {
+      "name": "Key West Songwriters Festival",
+      "file": "event15.json"
+    },
+    {
+      "name": "Inaugural Key West Grand Prix of the Sea",
+      "file": "events17.json"
+    },
+    {
+      "name": "Fifth Annual Key Lime Festival",
+      "file": "events6.json"
+    }
+  ],
   "homepage_slider": [
     {
-      "file": "homepage_slider4.json"
-    },
-    {
-      "file": "homepage_slider2.json"
-    },
-    {
       "file": "homepage_slider1.json"
+    },
+    {
+      "file": "homepage_slider3.json"
+    },
+    {
+      "file": "homepage_slider4.json"
     },
     {
       "file": "homepage_slider5.json"
     },
     {
-      "file": "homepage_slider3.json"
+      "file": "homepage_slider2.json"
     }
   ],
   "gallery_hotel_images": [
     {
-      "file": "gallery_hotel_images15.json"
-    },
-    {
-      "file": "gallery_hotel_images19.json"
-    },
-    {
-      "file": "gallery_hotel_image7.json"
-    },
-    {
-      "file": "gallery_hotel_image13.json"
-    },
-    {
-      "file": "gallery_hotel_images2.json"
+      "file": "gallery_hotel_image16.json"
     },
     {
       "file": "gallery_hotel_images16.json"
     },
     {
-      "file": "gallery_hotel_images14.json"
+      "file": "gallery_hotel_images2.json"
     },
     {
-      "file": "gallery_hotel_images11.json"
+      "file": "gallery_hotel_image6.json"
     },
     {
-      "file": "gallery_hotel_image11.json"
-    },
-    {
-      "file": "gallery_hotel_images21.json"
+      "file": "gallery_hotel_images20.json"
     },
     {
       "file": "gallery_hotel_image15.json"
@@ -54,19 +154,25 @@
       "file": "gallery_hotel_image14.json"
     },
     {
-      "file": "gallery_hotel_image9.json"
+      "file": "gallery_hotel_images23.json"
     },
     {
-      "file": "gallery_hotel_images17.json"
+      "file": "gallery_hotel_images6.json"
     },
     {
       "file": "gallery_hotel_images3.json"
     },
     {
-      "file": "gallery_hotel_images18.json"
+      "file": "gallery_hotel_images13.json"
     },
     {
-      "file": "gallery_hotel_images9.json"
+      "file": "gallery_hotel_images21.json"
+    },
+    {
+      "file": "gallery_hotel_images8.json"
+    },
+    {
+      "file": "gallery_hotel_images15.json"
     },
     {
       "file": "gallery_hotel_image17.json"
@@ -75,294 +181,85 @@
       "file": "gallery_hotel_image5.json"
     },
     {
-      "file": "gallery_hotel_image3.json"
-    },
-    {
-      "file": "gallery_hotel_image16.json"
-    },
-    {
-      "file": "gallery_hotel_image8.json"
-    },
-    {
-      "file": "gallery_hotel_images10.json"
-    },
-    {
-      "file": "gallery_hotel_images22.json"
-    },
-    {
-      "file": "gallery_hotel_image6.json"
-    },
-    {
-      "file": "gallery_hotel_images24.json"
-    },
-    {
-      "file": "gallery_hotel_images6.json"
-    },
-    {
-      "file": "gallery_hotel_image10.json"
-    },
-    {
-      "file": "gallery_hotel_images23.json"
-    },
-    {
-      "file": "gallery_hotel_images8.json"
-    },
-    {
-      "file": "gallery_hotel_images4.json"
+      "file": "gallery_hotel_image13.json"
     },
     {
       "file": "gallery_hotel_image4.json"
     },
     {
-      "file": "gallery_hotel_images7.json"
+      "file": "gallery_hotel_images18.json"
     },
     {
-      "file": "gallery_hotel_images5.json"
-    },
-    {
-      "file": "gallery_hotel_images12.json"
+      "file": "gallery_hotel_image8.json"
     },
     {
       "file": "gallery_hotel_image12.json"
     },
     {
-      "file": "gallery_hotel_images20.json"
+      "file": "gallery_hotel_image3.json"
     },
     {
-      "file": "gallery_hotel_images13.json"
+      "file": "gallery_hotel_images5.json"
+    },
+    {
+      "file": "gallery_hotel_images14.json"
+    },
+    {
+      "file": "gallery_hotel_images9.json"
+    },
+    {
+      "file": "gallery_hotel_image7.json"
+    },
+    {
+      "file": "gallery_hotel_images24.json"
+    },
+    {
+      "file": "gallery_hotel_images17.json"
+    },
+    {
+      "file": "gallery_hotel_image11.json"
+    },
+    {
+      "file": "gallery_hotel_images11.json"
+    },
+    {
+      "file": "gallery_hotel_images19.json"
+    },
+    {
+      "file": "gallery_hotel_images22.json"
     },
     {
       "file": "gallery_hotel_images1.json"
-    }
-  ],
-  "gallery_foodndrink_images": [
-    {
-      "file": "gallery_foodndrink_image1.json"
     },
     {
-      "file": "gallery_foodndrink_image9.json"
+      "file": "gallery_hotel_image9.json"
     },
     {
-      "file": "gallery_foodndrink_image6.json"
+      "file": "gallery_hotel_images10.json"
     },
     {
-      "file": "gallery_foodndrink_image5.json"
+      "file": "gallery_hotel_images4.json"
     },
     {
-      "file": "gallery_foodndrink_image8.json"
+      "file": "gallery_hotel_image10.json"
     },
     {
-      "file": "gallery_foodndrink_image7.json"
+      "file": "gallery_hotel_images12.json"
     },
     {
-      "file": "gallery_foodndrink_image11.json"
-    },
-    {
-      "file": "gallery_foodndrink_image2.json"
-    },
-    {
-      "file": "gallery_foodndrink_image10.json"
-    },
-    {
-      "file": "gallery_foodndrink_image3.json"
-    },
-    {
-      "file": "gallery_foodndrink_image4.json"
-    }
-  ],
-  "tc_carousel": [
-    {
-      "file": "tc_carousel1.json"
-    }
-  ],
-  "gallery_pool_images": [
-    {
-      "file": "gallery_pool_images7.json"
-    },
-    {
-      "file": "gallery_pool_images4.json"
-    },
-    {
-      "file": "gallery_pool_image12.json"
-    },
-    {
-      "file": "gallery_pool_images1.json"
-    },
-    {
-      "file": "gallery_pool_image1.json"
-    },
-    {
-      "file": "gallery_pool_images6.json"
-    },
-    {
-      "file": "gallery_pool_images5.json"
-    },
-    {
-      "file": "gallery_pool_images8.json"
-    },
-    {
-      "file": "gallery_pool_images2.json"
-    },
-    {
-      "file": "gallery_pool_image10.json"
-    },
-    {
-      "file": "gallery_pool_images3.json"
-    },
-    {
-      "file": "gallery_pool_image11.json"
-    },
-    {
-      "file": "gallery_pool_image13.json"
-    },
-    {
-      "file": "gallery_pool_image7.json"
-    }
-  ],
-  "shuttle_carousel": [
-    {
-      "file": "shuttle_carousel2.json"
-    }
-  ],
-  "attractions": [
-    {
-      "name": "Southernmost Point Buoy",
-      "file": "attraction8.json"
-    },
-    {
-      "name": "Audubon House and Botanical Gardens",
-      "file": "attraction12.json"
-    },
-    {
-      "name": "Duval Street",
-      "file": "attraction2.json"
-    },
-    {
-      "name": "Mel Fisher Maritime Heritage Museum",
-      "file": "attraction15.json"
-    },
-    {
-      "name": "Harry S. Truman Little White House",
-      "file": "attraction13.json"
-    },
-    {
-      "name": "Rodriguez Cigar Factory",
-      "file": "attraction7.json"
-    },
-    {
-      "name": "Fort Zachary Taylor Historic State Park",
-      "file": "attraction3.json"
-    },
-    {
-      "name": "Ernest Hemingway Home and Museum",
-      "file": "attraction4.json"
-    },
-    {
-      "name": "Dry Tortugas",
-      "file": "attraction1.json"
-    },
-    {
-      "name": "San Carlos Institute",
-      "file": "attraction10.json"
-    },
-    {
-      "name": "Mallory Square",
-      "file": "attraction6.json"
-    },
-    {
-      "name": "Key West Historic Memorial Sculpture Garden",
-      "file": "attraction5.json"
-    },
-    {
-      "name": "Cuban Coffee Queen",
-      "file": "attraction9.json"
-    },
-    {
-      "name": "Cayo Hueso y Habana Historeum",
-      "file": "attraction17.json"
-    },
-    {
-      "name": "The Key West Lighthouse & Keeper’s Quarters Museum",
-      "file": "attraction14.json"
-    },
-    {
-      "name": "Key West Golf Club",
-      "file": "attraction18.json"
-    },
-    {
-      "name": "Kino’s Sandal Factory",
-      "file": "attraction11.json"
-    },
-    {
-      "name": "The Key West Butterfly and Nature Conservatory",
-      "file": "attraction16.json"
-    }
-  ],
-  "gallery_rooms_images": [
-    {
-      "file": "gallery_rooms_image8.json"
-    },
-    {
-      "file": "gallery_rooms_image3.json"
-    },
-    {
-      "file": "gallery_rooms_image2.json"
-    },
-    {
-      "file": "gallery_rooms_image5.json"
-    },
-    {
-      "file": "gallery_rooms_image4.json"
-    },
-    {
-      "file": "gallery_rooms_image9.json"
-    },
-    {
-      "file": "gallery_rooms_image1.json"
-    },
-    {
-      "file": "gallery_rooms_image6.json"
-    },
-    {
-      "file": "gallery_rooms_image7.json"
-    }
-  ],
-  "partners": [
-    {
-      "name": "The Key West Theatre",
-      "file": "partner5.json"
-    },
-    {
-      "name": "Papa's Pilar Rum",
-      "file": "partner4.json"
-    },
-    {
-      "name": "Rodriguez Cigar",
-      "file": "partner3.json"
-    },
-    {
-      "name": "De La Gallery",
-      "file": "partner1.json"
-    },
-    {
-      "name": "Coast Design",
-      "file": "partner2.json"
-    },
-    {
-      "name": "Fury Water Adventures",
-      "file": "partners1.json"
+      "file": "gallery_hotel_images7.json"
     }
   ],
   "category": [
     {
-      "name": "Activities",
-      "title": "Activities",
-      "file": "category12.json"
-    },
-    {
       "name": "Bars & Nightlife",
       "title": "Bars & Nightlife",
       "file": "category7.json"
+    },
+    {
+      "name": "Activities",
+      "title": "Activities",
+      "file": "category12.json"
     },
     {
       "name": "Food & Dining",
@@ -370,14 +267,14 @@
       "file": "category3.json"
     },
     {
-      "name": "Weddings",
-      "title": "Weddings",
-      "file": "category11.json"
-    },
-    {
       "name": "24 North Key West News",
       "title": "24 North Key West News",
       "file": "category13.json"
+    },
+    {
+      "name": "Weddings",
+      "title": "Weddings",
+      "file": "category11.json"
     },
     {
       "name": "Key West Events & Festivals",
@@ -390,98 +287,50 @@
       "file": "category10.json"
     }
   ],
-  "event_category": [
+  "shuttle_carousel": [
     {
-      "name": "City Wide Events",
-      "title": "City Wide Events",
-      "file": "event_category2.json"
+      "file": "shuttle_carousel2.json"
+    }
+  ],
+  "starbucks_carousel": [
+    {
+      "file": "starbucks_carousel1.json"
+    }
+  ],
+  "gallery_rooms_images": [
+    {
+      "file": "gallery_rooms_image7.json"
     },
     {
-      "name": "24 North Hotel Events",
-      "title": "24 North Hotel Events",
-      "file": "event_category1.json"
+      "file": "gallery_rooms_image5.json"
+    },
+    {
+      "file": "gallery_rooms_image9.json"
+    },
+    {
+      "file": "gallery_rooms_image6.json"
+    },
+    {
+      "file": "gallery_rooms_image8.json"
+    },
+    {
+      "file": "gallery_rooms_image1.json"
+    },
+    {
+      "file": "gallery_rooms_image3.json"
+    },
+    {
+      "file": "gallery_rooms_image2.json"
+    },
+    {
+      "file": "gallery_rooms_image4.json"
     }
   ],
   "blog": [
     {
-      "name": "1st Annual Brews & Beats Beer Fest",
-      "title": "1st Annual Brews & Beats Beer Fest",
-      "file": "blog90.json"
-    },
-    {
-      "name": "Enjoying Key West with Kids",
-      "title": "Enjoying Key West with Kids",
-      "file": "blog81.json"
-    },
-    {
-      "name": "The Cow Key Channel Bridge Run 2017",
-      "title": "The Cow Key Channel Bridge Run 2017",
-      "file": "blog15.json"
-    },
-    {
-      "name": "Top 3 Beaches in Key West",
-      "title": "Top 3 Beaches in Key West",
-      "file": "blog80.json"
-    },
-    {
-      "name": "5 Best Cuban Sandwiches in Key West",
-      "title": "5 Best Cuban Sandwiches in Key West",
-      "file": "blog87.json"
-    },
-    {
-      "name": "Key Lime Pie, Minus the Pie - Part 2",
-      "title": "Key Lime Pie, Minus the Pie - Part 2",
-      "file": "blog109.json"
-    },
-    {
-      "name": "Part 3: 24 Reasons to Stay at 24 North",
-      "title": "Part 3: 24 Reasons to Stay at 24 North",
-      "file": "blog84.json"
-    },
-    {
-      "name": "Powerboat World Championships in Key West",
-      "title": "Powerboat World Championships in Key West",
-      "file": "powerboat-world-championships.json"
-    },
-    {
-      "name": "24 Reasons to Stay at 24 North, Part 2",
-      "title": "24 Reasons to Stay at 24 North, Part 2",
-      "file": "blog73.json"
-    },
-    {
-      "name": "Unofficially, the Most Fun in Key West: Conch Republic Independence Celebration",
-      "title": "Unofficially, the Most Fun in Key West: Conch Republic Independence Celebration",
-      "file": "unofficially-the-most-fun-in-key-west-conch-republic-independence-celebration.json"
-    },
-    {
-      "name": "Hemingway’s Key West",
-      "title": "Hemingway’s Key West",
-      "file": "blog86.json"
-    },
-    {
-      "name": "Phil Peterson's Poker Run 2016",
-      "title": "Phil Peterson's Poker Run 2016",
-      "file": "phil-petersons-poker-run-2016.json"
-    },
-    {
-      "name": "Starbucks Fall Drinks",
-      "title": "Starbucks Fall Drinks",
-      "file": "blog54.json"
-    },
-    {
-      "name": "The 24 North Guide to Gay Key West",
-      "title": "The 24 North Guide to Gay Key West",
-      "file": "blog24.json"
-    },
-    {
-      "name": "Get to Fantasy Fest Early for Goombay",
-      "title": "Get to Fantasy Fest Early for Goombay",
-      "file": "blog51.json"
-    },
-    {
-      "name": "Best Scuba Dive Options in Key West",
-      "title": "Best Scuba Dive Options in Key West",
-      "file": "blog124.json"
+      "name": "5 Essential Tips for Your Outdoor Wedding",
+      "title": "5 Essential Tips for Your Outdoor Wedding",
+      "file": "blog63.json"
     },
     {
       "name": "24 Reasons to Stay at 24 North, Part 4",
@@ -489,414 +338,19 @@
       "file": "blog98.json"
     },
     {
-      "name": "Best Drag Shows in Key West",
-      "title": "Best Drag Shows in Key West",
-      "file": "blog11.json"
+      "name": "Phil Peterson's Poker Run 2016",
+      "title": "Phil Peterson's Poker Run 2016",
+      "file": "phil-petersons-poker-run-2016.json"
     },
     {
-      "name": "Key West Half-Marathon & 5K",
-      "title": "Key West Half-Marathon & 5K",
-      "file": "blog4.json"
+      "name": "Key West Brewfest 2016",
+      "title": "Key West Brewfest 2016",
+      "file": "key-west-brewfest.json"
     },
     {
-      "name": "6 Best Bars on Duval Street",
-      "title": "6 Best Bars on Duval Street",
-      "file": "blog82.json"
-    },
-    {
-      "name": "Who Do You Want to See at the Sunset Green Event Lawn?",
-      "title": "Who Do You Want to See at the Sunset Green Event Lawn?",
-      "file": "blog83.json"
-    },
-    {
-      "name": "Upcoming Events in Key West",
-      "title": "Upcoming Events in Key West",
-      "file": "blog39.json"
-    },
-    {
-      "name": "Join Us in Key West for the Annual Key Lime Festival",
-      "title": "Join Us in Key West for the Annual Key Lime Festival",
-      "file": "blog104.json"
-    },
-    {
-      "name": "24 Things To Do in Key West – 4 Must-See Attractions in Key West",
-      "title": "24 Things To Do in Key West – 4 Must-See Attractions in Key West",
-      "file": "24-things-to-do-in-key-west-4-must-see-attractions-in-key-west.json"
-    },
-    {
-      "name": "Parrot Heads Unite: Meeting of the Minds 2017",
-      "title": "Parrot Heads Unite: Meeting of the Minds 2017",
-      "file": "blog52.json"
-    },
-    {
-      "name": "Mile Zero Fight Night at 24 North",
-      "title": "Mile Zero Fight Night at 24 North",
-      "file": "blog92.json"
-    },
-    {
-      "name": "Fantasy Fest 2016 – Bahama Village Goombay",
-      "title": "Fantasy Fest 2016 – Bahama Village Goombay",
-      "file": "bahama-village-goombay.json"
-    },
-    {
-      "name": "24 North Picks: Iced Summertime Drinks at Starbucks",
-      "title": "24 North Picks: Iced Summertime Drinks at Starbucks",
-      "file": "blog36.json"
-    },
-    {
-      "name": "Upcoming Shows at the Key West Theater You Don’t Want to Miss",
-      "title": "Upcoming Shows at the Key West Theater You Don’t Want to Miss",
-      "file": "blog77.json"
-    },
-    {
-      "name": "5 Reasons to Go to the Key Lime Festival this July 4th Weekend",
-      "title": "5 Reasons to Go to the Key Lime Festival this July 4th Weekend",
-      "file": "blog29.json"
-    },
-    {
-      "name": "Key West Food & Wine Festival 2017",
-      "title": "Key West Food & Wine Festival 2017",
-      "file": "blog8.json"
-    },
-    {
-      "name": "Treasures of Key West: 400 Years of Shipwrecks",
-      "title": "Treasures of Key West: 400 Years of Shipwrecks",
-      "file": "blog106.json"
-    },
-    {
-      "name": "New Year’s Eve in Key West",
-      "title": "New Year’s Eve in Key West",
-      "file": "blog2.json"
-    },
-    {
-      "name": "24 North Picks: Key West Pride",
-      "title": "24 North Picks: Key West Pride",
-      "file": "blog22.json"
-    },
-    {
-      "name": "10 Notable Key West Residents",
-      "title": "10 Notable Key West Residents",
-      "file": "blog113.json"
-    },
-    {
-      "name": "Key West Pottery @ Latitudes Supply Co.",
-      "title": "Key West Pottery @ Latitudes Supply Co.",
-      "file": "blog85.json"
-    },
-    {
-      "name": "Snorkel Key West",
-      "title": "Snorkel Key West",
-      "file": "blog95.json"
-    },
-    {
-      "name": " Flip Flops + Fireworks",
-      "title": " Flip Flops + Fireworks",
-      "file": "blog67.json"
-    },
-    {
-      "name": "Prep in Advance for Fantasy Fest",
-      "title": "Prep in Advance for Fantasy Fest",
-      "file": "blog123.json"
-    },
-    {
-      "name": "It’s Official: Ridesharing Has Arrived in Key West",
-      "title": "It’s Official: Ridesharing Has Arrived in Key West",
-      "file": "blog32.json"
-    },
-    {
-      "name": "A Romantic Retreat at 24 North",
-      "title": "A Romantic Retreat at 24 North",
-      "file": "blog10.json"
-    },
-    {
-      "name": "Key West Events – Hemingway Days 2016",
-      "title": "Key West Events – Hemingway Days 2016",
-      "file": "key-west-events-hemingway-days-2016.json"
-    },
-    {
-      "name": "Key West Pride 2016",
-      "title": "Key West Pride 2016",
-      "file": "key-west-pride-2016.json"
-    },
-    {
-      "name": "24 North Picks: The Best Live Music in Key West",
-      "title": "24 North Picks: The Best Live Music in Key West",
-      "file": "blog21.json"
-    },
-    {
-      "name": "Where to Go on Duval",
-      "title": "Where to Go on Duval",
-      "file": "where-to-go-on-duval.json"
-    },
-    {
-      "name": "‘Tis the Season: Key West Lobsterfest",
-      "title": "‘Tis the Season: Key West Lobsterfest",
-      "file": "blog122.json"
-    },
-    {
-      "name": "Key Weird Series: The Conch Republic's Big & Small Feats",
-      "title": "Key Weird Series: The Conch Republic's Big & Small Feats",
-      "file": "blog94.json"
-    },
-    {
-      "name": "Key Weird Series: Preserving a Relationship",
-      "title": "Key Weird Series: Preserving a Relationship",
-      "file": "blog65.json"
-    },
-    {
-      "name": "Animals & Critters Native to the Florida Keys",
-      "title": "Animals & Critters Native to the Florida Keys",
-      "file": "blog118.json"
-    },
-    {
-      "name": "Your Key West Cigar Guide",
-      "title": "Your Key West Cigar Guide",
-      "file": "blog101.json"
-    },
-    {
-      "name": "5 Hemingway Haunts to Visit in Key West",
-      "title": "5 Hemingway Haunts to Visit in Key West",
-      "file": "blog27.json"
-    },
-    {
-      "name": "Tips for Offshore Powerboat Races in Key West",
-      "title": "Tips for Offshore Powerboat Races in Key West",
-      "file": "blog50.json"
-    },
-    {
-      "name": "Best Lobster Dishes in Key West",
-      "title": "Best Lobster Dishes in Key West",
-      "file": "blog40.json"
-    },
-    {
-      "name": "24 Reasons to Stay at 24 North - Part 1",
-      "title": "24 Reasons to Stay at 24 North - Part 1",
-      "file": "blog59.json"
-    },
-    {
-      "name": "3 Reasons to Stay in New Town",
-      "title": "3 Reasons to Stay in New Town",
-      "file": "blog55.json"
-    },
-    {
-      "name": "The Best Color Schemes for Your Outdoor Wedding",
-      "title": "The Best Color Schemes for Your Outdoor Wedding",
-      "file": "blog48.json"
-    },
-    {
-      "name": "A Taste of Key Lime Pie, Minus the Pie",
-      "title": "A Taste of Key Lime Pie, Minus the Pie",
-      "file": "blog93.json"
-    },
-    {
-      "name": "A Brief History of Dry Tortugas Nat'l Park",
-      "title": "A Brief History of Dry Tortugas Nat'l Park",
-      "file": "blog64.json"
-    },
-    {
-      "name": "Tennessee Williams' 106th Birthday Celebration",
-      "title": "Tennessee Williams' 106th Birthday Celebration",
-      "file": "blog14.json"
-    },
-    {
-      "name": "Michael McDonald at the Sunset Green",
-      "title": "Michael McDonald at the Sunset Green",
-      "file": "blog69.json"
-    },
-    {
-      "name": "Join us July 4th at our Sunset Green Event Lawn",
-      "title": "Join us July 4th at our Sunset Green Event Lawn",
-      "file": "blog114.json"
-    },
-    {
-      "name": "Key West Routes for Runners",
-      "title": "Key West Routes for Runners",
-      "file": "blog88.json"
-    },
-    {
-      "name": "The History behind Key Lime Pie",
-      "title": "The History behind Key Lime Pie",
-      "file": "blog25.json"
-    },
-    {
-      "name": "Happy Birthday, 24 North!",
-      "title": "Happy Birthday, 24 North!",
-      "file": "happy-birthday-24-north.json"
-    },
-    {
-      "name": "Get Around: Fun Transport Options in Key West",
-      "title": "Get Around: Fun Transport Options in Key West",
-      "file": "blog107.json"
-    },
-    {
-      "name": "5 Essential Tips for Your Outdoor Wedding",
-      "title": "5 Essential Tips for Your Outdoor Wedding",
-      "file": "blog63.json"
-    },
-    {
-      "name": "The Dos and Don’ts of FL Keys Mini Lobster Season",
-      "title": "The Dos and Don’ts of FL Keys Mini Lobster Season",
-      "file": "blog117.json"
-    },
-    {
-      "name": "Roosters, Iguanas & Pythons - Oh My! 3 Weird Animals in the FL Keys",
-      "title": "Roosters, Iguanas & Pythons - Oh My! 3 Weird Animals in the FL Keys",
-      "file": "blog119.json"
-    },
-    {
-      "name": "10 Reasons You Can't Get Married w/o a Wedding Planner",
-      "title": "10 Reasons You Can't Get Married w/o a Wedding Planner",
-      "file": "blog43.json"
-    },
-    {
-      "name": "Get Spooky in Old Town with Key West Ghost Tours",
-      "title": "Get Spooky in Old Town with Key West Ghost Tours",
-      "file": "blog111.json"
-    },
-    {
-      "name": "A Day at Fort Zachary in Key West",
-      "title": "A Day at Fort Zachary in Key West",
-      "file": "blog120.json"
-    },
-    {
-      "name": "24 North Picks: Fishing in Key West",
-      "title": "24 North Picks: Fishing in Key West",
-      "file": "blog26.json"
-    },
-    {
-      "name": "Bars with History: Unique Key West Watering Holes",
-      "title": "Bars with History: Unique Key West Watering Holes",
-      "file": "blog68.json"
-    },
-    {
-      "name": "The History of the Key West Theater",
-      "title": "The History of the Key West Theater",
-      "file": "blog1.json"
-    },
-    {
-      "name": "Try Starbucks’ Two New Drinks @ 24 North",
-      "title": "Try Starbucks’ Two New Drinks @ 24 North",
-      "file": "blog16.json"
-    },
-    {
-      "name": "24 North Picks: Toasted Coconut",
-      "title": "24 North Picks: Toasted Coconut",
-      "file": "blog17.json"
-    },
-    {
-      "name": "Check Out Our New Shop: Latitudes Supply Co.",
-      "title": "Check Out Our New Shop: Latitudes Supply Co.",
-      "file": "blog78.json"
-    },
-    {
-      "name": "Tis the Starbucks Season",
-      "title": "Tis the Starbucks Season",
-      "file": "tis-starbucks-season.json"
-    },
-    {
-      "name": "2018 Florida Keys Seafood Fest",
-      "title": "2018 Florida Keys Seafood Fest",
-      "file": "blog74.json"
-    },
-    {
-      "name": "24 Things to Do in Key West – Historical Landmarks in Key West",
-      "title": "24 Things to Do in Key West – Historical Landmarks in Key West",
-      "file": "24-things-to-do-in-key-west-historical-landmarks-in-key-west.json"
-    },
-    {
-      "name": "Your Guide to Stone Crab Season in Key West",
-      "title": "Your Guide to Stone Crab Season in Key West",
-      "file": "blog66.json"
-    },
-    {
-      "name": "5 Shows in Key West You Don’t Want to Miss",
-      "title": "5 Shows in Key West You Don’t Want to Miss",
-      "file": "blog96.json"
-    },
-    {
-      "name": "24 Things to Do in Key West – Where to Snorkel & Dive in Key West",
-      "title": "24 Things to Do in Key West – Where to Snorkel & Dive in Key West",
-      "file": "24-things-to-do-in-key-west-where-to-snorkel-dive-in-key-west.json"
-    },
-    {
-      "name": "Silent Disco at 24 North Hotel",
-      "title": "Silent Disco at 24 North Hotel",
-      "file": "blog102.json"
-    },
-    {
-      "name": "Mel Fisher Days in Key West",
-      "title": "Mel Fisher Days in Key West",
-      "file": "blog30.json"
-    },
-    {
-      "name": "Best of Fantasy Fest",
-      "title": "Best of Fantasy Fest",
-      "file": "blog53.json"
-    },
-    {
-      "name": "Bike Key West with 24 North",
-      "title": "Bike Key West with 24 North",
-      "file": "blog23.json"
-    },
-    {
-      "name": "Costume Tips for Fantasy Fest",
-      "title": "Costume Tips for Fantasy Fest",
-      "file": "blog44.json"
-    },
-    {
-      "name": "A Look at Key West’s Colorful Bahama Village",
-      "title": "A Look at Key West’s Colorful Bahama Village",
-      "file": "blog72.json"
-    },
-    {
-      "name": "Where to Eat Stone Crab in Key West",
-      "title": "Where to Eat Stone Crab in Key West",
-      "file": "blog71.json"
-    },
-    {
-      "name": "Best Lounges in Key West",
-      "title": "Best Lounges in Key West",
-      "file": "blog89.json"
-    },
-    {
-      "name": "Best Things to do in New Town",
-      "title": "Best Things to do in New Town",
-      "file": "blog45.json"
-    },
-    {
-      "name": "Key West Nature Attractions",
-      "title": "Key West Nature Attractions",
-      "file": "blog70.json"
-    },
-    {
-      "name": "24 Things You Can't Miss in Key West",
-      "title": "24 Things You Can't Miss in Key West",
-      "file": "blog121.json"
-    },
-    {
-      "name": "Don’t Miss the Key West Food & Wine Festival",
-      "title": "Don’t Miss the Key West Food & Wine Festival",
-      "file": "blog75.json"
-    },
-    {
-      "name": "Key West Race Week 2017",
-      "title": "Key West Race Week 2017",
-      "file": "blog5.json"
-    },
-    {
-      "name": "5 Most Relaxing Spots to Have a Beer in Key West",
-      "title": "5 Most Relaxing Spots to Have a Beer in Key West",
-      "file": "blog34.json"
-    },
-    {
-      "name": "24 North Picks: Hemingway Days in Key West",
-      "title": "24 North Picks: Hemingway Days in Key West",
-      "file": "blog31.json"
-    },
-    {
-      "name": "5 Tips for Surviving Fantasy Fest",
-      "title": "5 Tips for Surviving Fantasy Fest",
-      "file": "blog49.json"
+      "name": "Old Town Key West Shuttle",
+      "title": "Old Town Key West Shuttle",
+      "file": "old-town-key-west-shuttle.json"
     },
     {
       "name": "An Interview with Jorge de la Torriente, of DE LA Gallery",
@@ -904,59 +358,54 @@
       "file": "an-interview-with-jorge-de-la-torriente-of-de-la-gallery.json"
     },
     {
-      "name": "Shopping in Key West – Christmas Edition",
-      "title": "Shopping in Key West – Christmas Edition",
-      "file": "blog3.json"
+      "name": "The History of the Key West Theater",
+      "title": "The History of the Key West Theater",
+      "file": "blog1.json"
     },
     {
-      "name": "Key Weird Series: Hemingway’s 6-Toed Cats",
-      "title": "Key Weird Series: Hemingway’s 6-Toed Cats",
-      "file": "blog76.json"
+      "name": "Roosters, Iguanas & Pythons - Oh My! 3 Weird Animals in the FL Keys",
+      "title": "Roosters, Iguanas & Pythons - Oh My! 3 Weird Animals in the FL Keys",
+      "file": "blog119.json"
     },
     {
-      "name": "The Haunted History of Key West",
-      "title": "The Haunted History of Key West",
-      "file": "haunted-history-key-west.json"
+      "name": "24 North Picks: The Best Live Music in Key West",
+      "title": "24 North Picks: The Best Live Music in Key West",
+      "file": "blog21.json"
     },
     {
-      "name": "The Cuban Key West: The Best Cuban Sandwiches on Key West",
-      "title": "The Cuban Key West: The Best Cuban Sandwiches on Key West",
-      "file": "blog9.json"
+      "name": "Costume Tips for Fantasy Fest",
+      "title": "Costume Tips for Fantasy Fest",
+      "file": "blog44.json"
     },
     {
-      "name": "Key Weird Series: Capt. Tony’s Saloon",
-      "title": "Key Weird Series: Capt. Tony’s Saloon",
-      "file": "blog115.json"
+      "name": "Happy Birthday, 24 North!",
+      "title": "Happy Birthday, 24 North!",
+      "file": "happy-birthday-24-north.json"
     },
     {
-      "name": "Fantasy Fest 2016 – Political Voodoo & Ballot-Box Barbarians",
-      "title": "Fantasy Fest 2016 – Political Voodoo & Ballot-Box Barbarians",
-      "file": "fantasy-fest-2016.json"
+      "name": "Your Guide to Stone Crab Season in Key West",
+      "title": "Your Guide to Stone Crab Season in Key West",
+      "file": "blog66.json"
     },
     {
-      "name": "The Cuban Key West: Where to Go for a Cuban Experience in Key West",
-      "title": "The Cuban Key West: Where to Go for a Cuban Experience in Key West",
-      "file": "blog12.json"
+      "name": "Your Key West Cigar Guide",
+      "title": "Your Key West Cigar Guide",
+      "file": "blog101.json"
     },
     {
-      "name": "The Key West Songwriters Festival",
-      "title": "The Key West Songwriters Festival",
-      "file": "blog18.json"
+      "name": "Where to Go on Duval",
+      "title": "Where to Go on Duval",
+      "file": "where-to-go-on-duval.json"
     },
     {
-      "name": "24 North Picks: Starbucks Summer Drinks",
-      "title": "24 North Picks: Starbucks Summer Drinks",
-      "file": "blog19.json"
+      "name": "Top 3 Beaches in Key West",
+      "title": "Top 3 Beaches in Key West",
+      "file": "blog80.json"
     },
     {
-      "name": "24 North Picks: Golfing in The Keys",
-      "title": "24 North Picks: Golfing in The Keys",
-      "file": "blog20.json"
-    },
-    {
-      "name": "Key West Events – Mini-Lobster Season 2016",
-      "title": "Key West Events – Mini-Lobster Season 2016",
-      "file": "mini-lobster-season.json"
+      "name": "Key West Events – Hemingway Days 2016",
+      "title": "Key West Events – Hemingway Days 2016",
+      "file": "key-west-events-hemingway-days-2016.json"
     },
     {
       "name": "What to Do on a Rainy Day in Key West",
@@ -964,49 +413,34 @@
       "file": "rainy-day-in-key-west.json"
     },
     {
-      "name": "Meeting Space @ 24 North",
-      "title": "Meeting Space @ 24 North",
-      "file": "blog79.json"
-    },
-    {
       "name": "The 24 North Sunset Green: Your Backyard in Key West",
       "title": "The 24 North Sunset Green: Your Backyard in Key West",
       "file": "blog41.json"
     },
     {
-      "name": "The Sheriff's Animal Farm – Key West",
-      "title": "The Sheriff's Animal Farm – Key West",
-      "file": "the-sheriffs-animal-farm.json"
+      "name": "Best Drag Shows in Key West",
+      "title": "Best Drag Shows in Key West",
+      "file": "blog11.json"
     },
     {
-      "name": "24 Things to Do in Key West",
-      "title": "24 Things to Do in Key West",
-      "file": "24-things-to-do-in-key-west.json"
+      "name": "24 Things You Can't Miss in Key West",
+      "title": "24 Things You Can't Miss in Key West",
+      "file": "blog121.json"
     },
     {
-      "name": "What to do on a Rainy Day in Key West",
-      "title": "What to do on a Rainy Day in Key West",
-      "file": "blog110.json"
+      "name": "The Songwriter's Festival – A Key West Classic",
+      "title": "The Songwriter's Festival – A Key West Classic",
+      "file": "the-songwriters-festival-a-key-west-classic.json"
     },
     {
-      "name": "Hens and Roosters in Key West",
-      "title": "Hens and Roosters in Key West",
-      "file": "blog6.json"
+      "name": "24 Things to Do in Key West - 4 Places You Must Eat in Key West",
+      "title": "24 Things to Do in Key West - 4 Places You Must Eat in Key West",
+      "file": "4-places-you-must-eat-in-key-west.json"
     },
     {
-      "name": "Your Guide to Key West Boat Charters",
-      "title": "Your Guide to Key West Boat Charters",
-      "file": "blog99.json"
-    },
-    {
-      "name": "How to Spend Spring Break in Key West",
-      "title": "How to Spend Spring Break in Key West",
-      "file": "blog13.json"
-    },
-    {
-      "name": "Old Town Key West Shuttle",
-      "title": "Old Town Key West Shuttle",
-      "file": "old-town-key-west-shuttle.json"
+      "name": "New Year’s Eve in Key West",
+      "title": "New Year’s Eve in Key West",
+      "file": "blog2.json"
     },
     {
       "name": "The Rum Runner: A Florida Keys Staple",
@@ -1019,54 +453,9 @@
       "file": "blog103.json"
     },
     {
-      "name": "24 Things to Do in Key West - 4 Places You Must Eat in Key West",
-      "title": "24 Things to Do in Key West - 4 Places You Must Eat in Key West",
-      "file": "4-places-you-must-eat-in-key-west.json"
-    },
-    {
-      "name": "Brewfest Bud Light Beer Pong Party Tour",
-      "title": "Brewfest Bud Light Beer Pong Party Tour",
-      "file": "blog33.json"
-    },
-    {
-      "name": "We’re OK! Post-Irma Update",
-      "title": "We’re OK! Post-Irma Update",
-      "file": "blog47.json"
-    },
-    {
-      "name": "The Songwriter's Festival – A Key West Classic",
-      "title": "The Songwriter's Festival – A Key West Classic",
-      "file": "the-songwriters-festival-a-key-west-classic.json"
-    },
-    {
-      "name": "Why Key West is the Best Place to Renew Your Vows",
-      "title": "Why Key West is the Best Place to Renew Your Vows",
-      "file": "blog57.json"
-    },
-    {
-      "name": "The Old Key West – Key West's Cuban History",
-      "title": "The Old Key West – Key West's Cuban History",
-      "file": "the-old-key-west.json"
-    },
-    {
-      "name": "Key West Cuba Race Week - The Conch Republic Cup",
-      "title": "Key West Cuba Race Week - The Conch Republic Cup",
-      "file": "blog7.json"
-    },
-    {
-      "name": "5 Iconic Movies Filmed in the Florida Keys",
-      "title": "5 Iconic Movies Filmed in the Florida Keys",
-      "file": "blog37.json"
-    },
-    {
-      "name": "Trusted Local Vendors for Your Key West Wedding",
-      "title": "Trusted Local Vendors for Your Key West Wedding",
-      "file": "blog125.json"
-    },
-    {
-      "name": "Organic / Local Eats in Key West",
-      "title": "Organic / Local Eats in Key West",
-      "file": "blog61.json"
+      "name": "Meeting Space @ 24 North",
+      "title": "Meeting Space @ 24 North",
+      "file": "blog79.json"
     },
     {
       "name": "5 Things to Pack for Fantasy Fest",
@@ -1074,34 +463,44 @@
       "file": "blog38.json"
     },
     {
-      "name": "Stay on Track with Your Fitness Plans",
-      "title": "Stay on Track with Your Fitness Plans",
-      "file": "blog58.json"
+      "name": "24 Things to Do in Key West – Our Favorite Drinks in Key West",
+      "title": "24 Things to Do in Key West – Our Favorite Drinks in Key West",
+      "file": "24-things-to-do-in-key-west-our-favorite-drinks-in-key-west.json"
     },
     {
-      "name": "New Year’s Eve in Key West",
-      "title": "New Year’s Eve in Key West",
-      "file": "blog62.json"
+      "name": "Key West Routes for Runners",
+      "title": "Key West Routes for Runners",
+      "file": "blog88.json"
     },
     {
-      "name": "Book in Advance for Fantasy Fest 2018!",
-      "title": "Book in Advance for Fantasy Fest 2018!",
-      "file": "blog116.json"
+      "name": "It’s Official: Ridesharing Has Arrived in Key West",
+      "title": "It’s Official: Ridesharing Has Arrived in Key West",
+      "file": "blog32.json"
     },
     {
-      "name": "New Starbucks Drinks this Spring",
-      "title": "New Starbucks Drinks this Spring",
-      "file": "blog91.json"
+      "name": "Why Key West is the Best Place to Renew Your Vows",
+      "title": "Why Key West is the Best Place to Renew Your Vows",
+      "file": "blog57.json"
     },
     {
-      "name": "Celebrate 38th Annual Hemingway Days in Key West",
-      "title": "Celebrate 38th Annual Hemingway Days in Key West",
-      "file": "blog108.json"
+      "name": "Key West Half-Marathon & 5K",
+      "title": "Key West Half-Marathon & 5K",
+      "file": "blog4.json"
     },
     {
-      "name": "24 Reasons to stay at 24 North Hotel",
-      "title": "24 Reasons to stay at 24 North Hotel",
-      "file": "blog112.json"
+      "name": "24 Reasons to Stay at 24 North, Part 2",
+      "title": "24 Reasons to Stay at 24 North, Part 2",
+      "file": "blog73.json"
+    },
+    {
+      "name": "Key Weird Series: Capt. Tony’s Saloon",
+      "title": "Key Weird Series: Capt. Tony’s Saloon",
+      "file": "blog115.json"
+    },
+    {
+      "name": "24 Things to Do in Key West – Historical Landmarks in Key West",
+      "title": "24 Things to Do in Key West – Historical Landmarks in Key West",
+      "file": "24-things-to-do-in-key-west-historical-landmarks-in-key-west.json"
     },
     {
       "name": "The Hidden Treasures of The Atocha",
@@ -1109,49 +508,19 @@
       "file": "blog28.json"
     },
     {
-      "name": "Key West Events: Lobsterfest 2016",
-      "title": "Key West Events: Lobsterfest 2016",
-      "file": "lobster-fest.json"
+      "name": "10 Reasons You Can't Get Married w/o a Wedding Planner",
+      "title": "10 Reasons You Can't Get Married w/o a Wedding Planner",
+      "file": "blog43.json"
     },
     {
-      "name": "Hit the Shops around Key West",
-      "title": "Hit the Shops around Key West",
-      "file": "blog105.json"
+      "name": "The 24 North Guide to Gay Key West",
+      "title": "The 24 North Guide to Gay Key West",
+      "file": "blog24.json"
     },
     {
-      "name": "Key West Brewfest 2016",
-      "title": "Key West Brewfest 2016",
-      "file": "key-west-brewfest.json"
-    },
-    {
-      "name": "Discover Breweries of the Florida Keys",
-      "title": "Discover Breweries of the Florida Keys",
-      "file": "blog97.json"
-    },
-    {
-      "name": "Donavon Frankenreiter Comes to Key West Theater",
-      "title": "Donavon Frankenreiter Comes to Key West Theater",
-      "file": "blog35.json"
-    },
-    {
-      "name": "Christmas in Key West",
-      "title": "Christmas in Key West",
-      "file": "blog60.json"
-    },
-    {
-      "name": "5 Spots to Spend Your #WineDownWednesday in Key West",
-      "title": "5 Spots to Spend Your #WineDownWednesday in Key West",
-      "file": "blog42.json"
-    },
-    {
-      "name": "Best Biker Bars in Key West",
-      "title": "Best Biker Bars in Key West",
-      "file": "blog46.json"
-    },
-    {
-      "name": "24 Things to Do in Key West – Our Favorite Drinks in Key West",
-      "title": "24 Things to Do in Key West – Our Favorite Drinks in Key West",
-      "file": "24-things-to-do-in-key-west-our-favorite-drinks-in-key-west.json"
+      "name": "Celebrate 38th Annual Hemingway Days in Key West",
+      "title": "Celebrate 38th Annual Hemingway Days in Key West",
+      "file": "blog108.json"
     },
     {
       "name": "Outdoor Activities in Key West",
@@ -1159,155 +528,786 @@
       "file": "outdoor-activities-in-key-west.json"
     },
     {
+      "name": "Best Scuba Dive Options in Key West",
+      "title": "Best Scuba Dive Options in Key West",
+      "file": "blog124.json"
+    },
+    {
+      "name": "5 Tips for Surviving Fantasy Fest",
+      "title": "5 Tips for Surviving Fantasy Fest",
+      "file": "blog49.json"
+    },
+    {
+      "name": "24 North Picks: Hemingway Days in Key West",
+      "title": "24 North Picks: Hemingway Days in Key West",
+      "file": "blog31.json"
+    },
+    {
+      "name": "10 Notable Key West Residents",
+      "title": "10 Notable Key West Residents",
+      "file": "blog113.json"
+    },
+    {
+      "name": "Prep in Advance for Fantasy Fest",
+      "title": "Prep in Advance for Fantasy Fest",
+      "file": "blog123.json"
+    },
+    {
+      "name": "24 Reasons to Stay at 24 North - Part 1",
+      "title": "24 Reasons to Stay at 24 North - Part 1",
+      "file": "blog59.json"
+    },
+    {
+      "name": "Best Lobster Dishes in Key West",
+      "title": "Best Lobster Dishes in Key West",
+      "file": "blog40.json"
+    },
+    {
+      "name": "Parrot Heads Unite: Meeting of the Minds 2017",
+      "title": "Parrot Heads Unite: Meeting of the Minds 2017",
+      "file": "blog52.json"
+    },
+    {
+      "name": "The Dos and Don’ts of FL Keys Mini Lobster Season",
+      "title": "The Dos and Don’ts of FL Keys Mini Lobster Season",
+      "file": "blog117.json"
+    },
+    {
       "name": "KW Songwriters Perform at Sunset Green Event Lawn",
       "title": "KW Songwriters Perform at Sunset Green Event Lawn",
       "file": "blog100.json"
+    },
+    {
+      "name": "Best Lounges in Key West",
+      "title": "Best Lounges in Key West",
+      "file": "blog89.json"
+    },
+    {
+      "name": "What to do on a Rainy Day in Key West",
+      "title": "What to do on a Rainy Day in Key West",
+      "file": "blog110.json"
+    },
+    {
+      "name": "A Look at Key West’s Colorful Bahama Village",
+      "title": "A Look at Key West’s Colorful Bahama Village",
+      "file": "blog72.json"
+    },
+    {
+      "name": "The Key West Songwriters Festival",
+      "title": "The Key West Songwriters Festival",
+      "file": "blog18.json"
+    },
+    {
+      "name": "Enjoying Key West with Kids",
+      "title": "Enjoying Key West with Kids",
+      "file": "blog81.json"
+    },
+    {
+      "name": "Starbucks Fall Drinks",
+      "title": "Starbucks Fall Drinks",
+      "file": "blog54.json"
+    },
+    {
+      "name": "New Year’s Eve in Key West",
+      "title": "New Year’s Eve in Key West",
+      "file": "blog62.json"
+    },
+    {
+      "name": "Fantasy Fest 2016 – Political Voodoo & Ballot-Box Barbarians",
+      "title": "Fantasy Fest 2016 – Political Voodoo & Ballot-Box Barbarians",
+      "file": "fantasy-fest-2016.json"
+    },
+    {
+      "name": "Animals & Critters Native to the Florida Keys",
+      "title": "Animals & Critters Native to the Florida Keys",
+      "file": "blog118.json"
+    },
+    {
+      "name": "Upcoming Events in Key West",
+      "title": "Upcoming Events in Key West",
+      "file": "blog39.json"
+    },
+    {
+      "name": "Treasures of Key West: 400 Years of Shipwrecks",
+      "title": "Treasures of Key West: 400 Years of Shipwrecks",
+      "file": "blog106.json"
+    },
+    {
+      "name": "Key Weird Series: Hemingway’s 6-Toed Cats",
+      "title": "Key Weird Series: Hemingway’s 6-Toed Cats",
+      "file": "blog76.json"
+    },
+    {
+      "name": "5 Spots to Spend Your #WineDownWednesday in Key West",
+      "title": "5 Spots to Spend Your #WineDownWednesday in Key West",
+      "file": "blog42.json"
+    },
+    {
+      "name": "Who Do You Want to See at the Sunset Green Event Lawn?",
+      "title": "Who Do You Want to See at the Sunset Green Event Lawn?",
+      "file": "blog83.json"
+    },
+    {
+      "name": "The Cow Key Channel Bridge Run 2017",
+      "title": "The Cow Key Channel Bridge Run 2017",
+      "file": "blog15.json"
+    },
+    {
+      "name": "Key Weird Series: The Conch Republic's Big & Small Feats",
+      "title": "Key Weird Series: The Conch Republic's Big & Small Feats",
+      "file": "blog94.json"
+    },
+    {
+      "name": "24 North Picks: Golfing in The Keys",
+      "title": "24 North Picks: Golfing in The Keys",
+      "file": "blog20.json"
+    },
+    {
+      "name": "Mel Fisher Days in Key West",
+      "title": "Mel Fisher Days in Key West",
+      "file": "blog30.json"
+    },
+    {
+      "name": "The Haunted History of Key West",
+      "title": "The Haunted History of Key West",
+      "file": "haunted-history-key-west.json"
+    },
+    {
+      "name": "24 North Picks: Iced Summertime Drinks at Starbucks",
+      "title": "24 North Picks: Iced Summertime Drinks at Starbucks",
+      "file": "blog36.json"
+    },
+    {
+      "name": "New Starbucks Drinks this Spring",
+      "title": "New Starbucks Drinks this Spring",
+      "file": "blog91.json"
+    },
+    {
+      "name": "Silent Disco at 24 North Hotel",
+      "title": "Silent Disco at 24 North Hotel",
+      "file": "blog102.json"
+    },
+    {
+      "name": "Key West Nature Attractions",
+      "title": "Key West Nature Attractions",
+      "file": "blog70.json"
+    },
+    {
+      "name": "A Day at Fort Zachary in Key West",
+      "title": "A Day at Fort Zachary in Key West",
+      "file": "blog120.json"
+    },
+    {
+      "name": "24 Reasons to stay at 24 North Hotel",
+      "title": "24 Reasons to stay at 24 North Hotel",
+      "file": "blog112.json"
+    },
+    {
+      "name": "Stay on Track with Your Fitness Plans",
+      "title": "Stay on Track with Your Fitness Plans",
+      "file": "blog58.json"
+    },
+    {
+      "name": "Trusted Local Vendors for Your Key West Wedding",
+      "title": "Trusted Local Vendors for Your Key West Wedding",
+      "file": "blog125.json"
+    },
+    {
+      "name": "Key Lime Pie, Minus the Pie - Part 2",
+      "title": "Key Lime Pie, Minus the Pie - Part 2",
+      "file": "blog109.json"
+    },
+    {
+      "name": "Key West Events – Mini-Lobster Season 2016",
+      "title": "Key West Events – Mini-Lobster Season 2016",
+      "file": "mini-lobster-season.json"
+    },
+    {
+      "name": "A Romantic Retreat at 24 North",
+      "title": "A Romantic Retreat at 24 North",
+      "file": "blog10.json"
+    },
+    {
+      "name": "The Cuban Key West: Where to Go for a Cuban Experience in Key West",
+      "title": "The Cuban Key West: Where to Go for a Cuban Experience in Key West",
+      "file": "blog12.json"
+    },
+    {
+      "name": "Shopping in Key West – Christmas Edition",
+      "title": "Shopping in Key West – Christmas Edition",
+      "file": "blog3.json"
+    },
+    {
+      "name": "24 Things to Do in Key West – Where to Snorkel & Dive in Key West",
+      "title": "24 Things to Do in Key West – Where to Snorkel & Dive in Key West",
+      "file": "24-things-to-do-in-key-west-where-to-snorkel-dive-in-key-west.json"
+    },
+    {
+      "name": "A Taste of Key Lime Pie, Minus the Pie",
+      "title": "A Taste of Key Lime Pie, Minus the Pie",
+      "file": "blog93.json"
+    },
+    {
+      "name": "How to Spend Spring Break in Key West",
+      "title": "How to Spend Spring Break in Key West",
+      "file": "blog13.json"
+    },
+    {
+      "name": "Get to Fantasy Fest Early for Goombay",
+      "title": "Get to Fantasy Fest Early for Goombay",
+      "file": "blog51.json"
+    },
+    {
+      "name": "The Cuban Key West: The Best Cuban Sandwiches on Key West",
+      "title": "The Cuban Key West: The Best Cuban Sandwiches on Key West",
+      "file": "blog9.json"
+    },
+    {
+      "name": "Fantasy Fest 2016 – Bahama Village Goombay",
+      "title": "Fantasy Fest 2016 – Bahama Village Goombay",
+      "file": "bahama-village-goombay.json"
+    },
+    {
+      "name": "Best Biker Bars in Key West",
+      "title": "Best Biker Bars in Key West",
+      "file": "blog46.json"
+    },
+    {
+      "name": "5 Shows in Key West You Don’t Want to Miss",
+      "title": "5 Shows in Key West You Don’t Want to Miss",
+      "file": "blog96.json"
+    },
+    {
+      "name": "We’re OK! Post-Irma Update",
+      "title": "We’re OK! Post-Irma Update",
+      "file": "blog47.json"
+    },
+    {
+      "name": "Unofficially, the Most Fun in Key West: Conch Republic Independence Celebration",
+      "title": "Unofficially, the Most Fun in Key West: Conch Republic Independence Celebration",
+      "file": "unofficially-the-most-fun-in-key-west-conch-republic-independence-celebration.json"
+    },
+    {
+      "name": "Snorkel Key West",
+      "title": "Snorkel Key West",
+      "file": "blog95.json"
+    },
+    {
+      "name": "Check Out Our New Shop: Latitudes Supply Co.",
+      "title": "Check Out Our New Shop: Latitudes Supply Co.",
+      "file": "blog78.json"
+    },
+    {
+      "name": "Key Weird Series: Preserving a Relationship",
+      "title": "Key Weird Series: Preserving a Relationship",
+      "file": "blog65.json"
+    },
+    {
+      "name": "24 North Picks: Starbucks Summer Drinks",
+      "title": "24 North Picks: Starbucks Summer Drinks",
+      "file": "blog19.json"
+    },
+    {
+      "name": "1st Annual Brews & Beats Beer Fest",
+      "title": "1st Annual Brews & Beats Beer Fest",
+      "file": "blog90.json"
+    },
+    {
+      "name": "Your Guide to Key West Boat Charters",
+      "title": "Your Guide to Key West Boat Charters",
+      "file": "blog99.json"
+    },
+    {
+      "name": "Powerboat World Championships in Key West",
+      "title": "Powerboat World Championships in Key West",
+      "file": "powerboat-world-championships.json"
+    },
+    {
+      "name": "24 Things To Do in Key West – 4 Must-See Attractions in Key West",
+      "title": "24 Things To Do in Key West – 4 Must-See Attractions in Key West",
+      "file": "24-things-to-do-in-key-west-4-must-see-attractions-in-key-west.json"
+    },
+    {
+      "name": "Hemingway’s Key West",
+      "title": "Hemingway’s Key West",
+      "file": "blog86.json"
+    },
+    {
+      "name": "Tis the Starbucks Season",
+      "title": "Tis the Starbucks Season",
+      "file": "tis-starbucks-season.json"
+    },
+    {
+      "name": "Key West Food & Wine Festival 2017",
+      "title": "Key West Food & Wine Festival 2017",
+      "file": "blog8.json"
+    },
+    {
+      "name": "Key West Events: Lobsterfest 2016",
+      "title": "Key West Events: Lobsterfest 2016",
+      "file": "lobster-fest.json"
+    },
+    {
+      "name": "Christmas in Key West",
+      "title": "Christmas in Key West",
+      "file": "blog60.json"
+    },
+    {
+      "name": "Best Things to do in New Town",
+      "title": "Best Things to do in New Town",
+      "file": "blog45.json"
+    },
+    {
+      "name": "24 North Picks: Fishing in Key West",
+      "title": "24 North Picks: Fishing in Key West",
+      "file": "blog26.json"
+    },
+    {
+      "name": "24 North Picks: Key West Pride",
+      "title": "24 North Picks: Key West Pride",
+      "file": "blog22.json"
+    },
+    {
+      "name": "Hens and Roosters in Key West",
+      "title": "Hens and Roosters in Key West",
+      "file": "blog6.json"
+    },
+    {
+      "name": " Flip Flops + Fireworks",
+      "title": " Flip Flops + Fireworks",
+      "file": "blog67.json"
+    },
+    {
+      "name": "5 Best Cuban Sandwiches in Key West",
+      "title": "5 Best Cuban Sandwiches in Key West",
+      "file": "blog87.json"
+    },
+    {
+      "name": "Bike Key West with 24 North",
+      "title": "Bike Key West with 24 North",
+      "file": "blog23.json"
+    },
+    {
+      "name": "5 Hemingway Haunts to Visit in Key West",
+      "title": "5 Hemingway Haunts to Visit in Key West",
+      "file": "blog27.json"
+    },
+    {
+      "name": "The Best Color Schemes for Your Outdoor Wedding",
+      "title": "The Best Color Schemes for Your Outdoor Wedding",
+      "file": "blog48.json"
+    },
+    {
+      "name": "Don’t Miss the Key West Food & Wine Festival",
+      "title": "Don’t Miss the Key West Food & Wine Festival",
+      "file": "blog75.json"
+    },
+    {
+      "name": "Mile Zero Fight Night at 24 North",
+      "title": "Mile Zero Fight Night at 24 North",
+      "file": "blog92.json"
+    },
+    {
+      "name": "Brewfest Bud Light Beer Pong Party Tour",
+      "title": "Brewfest Bud Light Beer Pong Party Tour",
+      "file": "blog33.json"
+    },
+    {
+      "name": "Donavon Frankenreiter Comes to Key West Theater",
+      "title": "Donavon Frankenreiter Comes to Key West Theater",
+      "file": "blog35.json"
+    },
+    {
+      "name": "Hit the Shops around Key West",
+      "title": "Hit the Shops around Key West",
+      "file": "blog105.json"
+    },
+    {
+      "name": "Upcoming Shows at the Key West Theater You Don’t Want to Miss",
+      "title": "Upcoming Shows at the Key West Theater You Don’t Want to Miss",
+      "file": "blog77.json"
+    },
+    {
+      "name": "3 Reasons to Stay in New Town",
+      "title": "3 Reasons to Stay in New Town",
+      "file": "blog55.json"
+    },
+    {
+      "name": "Key West Pride 2016",
+      "title": "Key West Pride 2016",
+      "file": "key-west-pride-2016.json"
+    },
+    {
+      "name": "Key West Race Week 2017",
+      "title": "Key West Race Week 2017",
+      "file": "blog5.json"
+    },
+    {
+      "name": "The Old Key West – Key West's Cuban History",
+      "title": "The Old Key West – Key West's Cuban History",
+      "file": "the-old-key-west.json"
+    },
+    {
+      "name": "Discover Breweries of the Florida Keys",
+      "title": "Discover Breweries of the Florida Keys",
+      "file": "blog97.json"
+    },
+    {
+      "name": "Bars with History: Unique Key West Watering Holes",
+      "title": "Bars with History: Unique Key West Watering Holes",
+      "file": "blog68.json"
+    },
+    {
+      "name": "Organic / Local Eats in Key West",
+      "title": "Organic / Local Eats in Key West",
+      "file": "blog61.json"
+    },
+    {
+      "name": "‘Tis the Season: Key West Lobsterfest",
+      "title": "‘Tis the Season: Key West Lobsterfest",
+      "file": "blog122.json"
+    },
+    {
+      "name": "A Brief History of Dry Tortugas Nat'l Park",
+      "title": "A Brief History of Dry Tortugas Nat'l Park",
+      "file": "blog64.json"
+    },
+    {
+      "name": "6 Best Bars on Duval Street",
+      "title": "6 Best Bars on Duval Street",
+      "file": "blog82.json"
+    },
+    {
+      "name": "Book in Advance for Fantasy Fest 2018!",
+      "title": "Book in Advance for Fantasy Fest 2018!",
+      "file": "blog116.json"
+    },
+    {
+      "name": "2018 Florida Keys Seafood Fest",
+      "title": "2018 Florida Keys Seafood Fest",
+      "file": "blog74.json"
+    },
+    {
+      "name": "The Sheriff's Animal Farm – Key West",
+      "title": "The Sheriff's Animal Farm – Key West",
+      "file": "the-sheriffs-animal-farm.json"
+    },
+    {
+      "name": "5 Reasons to Go to the Key Lime Festival this July 4th Weekend",
+      "title": "5 Reasons to Go to the Key Lime Festival this July 4th Weekend",
+      "file": "blog29.json"
+    },
+    {
+      "name": "Try Starbucks’ Two New Drinks @ 24 North",
+      "title": "Try Starbucks’ Two New Drinks @ 24 North",
+      "file": "blog16.json"
+    },
+    {
+      "name": "Key West Cuba Race Week - The Conch Republic Cup",
+      "title": "Key West Cuba Race Week - The Conch Republic Cup",
+      "file": "blog7.json"
+    },
+    {
+      "name": "24 North Picks: Toasted Coconut",
+      "title": "24 North Picks: Toasted Coconut",
+      "file": "blog17.json"
+    },
+    {
+      "name": "5 Iconic Movies Filmed in the Florida Keys",
+      "title": "5 Iconic Movies Filmed in the Florida Keys",
+      "file": "blog37.json"
+    },
+    {
+      "name": "Best of Fantasy Fest",
+      "title": "Best of Fantasy Fest",
+      "file": "blog53.json"
+    },
+    {
+      "name": "Get Around: Fun Transport Options in Key West",
+      "title": "Get Around: Fun Transport Options in Key West",
+      "file": "blog107.json"
+    },
+    {
+      "name": "Get Spooky in Old Town with Key West Ghost Tours",
+      "title": "Get Spooky in Old Town with Key West Ghost Tours",
+      "file": "blog111.json"
+    },
+    {
+      "name": "Join us July 4th at our Sunset Green Event Lawn",
+      "title": "Join us July 4th at our Sunset Green Event Lawn",
+      "file": "blog114.json"
+    },
+    {
+      "name": "Key West Pottery @ Latitudes Supply Co.",
+      "title": "Key West Pottery @ Latitudes Supply Co.",
+      "file": "blog85.json"
+    },
+    {
+      "name": "Michael McDonald at the Sunset Green",
+      "title": "Michael McDonald at the Sunset Green",
+      "file": "blog69.json"
+    },
+    {
+      "name": "5 Most Relaxing Spots to Have a Beer in Key West",
+      "title": "5 Most Relaxing Spots to Have a Beer in Key West",
+      "file": "blog34.json"
+    },
+    {
+      "name": "24 Things to Do in Key West",
+      "title": "24 Things to Do in Key West",
+      "file": "24-things-to-do-in-key-west.json"
+    },
+    {
+      "name": "Tennessee Williams' 106th Birthday Celebration",
+      "title": "Tennessee Williams' 106th Birthday Celebration",
+      "file": "blog14.json"
+    },
+    {
+      "name": "Part 3: 24 Reasons to Stay at 24 North",
+      "title": "Part 3: 24 Reasons to Stay at 24 North",
+      "file": "blog84.json"
+    },
+    {
+      "name": "Tips for Offshore Powerboat Races in Key West",
+      "title": "Tips for Offshore Powerboat Races in Key West",
+      "file": "blog50.json"
+    },
+    {
+      "name": "The History behind Key Lime Pie",
+      "title": "The History behind Key Lime Pie",
+      "file": "blog25.json"
+    },
+    {
+      "name": "Join Us in Key West for the Annual Key Lime Festival",
+      "title": "Join Us in Key West for the Annual Key Lime Festival",
+      "file": "blog104.json"
+    },
+    {
+      "name": "Where to Eat Stone Crab in Key West",
+      "title": "Where to Eat Stone Crab in Key West",
+      "file": "blog71.json"
+    }
+  ],
+  "attractions": [
+    {
+      "name": "Cayo Hueso y Habana Historeum",
+      "file": "attraction17.json"
+    },
+    {
+      "name": "Fort Zachary Taylor Historic State Park",
+      "file": "attraction3.json"
+    },
+    {
+      "name": "Mel Fisher Maritime Heritage Museum",
+      "file": "attraction15.json"
+    },
+    {
+      "name": "Key West Historic Memorial Sculpture Garden",
+      "file": "attraction5.json"
+    },
+    {
+      "name": "San Carlos Institute",
+      "file": "attraction10.json"
+    },
+    {
+      "name": "Southernmost Point Buoy",
+      "file": "attraction8.json"
+    },
+    {
+      "name": "The Key West Lighthouse & Keeper’s Quarters Museum",
+      "file": "attraction14.json"
+    },
+    {
+      "name": "Rodriguez Cigar Factory",
+      "file": "attraction7.json"
+    },
+    {
+      "name": "Key West Golf Club",
+      "file": "attraction18.json"
+    },
+    {
+      "name": "Cuban Coffee Queen",
+      "file": "attraction9.json"
+    },
+    {
+      "name": "Harry S. Truman Little White House",
+      "file": "attraction13.json"
+    },
+    {
+      "name": "Kino’s Sandal Factory",
+      "file": "attraction11.json"
+    },
+    {
+      "name": "The Key West Butterfly and Nature Conservatory",
+      "file": "attraction16.json"
+    },
+    {
+      "name": "Audubon House and Botanical Gardens",
+      "file": "attraction12.json"
+    },
+    {
+      "name": "Ernest Hemingway Home and Museum",
+      "file": "attraction4.json"
+    },
+    {
+      "name": "Duval Street",
+      "file": "attraction2.json"
+    },
+    {
+      "name": "Dry Tortugas",
+      "file": "attraction1.json"
+    },
+    {
+      "name": "Mallory Square",
+      "file": "attraction6.json"
+    }
+  ],
+  "gallery_pool_images": [
+    {
+      "file": "gallery_pool_images8.json"
+    },
+    {
+      "file": "gallery_pool_images6.json"
+    },
+    {
+      "file": "gallery_pool_image10.json"
+    },
+    {
+      "file": "gallery_pool_images7.json"
+    },
+    {
+      "file": "gallery_pool_images4.json"
+    },
+    {
+      "file": "gallery_pool_images2.json"
+    },
+    {
+      "file": "gallery_pool_images3.json"
+    },
+    {
+      "file": "gallery_pool_image7.json"
+    },
+    {
+      "file": "gallery_pool_image1.json"
+    },
+    {
+      "file": "gallery_pool_image13.json"
+    },
+    {
+      "file": "gallery_pool_image12.json"
+    },
+    {
+      "file": "gallery_pool_image11.json"
+    },
+    {
+      "file": "gallery_pool_images1.json"
+    },
+    {
+      "file": "gallery_pool_images5.json"
+    }
+  ],
+  "gallery_keywest_images": [
+    {
+      "file": "gallery_keywest_image2.json"
+    },
+    {
+      "file": "gallery_keywest_image3.json"
+    },
+    {
+      "file": "gallery_keywest_image1.json"
+    }
+  ],
+  "partners": [
+    {
+      "name": "Papa's Pilar Rum",
+      "file": "partner4.json"
+    },
+    {
+      "name": "Coast Design",
+      "file": "partner2.json"
+    },
+    {
+      "name": "De La Gallery",
+      "file": "partner1.json"
+    },
+    {
+      "name": "Fury Water Adventures",
+      "file": "partners1.json"
+    },
+    {
+      "name": "Rodriguez Cigar",
+      "file": "partner3.json"
+    },
+    {
+      "name": "The Key West Theatre",
+      "file": "partner5.json"
+    }
+  ],
+  "event_category": [
+    {
+      "name": "24 North Hotel Events",
+      "title": "24 North Hotel Events",
+      "file": "event_category1.json"
+    },
+    {
+      "name": "City Wide Events",
+      "title": "City Wide Events",
+      "file": "event_category2.json"
+    }
+  ],
+  "gallery_foodndrink_images": [
+    {
+      "file": "gallery_foodndrink_image3.json"
+    },
+    {
+      "file": "gallery_foodndrink_image4.json"
+    },
+    {
+      "file": "gallery_foodndrink_image5.json"
+    },
+    {
+      "file": "gallery_foodndrink_image1.json"
+    },
+    {
+      "file": "gallery_foodndrink_image7.json"
+    },
+    {
+      "file": "gallery_foodndrink_image6.json"
+    },
+    {
+      "file": "gallery_foodndrink_image2.json"
+    },
+    {
+      "file": "gallery_foodndrink_image11.json"
+    },
+    {
+      "file": "gallery_foodndrink_image8.json"
+    },
+    {
+      "file": "gallery_foodndrink_image9.json"
+    },
+    {
+      "file": "gallery_foodndrink_image10.json"
     }
   ],
   "groups_slider_images": [
-    {
-      "file": "groups_slider_image5.json"
-    },
-    {
-      "file": "groups_slider_image4.json"
-    },
-    {
-      "file": "groups_slider_image1.json"
-    },
-    {
-      "file": "groups_slider_image3.json"
-    },
     {
       "file": "groups_slider_image6.json"
     },
     {
       "file": "groups_slider_image2.json"
-    }
-  ],
-  "starbucks_carousel": [
-    {
-      "file": "starbucks_carousel1.json"
-    }
-  ],
-  "events": [
-    {
-      "name": "Fourth Annual Cow Key Channel Bridge Run",
-      "file": "event12.json"
     },
     {
-      "name": "New Year’s Eve Shoe Drop Celebration",
-      "file": "events19.json"
+      "file": "groups_slider_image5.json"
     },
     {
-      "name": "Key West Lobster Festival",
-      "file": "events9.json"
+      "file": "groups_slider_image1.json"
     },
     {
-      "name": "WineDine Key West",
-      "file": "events11.json"
+      "file": "groups_slider_image4.json"
     },
     {
-      "name": "Key West Film Festival",
-      "file": "events15.json"
-    },
-    {
-      "name": "Big Game Tailgate & Watch Party",
-      "file": "events21.json"
-    },
-    {
-      "name": "Key West Songwriters Festival",
-      "file": "event15.json"
-    },
-    {
-      "name": "Eighth Annual Key West Brewfest",
-      "file": "events10.json"
-    },
-    {
-      "name": "Key West Holiday Fest",
-      "file": "events16.json"
-    },
-    {
-      "name": "DJ Kyd",
-      "file": "event5.json"
-    },
-    {
-      "name": "Conch Shell Blowing Contest",
-      "file": "event11.json"
-    },
-    {
-      "name": "SoMo Marathon & Half Marathon",
-      "file": "events12.json"
-    },
-    {
-      "name": "Pre-Parade Pin-Up Party",
-      "file": "events20.json"
-    },
-    {
-      "name": "Yoga",
-      "file": "event6.json"
-    },
-    {
-      "name": "Hemingway Days",
-      "file": "events8.json"
-    },
-    {
-      "name": "Key West Pride",
-      "file": "events1.json"
-    },
-    {
-      "name": "Trivia",
-      "file": "event7.json"
-    },
-    {
-      "name": "Key West Triathlon and Expo",
-      "file": "events18.json"
-    },
-    {
-      "name": "Key West Africana Festival",
-      "file": "events5.json"
-    },
-    {
-      "name": "Papio Kinetic Sculpture Parade",
-      "file": "event14.json"
-    },
-    {
-      "name": "35th Annual Conch Republic Independence Celebration",
-      "file": "event13.json"
-    },
-    {
-      "name": "Mel Fisher Days",
-      "file": "events7.json"
-    },
-    {
-      "name": "36th Annual Key West World Championship Powerboat Races",
-      "file": "events14.json"
-    },
-    {
-      "name": "Inaugural Key West Grand Prix of the Sea",
-      "file": "events17.json"
-    },
-    {
-      "name": "Fourth Annual Mystery Fest Key West",
-      "file": "events4.json"
-    },
-    {
-      "name": "38th Annual Key West Fantasy Fest",
-      "file": "events13.json"
-    },
-    {
-      "name": "Fifth Annual Key Lime Festival",
-      "file": "events6.json"
-    }
-  ],
-  "gallery_keywest_images": [
-    {
-      "file": "gallery_keywest_image3.json"
-    },
-    {
-      "file": "gallery_keywest_image2.json"
-    },
-    {
-      "file": "gallery_keywest_image1.json"
+      "file": "groups_slider_image3.json"
     }
   ]
 }
