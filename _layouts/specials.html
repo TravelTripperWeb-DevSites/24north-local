@@ -2,9 +2,11 @@
 layout: default
 ---
 <div class="loading" style="display:block;">Loading&#8230;</div>
-<section class="container no-padding" tabindex="0">
-  <div class="page-banner specials-bannner">
-  	{% region specials-banner-content %}
+<section>
+  <div class="container no-padding" tabindex="0">
+    <div class="page-banner specials-bannner mb-60">
+    	{% region specials-banner-content %}
+    </div>
   </div>
 </section>
 <div rt3-special-rates= "offers" >
@@ -15,7 +17,7 @@ layout: default
         <div class="col-sm-6 sp-img v-center">
           <a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink]]/"><img ng-src="[[offer.lead_photo_url.yankee_large]]" style="object-fit: cover;" alt="[[offer.rate_plan_name]]"> </a> <!-- <a ng-href="{{ site.data.config.reztripUrl }}en/special_offer?rate_code=[[offer.rate_plan_code]]&offer_code=[[offer.offer_code]]" target="_blank"  class="rate-btn">Check Rate<i class="fa fa-play"></i></a> --> </div>
         <div class="col-sm-6 sp-content v-center">
-          <p class="title">[[offer.rate_plan_name]]</p>
+          <a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink]]/"><p class="title">[[offer.rate_plan_name]]</p></a>
           <p class="desp">[[offer.short_description]]</p>
           <!-- <div class="btn-holder"><a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink]]/"  class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div> -->
           <div class="btn-holder extra padding"><a ng-href="{{site.data.config.reztripUrl}}search?rate_code=[[offer.rate_plan_code]]&arrival_date=[[offer.stay_start_date | ifOldRetTodayDate:offer.min_lead_time]]&departure_date=[[offer.stay_start_date | ifOldRetTodayDate:offer.min_lead_time | addDayInDate:2 ]]" target="_blank" class="button-common btn-blue top-margin">Book Now<i class="fa fa-play"></i></a></div>
