@@ -43,13 +43,17 @@
     }
     h1,
     h2 {
+        margin-top: 30px;
         font-size: 30px;
         color: $tc-light-blue-1;
         padding: 0 0 15px 0;
         font-family: $main-font-light;
-        @media(max-width: 767px) {
-            font-size: 20px;
-        }
+    }
+    h1 {
+      @media(max-width: 767px) {
+          font-size: 20px;
+          margin-top: 0;
+      }
     }
     h6 {
         padding-top: 5px;

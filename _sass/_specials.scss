@@ -244,6 +244,9 @@ section.models
 .attractions-bannner {
 		background: url("/images/attractions/attractions-banner.jpg") no-repeat center center;
 		background-size:cover;
+    .page-title {
+      letter-spacing: 4px;
+    }
 	}
 
 .grand-opening-banner {
@@ -521,6 +524,9 @@ h2{
 }
 .blog-detail{ position:relative;}
 .att-item{ position:relative;
+  @media(max-width: 991px) {
+    padding-left: 0;
+  }
 	.others{ /*position:fixed;*/
 		.other-attractions{ margin:0px; padding:5px 0;
 			li{ list-style:none;  padding:5px 0;

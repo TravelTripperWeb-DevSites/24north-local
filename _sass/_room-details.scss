@@ -30,7 +30,8 @@
 		}
 		@media (max-width: 767px){
 				 padding-bottom:30px;
-				 width:320px;
+				 width:100%;
+         padding: 0 0 20px 0;
 				 position:relative; bottom:inherit; left:inherit;z-index: 0;
 		}
 		h3{ padding-top:35px; color:#333333;}
@@ -90,7 +91,7 @@
 					 width:90%; height:90%;
 				}
 		}
-		p{font-family: 'brandon_grotesquelight'; font-size: 18px; line-height: 24px; margin-bottom: 30px;
+		p{font-family: 'brandon_grotesquelight'; font-size: 18px; line-height: 24px;
 			&.highlight{font-family: "brandon_grotesqueregular"; padding-bottom:25px;}
 			span{ padding:0 15px;}
 		}
