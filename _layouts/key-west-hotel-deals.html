@@ -23,19 +23,19 @@ layout: default
       <li ng-show="nextRoomName"><a href="/rooms/[[nextRoomName | lowercase | replacePipe  | spacetohyphen]]/"   ><i class="fa fa-angle-right"></i></a></li>
     </ul>
   </div>
-  
- 
+
+
   <section ng-show="selectedRoom.amenities.length > 0">
     <div class="container-fluid">
       <div class="row details-intro style2">
-        
+
         <div class="holds">
              <h2>Special Offers at 24 North Hotel</h2>
             <ul>
                 <li ng-repeat="amenity in selectedRoom.amenities">[[amenity]] </li>
               </ul>
             <div class="badger">
-                <img src="../../images/rooms/room-details/logo-details.png" width="160" height="144" alt=""/>
+                <img src="/images/rooms/room-details/logo-details.png" width="160" height="144" alt=""/>
             </div>
         </div>
       </div>
@@ -58,7 +58,7 @@ layout: default
       </div>
     </div>
   </section>
- 
+
   <!--section class="bt">
     <div class="container">
       <div class="border-texture"><img src="/images/rooms/room-details/border.png" alt=""/></div>

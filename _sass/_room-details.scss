@@ -52,7 +52,7 @@
 			text-transform: uppercase;
 			font-family: "brandon_grotesquebold";
 			letter-spacing: 5px;
-			vertical-align:middle; padding-top:70px;padding-bottom: 70px;
+			vertical-align:middle; padding-top:70px;padding-bottom: 30px;
 			@media (max-width: 767px){
 				 padding-top: 20px;
          padding-bottom:20px;
@@ -153,7 +153,7 @@
 	}
 	.details-intro{
 				&.style2{
-					text-align:center; padding:30px 8% 60px; position:relative;
+					text-align:center; padding:30px 8%; position:relative;
 					.holds{max-width:80%; margin:0 auto;
 						@media (max-width: 767px){
 							 max-width:90%;
@@ -161,12 +161,12 @@
 						.badger{ position:absolute; bottom:20px; right:0px;}
 						h2{ text-align:center; padding-top:36px; padding-right:20px;
 							@media (max-width: 992px){
-							 padding-top:50px;
+							 padding-top:20px;
 							}
 						}
 						p{ font-family: 'brandon_grotesquelight';font-size: 16px;line-height: 24px; text-align:left;  margin:0 auto 20px;}
 
-						ul{ text-align:left; margin:30px 0 10px;
+						ul{ text-align:left; margin:0px 0 10px;
 							li{ text-align:left; list-style:none; position:relative; padding-left:30px;font-family: 'brandon_grotesquelight';
 
 								&:before{
@@ -181,6 +181,11 @@
 								}
 							  }
 						}
+            &.special-include {
+              @media (max-width: 767px) {
+                margin: 0 0 120px;
+              }
+            }
 					}
 				}
 		}
@@ -206,6 +211,10 @@
 					line-height: 40px;
 					@media (max-width: 767px){
 							padding: 25px 0;
+					}
+          @media (max-width: 1280px){
+							font-size: 22px;
+              line-height: 34px;
 					}
 				}
 				p{
