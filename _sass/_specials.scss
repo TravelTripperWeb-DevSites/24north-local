@@ -6,12 +6,7 @@
 
 	background-size: cover;
 	text-align:center;
-
-
-
-
-	.page-title
-	{
+	.page-title {
 		font-family: 'FuturaStd-Light';
 		font-size:	72px;
 		letter-spacing: 16px;
@@ -19,12 +14,7 @@
 		text-transform:uppercase;
 		color:#fff;
 		padding: 114px 0;
-  	position: relative;
-  /*  	top: 50%;
-    	transform: translateY(-50%);
-    	-webkit-transform: translateY(-50%);
-    	-ie-transform: translateY(-50%);
-    	-moz-transform: translateY(-50%);*/
+		position: relative;
 
     	@media(max-width:$phone-max)
 		{
@@ -82,6 +72,10 @@ section.models
 			{
 				width:100%;
 			}
+      .img-inner {
+        width: 100%;
+        height: 311px;
+      }
 
 			.rate-btn
 			{
@@ -126,7 +120,7 @@ section.models
 		.sp-content
 		{
 
-			padding: 55px 55px 48px 55px;
+			padding: 35px 55px 40px 55px;
 			text-align:center;
 
 			@media(max-width:$phone-max)
@@ -150,9 +144,9 @@ section.models
 			.title
 			{
 				font-family: 'brandon_grotesquebold';
-				font-size:18px;
+				font-size:14px;
 				color: #333333;
-				padding-bottom:55px;
+				padding-bottom:35px;
 				letter-spacing:5px;
 				text-transform:uppercase;
 
@@ -195,7 +189,7 @@ section.models
 				font-family: 'brandon_grotesquelight';
 				font-size: 18px;
 				line-height: 24px;
-				padding-bottom:50px;
+				padding-bottom:30px;
 
 				@media (max-width: 1240px)
 			{
@@ -221,9 +215,14 @@ section.models
 
 
 
-
 			}
-
+      .btn-holder {
+        a {
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
 
 		}
 	}
@@ -245,6 +244,9 @@ section.models
 .attractions-bannner {
 		background: url("/images/attractions/attractions-banner.jpg") no-repeat center center;
 		background-size:cover;
+    .page-title {
+      letter-spacing: 4px;
+    }
 	}
 
 .grand-opening-banner {
@@ -522,6 +524,9 @@ h2{
 }
 .blog-detail{ position:relative;}
 .att-item{ position:relative;
+  @media(max-width: 991px) {
+    padding-left: 0;
+  }
 	.others{ /*position:fixed;*/
 		.other-attractions{ margin:0px; padding:5px 0;
 			li{ list-style:none;  padding:5px 0;
@@ -539,12 +544,23 @@ h2{
 	.models{
 		.container{
 			.row{ background:#1f4552;
-				.sp-content{ color:#fff;
-					h2{font-family: "brandon_grotesquelight"; font-size:28px; text-transform:uppercase;}
-					.title{ color:#fff !important;}
-					.desp{
+				.sp-content{
+          color:#fff;
+					h2 {
+            font-family: "brandon_grotesquelight";
+            font-size:28px;
+            text-transform:uppercase;
+            @media(max-width: 767px){
+              padding:0;
+  						font-size:24px;
+  					}
+          }
+					.title {
+            color:#fff !important;
+          }
+					.desp {
 						@media(min-width: 769px) and (max-width: 1024px){
-						    font-size: 14px;
+					    font-size: 14px;
 							padding: 0px 10px 15px 10px;
 							line-height: 21px;
 						}
@@ -553,15 +569,22 @@ h2{
 							padding: 0px 55px 45px 55px;
 							line-height: 21px;
 						}
-						@media(min-width: 1147px) and (max-width: 1240px){ font-size:18px; padding: 25px 55px 45px 55px;}
-					}
-					@media(max-width: 768px){ padding:30px 15px;
-						h2{ font-size:24px;}
+						@media(min-width: 1147px) and (max-width: 1240px) {
+              font-size:18px;
+              padding: 25px 55px 45px 55px;
+            }
 					}
 				}
-				.btn-blue{ border-color:#fff; color:#fff;
-					&:hover{background-color: #3a9dc4; border-color:#3a9dc4;}
-					.fa-play{ color:#fff;}
+				.btn-blue{
+          border-color:#fff;
+          color:#fff;
+					&:hover {
+            background-color: #3a9dc4;
+            border-color:#3a9dc4;
+          }
+					.fa-play{
+            color:#fff;
+          }
 				}
 			}
 		}
@@ -592,6 +615,6 @@ h2{
 		}
 	}
 }
-.top-margin{
+.top-margin {
 	margin-top: 10px;
 }

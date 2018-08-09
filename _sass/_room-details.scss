@@ -30,7 +30,8 @@
 		}
 		@media (max-width: 767px){
 				 padding-bottom:30px;
-				 width:320px;
+				 width:100%;
+         padding: 0 0 20px 0;
 				 position:relative; bottom:inherit; left:inherit;z-index: 0;
 		}
 		h3{ padding-top:35px; color:#333333;}
@@ -51,7 +52,7 @@
 			text-transform: uppercase;
 			font-family: "brandon_grotesquebold";
 			letter-spacing: 5px;
-			vertical-align:middle; padding-top:70px;padding-bottom: 70px;
+			vertical-align:middle; padding-top:70px;padding-bottom: 30px;
 			@media (max-width: 767px){
 				 padding-top: 20px;
          padding-bottom:20px;
@@ -90,7 +91,7 @@
 					 width:90%; height:90%;
 				}
 		}
-		p{font-family: 'brandon_grotesquelight'; font-size: 18px; line-height: 24px; margin-bottom: 30px;
+		p{font-family: 'brandon_grotesquelight'; font-size: 18px; line-height: 24px;
 			&.highlight{font-family: "brandon_grotesqueregular"; padding-bottom:25px;}
 			span{ padding:0 15px;}
 		}
@@ -126,14 +127,33 @@
 					 width:120px; left:-30px; bottom:15px;
 			}
 	}
-	.room-details-carousel{ position:relative; margin-bottom:45px;
+	.room-details-carousel {
+    position:relative;
+    margin-bottom:45px;
 		@media (max-width: 767px){
-				margin-bottom:20px;
+			margin-bottom:20px;
 		}
+    .carousel-indicators {
+      li {
+        width: 7px;
+        height: 7px;
+        background-color: #fff;
+        border: 0;
+        border-radius: 7px;
+        &.active {
+          width: 10px;
+          height: 10px;
+          margin-top: 12px;
+          background-color: transparent;
+          border: 2px solid #fff;
+          border-radius: 10px;
+        }
+      }
+    }
 	}
 	.details-intro{
 				&.style2{
-					text-align:center; padding:30px 8% 60px; position:relative;
+					text-align:center; padding:30px 8%; position:relative;
 					.holds{max-width:80%; margin:0 auto;
 						@media (max-width: 767px){
 							 max-width:90%;
@@ -141,12 +161,12 @@
 						.badger{ position:absolute; bottom:20px; right:0px;}
 						h2{ text-align:center; padding-top:36px; padding-right:20px;
 							@media (max-width: 992px){
-							 padding-top:50px;
+							 padding-top:20px;
 							}
 						}
 						p{ font-family: 'brandon_grotesquelight';font-size: 16px;line-height: 24px; text-align:left;  margin:0 auto 20px;}
 
-						ul{ text-align:left; margin:30px 0 10px;
+						ul{ text-align:left; margin:0px 0 10px;
 							li{ text-align:left; list-style:none; position:relative; padding-left:30px;font-family: 'brandon_grotesquelight';
 
 								&:before{
@@ -161,6 +181,11 @@
 								}
 							  }
 						}
+            &.special-include {
+              @media (max-width: 767px) {
+                margin: 0 0 120px;
+              }
+            }
 					}
 				}
 		}
@@ -186,6 +211,10 @@
 					line-height: 40px;
 					@media (max-width: 767px){
 							padding: 25px 0;
+					}
+          @media (max-width: 1280px){
+							font-size: 22px;
+              line-height: 34px;
 					}
 				}
 				p{
@@ -246,7 +275,7 @@
 					 display:none;
 				}
 		}
-		.room-details-carousel{ margin-bottom:0px;}
+		.room-details-carousel{ margin-bottom: 0px;}
 		.information{ padding:50px 0; max-width:1000px; margin:0 auto;}
 		.m-b-20{ margin-bottom:20px;}
 		.m-t-30{ margin-top:30px;}
