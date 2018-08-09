@@ -354,6 +354,7 @@ section{
 
 		img {
 			width: 100%;
+      opacity: .7;
 		}
 	}
 
@@ -1226,7 +1227,7 @@ h2{
 			font-family: $main-font-light;
 			letter-spacing: 5px;
 			text-transform: uppercase;
-			padding-top: 40px;
+			padding-top: 12px;
 
 
 			@media (max-width: 1023px){
@@ -1241,7 +1242,7 @@ h2{
 		}
 }
 .map-wrap {
-	padding: 40px 0 0 0;
+	padding: 20px 0 0 0;
 	@media (max-width: 1023px){
 		padding: 30px 0 0 0;
 	}
@@ -1536,6 +1537,15 @@ h2{
 .page-banner {
 	position: relative;
 	overflow: hidden;
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0, 0, 0, .3);
+  }
 	.graphic {
 		position: absolute;
 		bottom: -9px;
@@ -1738,6 +1748,9 @@ h2{
 .beautiful-content{
 	width:500px;
 	margin:0 auto;
+  @media(max-width:1160px) {
+    width: 100%;
+  }
 }
 
 .event-lawn-fullimg{
@@ -1763,4 +1776,12 @@ h2{
 			width: 90%;
 		}
 	}
+}
+.bg-styles {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.mb-50 {
+  margin-bottom: 50px;
 }

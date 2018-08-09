@@ -22,7 +22,7 @@ layout: default
   <section>
     <div class="container room-details-carousel" >
       <div class="row">
-      <div class="col-sm-3 col-xs-12">
+      <div class="col-md-3 col-xs-12">
           <div class="spcl-lstng" tabindex="0">
           	<h2>Special Offer</h2>
             <h3><span class="block-element">[[offers.sRdetail.rate_plan_name]]</h3>
@@ -37,7 +37,7 @@ layout: default
             </p>
           </div>
       </div>
-      <div class="col-sm-9 col-xs-12">
+      <div class="col-md-9 col-xs-12">
 
           <div id="roomDetailsCarousel" class="carousel slide">
             <!-- Indicators -->
@@ -69,14 +69,14 @@ layout: default
     <div class="container-fluid">
 
       <div class="row details-intro style2">
-      	<div class="holds" tabindex="0">
+      	<div class="holds special-include" tabindex="0">
 
         <h2>this offer includes</h2>
         <ul>
             <li ng-repeat ="addon in offers.sRdetail.addons" >[[addon]]</li>
          </ul>
 
-        <div class="badger"><img src="../../images/rooms/room-details/logo-details.png" width="160" height="144" alt=""/></div>
+        <div class="badger"><img src="/images/rooms/room-details/logo-details.png" width="160" height="144" alt=""/></div>
       </div>
       </div>
     </div>
