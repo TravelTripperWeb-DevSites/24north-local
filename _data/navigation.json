@@ -26,7 +26,10 @@
 			"title":"Gallery",
 			"name": "gallery",
 			"url": "/gallery/" ,
-			"submenu": "false"
+			"submenu": "true",
+			"subitems": [
+				{"title":"Webcams","name": "webcams","url": "/location/webcams/"}
+			]
 		},
 		{
 			"title":"Meet",
@@ -64,8 +67,7 @@
 			"subitems": [
 				{"title":"Shuttle","name": "location","url": "/location/shuttle/"},
 				{"title":"Attractions","name": "attractions","url": "/location/attractions/"},
-				{"title":"Partners","name": "partners","url": "/location/partners/"},
-				{"title":"Webcams","name": "webcams","url": "/location/webcams/"}
+				{"title":"Partners","name": "partners","url": "/location/partners/"}
 			]
 		},
 		{
