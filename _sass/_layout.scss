@@ -1289,6 +1289,11 @@ h2{
 	background: url("/images/blog-banner.jpg") no-repeat center bottom;
 	background-size: cover;
   position: relative;
+	h2{
+		padding-bottom: 0;
+		z-index: 1;
+		position: relative;
+	}
   h1 {
     padding-bottom: 0;
     z-index: 1;
