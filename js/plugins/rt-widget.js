@@ -87,14 +87,14 @@ var css = __webpack_require__(2);
       currency: 'USD',
       offer_popup_widget: {
         show: true,
-        header_title: 'First Ever Silent Disco Weekend in Key West',
+        header_title: 'Escape & Regenerate',
         primary_color: '#33a1cc',
         secondary_color: '#616161',
         overlay_text_color: '#ffffff',
         offer_popup_type: 'reztrip',
         offer_data_url: 'http://localhost:3000/special-offer-popup.json',
         offer_btn_label: "Book Now",
-        rt_offer_code: 'DISC',
+        rt_offer_code: 'SEPTEMBER',
         show_detail: false,
         timeout: 5000,
         start_date: '',
@@ -113,7 +113,7 @@ var css = __webpack_require__(2);
       if (widget_settings.offer_popup_widget.start_date != "" && date >= start && date <= end) {
         popup_widget.show_widget();
       }else{
-      //  popup_widget.show_widget();
+         popup_widget.show_widget();
       }
 
     }
