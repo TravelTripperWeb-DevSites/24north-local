@@ -390,11 +390,12 @@ $(document)
 
 $(window)
   .load(function () {
+    jQuery('ul.nav li.dropdown a')
+        .attr('data-toggle', 'disable');
     if ($(window)
       .width() > 768) {
 
-      jQuery('ul.nav li.dropdown a')
-        .attr('data-toggle', 'disable');
+      
       //Add Hover effect to menus
       jQuery('ul.nav li.dropdown')
         .hover(function () {
