@@ -412,7 +412,7 @@ $(window)
             .fadeOut();
         });
     } else {
-      //jQuery('ul.nav li.dropdown a.dropdown-toggle').removeAttr('data-toggle');
+      jQuery('ul.nav li.dropdown a.dropdown-toggle').removeAttr('data-toggle');
     }
   });
 
