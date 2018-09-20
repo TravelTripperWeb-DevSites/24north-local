@@ -2180,6 +2180,24 @@
     "git_file_name": "_assets/image_data/Sunset-Green-Wedding-2-Web.json"
   },
   {
+    "name": "sea-turtle-cannery-key-west",
+    "file_name": "sea-turtle-cannery-key-west.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_19125/media/2018-09-20-115714/sea-turtle-cannery-key-west.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-20-115714",
+    "file_type": "image/jpeg",
+    "width": 1000,
+    "height": 667,
+    "file_size": 962749,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_384_19125/media/2018-09-20-115714/large_sea-turtle-cannery-key-west.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_384_19125/media/2018-09-20-115714/medium_sea-turtle-cannery-key-west.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_384_19125/media/2018-09-20-115714/small_sea-turtle-cannery-key-west.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_19125/media/2018-09-20-115714/xsmall_sea-turtle-cannery-key-west.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_19125/media/2018-09-20-115714/thumb_sea-turtle-cannery-key-west.jpg",
+    "git_file_name": "_assets/image_data/sea-turtle-cannery-key-west.json"
+  },
+  {
     "name": "mfmm-lst.jpg",
     "url": "//cdn.traveltripper.io/site-assets/359_384_820/media/mfmm-lst.jpg",
     "git_file_name": "_assets/image_data/site-assets_359_384_820_media_mfmm-lst.json"
@@ -5965,6 +5983,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_16334/media/2018-06-01-114218/xsmall_key-lime-key-west.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_16334/media/2018-06-01-114218/thumb_key-lime-key-west.jpg",
     "git_file_name": "_assets/image_data/key-lime-key-west.json"
+  },
+  {
+    "name": "key-west-sunday",
+    "file_name": "key-west-sunday.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_19031/media/2018-09-17-233651/key-west-sunday.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-17-233651",
+    "file_type": "image/jpeg",
+    "width": 1920,
+    "height": 1080,
+    "file_size": 529134,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_384_19031/media/2018-09-17-233651/large_key-west-sunday.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_384_19031/media/2018-09-17-233651/medium_key-west-sunday.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_384_19031/media/2018-09-17-233651/small_key-west-sunday.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_19031/media/2018-09-17-233651/xsmall_key-west-sunday.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_19031/media/2018-09-17-233651/thumb_key-west-sunday.jpg",
+    "git_file_name": "_assets/image_data/key-west-sunday.json"
   },
   {
     "name": "songwriters",
