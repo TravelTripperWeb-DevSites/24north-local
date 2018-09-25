@@ -1,7 +1,7 @@
 {
-  "sor_order": 2,
+  "sort_order": 2,
   "name": "Starbucks",
-  "description": "<p><strong>Monday - Wednesday 6:30am - 7pm<br /> Thursday - Friday 6:30am - 8pm<br /> Saturday 7am - 8pm<br /> Sunday 7am - 7pm</strong></p>\n<p>&nbsp;</p>\n<p>Start the day off right without ever leaving the hotel grounds. Located on the ground floor of our New Town hotel, the Starbucks at 24 North offers the same genuine service, inviting atmosphere, and superb cups of coffee the iconic coffeehouse is known for. It&rsquo;s a neighborhood gathering place and part of your daily routine &mdash; and now the first stop on your Key West vacation.</p>",
+  "description": "<p><strong>Monday - Wednesday 6:30am - 7pm<br /> Thursday - Friday 6:30am - 8pm<br /> Saturday 7am - 8pm<br /> Sunday 7am - 7pm</strong></p>\n<p>Start the day off right without ever leaving the hotel grounds. Located on the ground floor of our New Town hotel, the Starbucks at 24 North offers the same genuine service, inviting atmosphere, and superb cups of coffee the iconic coffeehouse is known for. It&rsquo;s a neighborhood gathering place and part of your daily routine &mdash; and now the first stop on your Key West vacation.</p>",
   "venue_image1": {
     "name": "1@2x",
     "file_name": "1@2x.jpg",
@@ -81,11 +81,5 @@
     "path": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-083115/4_2x.jpg",
     "alt": "Starbucks",
     "caption": ""
-  },
-  "menu": [
-    {
-      "menu_name": "Discover More",
-      "menu_url": "/dine-drink/starbucks/"
-    }
-  ]
+  }
 }

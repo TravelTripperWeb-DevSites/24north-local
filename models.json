@@ -237,6 +237,14 @@
   ],
   "eat_drink": [
     {
+      "name": "Starbucks",
+      "file": "eat_drink2.json"
+    },
+    {
+      "name": "Toasted Coconut",
+      "file": "eat_drink3.json"
+    },
+    {
       "name": "Republica Bar & Lounge",
       "file": "eat_drink1.json"
     }

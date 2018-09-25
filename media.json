@@ -1761,6 +1761,24 @@
     "git_file_name": "_assets/image_data/site-assets_359_384_818_media_home-carousel-2.json"
   },
   {
+    "name": "1@2x",
+    "file_name": "1@2x.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085226/1_2x.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-25-085226",
+    "file_type": "image/jpeg",
+    "width": 1214,
+    "height": 448,
+    "file_size": 860283,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085226/large_1_2x.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085226/medium_1_2x.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085226/small_1_2x.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085226/xsmall_1_2x.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085226/thumb_1_2x.jpg",
+    "git_file_name": "_assets/image_data/1-2x.json"
+  },
+  {
     "name": "fantasy-fest-key-west-costume",
     "file_name": "fantasy-fest-key-west-costume.jpg",
     "file_type": "image/jpeg",
@@ -2583,6 +2601,24 @@
     "git_file_name": "_assets/image_data/24-North-Meeting-Pick-up-1.json"
   },
   {
+    "name": "3@2x",
+    "file_name": "3@2x.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085311/3_2x.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-25-085311",
+    "file_type": "image/jpeg",
+    "width": 404,
+    "height": 400,
+    "file_size": 174745,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085311/large_3_2x.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085311/medium_3_2x.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085311/small_3_2x.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085311/xsmall_3_2x.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085311/thumb_3_2x.jpg",
+    "git_file_name": "_assets/image_data/3-2x.json"
+  },
+  {
     "name": "sb-05.jpg",
     "url": "//cdn.traveltripper.io/site-assets/359_384_818/media/sb-05.jpg",
     "git_file_name": "_assets/image_data/site-assets_359_384_818_media_sb-05.json"
@@ -3024,6 +3060,24 @@
     "name": "home-carousel-4.jpg",
     "url": "//cdn.traveltripper.io/site-assets/359_384_818/media/home-carousel-4.jpg",
     "git_file_name": "_assets/image_data/site-assets_359_384_818_media_home-carousel-4.json"
+  },
+  {
+    "name": "2@2x",
+    "file_name": "2@2x.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085252/2_2x.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-25-085252",
+    "file_type": "image/jpeg",
+    "width": 404,
+    "height": 400,
+    "file_size": 280782,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085252/large_2_2x.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085252/medium_2_2x.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085252/small_2_2x.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085252/xsmall_2_2x.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085252/thumb_2_2x.jpg",
+    "git_file_name": "_assets/image_data/2-2x.json"
   },
   {
     "name": "key-west-drinks.jpg",
@@ -5557,6 +5611,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_18619/media/2018-08-30-024235/xsmall_24-North-Boat.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_18619/media/2018-08-30-024235/thumb_24-North-Boat.jpg",
     "git_file_name": "_assets/image_data/24-North-Boat.json"
+  },
+  {
+    "name": "4@2x",
+    "file_name": "4@2x.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085330/4_2x.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-25-085330",
+    "file_type": "image/jpeg",
+    "width": 406,
+    "height": 400,
+    "file_size": 295818,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085330/large_4_2x.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085330/medium_4_2x.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085330/small_4_2x.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085330/xsmall_4_2x.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-085330/thumb_4_2x.jpg",
+    "git_file_name": "_assets/image_data/4-2x.json"
   },
   {
     "name": "014-lg",

@@ -1,13 +1,11 @@
 {
   "name": "Republica Bar & Lounge",
-  "sor_order": 1,
-  "description": "<p><strong>4pm to 11pm daily</strong></p>\n<p>&nbsp;</p>\n<p>Escape the heat and drop by Republica Bar &amp; Lounge at 24 North Hotel. Styled after Cuban bars of the 1940s, this nostalgic yet modern hideaway offers craft cocktails and libations that hearken back to times gone by. Enjoy a medley of mojito options, surprising mixes and lively conversation in the low-key atmosphere of Republica.</p>",
-  "menu": [
-    {
-      "menu_name": "Cocktails",
-      "menu_url": "#"
-    }
-  ],
+  "sort_order": 1,
+  "description": "<p><strong>4pm to 11pm daily</strong></p>\n<p>Escape the heat and drop by Republica Bar &amp; Lounge at 24 North Hotel. Styled after Cuban bars of the 1940s, this nostalgic yet modern hideaway offers craft cocktails and libations that hearken back to times gone by. Enjoy a medley of mojito options, surprising mixes and lively conversation in the low-key atmosphere of Republica.</p>",
+  "menu": [{
+    "menu_name": "Cocktails",
+    "menu_url": "#"
+  }],
   "venue_image1": {
     "name": "republica1",
     "file_name": "republica1.jpg",

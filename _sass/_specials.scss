@@ -261,7 +261,13 @@ section.models
       }
 
       .sp-content {
-        padding: 30px 15px;
+        padding: 30px;
+
+        strong {
+          display: block;
+          margin-bottom: 30px;
+          text-align: center;
+        }
       }
       @media(min-width: 768px) {
         display: table;

@@ -1,9 +1,8 @@
 {
-  "sor_order": 3,
+  "sort_order": 3,
   "name": "Toasted Coconut",
-  "description": "<p><strong>8am to 9pm daily<br /> Happy Hour - 12pm to 4pm daily</strong></p>\n<p>&nbsp;</p>\n<p>Toasted Coconut is a laid-back, family&ndash;friendly outdoor restaurant, located right next to the pool at 24 North Hotel. Whether you&rsquo;re looking for good food or fun in the sun, Toasted Coconut&rsquo;s vibrant menu and relaxed atmosphere has a little something for everyone. Sip on a Toasted Punch, our namesake tropical cocktail, or munch on some Conch Fritters, the caviar of Key West. It&rsquo;s delicious food at the perfect latitude.</p>",
-  "menu": [
-    {
+  "description": "<p><strong>8am to 9pm daily<br /> Happy Hour - 12pm to 4pm daily</strong></p>\n<p>Toasted Coconut is a laid-back, family&ndash;friendly outdoor restaurant, located right next to the pool at 24 North Hotel. Whether you&rsquo;re looking for good food or fun in the sun, Toasted Coconut&rsquo;s vibrant menu and relaxed atmosphere has a little something for everyone. Sip on a Toasted Punch, our namesake tropical cocktail, or munch on some Conch Fritters, the caviar of Key West. It&rsquo;s delicious food at the perfect latitude.</p>",
+  "menu": [{
       "menu_name": "Breakfast",
       "menu_url": "#"
     },
