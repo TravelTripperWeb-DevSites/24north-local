@@ -34,12 +34,12 @@ label: Eat & Drink in Key West Florida 2017 | 24 North Hotel Key West
 </div>
 
 <!-- Eat & Drink Listing -->
-{% assign venues = site.data._models.eat_drink %}
+{% assign venues = site.data._models.eat_drink | sort: "sort_order" %}
 <section class="models eat-drink">
   <div class="container">
     <div class="two-col-wrap">
 
-      {% for venue in venues | sort: "sort_order" %}
+      {% for venue in venues %}
         <div class="row no-gutters">
           <div class="col-sm-6 sp-img v-center">
             <div class="bg-styles img-inner">
