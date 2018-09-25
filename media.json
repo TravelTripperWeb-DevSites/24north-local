@@ -130,6 +130,24 @@
     "git_file_name": "_assets/image_data/site-assets_359_384_3611_media_2017-06-06-080734_winedine2.JPG.json"
   },
   {
+    "name": "republica1",
+    "file_name": "republica1.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073644/republica1.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-25-073644",
+    "file_type": "image/jpeg",
+    "width": 1214,
+    "height": 448,
+    "file_size": 584603,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073644/large_republica1.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073644/medium_republica1.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073644/small_republica1.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073644/xsmall_republica1.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073644/thumb_republica1.jpg",
+    "git_file_name": "_assets/image_data/republica1.json"
+  },
+  {
     "name": "hemingway-6-toed-cat",
     "file_name": "hemingway-6-toed-cat.jpg",
     "file_type": "image/jpeg",
@@ -705,6 +723,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-125126/xsmall_fury_resized.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_17493/media/2018-07-19-125126/thumb_fury_resized.jpg",
     "git_file_name": "_assets/image_data/fury-resized.json"
+  },
+  {
+    "name": "tennessee-williams-key-west",
+    "file_name": "tennessee-williams-key-west.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_19181/media/2018-09-24-180047/tennessee-williams-key-west.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-24-180047",
+    "file_type": "image/jpeg",
+    "width": 1000,
+    "height": 669,
+    "file_size": 973218,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_384_19181/media/2018-09-24-180047/large_tennessee-williams-key-west.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_384_19181/media/2018-09-24-180047/medium_tennessee-williams-key-west.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_384_19181/media/2018-09-24-180047/small_tennessee-williams-key-west.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_19181/media/2018-09-24-180047/xsmall_tennessee-williams-key-west.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_19181/media/2018-09-24-180047/thumb_tennessee-williams-key-west.jpg",
+    "git_file_name": "_assets/image_data/tennessee-williams-key-west.json"
   },
   {
     "name": "golf-in-key-west",
@@ -4512,6 +4548,24 @@
     "git_file_name": "_assets/image_data/key-west-tiki-bar-boat.json"
   },
   {
+    "name": "republica4",
+    "file_name": "republica4.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073748/republica4.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-25-073748",
+    "file_type": "image/jpeg",
+    "width": 404,
+    "height": 400,
+    "file_size": 144926,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073748/large_republica4.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073748/medium_republica4.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073748/small_republica4.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073748/xsmall_republica4.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073748/thumb_republica4.jpg",
+    "git_file_name": "_assets/image_data/republica4.json"
+  },
+  {
     "name": "KWFWF.3.RGB.300dpi.Jeremy.Ball",
     "file_name": "KWFWF.3.RGB.300dpi.Jeremy.Ball.jpg",
     "file_type": "image/jpeg",
@@ -5584,6 +5638,24 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/359_384_10710/media/2018-01-04-111812/xsmall_Screen_Shot_2018-01-03_at_21.56.25.png",
     "url_thumb": "//cdn.traveltripper.io/site-assets/359_384_10710/media/2018-01-04-111812/thumb_Screen_Shot_2018-01-03_at_21.56.25.png",
     "git_file_name": "_assets/image_data/Screen Shot 2018-01-03 at 21.56.25.json"
+  },
+  {
+    "name": "republica3",
+    "file_name": "republica3.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073727/republica3.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-25-073727",
+    "file_type": "image/jpeg",
+    "width": 404,
+    "height": 400,
+    "file_size": 206798,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073727/large_republica3.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073727/medium_republica3.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073727/small_republica3.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073727/xsmall_republica3.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073727/thumb_republica3.jpg",
+    "git_file_name": "_assets/image_data/republica3.json"
   },
   {
     "name": "florida-brew",
@@ -7073,6 +7145,24 @@
     "name": "sb-logo.png",
     "url": "//cdn.traveltripper.io/site-assets/359_384_818/media/sb-logo.png",
     "git_file_name": "_assets/image_data/site-assets_359_384_818_media_sb-logo.json"
+  },
+  {
+    "name": "republica2",
+    "file_name": "republica2.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073708/republica2.jpg",
+    "tags": "",
+    "description": "",
+    "date_added": "2018-09-25-073708",
+    "file_type": "image/jpeg",
+    "width": 404,
+    "height": 400,
+    "file_size": 220736,
+    "url_large": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073708/large_republica2.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073708/medium_republica2.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073708/small_republica2.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073708/xsmall_republica2.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-073708/thumb_republica2.jpg",
+    "git_file_name": "_assets/image_data/republica2.json"
   },
   {
     "name": "key-west-power-boat-events-2017",

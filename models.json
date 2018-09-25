@@ -491,8 +491,8 @@
       "file": "category12.json"
     },
     {
-      "name": "24 North Key West News",
-      "title": "24 North Key West News",
+      "name": "24 North News & Events",
+      "title": "24 North News & Events",
       "file": "category13.json"
     },
     {
@@ -501,8 +501,8 @@
       "file": "category3.json"
     },
     {
-      "name": "Key West Events & Festivals",
-      "title": "Key West Events & Festivals",
+      "name": "Events & Festivals",
+      "title": "Events & Festivals",
       "file": "category1.json"
     },
     {
@@ -830,6 +830,11 @@
       "name": "Key West Events – Mini-Lobster Season 2016",
       "title": "Key West Events – Mini-Lobster Season 2016",
       "file": "mini-lobster-season.json"
+    },
+    {
+      "name": "Key West Profiles: Tennessee Williams, Literary Icon",
+      "title": "Key West Profiles: Tennessee Williams, Literary Icon",
+      "file": "blog138.json"
     },
     {
       "name": "Where to Go on Duval",

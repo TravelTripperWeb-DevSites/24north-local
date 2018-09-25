@@ -17,8 +17,7 @@
         "required": true
       },
       "menu_url": {
-        "required": true,
-        "type": "url"
+        "required": true
       }
     }
   },
