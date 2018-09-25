@@ -252,7 +252,7 @@ section.models
 
         .onethrid-image {
           float: left;
-          width: 33.3%;
+          width: 33.3333%;
           height: 120px;
           background-repeat: no-repeat;
           background-position: center;
@@ -269,10 +269,6 @@ section.models
 
         .button-common {
           margin-top: 30px;
-
-          &:last-child {
-            margin-top: 3px;
-          }
         }
 
         strong {
