@@ -13,12 +13,8 @@
     "multiple": "true",
     "label": "Menu Details",
     "fields": {
-      "menu_name": {
-        "required": true
-      },
-      "menu_url": {
-        "required": true
-      }
+      "menu_name": {},
+      "menu_url": {}
     }
   },
   "venue_image1": {
