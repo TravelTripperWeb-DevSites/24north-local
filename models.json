@@ -235,6 +235,12 @@
       "file": "events13.json"
     }
   ],
+  "eat_drink": [
+    {
+      "name": "Republica Bar & Lounge",
+      "file": "eat_drink1.json"
+    }
+  ],
   "starbucks_carousel": [
     {
       "file": "starbucks_carousel1.json"
@@ -946,6 +952,11 @@
       "file": "blog44.json"
     },
     {
+      "name": "Key West: Birthplace of Pan American World Airways",
+      "title": "Key West: Birthplace of Pan American World Airways",
+      "file": "blog136.json"
+    },
+    {
       "name": "How to Spend Spring Break in Key West",
       "title": "How to Spend Spring Break in Key West",
       "file": "blog13.json"
@@ -1119,6 +1130,11 @@
       "name": "24 Things You Can't Miss in Key West",
       "title": "24 Things You Can't Miss in Key West",
       "file": "blog121.json"
+    },
+    {
+      "name": "Key West: Former “Wrecking Capital” of the World",
+      "title": "Key West: Former “Wrecking Capital” of the World",
+      "file": "blog137.json"
     },
     {
       "name": "The Cuban Key West: Where to Go for a Cuban Experience in Key West",

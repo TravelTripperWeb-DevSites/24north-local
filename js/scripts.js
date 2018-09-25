@@ -15,10 +15,10 @@ $(document)
   .ready(function () {
 
     // Blog categories
-        $(".toggle-arrow").click(function(){
-          $(this).toggleClass('rotate');
-          $(".categories").stop().slideToggle();
-        });
+    $(".toggle-arrow").click(function () {
+      $(this).toggleClass('rotate');
+      $(".categories").stop().slideToggle();
+    });
 
     $("#carousel-bottom")
       .owlCarousel({
@@ -391,11 +391,11 @@ $(document)
 $(window)
   .load(function () {
     jQuery('ul.nav li.dropdown a')
-        .attr('data-toggle', 'disable');
+      .attr('data-toggle', 'disable');
     if ($(window)
       .width() > 768) {
 
-      
+
       //Add Hover effect to menus
       jQuery('ul.nav li.dropdown')
         .hover(function () {
@@ -596,18 +596,18 @@ $('.form-submit-button, .rfp-btn, .meet-btn, #wedding-rfp, #contest-btn') // But
   // immediately fire it to initialize buttons state
   .keyup();
 
-  $(window).on('scroll',function() {
-    if(window.location.href.indexOf("/search/") == -1) {
-      if( $('.fixed-sidebar')){
-        $('.fixed-sidebar').affix({
-             offset: {
-               top: $('.fixed-sidebar').offset().top - 80,
-               bottom: $('.total-footer').outerHeight(true)+350
-             }
-           });
-      }
-     }
-  });
+$(window).on('scroll', function () {
+  if (window.location.href.indexOf("/search/") == -1) {
+    if ($('.fixed-sidebar')) {
+      $('.fixed-sidebar').affix({
+        offset: {
+          top: $('.fixed-sidebar').offset().top - 80,
+          bottom: $('.total-footer').outerHeight(true) + 350
+        }
+      });
+    }
+  }
+});
 // For Accessibility of Dropdown menus
 $(document)
   .on("focus", '.nav .parent > a', function () {

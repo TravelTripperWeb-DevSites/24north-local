@@ -1,0 +1,71 @@
+---
+pagename: Eat & Drink
+excerpt: Discover the eat & drink options in the boutique 24 North Hotel Key West.
+title_localized:
+  en: Eat & Drink in Key West Florida 2017 | 24 North Hotel Key West
+label_localized:
+  en:
+layout_localized:
+  en: default
+permalink_localized:
+  en: "/eat-drink/"
+meta_description_localized:
+  en: Discover the eat & drink options in the boutique 24 North Hotel Key West.
+meta_keywords_localized:
+  en:
+published_localized:
+  en: true
+label: Eat & Drink in Key West Florida 2017 | 24 North Hotel Key West
+---
+
+<!-- Eat & Drink Banner -->
+<div class="loading" style="display:block;">Loading&#8230;</div>
+<section class="container no-padding mb-50" tabindex="0">
+  <div class="page-banner eat-drink-banner">
+  	{% region dining-banner-content %}
+  </div>
+</section>
+
+<!-- Eat & Drink Intro -->
+<div class="intro">
+  {% regionblock eat_drink_intro, type:text %}
+    <p>Eat, drink, and be merry at our beautiful Key West hotel. At 24 North, we offer multiple dining options, from our poolside oasis, Toasted Coconut, to our Havana-esque craft cocktail bar, Republica, as well as everyone’s favorite morning brew — Starbucks Coffee.</p>
+  {% endregionblock %}
+</div>
+
+{% assign venues = site.data._models.eat_drink %}
+<!-- Eat & Drink Listing -->
+<section class="models eat-drink">
+  <div class="container">
+    <div class="two-col-wrap">
+      {% for venue in venues %}
+        <div class="row no-gutters">
+          <div class="col-sm-6 sp-img v-center">
+            <div class="bg-styles img-inner">
+              <div class="w100-image" style="background-image:url('{{ venue.venue_image1 }}')"></div>
+              <div class="onethrid-image" style="background-image:url('{{ venue.venue_image2 }}')"></div>
+              <div class="onethrid-image" style="background-image:url('{{ venue.venue_image3 }}')"></div>
+              <div class="onethrid-image" style="background-image:url('{{ venue.venue_image4 }}')"></div>
+              <div class="clearfix"></div>
+            </div>  
+          </div>
+          <div class="col-sm-6 sp-content v-center">
+            <a href="/special/#">
+              <p class="title">{{ venue.name }}</p>
+            </a>
+            <div class="desp">
+              {{ venue.description }}
+            </div>
+
+            {% if venue.menu.menu_name and venue.menu.menu_name != "" %}
+              {% for item in venue.menu %}
+                <a href="{{ item.menu_url }}"  class="button-common btn-blue">{{ item.menu_name }}<i class="fa fa-play"></i></a>
+              {% endfor %}
+            {% endif %}
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
