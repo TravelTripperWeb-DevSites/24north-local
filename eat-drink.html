@@ -39,7 +39,7 @@ label: Eat & Drink in Key West Florida 2017 | 24 North Hotel Key West
   <div class="container">
     <div class="two-col-wrap">
 
-      {% for venue in venues %}
+      {% for venue in venues | sort: "sort_order" %}
         <div class="row no-gutters">
           <div class="col-sm-6 sp-img v-center">
             <div class="bg-styles img-inner">
@@ -67,7 +67,7 @@ label: Eat & Drink in Key West Florida 2017 | 24 North Hotel Key West
           </div>
         </div>
       {% endfor %}
-      
+
     </div>
   </div>
 </section>
