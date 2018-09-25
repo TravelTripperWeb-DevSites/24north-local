@@ -81,5 +81,11 @@
     "path": "//cdn.traveltripper.io/site-assets/192_384_19192/media/2018-09-25-083115/4_2x.jpg",
     "alt": "Starbucks",
     "caption": ""
-  }
+  },
+  "menu": [
+    {
+      "menu_name": "Discover More",
+      "menu_url": "/dine-drink/starbucks/"
+    }
+  ]
 }
