@@ -43,7 +43,7 @@ layout: default
 
             {% for item in venue.menu %}
               {% if item.menu_name != "" %}
-                <a href="{{ item.menu_url }}" class="button-common btn-blue">{{ item.menu_name }}<i class="fa fa-play"></i></a>
+                <a href="{{ item.menu_url }}" class="button-common btn-blue" target="_blank">{{ item.menu_name }}<i class="fa fa-play"></i></a>
               {% endif %}
             {% endfor %}
 
