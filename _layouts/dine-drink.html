@@ -1,106 +1,69 @@
 ---
 layout: default
----  
+---
 
-<section>
-    <div class="container no-padding">
-        <div class="page-banner location-banner">
-            {% region dining-banner-text %}
+<!-- Eat & Drink Banner -->
+<div class="loading" style="display:block;">Loading&#8230;</div>
+<section class="container no-padding mb-50" tabindex="0">
+  <div class="page-banner eat-drink-banner">
+  	{% region dining-banner-content %}
+  </div>
+</section>
+
+<!-- Eat & Drink Intro -->
+<div class="intro">
+  {% regionblock eat_drink_intro, type:text %}
+    <p>Eat, drink, and be merry at our beautiful Key West hotel. At 24 North, we offer multiple dining options, from our poolside oasis, Toasted Coconut, to our Havana-esque craft cocktail bar, Republica, as well as everyone’s favorite morning brew — Starbucks Coffee.</p>
+  {% endregionblock %}
+</div>
+
+<!-- Eat & Drink Listing -->
+{% assign venues = site.data._models.eat_drink | sort: "sort_order" %}
+<section class="models eat-drink">
+  <div class="container">
+    <div class="two-col-wrap">
+
+      {% for venue in venues %}
+        <div class="row no-gutters">
+          <div class="col-sm-6 sp-img v-center">
+            <div class="bg-styles img-inner">
+              <div class="w100-image" style="background-image:url('{{ venue.venue_image1.url_large }}')"></div>
+              <div class="onethrid-image" style="background-image:url('{{ venue.venue_image2.url_large }}')"></div>
+              <div class="onethrid-image" style="background-image:url('{{ venue.venue_image3.url_large }}')"></div>
+              <div class="onethrid-image" style="background-image:url('{{ venue.venue_image4.url_large }}')"></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 sp-content v-center">
+
+            <p class="title">{{ venue.name }}</p>
+            <div class="desp">
+              {{ venue.description }}
+            </div>
+
+            {% for item in venue.menu %}
+              {% if item.menu_name != "" %}
+                <a href="{{ item.menu_url }}" class="button-common btn-blue">{{ item.menu_name }}<i class="fa fa-play"></i></a>
+              {% endif %}
+            {% endfor %}
+
+          </div>
         </div>
+      {% endfor %}
+
     </div>
+  </div>
 </section>
 
+<section class="more-spls" rt3-special-rates= "offers" ng-controller="offerDetail" >
+  <!--<div class="graphics"></div>-->
+  <div class="container-fluid no-padding home-specials-wrap">
+    <div class="container">
+      <h2 class="heading-large" tabindex="0">24 North hotel</h2>
 
-<section>
-	<div class="container">
-   	  <div class="home-location-wrap"> 
-      
-      {% include location.html %}
-      
-           <div><a href="/gallery/" class="button-common btn-blue">View Gallery<i class="fa fa-play"></i></a></div>
-            
-      </div>
+      {%  include special-offers.html %}
+
+      <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue">View all Specials<i class="fa fa-play"></i></a></div>
     </div>
+  </div>
 </section>
-
-
-
-<section class="hdct">
-	<div class="container-fluid no-padding">
-    <div class="graphic"></div>
-    	<div class="empty-container">{% region loc-1 %}</div>
-        
-    </div>
-</section>
-
-{% include grid.html %}
-
-<section>
-	<div class="loc-map">
-    {% region loc-map-img %} </div>
-</section>
-
-<!--<section>
-	<div class="container-fluid no-padding home-specials-wrap car-blue-bg">
-    	<div class="container">
-       	  <h2 class="heading-large">current events</h2>
-          
-          <div id="home-carousel-2">
-  				<div class="item">
-            <div class="home-specials-item">
-                <img src="../images/loc-event-1.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>fantasy festival</h3>
-                    <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
-                </div>
-                <a href="#" class="button-common btn-top">View Event</a>
-            </div>
-            
-            </div>
-            
-            <div class="item">
-            <div class="home-specials-item">
-                <img src="../images/loc-event-2.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>ernest hemingway</h3>
-                    <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
-                </div>
-                <a href="#" class="button-common btn-top">View Event</a>
-            </div>
-            
-            </div>
-            
-             <div class="item">
-            <div class="home-specials-item">
-                <img src="../images/loc-event-1.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>grand opening special</h3>
-                    <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
-                </div>
-                <a href="#" class="button-common btn-top">View Special</a>
-            </div>
-            
-            </div>
-            
-             <div class="item">
-            <div class="home-specials-item">
-                <img src="../images/loc-event-2.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>book early & save!</h3>
-                    <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
-                </div>
-                <a href="#" class="button-common btn-top">View Special</a>
-            </div>
-            
-            </div>
-            
-            </div>
-            
-            <div class="btn-holder-with-padding"><a href="#" class="button-common">View all Events<i class="fa fa-play"></i></a></div>
-            
-        </div>
-    </div>
-</section>-->
-
-
-
