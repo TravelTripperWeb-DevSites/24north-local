@@ -235,6 +235,20 @@
       "file": "events13.json"
     }
   ],
+  "eat_drink": [
+    {
+      "name": "Starbucks",
+      "file": "eat_drink2.json"
+    },
+    {
+      "name": "Toasted Coconut",
+      "file": "eat_drink3.json"
+    },
+    {
+      "name": "Republica Bar & Lounge",
+      "file": "eat_drink1.json"
+    }
+  ],
   "starbucks_carousel": [
     {
       "file": "starbucks_carousel1.json"
@@ -485,8 +499,8 @@
       "file": "category12.json"
     },
     {
-      "name": "24 North Key West News",
-      "title": "24 North Key West News",
+      "name": "24 North News & Events",
+      "title": "24 North News & Events",
       "file": "category13.json"
     },
     {
@@ -495,8 +509,8 @@
       "file": "category3.json"
     },
     {
-      "name": "Key West Events & Festivals",
-      "title": "Key West Events & Festivals",
+      "name": "Events & Festivals",
+      "title": "Events & Festivals",
       "file": "category1.json"
     },
     {
@@ -826,6 +840,11 @@
       "file": "mini-lobster-season.json"
     },
     {
+      "name": "Key West Profiles: Tennessee Williams, Literary Icon",
+      "title": "Key West Profiles: Tennessee Williams, Literary Icon",
+      "file": "blog138.json"
+    },
+    {
       "name": "Where to Go on Duval",
       "title": "Where to Go on Duval",
       "file": "where-to-go-on-duval.json"
@@ -944,6 +963,11 @@
       "name": "Costume Tips for Fantasy Fest",
       "title": "Costume Tips for Fantasy Fest",
       "file": "blog44.json"
+    },
+    {
+      "name": "Key West: Birthplace of Pan American World Airways",
+      "title": "Key West: Birthplace of Pan American World Airways",
+      "file": "blog136.json"
     },
     {
       "name": "How to Spend Spring Break in Key West",
@@ -1119,6 +1143,11 @@
       "name": "24 Things You Can't Miss in Key West",
       "title": "24 Things You Can't Miss in Key West",
       "file": "blog121.json"
+    },
+    {
+      "name": "Key West: Former “Wrecking Capital” of the World",
+      "title": "Key West: Former “Wrecking Capital” of the World",
+      "file": "blog137.json"
     },
     {
       "name": "The Cuban Key West: Where to Go for a Cuban Experience in Key West",
