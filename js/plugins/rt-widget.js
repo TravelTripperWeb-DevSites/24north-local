@@ -113,7 +113,7 @@ var css = __webpack_require__(2);
       if (widget_settings.offer_popup_widget.start_date != "" && date >= start && date <= end) {
         popup_widget.show_widget();
       }else{
-         popup_widget.show_widget();
+         //popup_widget.show_widget();
       }
 
     }
