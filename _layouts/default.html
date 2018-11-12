@@ -25,11 +25,7 @@
   {% include header.html %}
 
   <div id="main">
-
-    <!-- For native ad -->
-    {% assign ad = site.data.native_ad %}
-    {% assign native-ad = '<div class="native-ads"><a class="overlay" href="'| append: ad.offer-link | append: '"><span>' | append: ad.content | append: '</span></a></div>' %}
-
+ 
     <!-- Special Banner Bar -->
     {% include special-banner-bar.html %}
 
