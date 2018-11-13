@@ -9,11 +9,11 @@ layout: default
       <div class="graphic">
         <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
       </div>
-      {% regionblock webcam_banner_header_text, type:header %}
-      <h1 class="page-title">LIVE WEBCAMS</h1>
-      {% endregionblock %}
+        {% regionblock webcam_banner_header_text, type:header %}
+        <h1 class="page-title">LIVE WEBCAMS</h1>
+        {% endregionblock %}
+      </div>
     </div>
-  </div>
 </section>
 
 <section class="loc-main">
@@ -23,68 +23,79 @@ layout: default
         <!--Front Cam-->
         <div id="frontcam" class="flowplayer-wrap"></div>
         <script type="text/javascript">
-        WowzaPlayer.create('frontcam',
-            {
-            "license":"PLAY1-mYPu4-ydY4t-GNkET-Fkr4M-wbxCz",
-            "title":"24 North ",
-            "description":"",
-            "sourceURL":"https://wowzaprod179-i.akamaihd.net/hls/live/678105/74a65f41/playlist.m3u8",
-            "autoPlay":false,
-            "volume":"75",
-            "mute":false,
-            "loop":false,
-            "audioOnly":false,
-            "uiShowQuickRewind":false,
-            "posterFrameURL":"https://www.floridakeyswebcams.tv/axiscam/24North/24North-ocean.jpg",
-            "endPosterFrameURL":"",
-            "uiPosterFrameFillMode":"fill"
-            }
-        );
+          WowzaPlayer.create('frontcam', {
+            "license": "PLAY1-mYPu4-ydY4t-GNkET-Fkr4M-wbxCz",
+            "title": "24 North ",
+            "description": "",
+            "sourceURL": "https://wowzaprod179-i.akamaihd.net/hls/live/678105/74a65f41/playlist.m3u8",
+            "autoPlay": false,
+            "volume": "75",
+            "mute": false,
+            "loop": false,
+            "audioOnly": false,
+            "uiShowQuickRewind": false,
+            "posterFrameURL": "https://www.floridakeyswebcams.tv/axiscam/24North/24North-ocean.jpg",
+            "endPosterFrameURL": "",
+            "uiPosterFrameFillMode": "fill"
+          });
         </script>
-
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-sm-12">
         <!--PTZ Cam-->
         <div id="ptzcam" class="flowplayer-wrap"></div>
         <script type="text/javascript">
-          WowzaPlayer.create('ptzcam',
-              {
-              "license":"PLAY1-mYPu4-ydY4t-GNkET-Fkr4M-wbxCz",
-              "title":"24 North PTZ",
-              "description":"",
-              "sourceURL":"https://wowzaprod179-i.akamaihd.net/hls/live/678105/00645d5c/playlist.m3u8",
-              "autoPlay":false,
-              "volume":"75",
-              "mute":false,
-              "loop":false,
-              "audioOnly":false,
-              "uiShowQuickRewind":false,
-              "posterFrameURL":"https://www.floridakeyswebcams.tv/axiscam/24North/24North-ptz.jpg",
-              "endPosterFrameURL":"",
-              "uiPosterFrameFillMode":"fill"
-              }
-          );
-          </script>
-
-          <!--Pool Cam-->
-          <div id="poolcam" class="flowplayer-wrap"></div>
-          <script type="text/javascript">
-            WowzaPlayer.create('poolcam',
-                {
-                "license":"PLAY1-mYPu4-ydY4t-GNkET-Fkr4M-wbxCz",
-                "title":"24 North Pool",
-                "description":"",
-                "sourceURL":"https://wowzaprod179-i.akamaihd.net/hls/live/678105/c0b3e12e/playlist.m3u8",
-                "autoPlay":false,
-                "volume":"75",
-                "mute":false,
-                "loop":false,
-                "audioOnly":false,
-                "uiShowQuickRewind":false,
-                "posterFrameURL":"https://www.floridakeyswebcams.tv/axiscam/24North/24Northpool.jpg",
-                "endPosterFrameURL":"",
-                "uiPosterFrameFillMode":"fill"
-                }
-            );
-            </script>
+          WowzaPlayer.create('ptzcam', {
+            "license": "PLAY1-mYPu4-ydY4t-GNkET-Fkr4M-wbxCz",
+            "title": "24 North PTZ",
+            "description": "",
+            "sourceURL": "https://wowzaprod179-i.akamaihd.net/hls/live/678105/00645d5c/playlist.m3u8",
+            "autoPlay": false,
+            "volume": "75",
+            "mute": false,
+            "loop": false,
+            "audioOnly": false,
+            "uiShowQuickRewind": false,
+            "posterFrameURL": "https://www.floridakeyswebcams.tv/axiscam/24North/24North-ptz.jpg",
+            "endPosterFrameURL": "",
+            "uiPosterFrameFillMode": "fill"
+          });
+        </script>
+      </div>
+    </div>
+    <div class="more-spls" rt3-special-rates="offers">
+      <div class="graphics"></div>
+      <div class="container-fluid no-padding home-specials-wrap">
+        <div class="container">
+          <h2 class="heading-large" tabindex="0">Special Offers</h2>
+          {% include special-offers.html %}
+          <div class="stamp"><img src="../../images/rooms/room-details/stamp.png" alt="24 North Hotel" /></div>
+            <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue" title="View All Specials">View all Specials<i class="fa fa-play"></i></a></div>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+      <div class="col-sm-12">
+        <!--Pool Cam-->
+        <div id="poolcam" class="flowplayer-wrap"></div>
+        <script type="text/javascript">
+          WowzaPlayer.create('poolcam', {
+            "license": "PLAY1-mYPu4-ydY4t-GNkET-Fkr4M-wbxCz",
+            "title": "24 North Pool",
+            "description": "",
+            "sourceURL": "https://wowzaprod179-i.akamaihd.net/hls/live/678105/c0b3e12e/playlist.m3u8",
+            "autoPlay": false,
+            "volume": "75",
+            "mute": false,
+            "loop": false,
+            "audioOnly": false,
+            "uiShowQuickRewind": false,
+            "posterFrameURL": "https://www.floridakeyswebcams.tv/axiscam/24North/24Northpool.jpg",
+            "endPosterFrameURL": "",
+            "uiPosterFrameFillMode": "fill"
+          });
+        </script>
       </div>
     </div>
   </div>
