@@ -70,7 +70,26 @@ fbq('track', 'PageView');
 <!-- DO NOT MODIFY -->
 <!-- End Facebook Pixel Code -->
 
-<script id="gtsgig-boot" data-hotel-id="24northhotel" src="https://widgets.gtsgig.com/boot.js" async defer></script>
+<!-- <script id="gtsgig-boot" data-hotel-id="24northhotel" src="https://widgets.gtsgig.com/boot.js" async defer></script> -->
+
+<script type="text/javascript">
+   var docWidth = window.innerWidth
+              || document.documentElement.clientWidth
+              || document.body.clientWidth;
+
+   if (docWidth > 640) {  //append staywonderful widget if not mobile devices
+      var scriptgtsgig = document.createElement("script");
+      scriptgtsgig.id = "gtsgig-boot";
+      scriptgtsgig.dataset.hotelId = "24northhotel";
+      var att = document.createAttribute("async");
+      var att2 = document.createAttribute("defer");
+      scriptgtsgig.setAttributeNode(att);
+      scriptgtsgig.setAttributeNode(att2);
+      scriptgtsgig.src = "https://widgets.gtsgig.com/boot.js";
+      document.head.appendChild(scriptgtsgig);
+   }
+</script>
+
 
 {% if page.url contains "blog" %}
   <!-- Open Graph data -->
