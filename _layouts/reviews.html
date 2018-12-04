@@ -4,159 +4,85 @@ layout: default
 
 <section class="inner-banner">
     <div class="container">
-        {% regionblock banner, type:image %}
         <div class="page-banner" style="background-image: url(/images/reviews/reviews-banner.jpg);">
-{% regionblock title, type:text %}
+          <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"></div>
+          {% regionblock title, type:text %}
             <h1 class="page-title">
                 Reviews
             </h1>
             {% endregionblock %}
         </div>
-          {% endregionblock %}
     </div>
 </section>
 
-<section class="reviews-text">   
-    <div class="container">
-        {% regionblock content, type:text %}
-        <p>Are you looking for reviews of The Manhattan at Times Square Hotel? Take a look at some of our Times Square hotel's latest reviews, curated from a range of reputable online sources including Google, TripAdvisor and Facebook. Read what other guests have had to say after staying at our hotel based in the heart of all the action in Central Manhattan.</p>
-        {% endregionblock %}
-    </div>  
+<section class="container reviews-page-intro">
+  {% regionblock intro_header, type:header %}
+    <h2>Are you looking for reviews of 24 North Hotel in Key West?</h2>
+  {% endregionblock %}
+  {% regionblock intro_text, type:text %}
+    <p>Take a look at some of the reviews from previous guests at our hotel located right in the heart of Key West, sourced from TripAdvisor, Google, and other reputable platforms!</p>
+  {% endregionblock %}
 </section>
 
-<section class="attr-map reviews-container"  id="left-col">
-    <div class="container no-padding">
-        <div class="row m-ht">
-            <div class="col-lg-6 review-item">
-                <div class="attr-items">                   
-                    
-                    <div class="row">
-                        <div class="col-md-12 no-padding">
-                            {% regionblock review_image1, type:image %}
-                            <div class="attr-top" style="background-image: url('/images/reviews/reviews-1.jpg');">
-                                <div class="number-count">
-                                    1
-                                </div>
-                            </div>
-                             {% endregionblock %}
-                            <div class="attr-bottom">
-                                {% regionblock content_heading1, type:text %}
-                                <h3>Review 1</h3>
-                                 {% endregionblock %}
-                                 {% regionblock content_review1, type:text %}
-                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                                 {% endregionblock %}
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="col-lg-6 review-item">
-                <div class="attr-items">                   
-                    
-                    <div class="row">
-                        <div class="col-md-12 no-padding">
-                            {% regionblock review_image2, type:image %}
-                            <div class="attr-top" style="background-image: url('/images/reviews/reviews-2.jpg');">
-                                <div class="number-count">
-                                    2
-                                </div>
-                            </div>
-                            {% endregionblock %}
-                            <div class="attr-bottom">
-                                {% regionblock content_heading2, type:text %}
-                                <h3>Review 2</h3>
-                                 {% endregionblock %}
-                                 {% regionblock content_review2, type:text %}
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>  
-                                {% endregionblock %}
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>            
-            <div class="col-lg-6 review-item">
-                <div class="attr-items">                   
-                    
-                    <div class="row">
-                        <div class="col-md-12 no-padding">
-                            {% regionblock review_image3, type:image %}
-                            <div class="attr-top" style="background-image: url('/images/reviews/reviews-3.jpg');">
-                                <div class="number-count">
-                                    3
-                                </div>
-                            </div>
-                            {% endregionblock %}
-                            <div class="attr-bottom">
-                                 {% regionblock content_heading3, type:text %}
-                                <h3>Review 3</h3>
-                                {% endregionblock %}
-                                {% regionblock content_review3, type:text %}
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                {% endregionblock %}
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>            
-            <div class="col-lg-6 review-item">
-                <div class="attr-items">                   
-                    
-                    <div class="row">
-                        <div class="col-md-12 no-padding">
-                             {% regionblock review_image4, type:image %}
-                            <div class="attr-top" style="background-image: url('/images/reviews/reviews-4.jpg');">
-                                <div class="number-count">
-                                    4
-                                </div>
-                            </div>
-                             {% endregionblock %}
-                            <div class="attr-bottom">
-                                {% regionblock content_heading4, type:text %}
-                                <h3>Review 4</h3>
-                                  {% endregionblock %}
-                                  {% regionblock content_review4, type:text %}
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                {% endregionblock %}
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+<section class="reviews-list container">
+  <div class="row">
+    {% assign reviews = site.data._models.reviews | sort: "sort_order" %}
+    {% for review in reviews %}
+      <div class="review-item {% if forloop.index > 4 %} hide-item {% endif %}">
+        <div class="review-item-inner">
+          <h6>{{review.review_heading}}</h6>
+          <p class="review-text">{{review.review_full_text}}</p>
+          <p class="reviewer-name"><span>{{review.reviewer_name}}</span> - {{review.reviewer_company}}</p>
+          <p class="reviewer-address">{{review.reviewer_address}}</p>
         </div>
-    </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% if reviews.size > 4 %}
+    <a href="javascript:void(0);" class="button-common btn-blue load-more">LOAD MORE</a>
+  {% endif %}
 </section>
-<section class="reviews-text">   
-    <div class="container">
-        {% regionblock content_review_2, type:text %}
-        <p>Are you looking for reviews of The Manhattan at Times Square Hotel? Take a look at some of our Times Square hotel's latest reviews, curated from a range of reputable online sources including Google, TripAdvisor and Facebook. Read what other guests have had to say after staying at our hotel based in the heart of all the action in Central Manhattan.</p>
-        {% endregionblock %}
-    </div>  
-</section>
- 
 
-<section class="book-a-stay-container att-page m-b-90 m-t-90">
-    <div class="container">
-         {% regionblock button, type:text %}
-        <h2 class="overlay-heading">Book Now</h2>
-         {% endregionblock %}
-         {% regionblock attraction_image, type:image %}
-        <div class="page-banner"  style="background-image:url(/images/attractions/attractions-4.jpg);">
-            <div class="logo-details-container">
-                <div class="m-logo"></div>
-                <div class="detail-container">
-                    {% regionblock page_title, type:text %}
-                    <h2 class="page-title">stay in the<br>heart of NYC</h2>
-                     {% endregionblock %}
-                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.</p>-->
-                   {% regionblock book_now, type:text %} <a href="{{site.data.config.reztripUrl}}/" class="discover-btn">Book Your Stay</a>  {% endregionblock %}
-                </div>
-            </div>
-        </div>
-         {% endregionblock %}
+<section class="reasons-to-book">
+  {% regionblock reasons_to_book_header, type:header %}
+    <h2>3 REASONS TO BOOK DIRECT</h2>
+  {% endregionblock %}
+  <div class="reasons-list">
+    <div class="block">
+      <img src="/images/reviews/search-dollar.png" alt="Price">
+      {% regionblock reasons_to_book_text_1, type:text %}
+        <p>Recieve the best price for your booking</p>
+      {% endregionblock %}
     </div>
+    <div class="block">
+      <img src="/images/reviews/hotel.png" alt="Hotel">
+      {% regionblock reasons_to_book_text_2, type:text %}
+        <p>You're helping to support the hotel directly</p>
+      {% endregionblock %}
+    </div>
+    <div class="block">
+      <img src="/images/reviews/tag.png" alt="Tag">
+      {% regionblock reasons_to_book_text_3, type:text %}
+        <p>Take advantage of our exclusive special offers</p>
+      {% endregionblock %}
+    </div>
+  </div>
+  <div class="btn-holder">
+    {% regionblock reasons_to_book_cta, type:text %}
+      <a href="javascript:void(0);" class="button-common" show-booking-widget>Book Now</a>
+    {% endregionblock %}
+  </div>
 </section>
+
+<div class="room-details" rt3-special-rates="offers">
+  <section class="more-spls">
+    <div class="container-fluid no-padding home-specials-wrap">
+      <div class="container">
+        <h2 class="heading-large" tabindex="0">Special Offers</h2>
+        {%  include special-offers.html %}
+        <div class="stamp-blue"><img src="/images/specials/special-details/stamp-blue.png" alt="24North-stamp"/></div>
+        <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue">View all Specials<i class="fa fa-play"></i></a></div>
+      </div>
+    </div>
+  </section>
+</div>
