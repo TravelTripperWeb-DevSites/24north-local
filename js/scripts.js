@@ -14,6 +14,12 @@ $(".campaign-item").height(maxHeight);
 $(document)
   .ready(function () {
 
+    // Reviews load more
+    $(".load-more").click(function(){
+      $(".review-item.hide-item").removeClass("hide-item");
+      $(this).hide();
+    });
+
     // Blog categories
     $(".toggle-arrow").click(function () {
       $(this).toggleClass('rotate');
