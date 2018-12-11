@@ -169,6 +169,12 @@
       "submenu": "false"
     },
     {
+      "title": "Reviews",
+      "name": "reviews",
+      "url": "/reviews/",
+      "submenu": "false"
+    },
+    {
       "title": "Privacy Policy",
       "name": "privacy-policy",
       "url": "/privacy-policy/",
