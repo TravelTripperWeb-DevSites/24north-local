@@ -1,0 +1,139 @@
+---
+layout: default
+title_localized:
+  en: Tis the offer to be Jolly at the Gates Hotel Key West Florida
+meta_description_localized:
+  en: Enjoy a range of Exclusive Offers only when you book direct on the Official Website of the Gates Hotel in Key West Florida. View our latest deals online here!
+---
+
+<div class="loading" style="display:block;">Loading&#8230;</div>
+
+<div class="room-details special-details" ng-controller="offerDetail">
+  <section>
+    <div class="container no-padding">
+      <div class="page-banner specials-banner">
+        <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"/></div>
+        <h1 class="page-title">Specials</h1>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <ul class="gallery-nav">
+    </ul>
+  </div>
+
+  <section>
+    <div class="container room-details-carousel" >
+      <div class="row">
+      <div class="col-md-3 col-xs-12">
+          <div class="spcl-lstng" tabindex="0">
+            <h2>Special Offer</h2>
+            <h3><span class="block-element">Tis the Offer to be Jolly</h3>
+            <div class="booknow"> <a href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=413790&vr=3" target="_blank">Book Now</a> </div>
+            <p>Rumors are confirmed! You've uncovered an opportunity for the 24 North Hotel.</p>
+          </div>
+      </div>
+      <div class="col-md-9 col-xs-12">
+
+          <div id="roomDetailsCarousel" class="carousel slide">
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="//cdn.traveltripper.io/site-assets/359_384_14595/media/2018-04-13-055832/24-North-Pool-3-2018.jpg" alt="Jolly Offer"/>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lifestyle">
+    <div class="container-fluid">
+      <h3>About the offer</h3>
+      <p>Rumors are confirmed! You've uncovered an opportunity for the The Gates Hotel Key West.</p>
+      <p>Relax by the pool and enjoy the beautiful blue sky and warm sun. If you need some refreshments you are only steps away from cool delicious cocktails.</p>
+      <p>Located 10 minutes from Smathers Beach, our hotel features a year-round outdoor pool where you can (and will) enjoy a drink (or some) at the bar!</p>
+      <p>Unwind in the comfort of your room, which comes with a flat-screen TV, coffee machine and the best beds you've ever slept on! As part of the resort fee, our complimentary shuttles with friendly, recognized drivers take you to Mallory Square. You can choose to rent a bike to explore the Keys if you wish to.</p>
+      <p>So.. sit back and relax and we’ll do the rest.</p>
+      <p>#24North
+    </div>
+  </section>
+
+  <section ng-show="offers.sRdetail.addons.length > 0">
+    <div class="container-fluid">
+      <div class="row details-intro style2">
+        <div class="holds">
+          <h2>this offer includes</h2>
+          <ul>
+            <li ng-repeat="addon in offers.sRdetail.addons">[[addon]]</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row information">
+        <div class="col-md-5 align-center"><img src="../../images/specials/special-details/photo-patch-spcls.png" class="obj-fit" width="296" height="386" alt="" /></div>
+        <div class="col-md-7 p-l-0">
+          <p class="highlight p-t-35">Terms & Conditions:</p>
+          <p>Guests have up to 14 days prior to check in date to change or cancel a reservation.</p>
+          <p>Deposit of 1 night room and tax is required for all confirmed reservations.</p>
+          <p>Please note that changing arrival /departure date may result in rate changes and /or loss of special offer availability if any.</p>
+          <p>A hold of $100 will be placed on the guest credit card at check-in for incidentals. This hold will be released upon check-out pending any incidental charges.</p>
+          <p>Early Departure will be charged 100% on the applicable rate plus taxes.</p>
+          <p>Exceptions :<br>
+            Notification of 21 days prior to check in to change or cancel a reservation for the dates 10/24, 10/25, 10/26, 10/27, 10/28, 12/26, 12/27, 12/28, 12/29, 12/30, 12/31, 1/1.<br><br>
+            <b>**Please Note: From January 1st, 2019 onwards Resort Fee will be $35.00 plus tax, per room, per night.**</b><br><br>
+            <b>Resort Fee prior to January 1st, 2019: $30.00 plus tax, per room, per night</b><br><br>
+            Resort Fee provides guests the following services:<br>
+            • Shuttle service loop to old town.<br>
+            • Onsite concierge.<br>
+            • Access to fitness center and 2 pools.<br>
+            • Newspaper available in lobby.<br>
+            • Resort activities and entertainment.<br>
+            • Daily water in room.<br>
+            • Keepsake luggage tags.<br>
+            • Wireless high speed internet access.<br>
+            • Local calls.<br>
+            • Onsite parking.<br>
+            • 10% off Starbucks.<br><br></p>
+            <p>Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rooms-section">
+    <div class="container">
+      <div class="col-md-4 no-padding">
+        <div class="new-caption-area " id="odscroll" class="carousel slide" data-ride="carousel">
+          <p>VIEW MORE SPECIAL OFFERS</p>
+          <div class="carousel-controls">
+            <a class="left nav-control" href="#od-carousel" data-slide="prev" title="Prevoius"> </a>
+            <a class="right nav-control" href="#od-carousel" data-slide="next" title="Next"> </a> </div>
+          <div class="carousel-inner ">
+            <div class="item " ng-repeat="offer in offers.special_rates" ng-class='{active:$first}'>
+              <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
+              <div class="links"> <a href="/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="button-common-2 btn-spacing button-blue" title="VIEW THIS OFFER">VIEW THIS OFFER</a><br/> <a href="/offers/" class="button-common-2 button-blue" title="VIEW ALL OFFERS">VIEW ALL OFFERS</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 no-padding">
+        <div class="rooms-carousel">
+          <div id="od-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="item" ng-repeat="offer in offers.special_rates" ng-class='{active:$first}'>
+                <img alt="Room large image" ng-src="[[offer.lead_photo_url.large]]" class="width-full">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
