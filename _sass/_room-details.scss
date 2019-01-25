@@ -60,6 +60,13 @@
 			}
 		}
     ul {
+			&.include-list {
+				li {
+					max-width: 550px;
+					margin: 0 auto;
+					display: block;
+				}
+			}
       padding-bottom: 30px;
   		li {
         position: relative;
