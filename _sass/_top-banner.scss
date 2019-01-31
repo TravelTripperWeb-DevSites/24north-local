@@ -1,19 +1,23 @@
 // Top Banner
 
 .top-banner {
-  max-width: 100%;
+  max-width: 1210px;
+  margin: auto;
   padding: 10px 0;
   text-align: center;
   background-color: #000000;
-
   a,
   p {
     display: inline-block;
     margin: 0 15px;
+    font-family: "brandon_grotesquelight";
+    font-size: 18px;
     vertical-align: middle;
   }
 
   p {
+    margin-bottom: 10px;
+    font-size: 18px;
     color: #ffffff;
     @media (max-width: 992px) {
       font-size: 15px;
@@ -21,11 +25,21 @@
   }
 
   a {
-    font-size: 16px;
-    border: 1px solid #000000;
+    display: inline-block;
+    padding: 12px 20px;
+    font-family: "brandon_grotesquemedium";
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid #000000;
+    transition: all .3s;
     @media (max-width: 768px) {
-      padding: 6px 10px;
+      padding: 10px 12px;
       font-size: 12px;
+    }
+    &:hover {
+      background-color: #1086b4 !important;
+      border-color: #1086b4 !important;
     }
   }
 }
