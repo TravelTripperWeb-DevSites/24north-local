@@ -16,11 +16,13 @@
   }
 
   p {
-    margin-bottom: 10px;
     font-size: 18px;
     color: #ffffff;
     @media (max-width: 992px) {
       font-size: 15px;
+    }
+    @media (max-width: 730px) {
+      margin-bottom: 10px;
     }
   }
 
