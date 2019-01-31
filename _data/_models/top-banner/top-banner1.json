@@ -1,12 +1,12 @@
 {
   "featured": true,
-  "title": "Book Direct",
-  "banner-text": "BOOK DIRECT AND UPGRADE TO A DELUXE SUITE FOR $9",
+  "title": "SAVINGS UP TO 25%",
+  "banner-text": "DON’T MISS OUT! – SAVINGS UP TO 25% - AVAILABLE ONLY ON OUR WEBSITE.",
   "banner-text-color": "#ffffff",
-  "button-text": "Book",
-  "button-text-color": "#adadad",
+  "button-text": "Book Offer",
+  "button-text-color": "#ffffff",
   "button-link": "https://chicagoraffaello.reztrip.com/ext/promoRate?property=1737&mode=b&pm=true&sr=341608&vr=3",
-  "button-background-color": "#7ed321",
-  "button-border-color": "#bd10e0",
-  "background-color": "#50e3c2"
+  "button-background-color": "#1f4552",
+  "button-border-color": "#ffffff",
+  "background-color": "#1f4552"
 }
