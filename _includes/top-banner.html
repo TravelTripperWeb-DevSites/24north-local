@@ -1,5 +1,28 @@
 {% for banner in site.data._models.top-banner %}
-  {% if banner.featured == true %}
+  {% assign showBanner = true %}
+
+  {% if banner.featured != true %}
+    {% assign showBanner = false %}
+  {% endif %}
+
+  {% capture today %}{{'now' | date: '%s'}}{% endcapture %}
+
+
+  {% if banner.start-date != "" and banner.start-date != undefined %}
+  {% capture bannerstartdate %}{{banner.start-date | date: '%s'}}{% endcapture %}
+    {% if bannerstartdate > today %}
+      {% assign showBanner = false %}
+    {% endif %}
+  {% endif %}
+
+  {% if banner.end-date != "" and banner.end-date != undefined %}
+  {% capture bannerenddate %}{{banner.end-date | date: '%s'}}{% endcapture %}
+    {% if bannerenddate < today %}
+      {% assign showBanner = false %}
+    {% endif %}
+  {% endif %}
+
+  {% if showBanner == true %}
     <!--Top Banner-->
     <section class="top-banner" style="background-color: {{ banner.background-color }}">
       <p style="color: {{ banner.banner-text-color }}"><strong>{{ banner.banner-text }}</strong></p>
