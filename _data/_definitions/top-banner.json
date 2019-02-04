@@ -42,13 +42,5 @@
   "featured": {
     "type": "boolean",
     "label": "Activate banner?"
-  },
-  "start-date": {
-    "type": "date",
-    "label": "Start Date"
-  },
-  "end-date": {
-    "type": "date",
-    "label": "End Date"
   }
 }
