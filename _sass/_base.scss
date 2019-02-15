@@ -36,3 +36,15 @@ html input[disabled] {
     border-radius: 15px;
   }
 }
+
+.img-fit {
+  display: block;
+  width: 100%;
+  height: 100% !important;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
