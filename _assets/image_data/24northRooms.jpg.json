@@ -1,0 +1,22 @@
+{
+  "name": "24northRooms",
+  "content_type": "image/jpeg",
+  "date_added": "2019-02-15-050426",
+  "url_thumb": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1550225066/dyjsxy2tuvgkxkvfuwgl.jpg",
+  "url_xsmall": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1550225066/dyjsxy2tuvgkxkvfuwgl.jpg",
+  "url_small": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1550225066/dyjsxy2tuvgkxkvfuwgl.jpg",
+  "url_medium": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1550225066/dyjsxy2tuvgkxkvfuwgl.jpg",
+  "url_large": "http://res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1550225066/dyjsxy2tuvgkxkvfuwgl.jpg",
+  "width": 1200,
+  "height": 627,
+  "format": "jpg",
+  "url": "https://res.cloudinary.com/traveltripperweb/image/upload/v1550225066/dyjsxy2tuvgkxkvfuwgl.jpg",
+  "resource_type": "image",
+  "size": 485101,
+  "s3_url": "//cdn.traveltripper.io/site-assets/192_384_23598/media/2019-02-15-050427/dyjsxy2tuvgkxkvfuwgl.jpg",
+  "s3_url_large": "//cdn.traveltripper.io/site-assets/192_384_23598/media/2019-02-15-050427/large_dyjsxy2tuvgkxkvfuwgl.jpg",
+  "s3_url_medium": "//cdn.traveltripper.io/site-assets/192_384_23598/media/2019-02-15-050427/medium_dyjsxy2tuvgkxkvfuwgl.jpg",
+  "s3_url_small": "//cdn.traveltripper.io/site-assets/192_384_23598/media/2019-02-15-050427/small_dyjsxy2tuvgkxkvfuwgl.jpg",
+  "s3_url_xsmall": "//cdn.traveltripper.io/site-assets/192_384_23598/media/2019-02-15-050427/xsmall_dyjsxy2tuvgkxkvfuwgl.jpg",
+  "s3_url_thumb": "//cdn.traveltripper.io/site-assets/192_384_23598/media/2019-02-15-050427/thumb_dyjsxy2tuvgkxkvfuwgl.jpg"
+}
