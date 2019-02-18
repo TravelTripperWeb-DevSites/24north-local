@@ -41,10 +41,17 @@ function getIp(data){
       ipAddress: sessionStorage.ip_add,
       defaultCurrency: 'USD',
     });
-    $("[show-booking-widget]").bookingWidget({
-         showRateCalendar: false,
-         showOfferCode: true
+    var booking = new TTWeb.Booking({
+       showRateCalendar: false,
+       showOfferCode: true
     });
+    $("[show-booking-widget]").click(function(e) {
+      if ($(window).width() >= 768) {
+        booking.showWidget();
+        e.preventDefault();
+      }
+    });
+
 </script>
 
 <script>
