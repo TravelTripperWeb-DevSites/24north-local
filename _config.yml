@@ -1,37 +1,46 @@
- # Site settings
+---
 title: Hotels in Key West Florida | 24 North Hotel Key West
-description:
-url: "https://www.24northhotel.com"
-booking_widget_url: "https://24northhotel.reztrip.com/mobile"
-
-# Build settings
+description: 
+url: https://www.24northhotel.com
+booking_widget_url: https://24northhotel.reztrip.com/mobile
 permalink: pretty
 markdown: kramdown
-
-# Language settings
-default_lang: 'en'
-languages: ['en']
-
-# Reading Files
+default_lang: en
+languages:
+- en
 include:
-  - _pages
-
+- _pages
 data_paginate:
   per_page: 4
-  data: 'blog'
-  path: 'blog/page:num'
-  pagination_template: 'blog/index.html'
-  sort_field: 'date'
+  data: blog
+  path: blog/page:num
+  pagination_template: blog/index.html
+  sort_field: date
   sort_reverse: true
-
 page_gen:
-  - data: 'blog'
-    template: 'blog-details'
-    dir: 'blog'
-  - data: 'category'
-    template: 'category-list'
-    dir: 'blog/category'
-
-# File Handling
-# include: [_pages]
-exclude: [lib, config.rb, .sass-cache, Capfile, config, log, Rakefile, Rakefile.rb, tmp, Gemfile, Gemfile.lock, README.md, LICENSE.md, node_modules, gulpfile.js, package.json, media.json, models.json, sitemap.json]
+- data: blog
+  template: blog-details
+  dir: blog
+- data: category
+  template: category-list
+  dir: blog/category
+exclude:
+- lib
+- config.rb
+- ".sass-cache"
+- Capfile
+- config
+- log
+- Rakefile
+- Rakefile.rb
+- tmp
+- Gemfile
+- Gemfile.lock
+- README.md
+- LICENSE.md
+- node_modules
+- gulpfile.js
+- package.json
+- media.json
+- models.json
+- sitemap.json
