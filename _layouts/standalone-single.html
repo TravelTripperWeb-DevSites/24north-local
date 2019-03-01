@@ -27,15 +27,14 @@ layout: default
     <div class="container room-details-carousel" >
       <div class="row">
       <div class="col-md-3 col-xs-12">
-          <div class="spcl-lstng" tabindex="0">
+          <div class="spcl-lstng lp-list" tabindex="0">
           	<h2>Special Offer</h2>
             <h3><span class="block-element">{{ offer.title }}</h3>
             <div class="booknow"> <a  href="{{ offer.offer_promo_url }}" target="_blank">Book Now</a> </div>
-           <!--  <div class="btn-holder extra padding"><a href="mailto:reservations@hotel24north.com" class="button-common btn-blue">Contact Us</i></a></div> -->
-            <p>{{ offer.long_description }}</p>
+          {{ offer.long_description }}
           </div>
       </div>
-      <div class="col-md-9 col-xs-12"> 
+      <div class="col-md-9 col-xs-12">
           <div id="roomDetailsCarousel" class="carousel slide">
 
             <!-- Wrapper for Slides -->
