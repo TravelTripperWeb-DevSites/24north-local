@@ -23,7 +23,7 @@
       "type": "richtext",
       "label": "Description"
     },
-    "offer_image":
+    "image":
     {
       "required": true,
       "type": "image",
@@ -35,6 +35,19 @@
       "required": true,
       "label": "Offer Promo URL"
     },
+
+    "offers-details":
+{
+  "required": true,
+  "type": "richtext",
+  "label": "Amenities"
+},
+"terms_conditions":
+{
+  "required": true,
+  "type": "richtext",
+  "label": "Terms & Conditions"
+},
     "publish": {
     "label": "Publish Offer",
     "type": "select",

@@ -1,0 +1,109 @@
+---
+layout: default
+---
+
+{% assign offer = page %}
+<div class="loading" style="display:block;">Loading&#8230;</div>
+{% if offer.publish == "Yes" %}
+<div  class="room-details special-details">
+
+  <section>
+    <div class="container no-padding">
+      <div class="page-banner specials-banner">
+        <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"/></div>
+        <h1 class="page-title">Specials</h1>
+      </div>
+    </div>
+  </section>
+  <section>
+
+    <div class="container">
+      <ul class="gallery-nav">
+
+        <li>{{ offer.title }}</a></li>
+
+      </ul>
+    </div>
+    <div class="container room-details-carousel" >
+      <div class="row">
+      <div class="col-md-3 col-xs-12">
+          <div class="spcl-lstng" tabindex="0">
+          	<h2>Special Offer</h2>
+            <h3><span class="block-element">{{ offer.title }}</h3>
+            <div class="booknow"> <a  href="{{ offer.offer_promo_url }}" target="_blank">Book Now</a> </div>
+           <!--  <div class="btn-holder extra padding"><a href="mailto:reservations@hotel24north.com" class="button-common btn-blue">Contact Us</i></a></div> -->
+            <p>{{ offer.long_description }}</p>
+          </div>
+      </div>
+      <div class="col-md-9 col-xs-12">
+
+          <div id="roomDetailsCarousel" class="carousel slide">
+
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img  src="{{ offer.image.url_large }}" alt="{{ offer.offer_image.alt }}"/>
+              </div>
+
+
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="lifestyle">
+  	<div class="container-fluid" tabindex="0">
+    	<h3>About the offer</h3>
+        <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
+    </div>
+  </section>
+  <section ng-show="offers.sRdetail.addons.length > 0">
+    <div class="container-fluid">
+
+      <div class="row details-intro style2">
+      	<div class="holds special-include" tabindex="0">
+
+        <h2>this offer includes</h2>
+        <ul>
+            <li ng-repeat ="addon in offers.sRdetail.addons" >[[addon]]</li>
+         </ul>
+
+        <div class="badger"><img src="/images/rooms/room-details/logo-details.png" width="160" height="144" alt=""/></div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row information">
+        <div class="col-md-5 align-center"><img src="../../images/specials/special-details/photo-patch-spcls.png" width="296" height="386" alt=""/></div>
+        <div class="col-md-7 p-l-0" tabindex="0">
+          <p class="highlight p-t-35">Terms & Conditions:</p>
+          <ul class="lst p-b-25">
+
+          	<li ng-repeat="terms in offers.sRdetail.policy_description " ng-bind-html="terms | replaceNewline | renderHTMLCorrectly">[[terms]]</li>
+
+          </ul>
+         <!--  <p class="highlight">Need assistance? Our dedicated reservations team is available around the clock:</p>
+          <p class="p-b-25">24 North Hotel Service Centre on <a href="tel:305-320-0940">(305) 320-0940</a>  or <br>
+            e-mail <a href="mailto:reservations@hotel24north.com" >reservations@hotel24north.com</a></p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="more-spls">
+    <!--<div class="graphics"></div>-->
+    <div class="container-fluid no-padding home-specials-wrap">
+      <div class="container">
+        <h2 class="heading-large" tabindex="0">More Specials</h2>
+
+        {%  include special-offers.html %}
+
+        <div class="stamp-blue"><img src="../../images/specials/special-details/stamp-blue.png" alt="24North-stamp"/></div>
+        <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue">View all Specials<i class="fa fa-play"></i></a></div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endif %}
