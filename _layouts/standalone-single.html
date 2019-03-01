@@ -42,34 +42,10 @@ layout: default
             <!-- Wrapper for Slides -->
             <div class="carousel-inner">
               <div class="item active">
-                <img  src="{{ offer.image.url_large }}" alt="{{ offer.offer_image.alt }}"/>
+                <img  src="{{ offer.image.path }}" alt="hihoou"/>
               </div>
-
-
             </div>
           </div>
-      </div>
-      </div>
-    </div>
-  </section>
-  <section class="lifestyle">
-  	<div class="container-fluid" tabindex="0">
-    	<h3>About the offer</h3>
-        <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
-    </div>
-  </section>
-  <section ng-show="offers.sRdetail.addons.length > 0">
-    <div class="container-fluid">
-
-      <div class="row details-intro style2">
-      	<div class="holds special-include" tabindex="0">
-
-        <h2>this offer includes</h2>
-        <ul>
-            <li ng-repeat ="addon in offers.sRdetail.addons" >[[addon]]</li>
-         </ul>
-
-        <div class="badger"><img src="/images/rooms/room-details/logo-details.png" width="160" height="144" alt=""/></div>
       </div>
       </div>
     </div>

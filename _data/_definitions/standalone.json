@@ -26,16 +26,14 @@
     "image":
     {
       "required": true,
-      "type": "image",
-      "multiple": true,
-      "label": "Offer Images"
+      "type": "image"
     },
     "offer_promo_url":
     {
       "required": true,
       "label": "Offer Promo URL"
     },
- 
+
 "terms_conditions":
 {
   "required": true,
