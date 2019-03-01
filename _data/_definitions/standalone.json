@@ -35,13 +35,7 @@
       "required": true,
       "label": "Offer Promo URL"
     },
-
-    "offers-details":
-{
-  "required": true,
-  "type": "richtext",
-  "label": "Amenities"
-},
+ 
 "terms_conditions":
 {
   "required": true,
