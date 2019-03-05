@@ -20,7 +20,7 @@
 
     "short_description":
     {
-      "required": true,  
+      "required": true
     },
     "long_description":
     {
