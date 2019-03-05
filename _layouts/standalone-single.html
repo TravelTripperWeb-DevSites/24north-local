@@ -4,8 +4,8 @@ layout: default
 
 {% assign offer = page %}
 <div class="loading" style="display:block;">Loading&#8230;</div>
+<div  class="room-details special-details" rt3-special-rates= "offers" ng-controller="offerDetail" >
 {% if offer.publish == "Yes" %}
-<div  class="room-details special-details">
 
   <section>
     <div class="container no-padding">
@@ -46,6 +46,12 @@ layout: default
           </div>
       </div>
       </div>
+    </div>
+  </section>
+  <section class="lifestyle">
+  	<div class="container-fluid" tabindex="0">
+    	<h3>About the offer</h3>
+        <p>{{ offer.long_description }}</p>
     </div>
   </section>
   <section>
