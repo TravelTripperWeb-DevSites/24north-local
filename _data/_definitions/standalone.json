@@ -17,6 +17,12 @@
       "required": true,
       "label": "Standalone page URL"
     },
+
+    "short_description":
+    {
+      "required": true, 
+      "label": "Description"
+    },
     "long_description":
     {
       "required": true,
