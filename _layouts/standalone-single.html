@@ -20,10 +20,11 @@ layout: default
     <div class="container">
       <ul class="gallery-nav">
 
-        <li>{{ offer.title }}</a></li>
+        <li ng-repeat="o in offers.special_rates"><a ng-href="/special/#[[o.rate_plan_name | formatNameForLink]]" ng-class="{active: offers.sRdetail.rate_plan_code == o.rate_plan_code}" tabindex="-1">[[o.rate_plan_name]]</a></li>
 
       </ul>
     </div>
+    
     <div class="container room-details-carousel" >
       <div class="row">
       <div class="col-md-3 col-xs-12">
