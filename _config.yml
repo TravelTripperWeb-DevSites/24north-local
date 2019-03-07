@@ -1,6 +1,6 @@
 ---
 title: Hotels in Key West Florida | 24 North Hotel Key West
-description: 
+description:
 url: https://www.24northhotel.com
 booking_widget_url: https://24northhotel.reztrip.com/mobile
 permalink: pretty
@@ -24,6 +24,9 @@ page_gen:
 - data: category
   template: category-list
   dir: blog/category
+- data: standalone
+  template: standalone-single
+  dir: ''
 exclude:
 - lib
 - config.rb
