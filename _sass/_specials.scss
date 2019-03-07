@@ -34,6 +34,10 @@ section.models {
 	}
 
 	.container {
+		.col-md-4 {
+			min-height: 654px;
+		}
+
 
 		.sp-img {
 			padding: 0;
@@ -629,7 +633,6 @@ left: 15px;
 		.container {
 			.row {
 				background: #1f4552;
-
 				.sp-content {
 					color: #fff;
 
