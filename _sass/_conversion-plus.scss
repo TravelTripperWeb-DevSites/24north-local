@@ -1,0 +1,30 @@
+.ttweb-conversion-plus-banner {
+  background-color:  $bg-blue-3;
+  color: white;
+  font-family: $main-font-regular;
+  
+  .ttweb-booking-button {    
+    background-color: transparent;
+    color: white;
+    &:hover {
+      background-color: $bg-blue-2;
+      border-color: $bg-blue-2;
+    }
+
+    display: inline-block;
+    padding: 12px 20px;
+    font-family: "brandon_grotesquemedium";
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid white;
+    transition: all .3s;
+  }
+  
+  
+  .ttweb-cross-out-rate {
+    &__actual {
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<div ttweb-component="ConversionPlusBanner"
+  data-tt-min-rate="{{ site.data.conversion_plus.min_rate | default: 'null'}}"
+  data-tt-show-ota="{{ site.data.conversion_plus.show_ota | default: 'null'}}" 
+  data-tt-show-scarcity="{{ site.data.conversion_plus.show_scarcity | default: 'null'}}"
+  data-tt-max-rooms-available="{{ site.data.conversion_plus.max_rooms_available | default: 'null' }}"
+  data-tt-show-activity="{{ site.data.conversion_plus.show_activity | default: 'null'}}"
+  data-tt-recent-booking-min="{{ site.data.conversion_plus.recent_booking_min | default: 'null' }}"
+  data-tt-find-lowest-rate-range= "{{ site.data.conversion_plus.find_lowest_rate_range | default: 'false'}}"
+
+  data-tt-on-button-click="{{ site.data.conversion_plus.on_button_click | default: "open-reztrip-link" }}"
+  data-tt-select-dates-button-click="{{ site.data.conversion_plus.on_select_dates_click | default: "open-booking-widget" }}"
+  data-tt-fallback-on-button-click="{{ site.data.conversion_plus.on_fallback_button_click | default: "open-booking-widget" }}"    
+>
+  {{ site.data.conversion_plus.fallback_content }}
+</div>  
