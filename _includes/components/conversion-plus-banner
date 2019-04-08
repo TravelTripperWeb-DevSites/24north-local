@@ -12,5 +12,5 @@
   data-tt-fallback-on-button-click="{{ site.data.conversion_plus.on_fallback_button_click | default: "open-booking-widget" }}"    
   class="conversion-plus-banner"
 >
-  {{ site.data.conversion_plus.fallback_content }}
+  <div class="fallback-content">{{ site.data.conversion_plus.fallback_content }}</div>
 </div>  

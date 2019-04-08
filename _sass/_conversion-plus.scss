@@ -1,10 +1,16 @@
 .conversion-plus-banner {
-  color: white;
+  .fallback-content {
+    display: none;
+  }
 }
 .ttweb-conversion-plus-banner {
   background-color:  $bg-blue-3;
   color: white;
   font-family: $main-font-regular;
+
+  .fallback-content {
+    display: block;
+  }
   
   .ttweb-booking-button {    
     background-color: transparent;
