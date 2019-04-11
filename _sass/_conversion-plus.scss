@@ -30,10 +30,19 @@
     transition: all .3s;
   }
   
+  .ttweb-banner {
+    &__ad-text {      
+    }
+    &__column-spacer {
+    }
+  }
+  
+  
   
   .ttweb-cross-out-rate {
     &__actual {
       color: $white;
+      line-height: 1em;
     }
   }
 }

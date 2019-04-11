@@ -1,6 +1,7 @@
 show_rates: false
 show_offer_code: true
 show_specials: true
+adults: 1
 
 __EDITABLE_FIELDS__:
   show_rates:
@@ -9,3 +10,6 @@ __EDITABLE_FIELDS__:
     type: boolean
   show_specials:
     type: boolean
+  adults:
+    type: integer
+    instructions: Default Number of Adults
