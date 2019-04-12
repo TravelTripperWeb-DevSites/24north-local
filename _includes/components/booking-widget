@@ -1,6 +1,0 @@
-<div ttweb-component="BookingWidget"
-  data-tt-show-rates="{{ site.data.booking_widget.show_rates | default: 'true'}}" 
-  data-tt-show-offer-code="{{ site.data.booking_widget.show_offer_code | default: 'true'}}" 
-  data-tt-show-specials="{{ site.data.booking_widget.show_specials | default: 'true'}}" 
-  data-tt-adults="{{ site.data.booking_widget.adults | default: 1 }}"
-></div>  
