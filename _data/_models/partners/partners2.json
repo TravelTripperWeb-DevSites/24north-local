@@ -1,0 +1,37 @@
+{
+  "sort_order": 1,
+  "name": "Kino Sandals",
+  "url": "https://kinosandals.com/",
+  "image": {
+    "name": "3F9A1119",
+    "content_type": "image/jpeg",
+    "date_added": "2019-04-24-153611",
+    "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_crop,h_4477,w_6720,x_0,y_0/c_fill,g_faces,h_140,w_140/v1556134572/mmsmdx7tq9flhcqwzbaw.jpg",
+    "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_crop,h_4477,w_6720,x_0,y_0/c_fit,h_300,w_300/v1556134572/mmsmdx7tq9flhcqwzbaw.jpg",
+    "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_crop,h_4477,w_6720,x_0,y_0/c_fit,h_768,w_768/v1556134572/mmsmdx7tq9flhcqwzbaw.jpg",
+    "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_crop,h_4477,w_6720,x_0,y_0/c_fit,h_992,w_992/v1556134572/mmsmdx7tq9flhcqwzbaw.jpg",
+    "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_crop,h_4477,w_6720,x_0,y_0/c_fit,h_1200,w_1200/v1556134572/mmsmdx7tq9flhcqwzbaw.jpg",
+    "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1556134572/mmsmdx7tq9flhcqwzbaw.jpg",
+    "width": 6720,
+    "height": 4480,
+    "format": "jpg",
+    "url": "//res.cloudinary.com/traveltripperweb/image/upload/v1556134572/mmsmdx7tq9flhcqwzbaw.jpg",
+    "resource_type": "image",
+    "size": 11159968,
+    "path": "//res.cloudinary.com/traveltripperweb/image/upload/v1556134572/mmsmdx7tq9flhcqwzbaw.jpg",
+    "file_size": null,
+    "alt": "3F9A1119",
+    "crop": {
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "width": 6720,
+      "height": 4477
+    },
+    "caption": "Kino Sandals",
+    "description": "Kino Sandals"
+  },
+  "alt_text": "Kino Sandals",
+  "description": "<p class=\"MsoNormal\" style=\"text-align: justify;\"><span style=\"font-size: 11.0pt; font-family: 'Century Gothic',sans-serif; mso-fareast-font-family: 'Century Gothic'; mso-bidi-font-family: 'Century Gothic'; color: black;\">24 North Hotel has partnered with </span><u><span style=\"font-size: 11.0pt; font-family: 'Century Gothic',sans-serif; mso-fareast-font-family: 'Century Gothic'; mso-bidi-font-family: 'Century Gothic';\"><a href=\"https://kinosandals.com/\"><span style=\"color: windowtext;\">Kino Sandals,</span></a></span></u><span style=\"font-size: 11.0pt; font-family: 'Century Gothic',sans-serif; mso-fareast-font-family: 'Century Gothic'; mso-bidi-font-family: 'Century Gothic'; color: black;\"> a world-famous sandal factory in Old Town Key West since 1966, to launch a &ldquo;1-Hour Sandal Delivery&rdquo; program for hotel guests. As Jimmy Buffet once sang, it&rsquo;s common for vacationers to &ldquo;blow out their flip flop.&rdquo; Now, through the front desk, hotel guests can order a pair or three of these handmade Key West souvenirs and have them delivered directly to their hotel door within one hour. Guests can also purchase the sandals pre-arrival, and have them waiting for them upon check-in.</span></p>"
+}
