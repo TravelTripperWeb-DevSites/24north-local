@@ -279,6 +279,12 @@
 					 padding:0 20px 10px;
 				}
 			}
+
+			.container {
+				&.about {
+					max-width: 800px;
+				}
+			}
 		}
 	}
 	&.event-details{
