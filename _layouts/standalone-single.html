@@ -40,9 +40,11 @@ layout: default
 
             <!-- Wrapper for Slides -->
             <div class="carousel-inner">
-              <div class="item active">
-                <img  src="{{ offer.image.url_large }}" alt="hihoou"/>
+              {% for offer in offer.image %}
+              <div class="item {% if forloop.first %} active {% endif %}">
+                <img src="{{ offer.url_large }}" alt="{{ offer.title }}"/>
               </div>
+              {% endfor %}
             </div>
           </div>
       </div>
