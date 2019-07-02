@@ -171,7 +171,8 @@
     {
       "title": "Charities",
       "name": "charities",
-      "url": "/save-the-children/",
+      "url": "http://highgate.com/hcf",
+      "newtab": "true",
       "submenu": "false"
     },
     {
