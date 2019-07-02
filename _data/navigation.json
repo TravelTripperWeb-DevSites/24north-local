@@ -3,7 +3,13 @@
       "title": "Rooms",
       "name": "rooms",
       "url": "/rooms/",
-      "submenu": "false"
+      "submenu": "true",
+      "subitems": [{
+          "title": "Amenities",
+          "name": "Amenities",
+          "url": "/amenities/"
+        }
+      ]
     },
     {
       "title": "Specials",
