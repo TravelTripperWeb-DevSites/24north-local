@@ -31,7 +31,8 @@
     "image":
     {
       "required": true,
-      "type": "image"
+      "type": "image",
+      "multiple": true
     },
     "offer_promo_url":
     {
