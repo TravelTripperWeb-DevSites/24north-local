@@ -11,8 +11,8 @@
   .fallback-content {
     display: block;
   }
-  
-  .ttweb-booking-button {    
+
+  .ttweb-booking-button {
     background-color: transparent;
     color: white;
     &:hover {
@@ -29,20 +29,43 @@
     border: 2px solid white;
     transition: all .3s;
   }
-  
+
   .ttweb-banner {
-    &__ad-text {      
+    &__ad-text {
     }
     &__column-spacer {
     }
   }
-  
-  
-  
+
+
+
   .ttweb-cross-out-rate {
     &__actual {
       color: $white;
       line-height: 1em;
     }
   }
+}
+
+.ttweb-ota-rate-table {
+  &__row {
+    min-width: 19%;
+  }
+  &__cost {
+    padding: 4px 0 4px 5px;
+  }
+}
+
+// Booking widget css
+
+.ttweb-calendar-month .ttweb-calendar-month__grid .ttweb-day--in-selection {
+  background-color: $tc-dark-blue;
+}
+
+.ttweb-booking-widget a.ttweb-booking-widget__submit {
+  background-color: $tc-dark-blue;
+}
+
+.ttweb-slide-out-widget__header {
+  background-color: $tc-dark-blue;
 }
