@@ -50,7 +50,7 @@
           <h2>Links</h2>
           <ul>
             {% for items in site.data.navigation.footernav %}
-            <li><a href="{{ items.url }}" title="{{ items.title }}">{{ items.title }}</a></li>
+            <li><a href="{{ items.url }}" title="{{ items.title }}" {% if items.newtab == "true" %} target="_blank" {% endif %}>{{ items.title }}</a></li>
             {% endfor %}
           </ul>
         </div>
