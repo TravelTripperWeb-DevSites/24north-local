@@ -53,16 +53,16 @@
 .ttweb-ota-rate-table {
   &__row {
     min-width: 19%;
-    padding-right: 10px;
+    padding-right: 0;
     font-size: 14px;
-    &:last-child {
-      padding-right: 0;
+    @media (min-width: 1200px) {
+      padding-right: 10px;
+      &:last-child {
+        padding-right: 0;
+      }
     }
     @media (min-width: 991px) and (max-width: 1200px) {
       min-width: 48%;
-      &:last-child {
-        padding-right: 10px;
-      }
     }
   }
   &__label {
