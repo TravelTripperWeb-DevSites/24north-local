@@ -60,6 +60,9 @@
     }
     @media (min-width: 991px) and (max-width: 1200px) {
       min-width: 48%;
+      &:last-child {
+        padding-right: 10px;
+      }
     }
   }
   &__label {
