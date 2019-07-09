@@ -52,34 +52,34 @@
 
 .ttweb-ota-rate-table {
   &__row {
-    min-width: 19% !important;
-    padding-right: 0 !important;
-    font-size: 14px !important;
+    min-width: 19%;
+    padding-right: 0;
+    font-size: 14px;
     @media (min-width: 1200px) {
-      padding-right: 10px !important;
+      padding-right: 10px;
       &:last-child {
-        padding-right: 0 !important;
+        padding-right: 0;
       }
     }
     @media (min-width: 991px) and (max-width: 1200px) {
-      min-width: 48% !important;
+      min-width: 48%;
     }
   }
   &__label {
     @media (min-width: 991px) and (max-width: 1200px) {
-      width: 45% !important;
-      text-align: center !important;
+      width: 45%;
+      text-align: center;
     }
   }
   &__cost {
-    padding: 4px 0 4px 5px !important;
+    padding: 4px 0 4px 5px;
     @media (min-width: 991px) and (max-width: 1200px) {
-      width: 45% !important;
-      text-align: center !important;
+      width: 45%;
+      text-align: center;
     }
     span {
       @media (min-width: 991px) and (max-width: 1200px) {
-        text-align: center !important;
+        text-align: center;
       }
     }
   }
