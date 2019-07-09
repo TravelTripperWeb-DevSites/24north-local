@@ -103,7 +103,7 @@ function getIp(data){
         url: "https://geoip-db.com/jsonp",
         jsonpCallback: "callback",
         dataType: "jsonp",
-        success: function( location ) {
+        success: function( location ) { console.log('location-', location);
             if(location.state == 'Florida') {
               $('body').RTwidgets({
                 offer_popup_widget: {
