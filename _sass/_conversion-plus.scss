@@ -4,9 +4,9 @@
   }
 }
 .ttweb-conversion-plus-banner {
-  background-color:  $bg-blue-3;
-  color: white;
-  font-family: $main-font-regular;
+  background-color:  $bg-blue-3 !important;
+  color: white !important;
+  font-family: $main-font-regular !important;
 
   .fallback-content {
     display: block;
@@ -44,7 +44,7 @@
 
   .ttweb-cross-out-rate {
     &__actual {
-      color: $white;
+      color: $white !important;
       line-height: 1em;
     }
   }
