@@ -99,3 +99,12 @@
 .ttweb-slide-out-widget__header {
   background-color: $tc-dark-blue;
 }
+
+
+@media (min-width: 1200px) {
+  @media all and (-ms-high-contrast:none) {
+     *::-ms-backdrop, :last-child.ttweb-ota-rate-table__row {
+       padding-right: 20px;
+      } /* IE11 */
+   }
+}
