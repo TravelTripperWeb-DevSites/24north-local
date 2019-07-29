@@ -108,3 +108,16 @@
       } /* IE11 */
    }
 }
+
+.ttweb-ota-rate-table {
+
+  &__row {
+    justify-content: center;
+    width: 120px;
+  }
+
+  &__label {
+    flex: none;
+  }
+
+}
