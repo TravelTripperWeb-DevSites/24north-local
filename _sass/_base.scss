@@ -40,12 +40,12 @@ html input[disabled] {
 .ttweb-ota-rate-table {
 
   &__row {
-    justify-content: center;
-    width: 120px;
+    justify-content: center !important;
+    width: 120px !important;
   }
 
   &__label {
-    flex: none;
+    flex: none !important;
   }
 
 }
