@@ -40,7 +40,7 @@ layout: default
 
             <ol class="carousel-indicators">
               {% for offer in offer.image %}
-                {% if forloop.index > 1 %}
+                {% if forloop.length > 1 %}
                 <li data-target="#roomDetailsCarousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first == true %} class="active"{% endif %}></li>
                 {% endif %}
               {% endfor %}
