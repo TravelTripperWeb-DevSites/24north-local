@@ -13,8 +13,9 @@ layout: default
       <div class="row no-gutters">
         <div class="col-sm-6 col-md-4 sp-content" ng-repeat="offer in offers.special_rates">
           <a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink]]/">
-            <div class="bg-styles img-inner" style="background-image: url('[[offer.lead_photo_url.yankee_large]]');">
-            </div>
+            <!-- <div class="bg-styles img-inner" style="background-image: url('[[offer.lead_photo_url.yankee_large]]');">
+            </div> -->
+            <img src="[[offer.lead_photo_url.yankee_large]]" alt="[[offer.rate_plan_name]]" />
           </a>
 
           <a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink]]/">

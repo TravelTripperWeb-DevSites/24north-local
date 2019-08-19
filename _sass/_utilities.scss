@@ -135,3 +135,14 @@
     transform: rotate(360deg);
   }
 }
+
+img.objectfit, .objectfit img {
+	object-fit: cover;
+  font-family: 'object-fit: cover;';
+  height: 100%;
+  width: 100%;
+}
+.objectfit * {
+  height: 100%;
+  width: 100%;
+}
