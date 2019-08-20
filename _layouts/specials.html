@@ -4,7 +4,12 @@ layout: default
 <div class="loading" style="display:block;">Loading&#8230;</div>
 <section class="container no-padding mb-50" tabindex="0">
   <div class="page-banner specials-bannner">
-    {% region specials-banner-content %}
+    {% regionblock hero-heading, type:text %}
+		<h1 class="page-title" tabindex="0">Specials</h1>
+    {% endregionblock %}
+    <div class="graphic">
+      <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
+    </div>
   </div>
 </section>
 <div rt3-special-rates="offers">
@@ -12,14 +17,14 @@ layout: default
     <div class="container">
       <div class="row no-gutters">
         <div class="col-sm-6 col-md-4 sp-content" ng-repeat="offer in offers.special_rates">
-          <a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink]]/">
+          <a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink]]/" tabindex="-1">
             <img class="objectfit" src="[[offer.lead_photo_url.yankee_large]]" alt="[[offer.rate_plan_name]]" />
           </a>
 
           <a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink]]/">
-            <p class="title mt-3">[[offer.rate_plan_name]]</p>
+            <h2 class="title mt-3">[[offer.rate_plan_name]]</h2>
           </a>
-          <p class="desp">[[offer.short_description]]</p>
+          <p class="desp" tabindex="0">[[offer.short_description]]</p>
           <div class="btn-holder">
             <a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink]]/" class="button-common btn-blue">View this special<i class="fa fa-play"></i></a>
             <a ng-href="{{site.data.config.reztripUrl}}search?rate_code=[[offer.rate_plan_code]]&arrival_date=[[offer.stay_start_date | ifOldRetTodayDate:offer.min_lead_time]]&departure_date=[[offer.stay_start_date | ifOldRetTodayDate:offer.min_lead_time | addDayInDate:2 ]]"

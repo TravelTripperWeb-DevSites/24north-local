@@ -226,8 +226,16 @@ section.models {
 			.sp-content {
 				padding: 30px;
 
+        h2, .h2 {
+          margin-bottom: 20px;
+        }
+
 				.desp {
 					padding-bottom: 0;
+
+          p {
+            text-align: left;
+          }
 				}
 
 				.button-common {
@@ -237,7 +245,6 @@ section.models {
 				strong {
 					display: block;
 					margin-bottom: 30px;
-					text-align: center;
 				}
 			}
 			@media(min-width: 768px) {

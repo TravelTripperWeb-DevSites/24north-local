@@ -9,7 +9,7 @@ layout: default
 <div class="room-details" ng-controller="roomDetail">
   <div class="container no-padding">
     <div class="page-banner rooms-banner">
-      <h1 class="page-title" tabindex="0">Rooms</h1>
+      <p class="h1 page-title">Rooms</p>
       <div class="graphic">
         <img src="/images/floating/stamp-1.png" alt="24 north stamp">
       </div>
@@ -31,7 +31,7 @@ layout: default
             <div class="item" role="option">
               <p class="h2">Premium</p>
               <h1 class="h3" tabindex="0"><span class="block-element">[[selectedRoom.name]]</h1>
-              <p tabindex="0"><a ng-href="{{ site.data.config.reztripUrl }}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" title="today's room rate">[[ selectedRoom.todayRate ]]</a></p>
+              <p><a ng-href="{{ site.data.config.reztripUrl }}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" title="today's room rate" aria-label="Tonight's Rate [[ selectedRoom.todayRate ]]">[[ selectedRoom.todayRate ]]</a></p>
               <div class="btn-holder extra padding"><a ng-href="{{ site.data.config.reztripUrl }}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" class="button-common btn-blue" title="Book Now">Book Now<i class="fa fa-play"></i></a></div>
             </div>
           </div>

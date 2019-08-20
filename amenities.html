@@ -2,9 +2,14 @@
 layout: default
 ---
 
-<section class="container no-padding mb-50" tabindex="0">
+<section class="container no-padding mb-50">
   <div class="page-banner rooms-banner">
-    {% region banner-content %}
+    {% regionblock hero-heading, type:text %}
+		<h1 class="page-title" tabindex="0">Amenities</h1>
+    {% endregionblock %}
+    <div class="graphic" tabindex="-1">
+			<img src="/images/floating/stamp-1.png" alt="24 north stamp" tabindex="-1" />
+		</div>
   </div>
 </section>
 
@@ -24,11 +29,15 @@ layout: default
       </div>
     </div>
     <div class="col-md-6 info">
-      {% regionblock amenites_01_text, type:text %}
-      <h3>Underwater Library - <br>Perfect Poolside Reading</h3>
-      <p>Relax by (or in!) the pool with a classic novel – no more worrying about shriveled pages or runny ink.</p>
-      <p>24 North Hotel’s Underwater Library can be splashed on and even taken under.  Grab a book from the Front Desk and float off into a great book.</p>
+      {% regionblock amenites_01_heading, type:text %}
+      <h2 class="h3" tabindex="0">Underwater Library - <br>Perfect Poolside Reading</h2>
       {% endregionblock %}
+      <div tabindex="0">
+        {% regionblock amenites_01_content, type:text %}
+        <p>Relax by (or in!) the pool with a classic novel – no more worrying about shriveled pages or runny ink.</p>
+        <p>24 North Hotel’s Underwater Library can be splashed on and even taken under.  Grab a book from the Front Desk and float off into a great book.</p>
+        {% endregionblock %}
+      </div>
     </div>
 
   </div>
@@ -37,14 +46,18 @@ layout: default
       <div class="object-fit">
         {% regionblock amenites_02_image, type:image %}
         <img src="/images/eat-drink/24northBootcamp.jpg" alt="24North-Underwater Library">
-          {% endregionblock %}
+        {% endregionblock %}
       </div>
     </div>
-    <div class="col-md-6 info" tabindex="0">
-      {% regionblock amenites_02_text, type:text %}
-      <h3>Bootcamp in a Box </h3>
-      <p>This self-guided, instructional workout outlines 30 minutes of cardio blasts like jumping rope, push-ups and squats with strength training and balance challenges. With minimal equipment guests discover a maximum, individual workout on their schedule. The fun takes place on our adjacent lawn. </p>
+    <div class="col-md-6 info">
+      {% regionblock amenites_02_heading, type:text %}
+      <h3 tabindex="0">Bootcamp in a Box </h3>
       {% endregionblock %}
+      <div tabindex="0">
+        {% regionblock amenites_02_content, type:text %}
+        <p>This self-guided, instructional workout outlines 30 minutes of cardio blasts like jumping rope, push-ups and squats with strength training and balance challenges. With minimal equipment guests discover a maximum, individual workout on their schedule. The fun takes place on our adjacent lawn. </p>
+        {% endregionblock %}
+      </div>
     </div>
   </div>
   <div class="row">
@@ -57,13 +70,15 @@ layout: default
       </div>
     </div>
     <div class="col-md-6 info">
-      {% regionblock amenites_03_text, type:text %}
-      <h3>Kino’s Sandal Delivery</h3>
-      <p>24 North Hotel has partnered with Kino Sandals, a world-famous sandal factory in Old Town Key West since 1966, to launch a "1-Hour Sandal Delivery" program for hotel guests.  As Jimmy Buffet once sang, it's common for vacationers to "blow
-        out their flip flop." Now, through the front desk, hotel guests can order a pair or three of these handmade Key West souvenirs and have them delivered directly to their hotel door within one hour. Guests can also purchase the sandals
-        pre-arrival, and have them waiting for them upon check-in. </p>
-      <p>This service is offered daily between the hours of 10 a.m. and 5:30 p.m from Monday through Saturday and 10 a.m. to 3 p.m. on Sunday. The service offers the classic thong-style sandals for children and adults for $20.43 including tax</p>
+      {% regionblock amenites_03_heading, type:text %}
+      <h4 class="h3" tabindex="0">Kino’s Sandal Delivery</h3>
       {% endregionblock %}
+      <div tabindex="0">
+        {% regionblock amenites_03_content, type:text %}
+        <p>24 North Hotel has partnered with Kino Sandals, a world-famous sandal factory in Old Town Key West since 1966, to launch a "1-Hour Sandal Delivery" program for hotel guests.  As Jimmy Buffet once sang, it's common for vacationers to "blow out their flip flop." Now, through the front desk, hotel guests can order a pair or three of these handmade Key West souvenirs and have them delivered directly to their hotel door within one hour. Guests can also purchase the sandals pre-arrival, and have them waiting for them upon check-in.</p>
+        <p>This service is offered daily between the hours of 10 a.m. and 5:30 p.m from Monday through Saturday and 10 a.m. to 3 p.m. on Sunday. The service offers the classic thong-style sandals for children and adults for $20.43 including tax</p>
+        {% endregionblock %}
+      </div>
     </div>
   </div>
   <div class="row">
@@ -75,27 +90,34 @@ layout: default
       </div>
     </div>
     <div class="col-md-6 info ">
-      {% regionblock amenites_04_text, type:text %}
-      <h3>Running Maps </h3>
+      {% regionblock amenites_04_heading, type:text %}
+      <h5 class="h3" tabindex="0">Running Maps</h5>
+      {% endregionblock %}
+      <div tabindex="0">
+      {% regionblock amenites_04_content, type:text %}
       <p>Keep your fitness on track. We’ve got walking/running maps to provide the best routes for a 5k, 10k or a leisurely stroll, with some popular selfie stops.</p>
       {% endregionblock %}
+      </div>
     </div>
   </div>
   <div class="row">
 
     <div class="col-md-6 ">
       <div class="object-fit">
-
         {% regionblock amenites_05_image, type:image %}
         <img src="/images/eat-drink/24North-find-oomm.jpg" alt="24North-Find OOMM">
         {% endregionblock %}
       </div>
     </div>
     <div class="col-md-6 info">
-      {% regionblock amenites_05_text, type:text %}
-      <h3>Find OOMM…</h3>
-      <p>Every Saturday and Sunday during a complimentary, instructor-led yoga practice on the Sunset Green.</p>
+      {% regionblock amenites_05_heading, type:text %}
+      <h6 class="h3" tabindex="0">Find OOMM…</h6>
       {% endregionblock %}
+      <div tabindex="0">
+        {% regionblock amenites_05_content, type:text %}
+        <p>Every Saturday and Sunday during a complimentary, instructor-led yoga practice on the Sunset Green.</p>
+        {% endregionblock %}
+      </div>
     </div>
   </div>
   <div class="row">
@@ -107,10 +129,14 @@ layout: default
       </div>
     </div>
     <div class="col-md-6 info">
-      {% regionblock amenites_06_text, type:text %}
-      <h3>Take a ride to the wild side!</h3>
-      <p>Enjoy the ride to Mallory Square in our air-conditioned shuttle. The shuttle services to and from Mallory Square, just show them your key!</p>
+      {% regionblock amenites_06_heading, type:text %}
+      <h6 class="h3" tabindex="0">Take a ride to the wild side!</h3>
       {% endregionblock %}
+      <div tabindex="0">
+        {% regionblock amenites_06_content, type:text %}
+        <p>Enjoy the ride to Mallory Square in our air-conditioned shuttle. The shuttle services to and from Mallory Square, just show them your key!</p>
+        {% endregionblock %}
+      </div>
     </div>
   </div>
 </section>

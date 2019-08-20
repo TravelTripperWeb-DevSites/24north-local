@@ -5,7 +5,7 @@
       <div class="item" ng-repeat="room in browser.roomsList">
         <div class="home-specials-item2"> <img ng-src="[[room.photos[0].yankee_large]]" alt="" />
           <div class="car-content">
-            <h4 class="h3" tabindex="0"><a ng-href="/room/#[[room.name | formatNameForLink]]" title="Room Name" >[[room.name]]</a></h4>
+            <h4 class="h3"><a ng-href="/room/#[[room.name | formatNameForLink]]" title="Room Name" >[[room.name]]</a></h4>
             <p tabindex="0">[[room.short_description | limitTo: 150]][[room.short_description.length > 150 ? '...' : '']]</p>
           </div>
           <a ng-href="/room/#[[room.name | formatNameForLink]]" class="button-common btn-top" title="View Room">View Room</a> </div>

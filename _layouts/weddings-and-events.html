@@ -7,8 +7,12 @@ layout: default
   <section>
     <div class="container no-padding">
       <div class="page-banner partners-banner events-lawn-banner">
-        <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 North Hotel" /></div>
-        <h1 class="page-title">WEDDINGS</h1>
+        {% regionblock weddings_header, type:header %}
+        <h1 class="page-title" tabindex="0">Weddings</h1>
+        {% endregionblock %}
+        <div class="graphic">
+          <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
+        </div>
       </div>
     </div>
   </section>
@@ -17,12 +21,21 @@ layout: default
     <div class="container-fluid no-padding two-col-wrap m-t-60">
       <div class="col-sm-6 no-padding v-center">
         <div class="two-col-content" tabindex="0">
-          {% region heart-of-republic %}
+          {% regionblock weddings_header, type:text %}
+          <h2 class="h3" tabindex="0">A key west wedding</h2>
+          {% endregionblock %}
+          {% regionblock weddings_content, type:text %}
+          <div tabindex="0">
+  					<p class="m-t-30">One of the top wedding destinations in the country, this southernmost point in the United States offers balmy weather, vast horizons, and breathtaking sunsets ideal for your special day. Plan the perfect outdoor wedding in Key West on our lush Sunset Green Event Lawn, ideal for both formal celebrations and low-key ceremonies.<br />The Sunset Green Event Lawn is accessible. For more information, please view our <a title="Accessibility Statement" href="../accessibility/">Accessibility Statement</a>.</p>
+          </div>
+          {% endregionblock %}
           <div class="btn-holder"><a href="https://www.thekeyscollection.com/celebrate/" class="button-common btn-blue" target="_blank">Learn More<i class="fa fa-play"></i></a></div>
         </div>
       </div>
       <div class="col-sm-6 no-padding v-center">
+        {% regionblock weddings_image, type:image %}
         <img src="/images/event-lawn/24-north-wedding-key-west-2.jpg" alt="A KEY WEST WEDDING">
+        {% endregionblock %}
       </div>
     </div>
   </section>
@@ -30,7 +43,9 @@ layout: default
   <section class="about-home weddings-intro">
 
     <div class="container-fluid no-padding two-col-wrap">
-      <div class="col-sm-6 no-padding v-center">{% region shuttle-image-2 %}</div>
+      <div class="col-sm-6 no-padding v-center">
+        {% region shuttle-image-2 %}
+      </div>
       <div class="col-sm-6 no-padding v-center">
         <div class="two-col-content" tabindex="0">
           {% region explore-old-key %}
