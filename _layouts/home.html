@@ -31,9 +31,9 @@ layout: default
           </div>
 
           <div class="caption-price" style="display:none">
-            <p class="price-holder" ng-show="recentBookings.totalBookings > 5" tabindex="0"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</p>
+            <p class="price-holder" ng-show="recentBookings.totalBookings > 5"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</p>
             <div class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate">
-              <a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" title="Tonight’s Rate" ><span tabindex="-1">[[ browser.toNightsRate ]]</span>Tonight’s Rate</a>
+              <a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" title="Tonight’s Rate" tabindex="-1"><span tabindex="-1">[[ browser.toNightsRate ]]</span>Tonight’s Rate</a>
             </div>
           </div>
 
@@ -44,7 +44,7 @@ layout: default
                   <div class="tonight-rate ">
                   <p>Best Price Available</p>
                   <a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" title="Browse Rates" tabindex="-1">
-                    <h4>Tonight's Rate <span class="price">[[browser.otaRates.reztripRate]]</span></h4>
+                    <p class="h4">Tonight's Rate <span class="price">[[browser.otaRates.reztripRate]]</span></p>
                   </a>
                   </div>
                   <div class="ota-list" >
@@ -166,8 +166,8 @@ layout: default
         <div class="home-rooms-holder-inner">
           <data-owl-carousel  class="owl-carousel" data-options="{navigation : false, slideSpeed : 500,vpaginationSpeed : 400,singleItem:true, paginationNumbers: false,autoPlay: false,pagination: false, navigation: true,navigationText : false}" role="listbox" aria-label="Rooms & Suites">
             <div class="item" owl-carousel-item="" ng-repeat ="room in browser.roomsList" role="option">
-              <h4 class="h2" tabindex="-1">Rooms & Suites</h4>
-              <a class="h3 block-element" href="/room/#[[room.name | formatNameForLink]]">[[room.name]]</a>
+              <p class="h2 p-0" tabindex="-1">Rooms & Suites</p>
+              <a class="block-element" href="/room/#[[room.name | formatNameForLink]]"><h4 class="h3">[[room.name]]</h4></a>
               <p></p>
               <div class="btn-holder extra padding"><a href="/rooms/" class="button-common btn-blue" title="View Rooms">View Rooms<i class="fa fa-play"></i></a></div>
 	          </div>
@@ -182,7 +182,7 @@ layout: default
 <section rt3-special-rates= "offers">
 	<div class="container-fluid no-padding home-specials-wrap">
     	<div class="container">
-       	  <h5 class="heading-large" class=''tabindex="0">Special Offers</h5>
+       	  <h5 class="heading-large" tabindex="0">Special Offers</h5>
           {%  include special-offers.html %}
           <div class="graphic"><img src='/images/floating/stamp-2.png' alt='Stamp'/></div>
           <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue" title="View all Specials">View all Specials<i class="fa fa-play"></i></a></div>

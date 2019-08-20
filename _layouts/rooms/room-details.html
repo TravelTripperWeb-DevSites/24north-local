@@ -7,10 +7,12 @@ layout: default
 <div class="loading" style="display:block;">Loading&#8230;</div>
 
 <div class="room-details" ng-controller="roomDetail">
-  <div class="container no-padding" tabindex="-1">
+  <div class="container no-padding">
     <div class="page-banner rooms-banner">
-      <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"></div>
-      <h1 class="page-title">Rooms</h1>
+      <h1 class="page-title" tabindex="0">Rooms</h1>
+      <div class="graphic">
+        <img src="/images/floating/stamp-1.png" alt="24 north stamp">
+      </div>
     </div>
   </div>
   <div class="container">
@@ -27,13 +29,10 @@ layout: default
         <div class="home-rooms-holder-inner">
           <div id="carousel-bottom" role="listbox">
             <div class="item" role="option">
-              <div tabindex="0">
-                <p class="h2">Premium</p>
-                <h1 class="h3" tabindex="0"><span class="block-element">[[selectedRoom.name]]</h1>
-                <p tabindex="0"><a ng-href="{{ site.data.config.reztripUrl }}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" title="today's room rate">[[ selectedRoom.todayRate ]]</a></p>
-                <div class="btn-holder extra padding"><a ng-href="{{ site.data.config.reztripUrl }}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" class="button-common btn-blue" title="Book Now">Book Now<i class="fa fa-play"></i></a></div>
-
-              </div>
+              <p class="h2">Premium</p>
+              <h1 class="h3" tabindex="0"><span class="block-element">[[selectedRoom.name]]</h1>
+              <p tabindex="0"><a ng-href="{{ site.data.config.reztripUrl }}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" title="today's room rate">[[ selectedRoom.todayRate ]]</a></p>
+              <div class="btn-holder extra padding"><a ng-href="{{ site.data.config.reztripUrl }}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" class="button-common btn-blue" title="Book Now">Book Now<i class="fa fa-play"></i></a></div>
             </div>
           </div>
         </div>
@@ -119,7 +118,7 @@ layout: default
       <div class="border-texture"><img src="/images/rooms/room-details/border.png" alt="Border" /></div>
       <div class="cta-theme">
         <div class="pf-wrap">
-          <h2>Paradise Found</h2>
+          <h5 class="h2" tabindex="0">Paradise Found</h5>
           <div><a href="javascript:void(0);" class="button-common btn-white" title="Book Now" show-booking-widget>Book Now<i class="fa fa-play"></i></a></div>
         </div>
       </div>
@@ -130,7 +129,8 @@ layout: default
     <div class="graphics"></div>
     <div class="container-fluid no-padding home-specials-wrap">
       <div class="container">
-        <h2 class="heading-large" tabindex="0">Special Offers</h2> {% include special-offers.html %}
+        <h6 class="heading-large" tabindex="0">Special Offers</h6>
+        {% include special-offers.html %}
 
         <div class="stamp"><img src="../../images/rooms/room-details/stamp.png" alt="24 North Hotel" /></div>
         <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue" title="View All Specials">View all Specials<i class="fa fa-play"></i></a></div>
