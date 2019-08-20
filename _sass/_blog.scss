@@ -42,20 +42,20 @@
         }
     }
     h1,
-    h2 {
+    h2, .h1, .h2 {
         margin-top: 30px;
         font-size: 30px;
         color: $tc-light-blue-1;
         padding: 0 0 15px 0;
         font-family: $main-font-light;
     }
-    h1 {
+    h1, .h1 {
       @media(max-width: 767px) {
           font-size: 20px;
           margin-top: 0;
       }
     }
-    h6 {
+    h6, .h6 {
         padding-top: 5px;
     }
     p {
@@ -212,7 +212,7 @@
             padding-left: 2.5rem;
        	}
     }
-    h4{
+    h4, .h4 {
     	margin: 0 0 10px 0;
     	text-transform: uppercase;
     }
@@ -408,7 +408,7 @@
     color: #444;
     letter-spacing: 1px;
   }
-  h2,h1 {
+  h2,h1, .h1, .h2 {
     padding: 0 0 15px;
     font-family: 'brandon_grotesquelight';
     font-size: 30px;
