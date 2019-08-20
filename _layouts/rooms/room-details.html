@@ -15,7 +15,6 @@ layout: default
   </div>
   <div class="container">
     <ul class="gallery-nav">
-
       <li ng-show="prevRoomName"><a ng-href="/room/#[[prevRoomName | formatNameForLink ]]" title="Previous Room" tabindex="-1"><i class="fa fa-angle-left"></i></a></li>
       <li><a href="#" class="active" title="Room Name" tabindex="-1">[[selectedRoom.name]]</a></li>
       <li ng-show="nextRoomName"><a ng-href="/room/#[[nextRoomName | formatNameForLink ]]" title="Next Room" tabindex="-1"><i class="fa fa-angle-right"></i></a></li>
@@ -29,10 +28,9 @@ layout: default
           <div id="carousel-bottom" role="listbox">
             <div class="item" role="option">
               <div tabindex="0">
-                <h2>Premium</h2>
-
-                <h3><span class="block-element">[[selectedRoom.name]]</h3>
-                <p><a ng-href="{{ site.data.config.reztripUrl }}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" title="today's room rate">[[ selectedRoom.todayRate ]]</a></p>
+                <p class="h2">Premium</p>
+                <h1 class="h3" tabindex="0"><span class="block-element">[[selectedRoom.name]]</h1>
+                <p tabindex="0"><a ng-href="{{ site.data.config.reztripUrl }}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" title="today's room rate">[[ selectedRoom.todayRate ]]</a></p>
                 <div class="btn-holder extra padding"><a ng-href="{{ site.data.config.reztripUrl }}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" class="button-common btn-blue" title="Book Now">Book Now<i class="fa fa-play"></i></a></div>
 
               </div>
@@ -45,8 +43,6 @@ layout: default
         <!-- Indicators -->
         <ol class="carousel-indicators" ng-show="selectedRoom.photos.length > 1">
           <li data-target="#roomDetailsCarousel" ng-repeat="photo in selectedRoom.photos" data-slide-to="[[$index]]" ng-class="{'active': $index == 0}"></li>
-
-
         </ol>
 
         <!-- Wrapper for Slides -->
@@ -54,7 +50,6 @@ layout: default
           <div class="item" ng-repeat="photo in selectedRoom.photos" ng-class="{'active': $index == 0}">
             <img ng-src="[[photo.yankee_large]]" alt="Room image" />
           </div>
-
         </div>
       </div>
     </div>
@@ -82,11 +77,11 @@ layout: default
 
   <section ng-show="selectedRoom.amenities.length > 0">
     <div class="container">
-      <div class="details-intro" tabindex="0">
+      <div class="details-intro">
         <div class="col-md-5">
-          <h2 class="style-2">enjoy the following privileges</h2>
-          <ul>
-            <li ng-repeat="amenity in selectedRoom.amenities">[[amenity]] </li>
+          <h2 class="style-2" tabindex="0">enjoy the following privileges</h2>
+          <ul tabindex="0">
+            <li ng-repeat="amenity in selectedRoom.amenities">[[amenity]]</li>
           </ul>
         </div>
         <div class="col-md-7 room-img" style="background-image:url(//cdn.traveltripper.io/site-assets/359_384_818/media/gallery-13-large.jpg);">
@@ -101,14 +96,14 @@ layout: default
   </section>
 
   <section class="container">
-    <div class="row information" tabindex="0">
+    <div class="row information">
       <div class="col-md-5 align-center"><img src="../../images/rooms/room-details/photo-patch.png" width="296" height="386" alt="Room Thumb" /></div>
       <div class="col-md-7 p-l-0">
-        <p class="highlight p-t-35">Information:</p>
+        <p class="highlight p-t-35" tabindex="0">Information:</p>
 
-        <p class="p-b-25">
+        <p class="p-b-25" tabindex="0">
           <!--| <span ng-bind-html="selectedRoom.room_size_sqm | renderHTMLCorrectly"></span> |--><span ng-bind-html="selectedRoom.room_size_sqft | renderHTMLCorrectly"></span></p>
-        <p class="p-b-25">[[selectedRoom.description]]</p>
+        <p class="p-b-25" tabindex="0">[[selectedRoom.description]]</p>
 
         <!-- <p class="highlight">Need assistance? Our dedicated reservations team is available around the clock:</p>
         <p class="p-b-25">24 North Hotel Service Centre on <a href="tel:13053200940" title="(305) 320-0940">(305) 320-0940</a>  or <br>

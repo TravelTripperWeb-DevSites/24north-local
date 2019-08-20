@@ -14,9 +14,8 @@ layout: default
         <li data-target="#homeCarousel" data-slide-to="4"></li>
       </ol>
 
-
       <!-- Wrapper for Slides -->
-      <div class="carousel-inner" rt3-recent-bookings="recentBookings"  ng-cloak>
+      <div class="carousel-inner" rt3-recent-bookings="recentBookings"  ng-cloak tabindex="-1">
 
         {% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
         {% for slilderimages in slilder_images %}
@@ -31,7 +30,13 @@ layout: default
             </div>
           </div>
 
-          <div class="caption-price" style="display:none"> <span class="price-holder" ng-show="recentBookings.totalBookings > 5" tabindex="-1"><span tabindex="-1">[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" title="Tonight’s Rate" ><span tabindex="-1">[[ browser.toNightsRate ]]</span>Tonight’s Rate</a></span></div>
+          <div class="caption-price" style="display:none">
+            <p class="price-holder" ng-show="recentBookings.totalBookings > 5" tabindex="0"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</p>
+            <div class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate">
+              <a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" title="Tonight’s Rate" ><span tabindex="-1">[[ browser.toNightsRate ]]</span>Tonight’s Rate</a>
+            </div>
+          </div>
+
           <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
              <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
              <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
@@ -55,7 +60,8 @@ layout: default
       </div>
     </div>
     <div class="theme-right-panel">
-      <div class="social-right"><a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank" title="facebook" aria-label="Facebook" tabindex="-1"><i class="fa fa-facebook"></i></a></div>
+      <div class="social-right">
+        <a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank" title="facebook" aria-label="Facebook" tabindex="-1"><i class="fa fa-facebook"></i></a></div>
     </div>
   </div>
 </section>
@@ -65,7 +71,7 @@ layout: default
   <div class="about-wrap">
 
     {% regionblock intro-heading, type:header %}
-    <h1 class="h1" tabindex="1">24 north hotel Key West</h1>
+    <h1 class="h1" tabindex="0">24 north hotel Key West</h1>
     {% endregionblock %}
 
     <div tabindex="0">
@@ -119,39 +125,53 @@ layout: default
   </div>
 </section>
 
-<section class="about-home" tabindex="0">
+<section class="about-home">
   <div class="container-fluid no-padding two-col-wrap">
+
     <div class="col-sm-6 no-padding v-center">
-      {% region abouthotel-image %}
+      {% regionblock abouthotel-image, type:image %}
+      <img src='/images/bar-rt.jpg' alt='Toasted Coconut Bar at 24North Hotel' tabindex="0"/>
+      {% endregionblock %}
     </div>
+
     <div class="col-sm-6 no-padding v-center">
       <div class="two-col-content">
-        {% region about-hotel-text %}
+
+        {% regionblock abouthotel-heading, type:header %}
+        <h3 class="h3" tabindex="0">About the hotel</h3>
+        {% endregionblock %}
+
+        <div tabindex="0">
+          {% regionblock abouthotel-content, type:text %}
+          <p>24 North is a non-smoking hotel offering Standard, Pool View, and Ocean View <a href="https://www.24northhotel.com/rooms/">Rooms</a> with premium features and in-room amenities. Rooms are equipped with a 48" LCD TV, microwave, refrigerator, laptop safes, oversized lounge chair and ottoman, bath with granite counter tops, and exceptionally comfortable and clean beds.<br />Our pool and gift shop are accessible. For more information, please view our <a title="Accessibility Statement" href="https://www.24northhotel.com/accessibility/" target="_blank" rel="noopener noreferrer" shape="rect">Accessibility Statement</a>.</p>
+          {% endregionblock %}
+        </div>
+
       </div>
     </div>
   </div>
-  <div class="graphic">{% region curve2-image %}</div>
+  <div class="graphic">
+    <img src='/images/floating/curves-2.png' alt='floating-curves'/>
+  </div>
 </section>
+
 <!-- Flip to river code starts here -->
 <div id="fliptoRiver"></div>
 <!-- Flip to river code ends here -->
-<section>
-  <div class="container-fluid no-padding home-rooms-wrap">
-    <div class="home-rooms">
-      <div class="container">
-        <div class="home-rooms-holder">
-          <div class="home-rooms-holder-inner">
-            <data-owl-carousel  class="owl-carousel" data-options="{navigation : false, slideSpeed : 500,vpaginationSpeed : 400,singleItem:true, paginationNumbers: false,autoPlay: false,pagination: false, navigation: true,navigationText : false}" role="listbox">
-              <div class="item" owl-carousel-item="" ng-repeat ="room in browser.roomsList" role="option">
-                <div tabindex="0">
-                  <h2>Rooms & Suites</h2>
-                  <h3><span class="block-element">[[room.name]]</span></h3>
-                  <p></p>
-                  <div class="btn-holder extra padding"><a href="/rooms/" class="button-common btn-blue" title="View Rooms">View Rooms<i class="fa fa-play"></i></a></div>
-                </div>
-		          </div>
-            </data-owl-carousel >
-          </div>
+
+<section class="container-fluid no-padding home-rooms-wrap">
+  <div class="home-rooms">
+    <div class="container">
+      <div class="home-rooms-holder">
+        <div class="home-rooms-holder-inner">
+          <data-owl-carousel  class="owl-carousel" data-options="{navigation : false, slideSpeed : 500,vpaginationSpeed : 400,singleItem:true, paginationNumbers: false,autoPlay: false,pagination: false, navigation: true,navigationText : false}" role="listbox" aria-label="Rooms & Suites">
+            <div class="item" owl-carousel-item="" ng-repeat ="room in browser.roomsList" role="option">
+              <h4 class="h2" tabindex="-1">Rooms & Suites</h4>
+              <a class="h3 block-element" href="/room/#[[room.name | formatNameForLink]]">[[room.name]]</a>
+              <p></p>
+              <div class="btn-holder extra padding"><a href="/rooms/" class="button-common btn-blue" title="View Rooms">View Rooms<i class="fa fa-play"></i></a></div>
+	          </div>
+          </data-owl-carousel >
         </div>
       </div>
     </div>
@@ -159,16 +179,13 @@ layout: default
 </section>
 
 
-<section rt3-special-rates= "offers" tabindex="0">
+<section rt3-special-rates= "offers">
 	<div class="container-fluid no-padding home-specials-wrap">
     	<div class="container">
-       	  {% region special-offer-head %}
+       	  <h5 class="heading-large" class=''tabindex="0">Special Offers</h5>
           {%  include special-offers.html %}
-          <div class="graphic">{% region stamp2-image %}</div>
-
+          <div class="graphic"><img src='/images/floating/stamp-2.png' alt='Stamp'/></div>
           <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue" title="View all Specials">View all Specials<i class="fa fa-play"></i></a></div>
-
-
         </div>
     </div>
 </section>
@@ -178,8 +195,14 @@ layout: default
     <div class="border-texture"><img src="/images/floating/border-textrure.png" alt="floating-border"/></div>
     	<div class="cta-theme">
         	<div class="pf-wrap">
-        	{% region paradisefound %}
-            <div><a href="/gallery/" class="button-common btn-white" title="View Gallery">View Gallery<i class="fa fa-play"></i></a></div>
+            {% regionblock cta-heading, type:header %}
+            <h6 class="h2" tabindex="0">Paradise Found</h6>
+            {% endregionblock %}
+
+            {% regionblock cta-button, type:mixed %}
+            <a href="/gallery/" class="button-common btn-white" title="View Gallery">View Gallery<i class="fa fa-play"></i></a>
+            {% endregionblock %}
+
         	</div>
         </div>
     </div>
@@ -187,40 +210,48 @@ layout: default
 
 {% include grid.html %}
 
-
-
 <section class="hlw">
 	<div class="hlw-inner">
-	<div class="container">
-
-   	  <div class="home-location-wrap" tabindex="0">
-
-      {% include location.html %}
-
-           <div><a href="/location/" class="button-common btn-blue" title="Explore location">Explore location<i class="fa fa-play"></i></a></div>
-
-           <div class="graphic">{% region stamp3-image %}</div>
-
-
-
+  	<div class="container">
+   	  <div class="home-location-wrap">
+        {% include location.html %}
+        <div><a href="/location/" class="button-common btn-blue" title="Explore location">Explore location<i class="fa fa-play"></i></a></div>
+        <div class="graphic">
+          <img src='/images/floating/stamp-3.png' alt='Stamp'/>
+        </div>
       </div>
     </div>
-    </div>
-    <div class="cuba">{% region cuba-image %}</div>
+  </div>
+  <div class="cuba">
+    {% regionblock location-image, type:image %}
+    <img src='/images/floating/cuba.png' alt='#24North'/>
+    {% endregionblock %}
+  </div>
 </section>
 
 
-<section>
-	<div class="container-fluid show-case">
-    	<div class="row">
-    	<div class="col-sm-4 no-padding">{% region showcase-img-1 %}</div>
-        <div class="col-sm-4 no-padding">{% region showcase-img-2 %}</div>
-        <div class="col-sm-4 no-padding">{% region showcase-img-3 %}</div>
-        </div>
+<section class="container-fluid show-case">
+	<div class="row">
+  	<div class="col-sm-4 no-padding">
+      {% regionblock location-image2, type:image %}
+      <img src='../images/show-case-1.jpg' alt='24North Hotel Beachside Life' tabindex="0"/>
+      {% endregionblock %}
     </div>
+    <div class="col-sm-4 no-padding">
+      {% regionblock location-image3, type:image %}
+      <img src='../images/shuttle.jpg' alt='24North Hotel Shuttle' tabindex="0"/>
+      {% endregionblock %}
+    </div>
+    <div class="col-sm-4 no-padding">
+      {% regionblock location-image4, type:image %}
+      <img src='../images/show-case-3.jpg' alt='Aqua Life at Keywest' tabindex="0"/>
+      {% endregionblock %}
+    </div>
+  </div>
 </section>
 
-<section>
-	<div class="new-map">
-    {% region new-map-image %} </div>
+<section class="new-map">
+  {% regionblock keywest-map-image, type:image %}
+  <img src='/images/new-map.jpg' alt='Keywest on map'/>
+  {% endregionblock %}
 </section>
