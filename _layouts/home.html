@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<section>
-  <div class="home-banner-wrap">
-    <div id="homeCarousel" class="carousel slide" tabindex="-1">
+
+<section class="home-banner-wrap">
+  <div id="homeCarousel" class="carousel slide" tabindex="-1">
 
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -18,27 +18,29 @@ layout: default
       <!-- Wrapper for Slides -->
       <div class="carousel-inner" rt3-recent-bookings="recentBookings"  ng-cloak>
 
-            {% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
-            {% for slilderimages in slilder_images %}
-            {% if forloop.first == true %}
-            <div class="item active" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title="{{ slilderimages.alt_text }}">
-            {% else %}
-            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title="{{ slilderimages.alt_text }}">
-            {% endif %}
+        {% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
+        {% for slilderimages in slilder_images %}
+        {% if forloop.first == true %}
+        <div class="item active" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title="{{ slilderimages.alt_text }}">
+        {% else %}
+        <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title="{{ slilderimages.alt_text }}">
+        {% endif %}
           <div class="carousel-caption transparent-bg">
             <div class="caption-inner">
                {{ slilderimages.carousel_caption }}
             </div>
           </div>
 
-          <div class="caption-price" style="display:none"> <span class="price-holder" ng-show="recentBookings.totalBookings > 5"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" title="Tonight’s Rate" ><span>[[ browser.toNightsRate ]]</span>Tonight’s Rate</a></span></div>
+          <div class="caption-price" style="display:none"> <span class="price-holder" ng-show="recentBookings.totalBookings > 5" tabindex="-1"><span tabindex="-1">[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" title="Tonight’s Rate" ><span tabindex="-1">[[ browser.toNightsRate ]]</span>Tonight’s Rate</a></span></div>
           <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
-                       <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
+             <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
              <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
                 <div class="boxes">
                   <div class="tonight-rate ">
                   <p>Best Price Available</p>
-                  <h4>Tonight's Rate <a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" title="Browse Rates" ><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
+                  <a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" title="Browse Rates" tabindex="-1">
+                    <h4>Tonight's Rate <span class="price">[[browser.otaRates.reztripRate]]</span></h4>
+                  </a>
                   </div>
                   <div class="ota-list" >
                     <ul>
@@ -47,14 +49,9 @@ layout: default
                   </div>
                 </div>
               </div>
-
             </div>
         </div>
- {% endfor %}
-
-
-
-
+        {% endfor %}
       </div>
     </div>
     <div class="theme-right-panel">
@@ -62,27 +59,71 @@ layout: default
     </div>
   </div>
 </section>
-<section tabindex="0">
-  <div class="container-fluid blue-bg mo">
-    <div class="about-wrap">
-      {% region 24north-hotelkey-west %}
+
+
+<section class="container-fluid blue-bg mo">
+  <div class="about-wrap">
+
+    {% regionblock intro-heading, type:header %}
+    <h1 class="h1" tabindex="1">24 north hotel Key West</h1>
+    {% endregionblock %}
+
+    <div tabindex="0">
+      {% regionblock intro-content, type:text %}
+      <p>Our hotel is located at the point of entry to <a title="Hotel in Key West" href="https://www.24northhotel.com/location/">Key West</a> and convenient to everything in Old Town and across the island. Key West, also known as Cayo Hueso, is a 2-mile-by-4-mile island located at the southernmost tip of the continental U.S. at the tail end of the 120-mile-long Florida Keys island chain, just 90 miles from Cuba. Key West International Airport is a 10 minute drive to 24 North Hotel. Alternatively, guests can arrive by ferry from Fort Myers via Key West Express.</p>
+      <p>The 24 North Hotel welcomes guests of all abilities. Our property descriptions aim to allow any visitor to make an informed decision on whether the hotel is an appropriate choice for their needs. For more information, please see our <a href="/accessibility/" title="Accessibility Statement">Accessibility Statement</a>.</p>
+      {% endregionblock %}
     </div>
+
+    <div class="btn-holder">
+      <a class="button-common" href="specials/" title="View Specials">View Specials
+        <i class="fa fa-play"></i>
+      </a>
+    </div>
+
+    <div class="graphic-1">
+      <img src="images/floating/stamp-1.png" alt="24North" />
+    </div>
+    <div class="graphic-2">
+      <img src="images/floating/curves-1.png" alt="floating-stamp" />
+    </div>
+
   </div>
 </section>
-<section tabindex="0">
-  <div class="container-fluid no-padding two-col-wrap">
-    <div class="col-sm-6 no-padding v-center">
-      <div class="two-col-content">
-        {% region paradise-found %}
-        <div class="logo-icon">{% region logo24-image %}</div>
+
+<section class="container-fluid no-padding two-col-wrap">
+  <div class="col-sm-6 no-padding v-center">
+    <div class="two-col-content">
+
+      {% regionblock paradise-heading, type:header %}
+      <h2 class="h3" tabindex="0">Paradise Found</h2>
+      {% endregionblock %}
+
+      <div tabindex="0">
+        {% regionblock paradise-text, type:text %}
+				<p>Come to 24 North Hotel and soak in
+					<a title="Key West, Florida" href="https://www.24northhotel.com/location/">Key West</a>. Our concierge can curate personalized experiences such as yoga, pilates, spa services, bicycle and scooter rentals, snorkeling and diving, seaplane tours, catamaran sailing, parasailing, deep sea fishing, and much more.
+				</p>
+        {% endregionblock %}
+      </div>
+
+      <div class="logo-icon">
+        <img src='../images/logo-24.jpg' alt='24 North Hotel Key West'/>
       </div>
     </div>
-    <div class="col-sm-6 no-padding v-center">{% region paradisefound-image %}</div>
+  </div>
+  <div class="col-sm-6 no-padding v-center">
+    {% regionblock paradise-image, type:image %}
+    <img src="//cdn.traveltripper.io/site-assets/192_384_16935/media/2018-06-22-031836/24-north-pool-3.png" alt="Large Pool at 24North Hotel" tabindex="0" />
+    {% endregionblock %}
   </div>
 </section>
+
 <section class="about-home" tabindex="0">
   <div class="container-fluid no-padding two-col-wrap">
-    <div class="col-sm-6 no-padding v-center">{% region abouthotel-image %}</div>
+    <div class="col-sm-6 no-padding v-center">
+      {% region abouthotel-image %}
+    </div>
     <div class="col-sm-6 no-padding v-center">
       <div class="two-col-content">
         {% region about-hotel-text %}
