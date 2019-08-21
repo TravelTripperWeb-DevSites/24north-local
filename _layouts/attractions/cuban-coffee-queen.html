@@ -29,7 +29,7 @@ layout: default
       </div>
       <div class="col-md-4 blog-item att-item">
       	<div class="others">
-            <h2>Other Attractions</h2>
+            <h2 class="h2" tabindex="0">Other Attractions</h2>
             <ul class="other-attractions">
               {% assign attractions = site.data._models.attractions | sort : 'sort_order' %}
               {% for a in attractions %}
@@ -44,7 +44,6 @@ layout: default
               {% endif %}
               {% endunless %}
               {% endfor %}
-
             </ul>
         </div>
       </div>

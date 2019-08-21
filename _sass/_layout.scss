@@ -1288,6 +1288,18 @@ h2, .h2 {
 	background: url("/images/blog-banner.jpg") no-repeat center bottom;
 	background-size: cover;
   position: relative;
+  height: 368px;
+  display: flex;
+  align-items: center;
+
+  .page-title {
+    padding: 0;
+  }
+
+  p {
+    padding: 0 20px;
+  }
+
 	h2, .h2 {
 		padding-bottom: 0;
 		z-index: 1;

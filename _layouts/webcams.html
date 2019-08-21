@@ -6,12 +6,12 @@ layout: default
   <div class="container no-padding">
     <div class="page-banner location-banner">
       <div class="overlay-bg"></div>
+      {% regionblock webcams_header, type:header %}
+      <h1 class="page-title" tabindex="0">Live Webcams</h1>
+      {% endregionblock %}
       <div class="graphic">
         <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
       </div>
-        {% regionblock webcam_banner_header_text, type:header %}
-        <h1 class="page-title">LIVE WEBCAMS</h1>
-        {% endregionblock %}
       </div>
     </div>
 </section>
@@ -20,7 +20,7 @@ layout: default
   <div class="loc-main-inner">
     <div class="container">
       <div class="col-sm-12">
-        <h3 class="text-center py-5">24North Ocean Cam</h3>
+        <h2 class="h3 text-center py-5" tabindex="0">24North Ocean Cam</h2>
         <!--Front Cam-->
         <!--div id="frontcam" class="flowplayer-wrap"></div>
         <script type="text/javascript">
@@ -68,7 +68,7 @@ layout: default
             "uiPosterFrameFillMode": "fill"
           });
         </script-->
-        <h3 class="text-center py-5">24North PTZ Cam</h3>
+        <h3 class="text-center py-5" tabindex="0">24North PTZ Cam</h3>
         <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
           <iframe style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" id="ls_embed_1562342151" src="https://livestream.com/accounts/28216356/events/8739852/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=feed&mute=true" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="24North PTZ Cam"></iframe>
           <script type="text/javascript" data-embed_id="ls_embed_1562342151" src="https://livestream.com/assets/plugins/referrer_tracking.js"></script>
@@ -97,7 +97,7 @@ layout: default
           });
         </script-->
 
-          <h3 class="text-center py-5">24North Pool Cam</h3>
+          <h4 class="h3 text-center py-5" tabindex="0">24North Pool Cam</h4>
           <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
           <iframe style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" id="ls_embed_1563204954" src="https://livestream.com/accounts/28216356/events/8739880/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=feed&mute=true" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="24North Pool Cam"></iframe>
           <script type="text/javascript" data-embed_id="ls_embed_1563204954" src="https://livestream.com/assets/plugins/referrer_tracking.js"></script>
@@ -108,7 +108,7 @@ layout: default
       <div class="graphics"></div>
       <div class="container-fluid no-padding home-specials-wrap">
         <div class="container">
-          <h2 class="heading-large" tabindex="0">Special Offers</h2>
+          <h5 class="h2 heading-large" tabindex="0">Special Offers</h5>
           {% include special-offers.html %}
           <div class="stamp"><img src="../../images/rooms/room-details/stamp.png" alt="24 North Hotel" /></div>
             <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue" title="View All Specials">View all Specials<i class="fa fa-play"></i></a></div>
