@@ -5,18 +5,25 @@ layout: default
 	<section>
       <div class="container no-padding">
         <div class="page-banner rooms-banner">
-            {% region rfp-banner-content %}
+            {% regionblock rfp_header, type:header %}
+            <h1 class="page-title" tabindex="0">Request<br />for Proposal</h1>
+            {% endregionblock %}
+            <div class="graphic">
+              <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
+            </div>
         </div>
       </div>
     </section>
 
   <section>
         <div class="container-fluid">
-          <div class="row" tabindex="0">
-           <p class="desp">Contact Details<br/><br/>
-            <span class="rfp-callus">For inquiries, please call the Sales Office at<br/></span>
-            <a class="rfp-phone" href="tel:3056001425" title="(305) 600-1425">(305) 600-1425</a>&nbsp;<span class="rfp-callus">or fill out the form below.</span>
-          </p>
+          <div class="row">
+            {% regionblock rfp_contact, type:mixed %}
+            <p class="desp" tabindex="0">Contact Details<br/><br/>
+              <span class="rfp-callus">For inquiries, please call the Sales Office at<br/></span>
+              <a class="rfp-phone" href="tel:3056001425" title="(305) 600-1425">(305) 600-1425</a>&nbsp;<span class="rfp-callus">or fill out the form below.</span>
+            </p>
+            {% endregionblock %}
             <div class="rfp-wrapper">
               <div class="contact-form">
                 <form class="jotform-form" action="https://submit.jotform.me/submit/63041221610437/" method="post" name="form_63041221610437" id="63041221610437" accept-charset="utf-8" enctype="multipart/form-data">

@@ -10,7 +10,12 @@ layout: default
   <section>
     <div class="container no-padding">
       <div class="page-banner specials-bannner">
-        {% region events-banner-content %}
+        {% regionblock events_header, type:header %}
+        <h1 class="page-title" tabindex="0">Events</h1>
+        {% endregionblock %}
+        <div class="graphic">
+          <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
+        </div>
       </div>
     </div>
   </section>
