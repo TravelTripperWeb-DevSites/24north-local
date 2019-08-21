@@ -4,20 +4,31 @@ layout: default
 <section>
   <div class="container no-padding">
     <div class="page-banner attractions-bannner">
-    	{% region attractions-banner-content %}
+      {% regionblock attractions_header, type:header %}
+      <h1 class="page-title" tabindex="0">Attractions</h1>
+      {% endregionblock %}
+      <div class="graphic">
+        <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
+      </div>
     </div>
   </div>
 </section>
+
 {% assign attractions = site.data._models.attractions | sort : 'sort_order' %}
 {% for a in attractions %}
-<section class="models">
+<section class="models mt-3">
   <div class="container">
     <div class=" two-col-wrap">
       <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"><a href="{{ a.url }}/" title="Attractions" tabindex="-1"><img src="{{ a.image.url }}" title="{{ a.alt_text }}" alt="{{ a.alt_text }}" ></a>
+        <div class="col-sm-6 sp-img v-center">
+          <a href="{{ a.url }}/" title="Attractions" tabindex="-1">
+            <img src="{{ a.image.url }}" title="{{ a.alt_text }}" alt="{{ a.alt_text }}" >
+          </a>
         </div>
         <div class="col-sm-6 sp-content v-center">
-          <p class="title"><a href="{{ a.url }}/" title="Attractions">{{ a.name }}</a></p>
+          <p class="title">
+            <a href="{{ a.url }}/" title="Attractions">{{ a.name }}</a>
+          </p>
           <div class="desp" tabindex="0">{{ a.description }}</div>
           {% capture link_url %}
             {{ a.url }}

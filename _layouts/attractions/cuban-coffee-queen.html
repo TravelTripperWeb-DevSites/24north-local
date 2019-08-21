@@ -13,12 +13,14 @@ layout: default
             {% assign att = a %}
             {% endif %}
             {% endfor %}
-            <h1>{{ att.name }}</h1>
-            <span class="post-details">{{ att.other_info }}</span>
-            <div class="post-image-holder"><img src="{{ att.detail_image.url }}" alt=""/>
+            <h1 class="h1" tabindex="0">{{ att.name }}</h1>
+            <span class="post-details" tabindex="0">{{ att.other_info }}</span>
+            <div class="post-image-holder"><img src="{{ att.detail_image.url }}" alt="{{ att.name }}"/>
               <!--<h6>Andy Newman/Florida Keys News Bureau</h6>-->
             </div>
-            {{ att.about }}
+            <div tabindex="0">
+              {{ att.about }}
+            </div>
           </div>
         </div>
         <div class="btn-holder text-left">
