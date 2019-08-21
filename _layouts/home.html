@@ -31,7 +31,7 @@ layout: default
           </div>
 
           <div class="caption-price" style="display:none">
-            <p class="price-holder" ng-show="recentBookings.totalBookings > 5"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</p>
+            <p class="price-holder" ng-show="recentBookings.totalBookings > 5"><span aria-label="[[recentBookings.totalBookings]] People booked our hotel in the last 2 days" role="heading">[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</p>
             <div class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate">
               <a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" title="Tonight’s Rate" tabindex="-1"><span tabindex="-1">[[ browser.toNightsRate ]]</span>Tonight’s Rate</a>
             </div>
