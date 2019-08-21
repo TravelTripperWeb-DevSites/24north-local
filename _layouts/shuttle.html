@@ -40,7 +40,7 @@ layout: default
       </div>
 
 			<div class="btn-holder">
-        {% regionblock shuttle_schedule, type: mixed %}
+        {% regionblock shuttle_schedule, type:text %}
 				<a class="button-common" href="#schedule" title="View Schedule">View Schedule</a>
         {% endregionblock %}
 			</div>
@@ -109,7 +109,7 @@ layout: default
   	  <h4 class="h3" tabindex="0">Shuttle SCHEDULE</h4>
       {% endregionblock %}
 
-      {% regionblock shuttle_schedule, type: mixed %}
+      {% regionblock shuttle_schedule, type:text %}
       <table class="table table-striped odd" tabindex="0">
 				<tbody>
 					<tr>
@@ -305,7 +305,7 @@ layout: default
       {% endregionblock %}
 
       <div class="btn-holder extra padding m-80">
-        {% regionblock shuttle_schedule_download, type: mixed %}
+        {% regionblock shuttle_schedule_download, type:text %}
         <a href="/pdf/24N-Shuttle-Flyer.pdf" target="_blank" class="button-common btn-blue" title="Download Schedule">Download Schedule<i class="fa fa-play"></i></a>
         {% endregionblock %}
       </div>

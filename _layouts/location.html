@@ -98,7 +98,7 @@ layout: default
             {% endregionblock %}
 
             <div tabindex="0">
-              {% regionblock shuttle_text, type: mixed %}
+              {% regionblock shuttle_text, type:text %}
   						<p class="loc-no-padding">Complimentary
   							<a href="/location/shuttle/" title="shuttle service">
   								<strong>shuttle service</strong>
@@ -150,7 +150,7 @@ layout: default
 						<h5 class="h3" tabindex="0">Concierge</h5>
             {% endregionblock %}
 
-            {% regionblock mail, type: mixed %}
+            {% regionblock mail, type:text %}
 						<a href="mailto:24north@keywestconcierge.org" title="24north@keywestconcierge.org">24north@keywestconcierge.org</a>
             {% endregionblock %}
           </div>
@@ -198,7 +198,7 @@ layout: default
         <h6 class="h2" tabindex="0">Paradise Found</h6>
         {% endregionblock %}
 				<div>
-          {% regionblock cta_url, type: mixed %}
+          {% regionblock cta_url, type:text %}
 					<a class="button-common btn-white" href="https://24northhotel.reztrip.com/" target="_blank" title="Book Now">Book Now
 						<i class='fa fa-play'></i>
 					</a>
@@ -216,7 +216,7 @@ layout: default
       {% include location.html %}
 
       <div>
-        {% regionblock gallery_url, type: mixed %}
+        {% regionblock gallery_url, type:text %}
         <a href="/gallery/" class="button-common btn-blue" title="View Gallery">View Gallery<i class="fa fa-play"></i>
         </a>
         {% endregionblock %}
