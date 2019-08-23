@@ -5,129 +5,134 @@ layout: default
 	<section>
       <div class="container no-padding">
         <div class="page-banner rooms-banner">
-            {% region rfp-banner-content %}
+          {% regionblock rfp_header, type:header %}
+          <h1 class="page-title" tabindex="0">Request<br />for Proposal</h1>
+          {% endregionblock %}
+          <div class="graphic">
+            <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
+          </div>
         </div>
       </div>
     </section>
 	<section>
-        <div class="container-fluid">
-          <div class="row" tabindex="0">
-           {% region contact-details-txt %}
-            <div class="rfp-wrapper">
-              <div class="contact-form">
-                <form class="jotform-form" action="https://submit.jotform.me/submit/71653344304451/" method="post" name="form_71653344304451" id="71653344304451" accept-charset="utf-8" enctype="multipart/form-data">
-      <input type="hidden" name="formID" value="71653344304451" aria-label="hidden" title="hidden" />
-                  <div class="two-fields-holder">
-                    <div class="col-sm-6 no-padding">
-                      <div class="form-group right-space">
-                        <input type="text" class="form-control validate[required, Alphabetic]" id="input_33" name="q3_name" placeholder="Name" aria-label="Name" title="Name" required>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 no-padding">
-                      <div class="form-group left-space">
-                        <input type="text" class="form-control validate[required, Alphabetic]" id="input_9" name="q9_groupName" placeholder="Group Name" aria-label="Group Name" title="Group Name" required>
-                      </div>
-                    </div>
+    <div class="container-fluid">
+      <div class="row">
+       <h2 class="desp" tabindex="0">Contact Details</h2>
+        <div class="rfp-wrapper">
+          <div class="contact-form">
+            <form class="jotform-form" action="https://submit.jotform.me/submit/71653344304451/" method="post" name="form_71653344304451" id="71653344304451" accept-charset="utf-8" enctype="multipart/form-data">
+  <input type="hidden" name="formID" value="71653344304451" aria-label="hidden" title="hidden" />
+              <div class="two-fields-holder">
+                <div class="col-sm-6 no-padding">
+                  <div class="form-group right-space">
+                    <input type="text" class="form-control validate[required, Alphabetic]" id="input_33" name="q3_name" placeholder="Name" aria-label="Name" title="Name" required>
                   </div>
-             	  <div class="form-group">
-                    <textarea id="input_40" name="q40_address40" class="form-control validate[required] m-textarea" style="width:100%" rows="5" placeholder="Address Details"></textarea>
+                </div>
+                <div class="col-sm-6 no-padding">
+                  <div class="form-group left-space">
+                    <input type="text" class="form-control validate[required, Alphabetic]" id="input_9" name="q9_groupName" placeholder="Group Name" aria-label="Group Name" title="Group Name" required>
                   </div>
-                  <div class="two-fields-holder">
-                    <div class="col-sm-6 no-padding">
-                      <div class="form-group">
-                        <input type="text" class="form-control validate[required, Numeric]"  id="input_11" name="q11_phoneNumber"  placeholder="Phone Number" aria-label="Phone Number" title="Phone Number" required>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 no-padding">
-                      <div class="form-group left-space">
-                        <input type="email" class="form-control validate[required, Email]" id="input_13" name="q13_email13"  placeholder="Email" aria-label="Email" title="Email" required>
-                      </div>
-                    </div>
+                </div>
+              </div>
+         	  <div class="form-group">
+                <textarea id="input_40" name="q40_address40" class="form-control validate[required] m-textarea" style="width:100%" rows="5" placeholder="Address Details"></textarea>
+              </div>
+              <div class="two-fields-holder">
+                <div class="col-sm-6 no-padding">
+                  <div class="form-group">
+                    <input type="text" class="form-control validate[required, Numeric]"  id="input_11" name="q11_phoneNumber"  placeholder="Phone Number" aria-label="Phone Number" title="Phone Number" required>
                   </div>
+                </div>
+                <div class="col-sm-6 no-padding">
+                  <div class="form-group left-space">
+                    <input type="email" class="form-control validate[required, Email]" id="input_13" name="q13_email13"  placeholder="Email" aria-label="Email" title="Email" required>
+                  </div>
+                </div>
+              </div>
 
-                   <p class="desp">Function information</p>
+               <h3 class="desp" tabindex="0">Function information</h3>
 
-                  <div class="two-fields-holder">
-                    <div class="col-sm-6 no-padding">
-                      <div class="form-group right-space">
-                        <input type="text" class="form-control main-date-1" id="input_15" name="q15_eventDate" placeholder="event Date" title="Enter event date in YYYY-M M-DD format" aria-label="Enter event date in YYYY-M M-DD format">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 no-padding">
-                      <div class="form-group left-space">
-                        <input type="text" class="form-control" id="input_41" name="q41_eventType" placeholder="Event Type" title="Event Type" aria-label="Event Type">
-                      </div>
-                    </div>
+              <div class="two-fields-holder">
+                <div class="col-sm-6 no-padding">
+                  <div class="form-group right-space">
+                    <input type="text" class="form-control main-date-1" id="input_15" name="q15_eventDate" placeholder="event Date" title="Enter event date in YYYY-M M-DD format" aria-label="Enter event date in YYYY-M M-DD format">
                   </div>
-                  <div class="checkbox-holder" id="flexible">
-                    <div class="col-sm-4">
-                      <div class="row option-label">Are these dates flexible?</div>
-                    </div>
-                    <div class="col-sm-8">
-                      <div class="row">
-                        <label class="radio-inline">
-                          <input type="radio" value="Yes" id="yes" name="q42_areYour42" aria-label="Yes" title="Yes" aria-labelledby="flexible yes">
-                          Yes </label>
-                        <label class="radio-inline">
-                          <input type="radio" value="No" id="no" name="q42_areYour42" aria-label="No" title="No" aria-labelledby="flexible no">
-                          No </label>
-                      </div>
-                    </div>
+                </div>
+                <div class="col-sm-6 no-padding">
+                  <div class="form-group left-space">
+                    <input type="text" class="form-control" id="input_41" name="q41_eventType" placeholder="Event Type" title="Event Type" aria-label="Event Type">
                   </div>
-                  <div class="two-fields-holder">
-                  	<div class="col-sm-6 no-padding">
-                      <div class="form-group right-space">
-                        <input type="text" class="form-control" id="input_40" name="q36_numberOf" placeholder="No.of Guests" aria-label="No.of Guests" title="No.of Guests">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 no-padding">
-                      <div class="form-group left-space">
-                        <input type="text" class="form-control" id="input_37" name="q37_comments" placeholder="Comments" title="Comments" aria-label="Comments">
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="checkbox-holder" id="flexible">
+                <div class="col-sm-4">
+                  <div class="row option-label">Are these dates flexible?</div>
+                </div>
+                <div class="col-sm-8">
+                  <div class="row">
+                    <label class="radio-inline">
+                      <input type="radio" value="Yes" id="yes" name="q42_areYour42" aria-label="Yes" title="Yes" aria-labelledby="flexible yes">
+                      Yes </label>
+                    <label class="radio-inline">
+                      <input type="radio" value="No" id="no" name="q42_areYour42" aria-label="No" title="No" aria-labelledby="flexible no">
+                      No </label>
                   </div>
+                </div>
+              </div>
+              <div class="two-fields-holder">
+              	<div class="col-sm-6 no-padding">
+                  <div class="form-group right-space">
+                    <input type="text" class="form-control" id="input_40" name="q36_numberOf" placeholder="No.of Guests" aria-label="No.of Guests" title="No.of Guests">
+                  </div>
+                </div>
+                <div class="col-sm-6 no-padding">
+                  <div class="form-group left-space">
+                    <input type="text" class="form-control" id="input_37" name="q37_comments" placeholder="Comments" title="Comments" aria-label="Comments">
+                  </div>
+                </div>
+              </div>
 
 
 <!-- pasted -->
 
-                  <p class="desp">Hotel Information</p>
+              <h4 class="desp" tabindex="0">Hotel Information</h4>
 
-                  <div class="two-fields-holder">
-                    <div class="col-sm-6 no-padding">
-                      <div class="form-group right-space">
-                        <input type="text" class="form-control main-date-1" id="input_388" name="q38_arrivalDate" placeholder="Arrival Date" title="Arrival Date" aria-label="Arrival Date">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 no-padding">
-                      <div class="form-group left-space">
-                        <input type="text" class="form-control alternate-date-1" id="input_39" name="q39_departureDate" placeholder="Departure Date" title="Departure Date" aria-label="Departure Date">
-                      </div>
-                    </div>
+              <div class="two-fields-holder">
+                <div class="col-sm-6 no-padding">
+                  <div class="form-group right-space">
+                    <input type="text" class="form-control main-date-1" id="input_388" name="q38_arrivalDate" placeholder="Arrival Date" title="Arrival Date" aria-label="Arrival Date">
                   </div>
-                  <div class="two-fields-holder">
-                    <div class="col-sm-6 no-padding">
-                      <div class="form-group right-space">
-                        <input type="text" class="form-control" id="input_32" name="q32_totalRooms" placeholder="total Rooms" title="total rooms" aria-label="total rooms">
-                      </div>
-                    </div>
+                </div>
+                <div class="col-sm-6 no-padding">
+                  <div class="form-group left-space">
+                    <input type="text" class="form-control alternate-date-1" id="input_39" name="q39_departureDate" placeholder="Departure Date" title="Departure Date" aria-label="Departure Date">
                   </div>
-									<div class="two-fields-holder">
-                    <div class="col-sm-12 no-padding">
-                      <div class="form-group right-space checkbox tnc">
-                          <label class="cb">
-                            <input type="checkbox" name="q43_iAgree[]" value="Agree" id="agree" required="required" title="Press Spacebar to Agree to the Terms of Service & Privacy Policy" aria-label="Press Spacebar to Agree to the Terms of Service & Privacy Policy"> I agree to the <a href="/terms-of-use/" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.
-                          </label>
-                      </div>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn-lt-blue">Submit</button>
-                </form>
-               <script type="text/javascript">JotForm.ownerView=true;</script>
+                </div>
               </div>
-
-            </div>
-
+              <div class="two-fields-holder">
+                <div class="col-sm-6 no-padding">
+                  <div class="form-group right-space">
+                    <input type="text" class="form-control" id="input_32" name="q32_totalRooms" placeholder="total Rooms" title="total rooms" aria-label="total rooms">
+                  </div>
+                </div>
+              </div>
+							<div class="two-fields-holder">
+                <div class="col-sm-12 no-padding">
+                  <div class="form-group right-space checkbox tnc">
+                      <label class="cb">
+                        <input type="checkbox" name="q43_iAgree[]" value="Agree" id="agree" required="required" title="Press Spacebar to Agree to the Terms of Service & Privacy Policy" aria-label="Press Spacebar to Agree to the Terms of Service & Privacy Policy"> I agree to the <a href="/terms-of-use/" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.
+                      </label>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn-lt-blue">Submit</button>
+            </form>
+           <script type="text/javascript">JotForm.ownerView=true;</script>
           </div>
+
         </div>
-      </section>
+
+      </div>
+    </div>
+  </section>
 </div>

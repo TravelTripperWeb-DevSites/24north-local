@@ -4,31 +4,40 @@ title: Search
 description:
 parent: blog
 ---
-<section>
-    <div class="container no-padding">
-        <div class="page-banner blog-banner">
-            <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"></div>
-            <h2 class="page-title">Blog</h2>
-            <p>The island of Key West packs a lot of punch in its relatively small surface area. To keep tabs on Duval Street nightlife, seasonal seafood, event guides, watersport adventures and more, bookmark the 24 North Hotel Blog.</p>
-        </div>
+<section class="container no-padding">
+  <div class="page-banner blog-banner">
+    {% regionblock blog_search_header, type:header %}
+    <h1 class="page-title" tabindex="0">Blog</h1>
+    {% endregionblock %}
+
+    <div tabindex="0">
+      {% regionblock blog_search_intro, type:text %}
+      <p>The island of Key West packs a lot of punch in its relatively small surface area. To keep tabs on Duval Street nightlife, seasonal seafood, event guides, watersport adventures and more, bookmark the 24 North Hotel Blog.</p>
+      {% endregionblock %}
     </div>
+    
+    <div class="graphic">
+      <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
+    </div>
+  </div>
 </section>
 
 <section class="blog-section">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-sm-4">
-                <div class="blog-right-block "> {% include blog-aside.html %} </div>
-            </div>
-            <div class="col-sm-8">
-                <div class="post search-result">
-                    <h2> SEARCH RESULT: </h2>
-                    <ul id="search-results"></ul>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="blog-right-block ">
+          {% include blog-aside.html %}
         </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="post search-result">
+          <h2 class="h2" tabindex="0"> SEARCH RESULT: </h2>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <script>

@@ -7,15 +7,15 @@ layout: default
   <section>
     <div class="container no-padding">
       <div class="page-banner tripadvisor-banner">
-        <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"/></div>
         {% regionblock tripadvisor_heading1, type:header %}
-        <h1 class="page-title">tripadvisor</h1>
+        <h1 class="page-title" tabindex="0">tripadvisor</h1>
         {% endregionblock %}
         <div class="m-b-60">
           {% regionblock tripadvisor_button3, type:text %}
           <a class="button-common" href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=278014&vr=3">Book Now</a>
           {% endregionblock %}
         </div>
+        <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"/></div>
       </div>
     </div>
   </section>
@@ -26,10 +26,10 @@ layout: default
       <div class="col-sm-3 col-xs-12">
           <div class="spcl-lstng">
             {% regionblock tripadvisor_heading2, type:header %}
-          	<h2>Special Offer</h2>
+          	<h2 tabindex="0">Special Offer</h2>
             {% endregionblock %}
             {% regionblock tripadvisor_heading3, type:header %}
-            <h3><span class="block-element">We Are Open!</h3>
+            <p class="h3" tabindex="0"><span class="block-element">We Are Open!</p>
             {% endregionblock %}
             <!-- {% regionblock tripadvisor_button1, type:text %}
             <div class="booknow"> <a href="https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=278014&vr=3" target="_blank">Book Now</a> </div>
@@ -37,9 +37,11 @@ layout: default
             {% regionblock tripadvisor_button2, type:text %}
             <div class="btn-holder extra padding"><a href="mailto:reservations@hotel24north.com" class="button-common btn-blue">Contact Us</i></a></div>
             {% endregionblock %}
-            {% regionblock tripadvisor_content1, type:text %}
-            <p>Welcome back!! We are open and ready for you!!  Limited Time offer available until November 12th only.</p>
-            {% endregionblock %}
+            <div tabindex="0">
+              {% regionblock tripadvisor_content1, type:text %}
+              <p>Welcome back!! We are open and ready for you!!  Limited Time offer available until November 12th only.</p>
+              {% endregionblock %}
+            </div>
           </div>
       </div>
       <div class="col-sm-9 col-xs-12">
@@ -69,11 +71,13 @@ layout: default
   <section class="lifestyle">
   	<div class="container-fluid">
       {% regionblock tripadvisor_heading4, type:header %}
-    	<h3>About the offer</h3>
+    	<h3 tabindex="0">About the offer</h3>
       {% endregionblock %}
+      <div tabindex="0">
       {% regionblock tripadvisor_content2, type:text %}
         <p>We are back and ready to make your stay memorable.  Take a load off your shoulder, kick back and relax with family and friends when you escape to the tropical paradise of Key West, Florida.<br><br>Enjoy your savings and a 7 day cancellation policy with this special offer. Limited Time offer available until November 12th. Blackout dates apply.<br><br>.Terms and Conditions:Deposit of 1 night room and tax is required for all confirmed reservations and will be charged 7 days prior to check in time and becomes non-refundable when charged.  Notification of cancellation 21 days prior to arrival is required for Fantasy Fest, Christmas and New Year's.</p>
       {% endregionblock %}
+      </div>
     </div>
   </section>
   <section>
@@ -84,19 +88,19 @@ layout: default
           <img src="../../images/specials/special-details/photo-patch-spcls.png" width="296" height="386" alt=""/>
           {% endregionblock %}
         </div>
-        
+
         <div class="col-md-7 p-l-0">
           {% regionblock tripadvisor_content3, type:text %}
-          <p class="highlight p-t-35">Terms & Conditions:</p>
-          
-          <ul class="lst p-b-25">
+          <p class="highlight p-t-35" tabindex="0">Terms & Conditions:</p>
+
+          <ul class="lst p-b-25" tabindex="0">
 
           	<li>Deposit of 1 night room and tax is required for all confirmed reservations and will be charged 7 days prior to check in time and becomes non-refundable when charged.</li>
             <li>Guarantee/Deposit and Change/Cancellation Fees will depend on selected dates and room/rate combination.</li>
 
           </ul>
-          <p class="highlight">Need assistance? Our dedicated reservations team is available around the clock:</p>
-          <p class="p-b-25">24 North Hotel Service Centre on <a href="tel:305-320-0930">(305) 320-0930</a>  or <br>
+          <p class="highlight" tabindex="0">Need assistance? Our dedicated reservations team is available around the clock:</p>
+          <p class="p-b-25" tabindex="0">24 North Hotel Service Centre on <a href="tel:305-320-0930">(305) 320-0930</a>  or <br>
             e-mail <a href="mailto:reservations@hotel24north.com" >reservations@hotel24north.com</a></p>
             {% endregionblock %}
         </div>
@@ -109,7 +113,7 @@ layout: default
     <div class="container-fluid no-padding home-specials-wrap">
       <div class="container">
         {% regionblock tripadvisor_heading5, type:header %}
-        <h2 class="heading-large">More Specials</h2>
+        <h4 class="h2 heading-large" tabindex="0">More Specials</h4>
         {% endregionblock %}
 
         {%  include special-offers.html %}

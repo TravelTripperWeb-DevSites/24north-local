@@ -7,8 +7,10 @@ layout: default
   <section>
     <div class="container no-padding">
       <div class="page-banner specials-banner">
-        <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"/></div>
-        <h1 class="page-title">Specials</h1>
+        <p class="h1 page-title">Specials</p>
+        <div class="graphic">
+          <img src="/images/floating/stamp-1.png" alt="24 north stamp"/>
+        </div>
       </div>
     </div>
   </section>
@@ -23,12 +25,12 @@ layout: default
     <div class="container room-details-carousel" >
       <div class="row">
       <div class="col-md-3 col-xs-12">
-          <div class="spcl-lstng" tabindex="0">
-          	<h2>Special Offer</h2>
-            <h3><span class="block-element">[[offers.sRdetail.rate_plan_name]]</h3>
+          <div class="spcl-lstng">
+          	<p class="h2">Special Offer</p>
+            <h1 class="h3" tabindex="0"><span class="block-element">[[offers.sRdetail.rate_plan_name]]</h1>
             <div class="booknow"> <a ng-href="{{site.data.config.reztripUrl}}search?rate_code=[[offers.sRdetail.rate_plan_code]]&arrival_date=[[offers.sRdetail.stay_start_date | ifOldRetTodayDate:offers.sRdetail.min_lead_time ]]&departure_date=[[offers.sRdetail.stay_start_date | ifOldRetTodayDate:offers.sRdetail.min_lead_time  | addDayInDate:2 ]]" target="_blank">Book Now</a> </div>
            <!--  <div class="btn-holder extra padding"><a href="mailto:reservations@hotel24north.com" class="button-common btn-blue">Contact Us</i></a></div> -->
-            <p ng-bind-html="offers.sRdetail.short_description | renderHTMLCorrectly"></p>
+            <p ng-bind-html="offers.sRdetail.short_description | renderHTMLCorrectly" tabindex="0"></p>
             <p>
                <!--<strong><span ng-show="!offers.sRdetail.booking_end_date">Available From: </span>
                     [[offers.sRdetail.booking_start_date | date:"MM-dd-yyyy"]]
@@ -43,7 +45,6 @@ layout: default
             <!-- Indicators -->
             <ol class="carousel-indicators" ng-show="offers.sRdetail.images.length>1">
               <li data-target="#roomDetailsCarousel" ng-repeat ="photo in offers.sRdetail.images" data-slide-to="[[$index]]"  ng-class="{'active': $index == 0}"></li>
-
             </ol>
 
             <!-- Wrapper for Slides -->
@@ -51,8 +52,6 @@ layout: default
               <div class="item"  ng-repeat ="photo in offers.sRdetail.images" ng-class="{'active': $index == 0}">
                 <img ng-src="[[photo.yankee_large]]" alt=""/>
               </div>
-
-
             </div>
           </div>
       </div>
@@ -60,23 +59,23 @@ layout: default
     </div>
   </section>
   <section class="lifestyle">
-  	<div class="container-fluid" tabindex="0">
-    	<h3>About the offer</h3>
-        <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
+  	<div class="container-fluid">
+    	<h2 class="h3" tabindex="0">About the offer</h2>
+        <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly" tabindex="0"></p>
     </div>
   </section>
   <section ng-show="offers.sRdetail.addons.length > 0">
     <div class="container-fluid">
 
       <div class="row details-intro style2">
-      	<div class="holds special-include" tabindex="0">
+      	<div class="holds special-include">
 
-        <h2>this offer includes</h2>
-        <ul>
+        <h3 class="h2" tabindex="0">this offer includes</h3>
+        <ul tabindex="0">
             <li ng-repeat ="addon in offers.sRdetail.addons" >[[addon]]</li>
          </ul>
 
-        <div class="badger"><img src="/images/rooms/room-details/logo-details.png" width="160" height="144" alt=""/></div>
+        <div class="badger"><img src="/images/rooms/room-details/logo-details.png" width="160" height="144" alt="24North Hotel"/></div>
       </div>
       </div>
     </div>
@@ -84,13 +83,12 @@ layout: default
   <section>
     <div class="container">
       <div class="row information">
-        <div class="col-md-5 align-center"><img src="../../images/specials/special-details/photo-patch-spcls.png" width="296" height="386" alt=""/></div>
-        <div class="col-md-7 p-l-0" tabindex="0">
-          <p class="highlight p-t-35">Terms & Conditions:</p>
-          <ul class="lst p-b-25">
-
+        <div class="col-md-5 align-center">
+          <img src="../../images/specials/special-details/photo-patch-spcls.png" width="296" height="386" alt="24North Hotel"/></div>
+        <div class="col-md-7 p-l-0">
+          <p class="highlight p-t-35" tabindex="0">Terms & Conditions:</p>
+          <ul class="lst p-b-25" tabindex="0">
           	<li ng-repeat="terms in offers.sRdetail.policy_description " ng-bind-html="terms | replaceNewline | renderHTMLCorrectly">[[terms]]</li>
-
           </ul>
          <!--  <p class="highlight">Need assistance? Our dedicated reservations team is available around the clock:</p>
           <p class="p-b-25">24 North Hotel Service Centre on <a href="tel:305-320-0940">(305) 320-0940</a>  or <br>
