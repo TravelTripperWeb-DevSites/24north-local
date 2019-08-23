@@ -4,7 +4,7 @@
   @media (min-width: $screen-sm-min) {
     padding: 55px 15px;
   }
-  h2 {
+  h2, .h2 {
     max-width: 400px;
     margin: 0 auto;
     padding: 0;
@@ -45,7 +45,7 @@
     .review-item-inner {
       padding: 20px 26px 20px 30px;
       background-color: $bg-ash-3;
-      h6 {
+      h6, .h6 {
         margin-bottom: 10px;
         font-family: $main-font-medium;
         font-size: 16px;
@@ -93,7 +93,7 @@
   padding: 70px 0 76px;
   text-align: center;
   background-color: $tc-dark-blue;
-  h2 {
+  h2, .h2 {
     margin-bottom: 55px;
     font-family: $main-font-light;
     font-size: 34px;

@@ -245,7 +245,7 @@ $(window)
     if (mwidth > 768) {
       // Home specials title equal heights
 
-      $(".home-specials-item h3")
+      $(".home-specials-item .h3")
         .each(function () {
           if ($(this)
             .height() > maxHeight) {
@@ -254,11 +254,11 @@ $(window)
           }
         });
 
-      $(".home-specials-item h3")
+      $(".home-specials-item .h3")
         .height(maxHeight);
 
       // Home specials description equal heights
-      $(".home-specials-item h3")
+      $(".home-specials-item .h3")
         .each(function () {
           if ($(this)
             .height() > maxHeight) {
@@ -281,7 +281,7 @@ $(window)
             }
           });
 
-        $(".rooms-item h2")
+        $(".rooms-item .h2")
           .height(maxHeight);
 
         // Rooms title equal heights

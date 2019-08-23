@@ -72,7 +72,7 @@
 			}
 
 			.description-center {
-				h2 {
+				h2, .h2 {
 					font-family: "brandon_grotesquebold";
 					font-size: 26px;
 					letter-spacing: .05ex;
@@ -137,7 +137,7 @@
 }
 
 .save-the-child-section-inner {
-	
+
 	.save-the-child-container{
 		.logo-container{
 			img{
@@ -154,10 +154,10 @@
 		}
 		.description-container{
 			.description-center{
-				h2{
+				h2, .h2{
 					font-size: 32px;
 				    text-transform: uppercase;
-				    color: #3a9dc4;
+				    color: #076286;
 				    padding: 0px 0 40px 0;
 				    line-height: normal;
 				    letter-spacing: 5px;
