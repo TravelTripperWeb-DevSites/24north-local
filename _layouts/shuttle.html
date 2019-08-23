@@ -2,87 +2,362 @@
 layout: default
 ---
 <div class="starbucks shuttle">
-<section>
-  <div class="home-banner-wrap">
+
+  <section class="home-banner-wrap" tabindex="-1">
     <div id="homeCarousel" class="carousel slide">
       <!-- Wrapper for Slides -->
-      <div class="carousel-inner" rt3-recent-bookings="recentBookings" rt3-rooms-browser="browser" rt3-search-form="search" on-search-changed="browser.tonightRate()" ng-cloak>
-         {% assign slilder_images = site.data._models.shuttle_carousel  | sort : "sort_order" %}
-            {% for slilderimages in slilder_images %}
+      <div class="carousel-inner" rt3-recent-bookings="recentBookings" rt3-rooms-browser="browser" rt3-search-form="search" on-search-changed="browser.tonightRate()" ng-cloak >
+          {% assign slilder_images = site.data._models.shuttle_carousel  | sort : "sort_order" %}
+          {% for slilderimages in slilder_images %}
             {% if forloop.first == true %}
             <div class="item active landing" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
             {% else %}
             <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title={{ slilderimages.alt_text }}>
             {% endif %}
-          <!--<img src="{{ slilderimages.slider_image.url }}" alt="{{ slilderimages.carousel_caption }}"/>-->
-      {% endfor %}
+            <!--<img src="{{ slilderimages.slider_image.url }}" alt="{{ slilderimages.carousel_caption }}"/>-->
+          {% endfor %}
       </div>
     </div>
     <!--<div class="theme-left-panel">
       <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
     </div>-->
-    <div class="theme-right-panel">
-      <div class="social-right"> <!--<a href="#"><i class="fa fa-instagram"></i></a>--> <a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank" title="facebook" aria-label="Facebook" tabindex="-1"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a> --></div>
-    </div>
-  </div>
-</section>
-<section>
-  <div class="container-fluid blue-bg">
-    <div class="about-wrap" tabindex="0">
-      {% region old-town-shuttle-text %}
-    </div>
-  </div>
-</section>
-<section>
-  <div class="container-fluid no-padding two-col-wrap">
-    <div class="col-sm-6 no-padding v-center">
-      <div class="two-col-content" tabindex="0">
-      	{% region heart-of-republic %}
+    <!-- <div class="theme-right-panel">
+      <div class="social-right"> <a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank" title="facebook" aria-label="Facebook" tabindex="-1"><i class="fa fa-facebook"></i></a></div>
+    </div> -->
+  </section>
+
+  <section class="container-fluid blue-bg">
+    <div class="about-wrap">
+
+      {% regionblock shuttle_heading, type: header %}
+      <h1 class="h1" tabindex="0">OLD TOWN SHUTTLE SERVICE</h1>
+      {% endregionblock %}
+
+      <div tabindex="0">
+        {% regionblock shuttle_intro, type: text %}
+  			<p>Complimentary shuttle service is provided daily to transport our guests to and from <a title="Hotel in Old Town, Key West" href="https://www.24northhotel.com/location/">Old Town</a> at regular increments. Please review the shuttle schedule to plan your trip.</p>
+        {% endregionblock %}
       </div>
+
+			<div class="btn-holder">
+        {% regionblock shuttle_schedule, type:text %}
+				<a class="button-common" href="#schedule" title="View Schedule">View Schedule</a>
+        {% endregionblock %}
+			</div>
     </div>
-    <div class="col-sm-6 no-padding v-center">{% region shuttle-image-1 %}</div>
-  </div>
-</section>
-<section class="about-home">
-  <div class="container-fluid no-padding two-col-wrap">
-    <div class="col-sm-6 no-padding v-center">{% region shuttle-image-2 %}</div>
+  </section>
+
+  <section class="container-fluid no-padding two-col-wrap">
     <div class="col-sm-6 no-padding v-center">
-      <div class="two-col-content" tabindex="0">
-        {% region explore-old-key %}
-       <!-- <div class="btn-holder"><a href="#" class="button-common btn-blue">Discover More<i class="fa fa-play"></i></a></div>-->
-      </div>
-    </div>
-  </div>
-</section>
-<section>
-  <div class="container-fluid no-padding home-rooms-wrap">
-    <div class="home-rooms"></div>
-  </div>
-</section>
-<section class="lifestyle" id="schedule">
-	<div class="container-fluid no-padding">
-    	{% region shuttle-schedule-head %}
-        {% region shuttle-table %}
-        <div class="btn-holder extra padding m-80"><a href="/pdf/24N-Shuttle-Flyer.pdf" target="_blank" class="button-common btn-blue" title="Download Schedule">Download Schedule<i class="fa fa-play"></i></a></div>
-    </div>
-</section>
-<section>
-	<div class="container">
-    	<div class="home-location-wrap" tabindex="0">
-            {% region shuttle-rout-map-head %}
-            {% region shuttlemap-image %}
-            {% region keywestlabel-image %}
-            {% region driving-directions %}
+      <div class="two-col-content">
+
+        {% regionblock conch_heading, type: header %}
+      	<h2 class="h3" tabindex="0">THE HEART OF THE CONCH REPUBLIC</h2>
+        {% endregionblock %}
+
+        <div tabindex="0">
+          {% regionblock conch_content, type: text %}
+          <p class="m-t-30">Not that the Conch Republic is fond of an &ldquo;official&rdquo; anything, but few Conchs will debate Old Town&rsquo;s reputation as downtown <a title="Key West, Florida" href="https://www.24northhotel.com/location/">Key West</a>. This is where you&rsquo;ll find Key West&rsquo;s most talked-about spots, restaurants, and bars, as well as the infamous <a title="Duval Street in Key West" href="https://www.24northhotel.com/attractions/duval-street/">Duval Street</a>, a.k.a the Conch Republic&rsquo;s &ldquo;unofficial&rdquo; meeting point.</p>
+          {% endregionblock %}
         </div>
+
+        <div class="keywest-icon"><img src="//cdn.traveltripper.io/site-assets/359_384_818/media/keywest-logo.svg" alt="Key West" /></div>
+      </div>
     </div>
-</section>
-<section>
-  <div class="container-fluid show-case">
-    <div class="row">
-      <div class="col-sm-4 no-padding">{% region shuttle-image-4 %}</div>
-      <div class="col-sm-4 no-padding">{% region shuttle-image-5 %}</div>
-      <div class="col-sm-4 no-padding">{% region shuttle-image-6 %}</div>
+    <div class="col-sm-6 no-padding v-center">
+      {% regionblock conch_image, type: image %}
+      <img src="//cdn.traveltripper.io/site-assets/359_384_818/media/shuttle-1.jpg" alt="Conch Republic" />
+      {% endregionblock %}
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="about-home">
+    <div class="container-fluid no-padding two-col-wrap">
+
+      <div class="col-sm-6 no-padding v-center">
+        {% regionblock duvalstreet_image, type: image %}
+        <img src="//cdn.traveltripper.io/site-assets/359_384_818/media/shuttle-2.jpg" alt="shuttle" />
+        {% endregionblock %}
+      </div>
+
+      <div class="col-sm-6 no-padding v-center">
+        <div class="two-col-content">
+
+          {% regionblock duvalstreet_heading, type: header %}
+          <h3 class="h3" tabindex="0">EXPLORE THE OLD KEY WEST</h3>
+          {% endregionblock %}
+
+          <div tabindex="0">
+            {% regionblock duvalstreet_content, type: text %}
+            <p>Although Old Town is often synonymous with <a title="Duval Street attraction" href="https://www.24northhotel.com/attractions/duval-street/">Duval Street</a>, there&rsquo;s much more to Key West&rsquo;s historic district than its main thoroughfare. Whether you&rsquo;re interested in learning about the island&rsquo;s rich wrecking history, Key West&rsquo;s Cuban background, or simply can&rsquo;t live without seeing the famous sunset at Mallory Square, you&rsquo;ll find plenty to keep you entertained in Old Town.</p>
+            {% endregionblock %}
+          </div>
+         <!-- <div class="btn-holder"><a href="#" class="button-common btn-blue">Discover More<i class="fa fa-play"></i></a></div>-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid no-padding home-rooms-wrap">
+    <div class="home-rooms"></div>
+  </section>
+
+  <section class="lifestyle" id="schedule">
+  	<div class="container-fluid no-padding">
+
+      {% regionblock shuttle_schedule_heading, type: header %}
+  	  <h4 class="h3" tabindex="0">Shuttle SCHEDULE</h4>
+      {% endregionblock %}
+
+      {% regionblock shuttle_schedule, type:text %}
+      <table class="table table-striped odd" tabindex="0">
+				<tbody>
+					<tr>
+						<td>&nbsp;</td>
+						<th scope="col">24 North</th>
+						<th scope="col">The Gates</th>
+						<th scope="col">HILTON</th>
+						<th scope="col">Fairfield</th>
+						<th scope="col">Mallory Square</th>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 1</td>
+						<td>8:00 AM</td>
+						<td>8:00 AM</td>
+						<td>8:00 AM</td>
+						<td>8:00 AM</td>
+						<td>8:30 AM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 2</td>
+						<td>9:00 AM</td>
+						<td>9:00 AM</td>
+						<td>9:00 AM</td>
+						<td>9:00 AM</td>
+						<td>9:30 AM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 3</td>
+						<td>10:00 AM</td>
+						<td>10:00 AM</td>
+						<td>10:00 AM</td>
+						<td>10:00 AM</td>
+						<td>10:30 AM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 4</td>
+						<td>11:00 AM</td>
+						<td>11:00 AM</td>
+						<td>11:00 AM</td>
+						<td>11:00 AM</td>
+						<td>11:30 AM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 5</td>
+						<td>12:00 PM</td>
+						<td>12:00 PM</td>
+						<td>12:00 PM</td>
+						<td>12:00 PM</td>
+						<td>12:30 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 6</td>
+						<td>1:00 PM</td>
+						<td>1:00 PM</td>
+						<td>1:00 PM</td>
+						<td>1:00 PM</td>
+						<td>1:30 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 7</td>
+						<td>2:00 PM</td>
+						<td>2:00 PM</td>
+						<td>2:00 PM</td>
+						<td>2:00 PM</td>
+						<td>2:30 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 8</td>
+						<td>3:00 PM</td>
+						<td>3:00 PM</td>
+						<td>3:00 PM</td>
+						<td>3:00 PM</td>
+						<td>3:30 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 9</td>
+						<td>3:30 PM</td>
+						<td>3:30 PM</td>
+						<td>3:30 PM</td>
+						<td>3:30 PM</td>
+						<td>4:00 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 10</td>
+						<td>4:00 PM</td>
+						<td>4:00 PM</td>
+						<td>4:00 PM</td>
+						<td>4:00 PM</td>
+						<td>4:30 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 11</td>
+						<td>4:30 PM</td>
+						<td>4:30 PM</td>
+						<td>4:30 PM</td>
+						<td>4:30 PM</td>
+						<td>5:00 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 12</td>
+						<td>5:00 PM</td>
+						<td>5:00 PM</td>
+						<td>5:00 PM</td>
+						<td>5:00 PM</td>
+						<td>5:30 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 13</td>
+						<td>5:30 PM</td>
+						<td>5:30 PM</td>
+						<td>5:30 PM</td>
+						<td>5:30 PM</td>
+						<td>6:00 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 14</td>
+						<td>6:00 PM</td>
+						<td>6:00 PM</td>
+						<td>6:00 PM</td>
+						<td>6:00 PM</td>
+						<td>6:30 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 15</td>
+						<td>6:30 PM</td>
+						<td>6:30 PM</td>
+						<td>6:30 PM</td>
+						<td>6:30 PM</td>
+						<td>7:00 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 16</td>
+						<td>7:00 PM</td>
+						<td>7:00 PM</td>
+						<td>7:00 PM</td>
+						<td>7:00 PM</td>
+						<td>7:30 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 17</td>
+						<td>7:30 PM</td>
+						<td>7:30 PM</td>
+						<td>7:30 PM</td>
+						<td>7:30 PM</td>
+						<td>8:00 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 18</td>
+						<td>8:00 PM</td>
+						<td>8:00 PM</td>
+						<td>8:00 PM</td>
+						<td>8:00 PM</td>
+						<td>8:30 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 19</td>
+						<td>8:30 PM</td>
+						<td>8:30 PM</td>
+						<td>8:30 PM</td>
+						<td>8:30 PM</td>
+						<td>9:00 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 20</td>
+						<td>9:00 PM</td>
+						<td>9:00 PM</td>
+						<td>9:00 PM</td>
+						<td>9:00 PM</td>
+						<td>9:30 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 21</td>
+						<td>9:30 PM</td>
+						<td>9:30 PM</td>
+						<td>9:30 PM</td>
+						<td>9:30 PM</td>
+						<td>10:00 PM</td>
+					</tr>
+					<tr>
+						<td class="heading" scope="row">Loop 22</td>
+						<td>10:00 PM</td>
+						<td>10:00 PM</td>
+						<td>10:00 PM</td>
+						<td>10:00 PM</td>
+						<td>10:30 PM</td>
+					</tr>
+					<tr>
+						<td class="none" scope="row" colspan="5">No Hotel Pickup. Last Mallory Square Pickup.</td>
+						<td>11:00 PM</td>
+					</tr>
+				</tbody>
+			</table>
+      {% endregionblock %}
+
+      <div class="btn-holder extra padding m-80">
+        {% regionblock shuttle_schedule_download, type:text %}
+        <a href="/pdf/24N-Shuttle-Flyer.pdf" target="_blank" class="button-common btn-blue" title="Download Schedule">Download Schedule<i class="fa fa-play"></i></a>
+        {% endregionblock %}
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="home-location-wrap">
+
+      {% regionblock route_heading, type: header %}
+      <h5 class="h2" tabindex="0">Shuttle Route Map</h5>
+      {% endregionblock %}
+
+      {% regionblock route_tagline, type: text %}
+      <p class="h3" tabindex="0">exploring key west</p>
+      {% endregionblock %}
+
+      {% regionblock shuttle_map, type: image %}
+      <img class="objectfit" src="/images/shuttle-map.jpg" alt="Shuttle Map" />
+      {% endregionblock %}
+
+      <div class="map-label">
+        <img src="/images/floating/keywest-label.png" alt="Keywest" />
+      </div>
+
+      {% regionblock directions_heading, type: header %}
+      <h6 class="h2">Driving Directions</h6>
+      {% endregionblock %}
+
+      <div tabindex="0">
+        {% regionblock directions_content, type: text %}
+        <p><span class="cap">1.</span> Start at 24 North <span class="cap">2. </span>Additional Hotel Pickup <span class="cap">3.</span> Right on N Roosevelt <span class="cap">4.</span> Continue on S Roosevelt <span class="cap">5.</span> Right on Flagler <span class="cap">6.</span> Right on 5th Street <span class="cap">7.</span> Left on N Roosevelt (US 1. <span class="cap">8.</span> Right on Palm <span class="cap">9.</span> Merge/Left on Eaton <span class="cap">10.</span> Right on Whitehead <span class="cap">11.</span> Merge/Right on Front <span class="cap">12.</span> Drop off Mallory Square <span class="cap">13.</span> Continue on Front <span class="cap">14.</span> Right on Simonton <span class="cap">15.</span> Left on Eaton <span class="cap">16.</span> Merge Palm <span class="cap">17.</span> Left on N Roosevelt <span class="cap">18.</span> 24 North</p>
+        {% endregionblock %}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid show-case">
+      <div class="row">
+        <div class="col-sm-4 no-padding">
+          <img src="//cdn.traveltripper.io/site-assets/359_384_818/media/shuttle-4.jpg" alt="Mallory Square" />
+        </div>
+        <div class="col-sm-4 no-padding">
+          <img src="//cdn.traveltripper.io/site-assets/359_384_818/media/shuttle-5.jpg" alt="ShipYard" />
+        </div>
+        <div class="col-sm-4 no-padding">
+          <img src="//cdn.traveltripper.io/site-assets/359_384_818/media/shuttle-6.jpg" alt="Sloopy Joe's bar" />
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div>

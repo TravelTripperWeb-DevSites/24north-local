@@ -5,23 +5,27 @@ layout: default
 <section class="inner-banner">
     <div class="container">
         <div class="page-banner" style="background-image: url(/images/reviews/reviews-banner.jpg);">
-          <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"></div>
-          {% regionblock title, type:text %}
-            <h1 class="page-title">
-                Reviews
-            </h1>
-            {% endregionblock %}
+          {% regionblock reviews_header, type:header %}
+          <h1 class="page-title" tabindex="0">Reviews</h1>
+          {% endregionblock %}
+          <div class="graphic">
+            <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
+          </div>
         </div>
     </div>
 </section>
 
 <section class="container reviews-page-intro">
+
   {% regionblock intro_header, type:header %}
-    <h2>Are you looking for reviews of 24 North Hotel in Key West?</h2>
+  <h2 class="h2" tabindex="0">Are you looking for reviews of 24 North Hotel in Key West?</h2>
   {% endregionblock %}
-  {% regionblock intro_text, type:text %}
+
+  <div tabindex="0">
+    {% regionblock intro_text, type:text %}
     <p>Take a look at some of the reviews from previous guests at our hotel located right in the heart of Key West, sourced from TripAdvisor, Google, and other reputable platforms!</p>
-  {% endregionblock %}
+    {% endregionblock %}
+  </div>
 </section>
 
 <section class="reviews-list container">
@@ -30,9 +34,9 @@ layout: default
     {% for review in reviews %}
       <div class="review-item {% if forloop.index > 4 %} hide-item {% endif %}">
         <div class="review-item-inner">
-          <h6>{{review.review_heading}}</h6>
-          <p class="review-text">{{review.review_full_text}}</p>
-          <p class="reviewer-name"><span>{{review.reviewer_name}}</span> - {{review.reviewer_company}}</p>
+          <h3 class="h6" tabindex="0">{{review.review_heading}}</h3>
+          <p class="review-text" tabindex="0">{{review.review_full_text}}</p>
+          <p class="reviewer-name" tabindex="0"><span>{{review.reviewer_name}}</span> - {{review.reviewer_company}}</p>
           <p class="reviewer-address">{{review.reviewer_address}}</p>
         </div>
       </div>
@@ -45,26 +49,32 @@ layout: default
 
 <section class="reasons-to-book">
   {% regionblock reasons_to_book_header, type:header %}
-    <h2>3 REASONS TO BOOK DIRECT</h2>
+  <h4 class="h2" tabindex="0">3 REASONS TO BOOK DIRECT</h4>
   {% endregionblock %}
   <div class="reasons-list">
     <div class="block">
       <img src="/images/reviews/search-dollar.png" alt="Price">
-      {% regionblock reasons_to_book_text_1, type:text %}
+      <div tabindex="0">
+        {% regionblock reasons_to_book_text_1, type:text %}
         <p>Recieve the best price for your booking</p>
-      {% endregionblock %}
+        {% endregionblock %}
+      </div>
     </div>
     <div class="block">
       <img src="/images/reviews/hotel.png" alt="Hotel">
-      {% regionblock reasons_to_book_text_2, type:text %}
+      <div tabindex="0">
+        {% regionblock reasons_to_book_text_2, type:text %}
         <p>You're helping to support the hotel directly</p>
-      {% endregionblock %}
+        {% endregionblock %}
+      </div>
     </div>
     <div class="block">
       <img src="/images/reviews/tag.png" alt="Tag">
-      {% regionblock reasons_to_book_text_3, type:text %}
+      <div tabindex="0">
+        {% regionblock reasons_to_book_text_3, type:text %}
         <p>Take advantage of our exclusive special offers</p>
-      {% endregionblock %}
+        {% endregionblock %}
+      </div>
     </div>
   </div>
   <div class="btn-holder">

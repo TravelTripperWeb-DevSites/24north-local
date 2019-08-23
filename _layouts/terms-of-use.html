@@ -6,11 +6,12 @@ layout: default
     <div class="container no-padding">
       <div class="page-banner rooms-banner">
         <div class="overlay-bg"></div>
+        {% regionblock terms_header, type:header %}
+        <h1 class="page-title" tabindex="0">Terms of Use</h1>
+        {% endregionblock %}
         <div class="graphic">
           <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
         </div>
-        {% regionblock terms_header, type:header %}
-        <h1 class="page-title">TERMS OF USE</h1> {% endregionblock %}
       </div>
     </div>
   </section>
@@ -20,7 +21,7 @@ layout: default
         {% regionblock terms_contenthead, type:text %}
         <p class="desp">TERMS OF USE</p>
         {% endregionblock %} {% regionblock terms_of_use, type:text %}
-        <h4>Last updated June 05, 2018</h4>
+        <h2 class="h4">Last updated June 05, 2018</h2>
         <p>Thank you for visiting our website located at <a title="24 North Hotel" href="https://www.24northhotel.com/">www.24northhotel.com</a> (the &ldquo;Site&rdquo;) and for your interest in <strong>24 North Hotel</strong> (sometimes hereinafter referred to as &ldquo;Hotel&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;). As a condition of using this Site we require that you agree to each of the terms and conditions of use and notices stated below (the &ldquo;Terms&rdquo;). If you do not agree to these Terms without modification, please discontinue use of this Site.</p>
         <p>The content and information displayed on this Site (&ldquo;Hotel Information&rdquo;) is the property of Hotel and/or other parties. You agree that downloading, reproducing, or transmitting Hotel Information is strictly prohibited (except to the extent conducted for non-commercial individual use).</p>
         <p>This Site may contain or reference trademarks, patents, copyrighted materials, trade secrets, technologies, products, processes or other proprietary rights of Hotel and/or other parties. You are not granted any license to use or right in any such trademarks, patents, copyrighted materials, trade secrets, technologies, products, processes and other proprietary rights of Hotel and/or other parties.</p>

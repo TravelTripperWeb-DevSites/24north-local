@@ -2,183 +2,251 @@
 layout: default
 ---
 
-<section>
-
-
-  <div class="container no-padding">
+<section class="container no-padding">
   <div class="page-banner location-banner">
-
-    <div class="graphic">{% region stamp-image-1 %}</div>
-
-    {% region banner-heading %}
-
+    {% regionblock location_header, type: header %}
+    <h1 class="page-title" tabindex="0">Location</h1>
+    {% endregionblock %}
+    <div class="graphic">
+      <img src="/images/floating/stamp-1.png" alt="24 north stamp"/>
+    </div>
   </div>
-
-</div>
-
 </section>
 
 <section class="loc-main">
-<div class="loc-main-inner">
-	<div class="container loc-content">
+  <div class="loc-main-inner">
+    <div class="container loc-content">
+      <div class="col-sm-7">
+        <div class="loc-con-inner">
+          <div class="left-column">
 
-    		<div class="col-sm-7">
-            <div class="loc-con-inner">
-        		<div class="left-column" tabindex="0">
-                	{% region accessability %}
+            {% regionblock accessibility_header, type: header %}
+            <h2 class="no-top-padding" tabindex="0">ACCESSIBILITY</h2>
+            {% endregionblock %}
 
-                    {% region overview %}
+            <div tabindex="0">
+              {% regionblock accessibility_text, type: text %}
+  						<p>Key West International Airport is 1.3 miles from 24 North Hotel | Key West, and Duval Street is 3.1 miles away.</p>
+              {% endregionblock %}
+            </div>
 
+            {% regionblock overview_header, type: header %}
+            <h3 class="h3 mb-3" tabindex="0">OVERVIEW</h3>
+            {% endregionblock %}
 
-<p>
+            <div tabindex="0">
+              {% regionblock overview_text, type: text %}
+  						<p>
+  							<a title="Hotel in Key West" href="https://www.24northhotel.com/">24 North Hotel | Key West</a> offers accommodations in Key West. The hotel has an outdoor pool and fitness center, and guests can enjoy a
+  							<a title="Toasted Coconut Key West" href="https://www.24northhotel.com/dine-drink/toasted-coconut/">drink at the bar</a>.
+  							<br />
+  							<br />All
+  							<a title="Rooms in Key West" href="https://www.24northhotel.com/rooms/">rooms</a> are fitted with a flat-screen TV. Certain rooms feature a sitting area for your convenience. The rooms are equipped with a private bathroom equipped with a bathtub and bathtub or shower. For your comfort, you will find free toiletries and a hairdryer.
+  							<br />
+  							<br />You will find a 24-hour front desk at the property.
+  						</p>
+              {% endregionblock %}
+            </div>
 
-<span class="sb-img">{% region starbucks-logo-image %}</span><br><br>
+            <div class="sb-img">
+              {% regionblock starbucks_logo, type: image %}
+              <img class="img-responsive" src="../images/Starbucks_logo_2.png" alt="24North Starbucks" tabindex="0" />
+              {% endregionblock %}
+            </div>
+            <br><br>
 
-{% region starbuck-section-1 %}
+            <div tabindex="0">
+              {% regionblock starbucks_content, type: text %}
+              <p>To say Starbucks purchases and roasts high-quality whole bean coffees is very true. That&rsquo;s the essence of what we do &ndash; but it hardly tells the whole story. Our coffeehouses have become a beacon for coffee lovers everywhere. Why do they insist on Starbucks? Because they know they can count on genuine service, an inviting atmosphere and a superb cup of expertly roasted and richly brewed coffee every time.</p>
+              {% endregionblock %}
+            </div>
 
-<!--We’re not just passionate purveyors of coffee, but everything else that goes with a full and rewarding coffeehouse experience. We also offer a selection of premium Tazo® teas, fine pastries and other delectable treats to please the taste buds. And the music you hear in store is chosen for its artistry and appeal.<br><br>
+            {% regionblock starbucks_image, type: image %}
+            <img class="img-responsive" src="../images/gallery/sb-01-in.jpg" alt="Starbucks Store Interior" tabindex="0" />
+            {% endregionblock %}
 
-It’s not unusual to see people coming to Starbucks to chat, meet up or even work. We’re a neighborhood gathering place, a part of the daily routine – and we couldn’t be happier about it. Get to know us and you’ll see: we are so much more than what we brew.<br><br>-->
-</p>
+            <div class="mt-3">
+              {% regionblock starbucks_timings, type: text %}
+              <p class="h5" tabindex="0"><strong>Hours:</strong></p>
+              <p class="h5" style="text-align: left;" tabindex="0">Monday | 6:30am - 7pm</p>
+              <p class="h5" style="text-align: left;" tabindex="0">Tuesday | 6:30am - 7pm</p>
+              <p class="h5" style="text-align: left;" tabindex="0">Wednesday | 6:30am - 7pm</p>
+              <p class="h5" style="text-align: left;" tabindex="0">Thursday | 6:30a - 8pm</p>
+              <p class="h5" style="text-align: left;" tabindex="0">Friday | 6:30am - 8pm</p>
+              <p class="h5" style="text-align: left;" tabindex="0">Saturday | 7am - 8pm</p>
+              <p class="h5" style="text-align: left;" tabindex="0">Sunday | 7am - 7pm</p>
+              <p class="h4"><br /><a class="button-common btn-blue" href="../dine-drink/starbucks/" title="Discover More">Discover More</a></p>
+              {% endregionblock %}
+            </div>
 
-{% region cuban-inspired-walkmap %}
+            <!--We’re not just passionate purveyors of coffee, but everything else that goes with a full and rewarding coffeehouse experience. We also offer a selection of premium Tazo® teas, fine pastries and other delectable treats to please the taste buds.
+            And the music you hear in store is chosen for its artistry and appeal.<br><br> It’s not unusual to see people coming to Starbucks to chat, meet up or even work. We’re a neighborhood gathering place, a part of the daily routine – and we couldn’t be
+            happier about it. Get to know us and you’ll see: we are so much more than what we brew.<br><br>-->
+            {% regionblock cuban_heading, type: header %}
+            <h4 class="h2" tabindex="0">Cuban Inspired Walking Map</h4>
+            {% endregionblock %}
 
+            <div tabindex="0">
+              {% regionblock cuban_content, type: text %}
+  						<p>Just 90 miles apart, the islands of Key West (originally referred to as Cayo Hueso) and Cuba have been closely linked, both culturally and economically, for nearly two centuries, when the island began welcoming its Cuban neighbors in the 19th century. Enlivened by the vibrant Cuban heritage, Key West began to experience Cuban craft and customs, including a cigar boom, making the island the cigar manufacturing capital of the world by the mid- to late-1800's.<br /><br />Take a self-guided tour of Key West&rsquo;s vibrant Cuban history.<br /><br /><a class="button-common btn-blue" href="/pdf/24N-Walking-Map.pdf" target="_blank" title="View Map">View Map <i class='fa fa-play'></i></a>
+  						</p>
+              {% endregionblock %}
+            </div>
 
-{% region old-town-shuttle-service %}
+            {% regionblock shuttle_heading, type: header %}
+            <h5 class="h2" tabindex="0">Old Town Shuttle Service</h5>
+            {% endregionblock %}
 
+            <div tabindex="0">
+              {% regionblock shuttle_text, type:text %}
+  						<p class="loc-no-padding">Complimentary
+  							<a href="/location/shuttle/" title="shuttle service">
+  								<strong>shuttle service</strong>
+  							</a> is provided daily to transport our guests to and from Old Town at regular increments. Please review the
+  							<a href="/location/shuttle/#schedule" target="_blank" title="shuttle schedule">
+  								<strong>shuttle schedule</strong>
+  							</a> to plan your trip.
+  						</p>
+              {% endregionblock %}
+            </div>
 
+          </div>
+        </div>
+        <div class="shuttle-graphic sg-desktop">
+          <img src="/images/floating/shuttle-graphic.png" alt="24North|shuttle" />
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="right-column">
+          <div class="address-wrap">
+            {% regionblock address_header, type: header %}
+            <h5 class="h3" tabindex="0">Address</h5>
+            {% endregionblock %}
 
-              </div>
-              </div>
-              <div class="shuttle-graphic sg-desktop">{% region shuttle-graphic-image %}</div>
-        	</div>
-        	<div class="col-sm-5">
-        		<div class="right-column">
-                	<div class="address-wrap">
-                        {% region address %}
-                     </div>
-                    <div class="address-wrap">
-                        {% region contanct %}
-                    </div>
-                    <div class="address-wrap">
-                         {% region check-in %}
-                    </div>
-                    <div class="address-wrap">
-                         {% region gps %}
-                    </div>
-                    <!--<div class="btn-wrap">
-                       <div><a href="#" class="button-common btn-blue">Download Map<i class="fa fa-play"></i></a></div>
-                       <div class="extra-padding"><a href="#" class="button-common btn-blue">Download Fact Sheet<i class="fa fa-play"></i></a></div>
-                        <div></div>
-                    </div>-->
-                </div>
-        	</div>
-            <div class="shuttle-graphic sg-mobile">{% region shuttle-graphic-image %}</div>
+            <div tabindex="0">
+              {% regionblock address_text, type: text %}
+              <p>3820 North Roosevelt Blvd
+  							<br />Key West, FL 33040 USA
+  						</p>
+              {% endregionblock %}
+            </div>
+
+						<div class="loc-cuba">
+							<img src="/images/floating/cuba-1.png" alt="#24North" />
+						</div>
+          </div>
+          <div class="address-wrap">
+            {% regionblock contact_header, type: header %}
+            <h5 class="h3" tabindex="0">Contact</h5>
+            {% endregionblock %}
+
+            <div tabindex="0">
+              {% regionblock tel_text, type: text %}
+			        <p>Tel <a href="tel:3053200940" title="(305) 320-0940">(305) 320-0940</a><br /><a href="mailto:reservations@hotel24north.com" title="reservations@hotel24north.com">reservations@hotel24north.com<br /><br /></a></p>
+              {% endregionblock %}
+            </div>
+
+            {% regionblock concierge_header, type: header %}
+						<h5 class="h3" tabindex="0">Concierge</h5>
+            {% endregionblock %}
+
+            {% regionblock mail, type:text %}
+						<a href="mailto:24north@keywestconcierge.org" title="24north@keywestconcierge.org">24north@keywestconcierge.org</a>
+            {% endregionblock %}
+          </div>
+          <div class="address-wrap">
+            {% regionblock checkin_header, type: header %}
+            <h5 class="h3" tabindex="0">Check - In</h5>
+            {% endregionblock %}
+
+            <div tabindex="0">
+              {% regionblock checkin_text, type: text %}
+			        <p>Check-in time:16:00 hours / 4:00 pm <span class="extra-padding">Check-out time:</span>11:00 hours / 11:00 am</p>
+              {% endregionblock %}
+            </div>
+          </div>
+
+          <div class="address-wrap">
+            {% regionblock gps_header, type: header %}
+            <h5 class="h3" tabindex="0">GPS</h5>
+            {% endregionblock %}
+
+            <div tabindex="0">
+              {% regionblock climate_text, type: text %}
+			        <p>24&deg; 34' 16.8" N81&deg; 45' 18.6" W</p>
+              {% endregionblock %}
+            </div>
+          </div>
+          <!--<div class="btn-wrap"> <div><a href="#" class="button-common btn-blue">Download Map<i class="fa fa-play"></i></a></div> <div class="extra-padding"><a href="#" class="button-common btn-blue">Download Fact Sheet<i class="fa fa-play"></i></a></div>
+          <div></div> </div>-->
+        </div>
+      </div>
+      <div class="shuttle-graphic sg-mobile">
+        <img src="/images/floating/shuttle-graphic.png" alt="24North|shuttle" />
+      </div>
     </div>
 
-    </div>
+  </div>
 </section>
 
 <section class="bt">
-	<div class="container no-padding">
+  <div class="container no-padding">
     <div class="border-texture bt-2"><img src="/images/floating/border-textrure-2.png" alt="floating-border"/></div>
-    	<div class="cta-theme cta-theme-location">
-        <div class="pf-wrap">
-        	{% region paradise-found-booknow %}
-            </div>
-        </div>
+    <div class="cta-theme cta-theme-location">
+      <div class="pf-wrap">
+        {% regionblock cta_heading, type: header %}
+        <h6 class="h2" tabindex="0">Paradise Found</h6>
+        {% endregionblock %}
+				<div>
+          {% regionblock cta_url, type:text %}
+					<a class="button-common btn-white" href="https://24northhotel.reztrip.com/" target="_blank" title="Book Now">Book Now
+						<i class='fa fa-play'></i>
+					</a>
+          {% endregionblock %}
+				</div>
+      </div>
     </div>
+  </div>
 </section>
 
-
-
 <section>
-	<div class="container">
-   	  <div class="home-location-wrap">
+  <div class="container">
+    <div class="home-location-wrap">
 
       {% include location.html %}
 
-           <div><a href="/gallery/" class="button-common btn-blue" title="View Gallery">View Gallery<i class="fa fa-play"></i></a></div>
-
+      <div>
+        {% regionblock gallery_url, type:text %}
+        <a href="/gallery/" class="button-common btn-blue" title="View Gallery">View Gallery<i class="fa fa-play"></i>
+        </a>
+        {% endregionblock %}
       </div>
+
     </div>
+  </div>
 </section>
 
-
-
 <section class="hdct">
-	<div class="container-fluid no-padding">
+  <div class="container-fluid no-padding">
     <div class="graphic"></div>
-    	<div class="empty-container">{% region loc-1 %}</div>
-
+    <div class="empty-container">
+      <img src="/images/loc-1.jpg" alt="location" />
     </div>
+  </div>
 </section>
 
 {% include grid.html %}
 
 <section>
-	<div class="loc-map">
-    {% region loc-map-img %} </div>
+  <div class="loc-map">
+    <img src="/images/loc-map.jpg" alt="location" />
+  </div>
 </section>
 
-<!--<section>
-	<div class="container-fluid no-padding home-specials-wrap car-blue-bg">
-    	<div class="container">
-       	  <h2 class="heading-large">current events</h2>
-
-          <div id="home-carousel-2">
-  				<div class="item">
-            <div class="home-specials-item">
-                <img src="../images/loc-event-1.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>fantasy festival</h3>
-                    <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
-                </div>
-                <a href="#" class="button-common btn-top">View Event</a>
-            </div>
-
-            </div>
-
-            <div class="item">
-            <div class="home-specials-item">
-                <img src="../images/loc-event-2.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>ernest hemingway</h3>
-                    <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
-                </div>
-                <a href="#" class="button-common btn-top">View Event</a>
-            </div>
-
-            </div>
-
-             <div class="item">
-            <div class="home-specials-item">
-                <img src="../images/loc-event-1.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>grand opening special</h3>
-                    <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
-                </div>
-                <a href="#" class="button-common btn-top">View Special</a>
-            </div>
-
-            </div>
-
-             <div class="item">
-            <div class="home-specials-item">
-                <img src="../images/loc-event-2.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>book early & save!</h3>
-                    <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
-                </div>
-                <a href="#" class="button-common btn-top">View Special</a>
-            </div>
-
-            </div>
-
-            </div>
-
-            <div class="btn-holder-with-padding"><a href="#" class="button-common">View all Events<i class="fa fa-play"></i></a></div>
-
-        </div>
-    </div>
-</section>-->
+<!--<section> <div class="container-fluid no-padding home-specials-wrap car-blue-bg"> <div class="container"> <h2 class="heading-large">current events</h2> <div id="home-carousel-2"> <div class="item"> <div class="home-specials-item"> <img
+src="../images/loc-event-1.jpg" alt=""/> <div class="car-content"> <h3>fantasy festival</h3> <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p> </div> <a href="#" class="button-common btn-top">View Event</a>
+</div> </div> <div class="item"> <div class="home-specials-item"> <img src="../images/loc-event-2.jpg" alt=""/> <div class="car-content"> <h3>ernest hemingway</h3> <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec
+ne...</p> </div> <a href="#" class="button-common btn-top">View Event</a> </div> </div> <div class="item"> <div class="home-specials-item"> <img src="../images/loc-event-1.jpg" alt=""/> <div class="car-content"> <h3>grand opening special</h3>
+<p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p> </div> <a href="#" class="button-common btn-top">View Special</a> </div> </div> <div class="item"> <div class="home-specials-item"> <img
+src="../images/loc-event-2.jpg" alt=""/> <div class="car-content"> <h3>book early & save!</h3> <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p> </div> <a href="#" class="button-common btn-top">View Special</a>
+</div> </div> </div> <div class="btn-holder-with-padding"><a href="#" class="button-common">View all Events<i class="fa fa-play"></i></a></div> </div> </div> </section>-->

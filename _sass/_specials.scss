@@ -35,7 +35,10 @@ section.models {
 
 	.container {
 		.col-md-4 {
-			min-height: 654px;
+			min-height: auto;
+      @media (min-width: $screen-sm-max) {
+        min-height: 654px;
+      }
 		}
 
 
@@ -223,8 +226,16 @@ section.models {
 			.sp-content {
 				padding: 30px;
 
+        h2, .h2 {
+          margin-bottom: 20px;
+        }
+
 				.desp {
 					padding-bottom: 0;
+
+          p {
+            text-align: left;
+          }
 				}
 
 				.button-common {
@@ -234,7 +245,6 @@ section.models {
 				strong {
 					display: block;
 					margin-bottom: 30px;
-					text-align: center;
 				}
 			}
 			@media(min-width: 768px) {
@@ -337,14 +347,14 @@ section.models {
 		padding: 15px 0;
 	}
 
-	h2 {
+	h2, .h2 {
 		font-size: 14px;
 		text-transform: uppercase;
 		font-family: $main-font-bold;
 		letter-spacing: 5px;
 	}
 
-	h3 {
+	h3, .h3 {
 		font-family: $main-font-light;
 		font-size: 32px;
 		text-transform: uppercase;
@@ -468,7 +478,7 @@ left: 15px;
 		text-align: center;
 	}
 
-	h4 {
+	h4, .h4 {
 		font-family: $main-font-bold;
 		text-transform: uppercase;
 		font-size: 14px;
@@ -614,7 +624,7 @@ left: 15px;
 					letter-spacing: 2px;
 
 					&:hover {
-						color: #3a9dc4;
+						color: #076286;
 					}
 				}
 			}
@@ -635,7 +645,7 @@ left: 15px;
 				.sp-content {
 					color: #fff;
 
-					h2 {
+					h2, .h2 {
 						font-family: "brandon_grotesquelight";
 						font-size: 28px;
 						text-transform: uppercase;
@@ -672,8 +682,8 @@ left: 15px;
 					color: #fff;
 
 					&:hover {
-						background-color: #3a9dc4;
-						border-color: #3a9dc4;
+						background-color: #076286;
+						border-color: #076286;
 					}
 
 					.fa-play {

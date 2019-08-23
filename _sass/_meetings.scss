@@ -19,12 +19,12 @@
 							@media (min-width: 481px) and (max-width:1024px){ font-size:24px;}
 
 						}
-						h1{ padding:30px 0 50px;
+						h1, .h1{ padding:30px 0 50px;
 							@media (max-width: 480px){ padding:0px 0 10px; font-size:10px;}
 							@media (min-width: 481px) and (max-width:1024px){ font-size:12px;
 							padding:0px 0 20px;}
 						}
-						h2{ padding:30px 0 50px;
+						h2, .h2{ padding:30px 0 50px;
 							@media (max-width: 480px){ padding:0px 0 10px; font-size:10px;}
 							@media (min-width: 481px) and (max-width:1024px){ font-size:12px;
 							padding:0px 0 20px;}
@@ -58,7 +58,7 @@
 				}
 			}
 		}
-		#sync2 .item h1{
+		#sync2 .item h1, .h1{
 		  font-size: 18px;
 		}
 		#sync2 .synced .item{
@@ -67,7 +67,7 @@
 	}
 	.lifestyle{
 		 text-align:center; background:#fbf8ef;
-		 h3{font-size: 14px;
+		 h3, .h3{font-size: 14px;
 			text-transform: uppercase;
 			font-family: "brandon_grotesquebold";
 			letter-spacing: 5px; padding:66px 0;
@@ -86,7 +86,7 @@
 			@media (max-width: 480px){
 				padding:40px 10px;
 			}
-			h3 {
+			h3, .h3 {
 				font-size: 14px;
 				text-transform: uppercase;
 				font-family: "brandon_grotesquebold";
@@ -155,7 +155,7 @@
 		.blue-bg{
 			.two-col-content{
 				@media (max-width: 1024px){ padding:30px 15px;}
-				h3{color:#fff;}
+				h3, .h3{color:#fff;}
 				p{color:#fff; width:62%;
 					&.wide{ width:82%;}
 					a {

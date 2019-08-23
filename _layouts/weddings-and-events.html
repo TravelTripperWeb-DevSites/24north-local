@@ -7,8 +7,12 @@ layout: default
   <section>
     <div class="container no-padding">
       <div class="page-banner partners-banner events-lawn-banner">
-        <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 North Hotel" /></div>
-        <h1 class="page-title">WEDDINGS</h1>
+        {% regionblock weddings_header, type:header %}
+        <h1 class="page-title" tabindex="0">Weddings</h1>
+        {% endregionblock %}
+        <div class="graphic">
+          <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
+        </div>
       </div>
     </div>
   </section>
@@ -16,13 +20,30 @@ layout: default
   <section>
     <div class="container-fluid no-padding two-col-wrap m-t-60">
       <div class="col-sm-6 no-padding v-center">
-        <div class="two-col-content" tabindex="0">
-          {% region heart-of-republic %}
-          <div class="btn-holder"><a href="https://www.thekeyscollection.com/celebrate/" class="button-common btn-blue" target="_blank">Learn More<i class="fa fa-play"></i></a></div>
+        <div class="two-col-content">
+
+          {% regionblock weddings_header2, type:text %}
+          <h2 class="h3" tabindex="0">A key west wedding</h2>
+          {% endregionblock %}
+
+          <div tabindex="0">
+            {% regionblock weddings_content, type:text %}
+  					<p class="m-t-30">One of the top wedding destinations in the country, this southernmost point in the United States offers balmy weather, vast horizons, and breathtaking sunsets ideal for your special day. Plan the perfect outdoor wedding in Key West on our lush Sunset Green Event Lawn, ideal for both formal celebrations and low-key ceremonies.<br />The Sunset Green Event Lawn is accessible. For more information, please view our <a title="Accessibility Statement" href="../accessibility/">Accessibility Statement</a>.</p>
+            {% endregionblock %}
+          </div>
+
+          <div class="btn-holder">
+            {% regionblock weddings_url, type:text %}
+            <a href="https://www.thekeyscollection.com/celebrate/" class="button-common btn-blue" target="_blank">Learn More<i class="fa fa-play"></i></a>
+            {% endregionblock %}
+          </div>
+
         </div>
       </div>
       <div class="col-sm-6 no-padding v-center">
+        {% regionblock weddings_image, type:image %}
         <img src="/images/event-lawn/24-north-wedding-key-west-2.jpg" alt="A KEY WEST WEDDING">
+        {% endregionblock %}
       </div>
     </div>
   </section>
@@ -30,19 +51,41 @@ layout: default
   <section class="about-home weddings-intro">
 
     <div class="container-fluid no-padding two-col-wrap">
-      <div class="col-sm-6 no-padding v-center">{% region shuttle-image-2 %}</div>
       <div class="col-sm-6 no-padding v-center">
-        <div class="two-col-content" tabindex="0">
-          {% region explore-old-key %}
-          <div class="btn-holder"><a href="https://www.thekeyscollection.com/celebrate/" class="button-common btn-blue" target="_blank">Learn More<i class="fa fa-play"></i></a></div>
+        {% regionblock weddings_image2, type:image %}
+        <img src="/images/event-lawn/24-north-wedding-pergola-2.jpg" alt="THE PERFECT UNION" />
+        {% endregionblock %}
+      </div>
+      <div class="col-sm-6 no-padding v-center">
+        <div class="two-col-content">
+          {% regionblock gathering_header, type:header %}
+          <h3 class="h3" tabindex="0">The Perfect Union</h3>
+          {% endregionblock %}
+          <div tabindex="0">
+            {% regionblock gathering_content, type:text %}
+            <p class="m-t-30">Set between 24 North and our sister hotel The Gates Key West, the Sunset Green Event Lawn offers beauty, convenience, and versatility for you and your guests. Whether you're planning a large wedding or an initimate gathering, our Sunset Green Event Lawn offers a vibrant environment and easygoing feel, steps from your hotel room.</p>
+            {% endregionblock %}
+          </div>
+          <div class="btn-holder">
+            {% regionblock gathering_url, type:text %}
+            <a href="https://www.thekeyscollection.com/celebrate/" class="button-common btn-blue" target="_blank">Learn More<i class="fa fa-play"></i></a>
+            {% endregionblock %}
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="ev-lawn-btn" tabindex="0">
-      <p>For inquiries, please call the Sales Office at
-        <a href="tel:(305) 600-1425" title="(305) 600-1425">(305) 600-1425</a> or fill out the RFP below.</p>
-      <div class="btn-holder "><a class="button-common btn-blue" href="/weddings-and-events/request-for-proposal/" title="Request for Proposal">Request for Proposal </a></div>
+    <div class="ev-lawn-btn">
+      <div tabindex="0">
+        {% regionblock inquiries, type:text %}
+        <p>For inquiries, please call the Sales Office at <a href="tel:(305) 600-1425" title="(305) 600-1425">(305) 600-1425</a> or fill out the RFP below.</p>
+        {% endregionblock %}
+      </div>
+      <div class="btn-holder ">
+        {% regionblock inquiries_url, type:text %}
+        <a class="button-common btn-blue" href="/weddings-and-events/request-for-proposal/" title="Request for Proposal">Request for Proposal </a>
+        {% endregionblock %}
+      </div>
     </div>
 
   </section>
