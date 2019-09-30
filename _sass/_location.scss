@@ -389,3 +389,20 @@ a {
     height: 350px;
   }
 }
+
+// Exclusive Highlight Section on Webcams page
+.exclusive-higlights {
+  max-width: 600px;
+  margin: 50px auto auto;
+  @media(max-width: $screen-sm-min) {
+    margin-top: 30px;
+  }
+
+  p {
+    padding: 20px;
+    font-size: 22px;
+    color: $white;
+    text-align: center;
+    background-color: #ff9300;
+  }
+}
