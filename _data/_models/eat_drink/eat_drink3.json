@@ -5,11 +5,11 @@
   "menu": [
     {
       "menu_name": "Breakfast",
-      "menu_url": "https://cdn.traveltripper.io/site-assets/192_384_17619/media/2018-07-25-023059/Toasted-Coconut-Breakfast-Menus--2-.pdf"
+      "menu_url": "//res.cloudinary.com/traveltripperweb/raw/upload/v1569920847/icknbevk7vtooerw5uj0.pdf"
     },
     {
       "menu_name": "Lunch/Dinner",
-      "menu_url": "https://cdn.traveltripper.io/site-assets/192_384_17619/media/2018-07-25-023255/Toasted-Coconut-Lunch-Menu--3-.pdf"
+      "menu_url": "//res.cloudinary.com/traveltripperweb/raw/upload/v1569920846/vb5a3ezdqrenbns3nrzk.pdf"
     },
     {
       "menu_name": "Drinks",
