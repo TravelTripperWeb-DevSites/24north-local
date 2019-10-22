@@ -30,7 +30,7 @@
       "description": ""
     },
     {
-      "name": "North Hotel Room",
+      "name": "24 North Hotel Room",
       "content_type": "image/jpeg",
       "date_added": "2019-10-22-020001",
       "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1571724002/tqms849kq6jiq81hzyew.jpg",
@@ -48,12 +48,12 @@
       "size": 74190,
       "path": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1571724002/tqms849kq6jiq81hzyew.jpg",
       "file_size": null,
-      "alt": "North Hotel Room",
+      "alt": "24 North Hotel Room",
       "caption": "",
       "description": ""
     },
     {
-      "name": "pool",
+      "name": "24 North Hotel Pool",
       "content_type": "image/jpeg",
       "date_added": "2019-10-22-020024",
       "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1571724024/jpdm4grwrj8vjesqqb0b.jpg",
@@ -71,7 +71,7 @@
       "size": 348076,
       "path": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1571724024/jpdm4grwrj8vjesqqb0b.jpg",
       "file_size": null,
-      "alt": "pool",
+      "alt": "24 North Hotel Pool",
       "caption": "",
       "description": ""
     },
