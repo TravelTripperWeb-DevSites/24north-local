@@ -4,9 +4,19 @@ layout: default
 <section>
   <div class="container no-padding">
     <div class="page-banner blog-banner">
-      <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"/></div>
-      <h1 class="page-title">Blog</h1>
+
+      {% regionblock blog_header, type:header %}
+      <h1 class="page-title" tabindex="0">Partners</h1>
+      {% endregionblock %}
+
+      {% regionblock blog_intro, type:text %}
       <p>The island of Key West packs a lot of punch in its relatively small surface area. To keep tabs on Duval Street nightlife, seasonal seafood, event guides, watersport adventures and more, bookmark the 24 North Hotel Blog.</p>
+      {% endregionblock %}
+
+      <div class="graphic">
+        <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
+      </div>
+
     </div>
   </div>
 </section>
@@ -18,7 +28,11 @@ layout: default
           <div class="blog-item">
             <div class="row">
               <div class="col-sm-4">
-                <div class="post-image-holder"> <a href="happy-birthday-24-north/" title="image"><img src="/images/blog/happy-birthday-24-north-1.jpg" alt="On November 4, 2016, 24 North Hotel is turning 1."/></a> </div>
+                <div class="post-image-holder">
+                  <a href="happy-birthday-24-north/" title="image">
+                    <img src="/images/blog/happy-birthday-24-north-1.jpg" alt="On November 4, 2016, 24 North Hotel is turning 1."/>
+                  </a> 
+                </div>
               </div>
               <div class="col-sm-8">
                 <h2><a href="/blog/happy-birthday-24-north/" title="Happy Birthday, 24 North!">Happy Birthday, 24 North!</a></h2>

@@ -2,75 +2,131 @@
 layout: default
 ---
 <div class="meetings">
-<section>
-  <div class="home-banner-wrap meetings-wrap">
-   <div id="sync1" class="carousel">
-   	       {% assign slilder_images = site.data._models.groups_slider_images  | sort : "sort_order" %}
-            {% for slilderimages in slilder_images %}
-              <div class="item">
-              <img src="{{ slilderimages.slider_image.url }}" title="{{ slilderimages.alt_text }}" alt="{{ slilderimages.alt_text }}" class="banner"/>
-              <div class="carousel-caption">
-                <div class="caption-inner">
-                  {{ slilderimages.carousel_caption }}
-                </div>
-              </div>
-          </div>
-          {% endfor %}
 
-    </div>
-    <div id="sync2" class="carousel">
-        {% assign slilder_images = site.data._models.groups_slider_images  | sort : "sort_order" %}
-        {% for slilderimages in slilder_images %}
-          <div class="item">
-            <img src="{{ slilderimages.thumb_image.url }}" title="{{ slilderimages.alt_text }}" alt="{{ slilderimages.alt_text }}">
-          </div>
-        {% endfor %}
-    </div>
-    <!--<div class="theme-left-panel">
-      <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
-    </div>-->
-    <div class="theme-right-panel">
-      <div class="social-right"><!-- <a href="#"><i class="fa fa-instagram"></i></a> --><a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank" title="facebook" aria-label="Facebook" tabindex="-1"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a> --></div>
-    </div>
-  </div>
-</section>
-<section>
-  <div class="container-fluid white-bg">
-    <div class="about-wrap" tabindex="0">
-      {% region 24North-hotelkeywest %}
-      {% region stamp1-blue-image %}
-      {% region curves-1-white-image %}
-    </div>
-  </div>
-</section>
-<section>
-  <div class="container no-padding two-col-wrap group-accomodation">
-    <div class="col-sm-5 no-padding v-center blue-bg content">
-      <div class="two-col-content" tabindex="0">
-        {% region group-accom %}
+<section class="home-banner-wrap meetings-wrap" tabindex="-1">
+  <div id="sync1" class="carousel" tabindex="-1">
+  {% assign slilder_images = site.data._models.groups_slider_images  | sort : "sort_order" %}
+  {% for slilderimages in slilder_images %}
+      <div class="item">
+      <img src="{{ slilderimages.slider_image.url }}" title="{{ slilderimages.alt_text }}" alt="{{ slilderimages.alt_text }}" class="banner"/>
+      <div class="carousel-caption">
+        <div class="caption-inner">
+          {{ slilderimages.carousel_caption }}
+        </div>
       </div>
-    </div>
-    <div class="col-sm-7 no-padding v-center bg-styles image-block" style="background-image:url('/images/meetings/meetings-1.jpg');">
-    </div>
+  </div>
+  {% endfor %}
+
+  </div>
+  <div id="sync2" class="carousel">
+    {% assign slilder_images = site.data._models.groups_slider_images  | sort : "sort_order" %}
+    {% for slilderimages in slilder_images %}
+      <div class="item">
+        <img src="{{ slilderimages.thumb_image.url }}" title="{{ slilderimages.alt_text }}" alt="{{ slilderimages.alt_text }}">
+      </div>
+    {% endfor %}
+  </div>
+  <!--<div class="theme-left-panel">
+    <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
+  </div>-->
+  <div class="theme-right-panel">
+    <div class="social-right"><!-- <a href="#"><i class="fa fa-instagram"></i></a> --><a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank" title="facebook" aria-label="Facebook" tabindex="-1"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a> --></div>
   </div>
 </section>
+
+<section class="container-fluid white-bg">
+  <div class="about-wrap">
+    {% regionblock events_tagline, type:text %}
+    <p class="h3" tabindex="0">24 north hotel Key West</p>
+    {% endregionblock %}
+    {% regionblock events_heading, type:header %}
+		<h1 class="h1" tabindex="0">Meetings &amp; Events</h1>
+    {% endregionblock %}
+    <div tabindex="0">
+      {% regionblock events_content, type:text %}
+      <p>We understand the planning that goes into an event and the effort it takes to manage a group on vacation, which is why we are here to ensure that your group stay goes as smoothly as possible.<br />Our flexible indoor meeting space comes prepared with Wi-Fi internet access, flat screen televisions, blackout blinds and central air-conditioning.<br><br> Conveniently located in the lobby of <a href="/">24 North Hotel</a>, with <a href="/rooms/">145 guestrooms</a>, retail, <a href="/location/shuttle/">a shuttle to Old Town</a>, and plenty of food & beverage options, your attendees will have everything they need to meet and enjoy their time in Key West. Our Group Sales Department is eager to plan your meetings and events from beginning to end.<br><br>For inquiries, please call the Sales Office at <a href="tel:3056001425">(305) 600-1425</a> or</p>
+      {% endregionblock %}
+    </div>
+
+		<div class="btn-holder">
+			<a class="button-common btn-blue" href="/meetings-and-events-key-west/request-for-proposal/">Request for Proposal </a>
+		</div>
+
+    <div class="graphic-1">
+      <img src="/images/meetings/stamp-1-blue.png" alt="24North" />
+    </div>
+
+    <div class="graphic-2">
+      <img src="/images/meetings/curves-1-white.png" alt="24North-curves" />
+    </div>
+
+  </div>
+</section>
+
+<section class="container no-padding two-col-wrap group-accomodation">
+  <div class="col-sm-5 no-padding v-center blue-bg content">
+    <div class="two-col-content">
+      {% regionblock group_heading, type:header %}
+      <h2 class="h3" tabindex="0">Group Accomodation</h2>
+      {% endregionblock %}
+
+      <div tabindex="0">
+        {% regionblock group_content, type:text %}
+        <p>Whether you're organizing a college reunion, planning a wedding, or coordinating a corporate retreat, <a title="Boutique Key West hotel" href="https://www.24northhotel.com/">24 North Hotel</a> is well-equipped to meet your group accommodation needs. Our central location makes it easy for your guests to get around <a title="Hotel in Key West" href="https://www.24northhotel.com/location/">Key West</a>, and our extra-comfy bedding and on-site Starbucks ensure that your group starts the day off on the right foot.</p>
+        {% endregionblock %}
+      </div>
+
+			<div class="logo-icon">
+				<img src="../images/meetings/abelum.png" alt="24 North Hotel Key West" />
+			</div>
+    </div>
+  </div>
+  <div class="col-sm-7 no-padding v-center bg-styles image-block" style="background-image:url('/images/meetings/meetings-1.jpg');">
+  </div>
+</section>
+
 <section class="about-home">
   <div class="container two-col-wrap boxed no-padding">
     <div class="col-sm-7 no-padding v-center bg-styles image-block" style="background-image:url('/images/meetings/meetings-2.jpg');">
     </div>
     <div class="col-sm-5 no-padding v-center blue-bg content">
-      <div class="two-col-content" tabindex="0">
-        {% region work-fun %}
+      <div class="two-col-content">
+        {% regionblock corporate_heading, type:header %}
+        <h3 class="h3" tabindex="0">Work &amp; Fun...together</h3>
+        {% endregionblock %}
+        <div tabindex="0">
+          {% regionblock corporate_content, type:text %}
+  				<p class="wide">For the groups that will be doing more work than play, each of our spotless rooms offer desks and high-speed WiFi. However, for the groups that come to play, there&rsquo;s our on-site Fury Watersports concierge for tours and water-related excursions. There&rsquo;s also our highly-recommended bar and restaurant, Chug Cantina, perfect for whenever your group wants to unwind with a few tacos and beers by the pool.</p>
+          {% endregionblock %}
+        </div>
+        {% regionblock corporate_url, type:text %}
+        <a class="button-common" href="/rooms/">View Rooms </a>
+        {% endregionblock %}
       </div>
     </div>
   </div>
-  <div class="graphic">{% region curve2-image %}</div>
+  <div class="graphic">
+    <img src="/images/floating/curves-2.png" alt="floating-curves" />
+  </div>
 </section>
-<section class="lifestyle">
-	{% region stamp2-blue-image %}
-	<div class="container-fluid" tabindex="0">
-    	{% region nomatter %}
 
+<section class="lifestyle">
+	<div class="stamp2">
+    <img src="//cdn.traveltripper.io/site-assets/359_384_818/media/stamp-2-blue.png" alt="24 North Hotel" />
+  </div>
+	<div class="container-fluid">
+    <div tabindex="0">
+      {% regionblock general_text, type:text %}
+      <p>No matter the purpose of your group trip, you can count on 24 North&rsquo;s dedicated staff to make your group stay in Key West comfortable, warm, and stress-free.</p>
+      {% endregionblock %}
+    </div>
+		<div class="btn-holder">
+      {% regionblock general_url, type:text %}
+			<a class="button-common btn-blue" href="/meetings-and-events-key-west/request-for-proposal/">Request for Proposal
+				<i class='fa fa-play'></i>
+			</a>
+      {% endregionblock %}
+		</div>
   </div>
 </section>
 

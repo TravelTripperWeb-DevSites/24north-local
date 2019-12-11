@@ -17,8 +17,8 @@
       <div class="home-specials-item">
           <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt="offer display image"/>
           <div class="car-content">
-              <h3><a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink ]]" style="text-decoration:none;" title="[[offer.rate_plan_name]]" >[[offer.rate_plan_name]]</a></h3>
-              <p>[[offer.short_description | limitTo: 90]][[offer.short_description.length > 90 ? '...' : '']]</p>
+              <a class="h3 block-element" ng-href="/special/#[[offer.rate_plan_name | formatNameForLink ]]" style="text-decoration:none;" title="[[offer.rate_plan_name]]" >[[offer.rate_plan_name]]</a>
+              <p tabindex="0">[[offer.short_description | limitTo: 90]][[offer.short_description.length > 90 ? '...' : '']]</p>
           </div>
           <a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink ]]"  class="button-common btn-top" title="View Special">View Special</a>
       </div>

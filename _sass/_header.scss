@@ -6,14 +6,7 @@ body {
 	font-family: $main-font-regular;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,p,ul {
 	margin: 0;
 	padding: 0;
 	line-height: normal;
@@ -275,7 +268,7 @@ a:hover {
 	margin-right: 30px;
 	margin-top: -36px;
 
-	h2 {
+	h2, .h2 {
 		font-size: 13px;
 		font-weight: bold;
 	}
@@ -292,7 +285,7 @@ a:hover {
 		margin-top: 0;
 		margin-left: 5px;
 
-		h2 {
+		h2, .h2 {
 			font-size: 12px;
 		}
 
@@ -308,7 +301,7 @@ a:hover {
 	margin-right: 30px;
 	margin-top: -36px;
 
-	h2 {
+	h2, .h2 {
 		font-size: 13px;
 	}
 	@media (max-width: 1023px) {
@@ -320,7 +313,7 @@ a:hover {
 		margin-top: 0;
 		margin-left: 5px;
 
-		h2 {
+		h2, .h2 {
 			font-size: 12px;
 		}
 

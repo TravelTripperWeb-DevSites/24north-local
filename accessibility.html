@@ -6,11 +6,12 @@ layout: default
     <div class="container no-padding">
       <div class="page-banner rooms-banner">
         <div class="overlay-bg"></div>
+        {% regionblock access_header, type:header %}
+        <h1 class="page-title" tabindex="0">Accessibility Statement</h1>
+        {% endregionblock %}
         <div class="graphic">
           <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
         </div>
-        {% regionblock accessibility_header, type:text %}
-        <h1 class="page-title">Accessibility Statement</h1> {% endregionblock %}
       </div>
     </div>
   </section>
@@ -20,7 +21,7 @@ layout: default
         {% regionblock accesssbility_contenthead, type:text %}
         <p>The 24 North Hotel Key West (sometimes hereinafter referred to as “Hotel”, “we”, “us”, or “our”) is dedicated to providing exceptional service to guests of all abilities. We strive to provide online content that provides an excellent user experience for visitors of all abilities, using any type of assistive technology to access the website.</p>
         <p>We base our website accessibility standards on the Web Content Accessibility Guidelines 2.1, level A + AA success criteria. In addition, we actively work to maintain, assess and improve the usability and accessibility of our website through training of our personnel, engagement of experts and regular testing of our digital accessibility.</p>
-        <h3>We welcome feedback</h3>
+        <h2 class="h3">We welcome feedback</h2>
         <p>If you experience any difficulty accessing or navigating our websites or have any accessibility-related questions or comments, we are listening. Please contact us at <a href="tel:305-320-0940" title="Call Us">305-320-0940</a> or <a href="mailto:reservations@hotel24north.com" title="Email Us">reservations@hotel24north.com</a> with a description of the issue you encountered and your contact information. Your experience matters to us.</p>
         <p>The 24 North Hotel website may contain material from social media sites such as Facebook and Youtube, which are used to share additional content about our property, facilities and services. These third-party sites may have accessibility issues that are beyond our control. We invite you to review further public accessibility information directly from <a href="https://www.facebook.com/help/accessibility" title="Facebook" target="_blank">Facebook</a>, <a href="https://support.google.com/youtube/answer/189278?hl=en" title="Youtube" target="_blank">Youtube</a>, <a href="https://twitter.com/twittera11y?lang=en" title="Twitter" target="_blank">Twitter</a> and <a href="https://help.instagram.com/1178723545597542" title="Instagram" target="_blank">Instagram</a>.</p>
         <h3>Accessible Features and Amenities</h3>

@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<section>
-  <div class="home-banner-wrap">
-    <div id="homeCarousel" class="carousel slide" tabindex="-1">
+
+<section class="home-banner-wrap">
+  <div id="homeCarousel" class="carousel slide" tabindex="-1">
 
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -14,84 +14,164 @@ layout: default
         <li data-target="#homeCarousel" data-slide-to="4"></li>
       </ol>
 
-
       <!-- Wrapper for Slides -->
-      <div class="carousel-inner" rt3-recent-bookings="recentBookings"  ng-cloak>
+      <div class="carousel-inner" rt3-recent-bookings="recentBookings"  ng-cloak tabindex="-1">
 
-            {% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
-            {% for slilderimages in slilder_images %}
-            {% if forloop.first == true %}
-            <div class="item active" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title="{{ slilderimages.alt_text }}">
-            {% else %}
-            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title="{{ slilderimages.alt_text }}">
-            {% endif %}
+        {% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
+        {% for slilderimages in slilder_images %}
+        {% if forloop.first == true %}
+        <div class="item active" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title="{{ slilderimages.alt_text }}">
+        {% else %}
+        <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;" title="{{ slilderimages.alt_text }}">
+        {% endif %}
           <div class="carousel-caption transparent-bg">
             <div class="caption-inner">
                {{ slilderimages.carousel_caption }}
             </div>
           </div>
+
+          <div class="caption-price" style="display:none">
+            <p class="price-holder" ng-show="recentBookings.totalBookings > 5"><span aria-label="[[recentBookings.totalBookings]] People booked our hotel in the last 2 days" role="heading">[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</p>
+            <div class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate">
+              <a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" title="Tonight’s Rate" tabindex="-1"><span tabindex="-1">[[ browser.toNightsRate ]]</span>Tonight’s Rate</a>
+            </div>
+          </div>
+
+          <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
+             <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
+             <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
+                <div class="boxes">
+                  <div class="tonight-rate ">
+                  <p>Best Price Available</p>
+                  <a href="https://24northhotel.reztrip.com/search?" target="_blank" class="homeTonightRate" title="Browse Rates" tabindex="-1">
+                    <p class="h4">Tonight's Rate <span class="price">[[browser.otaRates.reztripRate]]</span></p>
+                  </a>
+                  </div>
+                  <div class="ota-list" >
+                    <ul>
+                    <li ng-repeat = "(key, value) in browser.otaRates.brg">[[key]] <span>$[[value]]</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
- {% endfor %}
-
-
-
-
+        {% endfor %}
       </div>
     </div>
     <div class="theme-right-panel">
-      <div class="social-right"><a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank" title="facebook" aria-label="Facebook" tabindex="-1"><i class="fa fa-facebook"></i></a></div>
+      <div class="social-right">
+        <a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank" title="facebook" aria-label="Facebook" tabindex="-1"><i class="fa fa-facebook"></i></a></div>
     </div>
   </div>
 </section>
-<section tabindex="0">
-  <div class="container-fluid blue-bg mo">
-    <div class="about-wrap">
-      {% region 24north-hotelkey-west %}
+
+
+<section class="container-fluid blue-bg mo">
+  <div class="about-wrap">
+
+    {% regionblock intro-heading, type:header %}
+    <h1 class="h1" tabindex="0">24 north hotel Key West</h1>
+    {% endregionblock %}
+
+    <div tabindex="0">
+      {% regionblock intro-content, type:text %}
+      <p>Our hotel is located at the point of entry to <a title="Hotel in Key West" href="https://www.24northhotel.com/location/">Key West</a> and convenient to everything in Old Town and across the island. Key West, also known as Cayo Hueso, is a 2-mile-by-4-mile island located at the southernmost tip of the continental U.S. at the tail end of the 120-mile-long Florida Keys island chain, just 90 miles from Cuba. Key West International Airport is a 10 minute drive to 24 North Hotel. Alternatively, guests can arrive by ferry from Fort Myers via Key West Express.</p>
+      <p>The 24 North Hotel welcomes guests of all abilities. Our property descriptions aim to allow any visitor to make an informed decision on whether the hotel is an appropriate choice for their needs. For more information, please see our <a href="/accessibility/" title="Accessibility Statement">Accessibility Statement</a>.</p>
+      {% endregionblock %}
     </div>
+
+    <div class="btn-holder">
+      <a class="button-common" href="specials/" title="View Specials">View Specials
+        <i class="fa fa-play"></i>
+      </a>
+    </div>
+
+    <div class="graphic-1">
+      <img src="images/floating/stamp-1.png" alt="24North" />
+    </div>
+    <div class="graphic-2">
+      <img src="images/floating/curves-1.png" alt="floating-stamp" />
+    </div>
+
   </div>
 </section>
-<section tabindex="0">
-  <div class="container-fluid no-padding two-col-wrap">
-    <div class="col-sm-6 no-padding v-center">
-      <div class="two-col-content">
-        {% region paradise-found %}
-        <div class="logo-icon">{% region logo24-image %}</div>
+
+<section class="container-fluid no-padding two-col-wrap">
+  <div class="col-sm-6 no-padding v-center">
+    <div class="two-col-content">
+
+      {% regionblock paradise-heading, type:header %}
+      <h2 class="h3" tabindex="0">Paradise Found</h2>
+      {% endregionblock %}
+
+      <div tabindex="0">
+        {% regionblock paradise-text, type:text %}
+				<p>Come to 24 North Hotel and soak in
+					<a title="Key West, Florida" href="https://www.24northhotel.com/location/">Key West</a>. Our concierge can curate personalized experiences such as yoga, pilates, spa services, bicycle and scooter rentals, snorkeling and diving, seaplane tours, catamaran sailing, parasailing, deep sea fishing, and much more.
+				</p>
+        {% endregionblock %}
+      </div>
+
+      <div class="logo-icon">
+        <img src='../images/logo-24.jpg' alt='24 North Hotel Key West'/>
       </div>
     </div>
-    <div class="col-sm-6 no-padding v-center">{% region paradisefound-image %}</div>
+  </div>
+  <div class="col-sm-6 no-padding v-center">
+    {% regionblock paradise-image, type:image %}
+    <img src="//cdn.traveltripper.io/site-assets/192_384_16935/media/2018-06-22-031836/24-north-pool-3.png" alt="Large Pool at 24North Hotel" tabindex="0" />
+    {% endregionblock %}
   </div>
 </section>
-<section class="about-home" tabindex="0">
+
+<section class="about-home">
   <div class="container-fluid no-padding two-col-wrap">
-    <div class="col-sm-6 no-padding v-center">{% region abouthotel-image %}</div>
+
+    <div class="col-sm-6 no-padding v-center">
+      {% regionblock abouthotel-image, type:image %}
+      <img src='/images/bar-rt.jpg' alt='Toasted Coconut Bar at 24North Hotel' tabindex="0"/>
+      {% endregionblock %}
+    </div>
+
     <div class="col-sm-6 no-padding v-center">
       <div class="two-col-content">
-        {% region about-hotel-text %}
+
+        {% regionblock abouthotel-heading, type:header %}
+        <h3 class="h3" tabindex="0">About the hotel</h3>
+        {% endregionblock %}
+
+        <div tabindex="0">
+          {% regionblock abouthotel-content, type:text %}
+          <p>24 North is a non-smoking hotel offering Standard, Pool View, and Ocean View <a href="https://www.24northhotel.com/rooms/">Rooms</a> with premium features and in-room amenities. Rooms are equipped with a 48" LCD TV, microwave, refrigerator, laptop safes, oversized lounge chair and ottoman, bath with granite counter tops, and exceptionally comfortable and clean beds.<br />Our pool and gift shop are accessible. For more information, please view our <a title="Accessibility Statement" href="https://www.24northhotel.com/accessibility/" target="_blank" rel="noopener noreferrer" shape="rect">Accessibility Statement</a>.</p>
+          {% endregionblock %}
+        </div>
+
       </div>
     </div>
   </div>
-  <div class="graphic">{% region curve2-image %}</div>
+  <div class="graphic">
+    <img src='/images/floating/curves-2.png' alt='floating-curves'/>
+  </div>
 </section>
+
 <!-- Flip to river code starts here -->
 <div id="fliptoRiver"></div>
 <!-- Flip to river code ends here -->
-<section>
-  <div class="container-fluid no-padding home-rooms-wrap">
-    <div class="home-rooms">
-      <div class="container">
-        <div class="home-rooms-holder">
-          <div class="home-rooms-holder-inner">
-            <data-owl-carousel  class="owl-carousel" data-options="{navigation : false, slideSpeed : 500,vpaginationSpeed : 400,singleItem:true, paginationNumbers: false,autoPlay: false,pagination: false, navigation: true,navigationText : false}" role="listbox">
-              <div class="item" owl-carousel-item="" ng-repeat ="room in browser.roomsList" role="option">
-                <div tabindex="0">
-                  <h2>Rooms & Suites</h2>
-                  <h3><span class="block-element">[[room.name]]</span></h3>
-                  <p></p>
-                  <div class="btn-holder extra padding"><a href="/rooms/" class="button-common btn-blue" title="View Rooms">View Rooms<i class="fa fa-play"></i></a></div>
-                </div>
-		          </div>
-            </data-owl-carousel >
-          </div>
+
+<section class="container-fluid no-padding home-rooms-wrap">
+  <div class="home-rooms">
+    <div class="container">
+      <div class="home-rooms-holder">
+        <div class="home-rooms-holder-inner">
+          <data-owl-carousel  class="owl-carousel" data-options="{navigation : false, slideSpeed : 500,vpaginationSpeed : 400,singleItem:true, paginationNumbers: false,autoPlay: false,pagination: false, navigation: true,navigationText : false}" role="listbox" aria-label="Rooms & Suites">
+            <div class="item" owl-carousel-item="" ng-repeat ="room in browser.roomsList" role="option">
+              <p class="h2 p-0" tabindex="-1">Rooms & Suites</p>
+              <a class="block-element" href="/room/#[[room.name | formatNameForLink]]"><h4 class="h3">[[room.name]]</h4></a>
+              <p></p>
+              <div class="btn-holder extra padding"><a href="/rooms/" class="button-common btn-blue" title="View Rooms">View Rooms<i class="fa fa-play"></i></a></div>
+	          </div>
+          </data-owl-carousel >
         </div>
       </div>
     </div>
@@ -99,16 +179,13 @@ layout: default
 </section>
 
 
-<section rt3-special-rates= "offers" tabindex="0">
+<section rt3-special-rates= "offers">
 	<div class="container-fluid no-padding home-specials-wrap">
     	<div class="container">
-       	  {% region special-offer-head %}
+       	  <h5 class="heading-large" tabindex="0">Special Offers</h5>
           {%  include special-offers.html %}
-          <div class="graphic">{% region stamp2-image %}</div>
-
+          <div class="graphic"><img src='/images/floating/stamp-2.png' alt='Stamp'/></div>
           <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue" title="View all Specials">View all Specials<i class="fa fa-play"></i></a></div>
-
-
         </div>
     </div>
 </section>
@@ -118,8 +195,14 @@ layout: default
     <div class="border-texture"><img src="/images/floating/border-textrure.png" alt="floating-border"/></div>
     	<div class="cta-theme">
         	<div class="pf-wrap">
-        	{% region paradisefound %}
-            <div><a href="/gallery/" class="button-common btn-white" title="View Gallery">View Gallery<i class="fa fa-play"></i></a></div>
+            {% regionblock cta-heading, type:header %}
+            <h6 class="h2" tabindex="0">Paradise Found</h6>
+            {% endregionblock %}
+
+            {% regionblock cta-button, type:text %}
+            <a href="/gallery/" class="button-common btn-white" title="View Gallery">View Gallery<i class="fa fa-play"></i></a>
+            {% endregionblock %}
+
         	</div>
         </div>
     </div>
@@ -127,40 +210,48 @@ layout: default
 
 {% include grid.html %}
 
-
-
 <section class="hlw">
 	<div class="hlw-inner">
-	<div class="container">
-
-   	  <div class="home-location-wrap" tabindex="0">
-
-      {% include location.html %}
-
-           <div><a href="/location/" class="button-common btn-blue" title="Explore location">Explore location<i class="fa fa-play"></i></a></div>
-
-           <div class="graphic">{% region stamp3-image %}</div>
-
-
-
+  	<div class="container">
+   	  <div class="home-location-wrap">
+        {% include location.html %}
+        <div><a href="/location/" class="button-common btn-blue" title="Explore location">Explore location<i class="fa fa-play"></i></a></div>
+        <div class="graphic">
+          <img src='/images/floating/stamp-3.png' alt='Stamp'/>
+        </div>
       </div>
     </div>
-    </div>
-    <div class="cuba">{% region cuba-image %}</div>
+  </div>
+  <div class="cuba">
+    {% regionblock location-image, type:image %}
+    <img src='/images/floating/cuba.png' alt='#24North'/>
+    {% endregionblock %}
+  </div>
 </section>
 
 
-<section>
-	<div class="container-fluid show-case">
-    	<div class="row">
-    	<div class="col-sm-4 no-padding">{% region showcase-img-1 %}</div>
-        <div class="col-sm-4 no-padding">{% region showcase-img-2 %}</div>
-        <div class="col-sm-4 no-padding">{% region showcase-img-3 %}</div>
-        </div>
+<section class="container-fluid show-case">
+	<div class="row">
+  	<div class="col-sm-4 no-padding">
+      {% regionblock location-image2, type:image %}
+      <img src='../images/show-case-1.jpg' alt='24North Hotel Beachside Life' tabindex="0"/>
+      {% endregionblock %}
     </div>
+    <div class="col-sm-4 no-padding">
+      {% regionblock location-image3, type:image %}
+      <img src='../images/shuttle.jpg' alt='24North Hotel Shuttle' tabindex="0"/>
+      {% endregionblock %}
+    </div>
+    <div class="col-sm-4 no-padding">
+      {% regionblock location-image4, type:image %}
+      <img src='../images/show-case-3.jpg' alt='Aqua Life at Keywest' tabindex="0"/>
+      {% endregionblock %}
+    </div>
+  </div>
 </section>
 
-<section>
-	<div class="new-map">
-    {% region new-map-image %} </div>
+<section class="new-map">
+  {% regionblock keywest-map-image, type:image %}
+  <img src='/images/new-map.jpg' alt='Keywest on map'/>
+  {% endregionblock %}
 </section>

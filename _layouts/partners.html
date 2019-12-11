@@ -2,11 +2,13 @@
 layout: default
 ---
 <div class="events partners">
-    <section>
-      <div class="container no-padding mb-50">
-        <div class="page-banner partners-banner">
-            <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"/></div>
-          <h1 class="page-title"> Partners </h1>
+    <section class="container no-padding mb-50">
+      <div class="page-banner partners-banner">
+        {% regionblock partners_header, type:header %}
+        <h1 class="page-title" tabindex="0">Partners</h1>
+        {% endregionblock %}
+        <div class="graphic">
+          <img src="/images/floating/stamp-1.png" alt="24 north stamp" />
         </div>
       </div>
     </section>
@@ -18,14 +20,15 @@ layout: default
           <div class="row no-gutters">
             <div class="col-sm-3 sp-img "> <img src="{{ p.image.url }}" title="{{ p.alt_text }}" alt="{{ p.alt_text }}"></div>
           	<div class="col-sm-9 sp-content">
-            <a class="link-heading" href="{{ p.url }}" title="{{p.name}}" ><h2>{{p.name}}</h2></a>
-              <div class="desp">{{ p.description }}</div>
-    		  <div class="btn-holder"><a href="{{ p.url }}" target="_blank" class="button-common btn-blue" title="View Partner Site">View Partner Site<i class="fa fa-play"></i></a></div>
+              <a class="link-heading" href="{{ p.url }}" title="{{p.name}}" ><h2 class="h2">{{p.name}}</h2></a>
+              <div class="desp" tabindex="0">{{ p.description }}</div>
+        		  <div class="btn-holder">
+                <a href="{{ p.url }}" target="_blank" class="button-common btn-blue" title="View Partner Site">View Partner Site<i class="fa fa-play"></i></a>
+              </div>
             </div>
-          </div>
+            </div>
         </div>
       </div>
     </section>
     {% endfor %}
-
 </div>

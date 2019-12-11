@@ -25,10 +25,10 @@ layout: default
 
 <section>
   <div class="container no-padding">
-    <div class="page-banner blog-banner">
+    <div class="page-banner blog-banner" style="background-image:url('{{ blog.blogimage.url }}')">
       <div class="graphic"><img src="/images/floating/stamp-1.png" alt="24 north stamp"></div>
-      <h2 class="page-title">Blog</h2>
-      <p>The island of Key West packs a lot of punch in its relatively small surface area. To keep tabs on Duval Street nightlife, seasonal seafood, event guides, watersport adventures and more, bookmark the 24 North Hotel Blog.</p>
+      <h1 class="h2 page-title" tabindex="0">{{ blog.title }}</h1>
+      <!-- <p>The island of Key West packs a lot of punch in its relatively small surface area. To keep tabs on Duval Street nightlife, seasonal seafood, event guides, watersport adventures and more, bookmark the 24 North Hotel Blog.</p> -->
     </div>
   </div>
 </section>
@@ -45,9 +45,8 @@ layout: default
         <div class="blog-list blog-detail">
           <div class="col-md-12 no-padding">
             <div class="blog-item">
-              <h1 class="blog-heading">{{ blog.title }}</h1>
               <div class="post-details">
-                <span class="date">
+                <span class="date"> Posted on: 
                   {% assign d = blog.date | date: "%-d" %}
                   {{ blog.date | date: "%B" }}
                   {% case d %}

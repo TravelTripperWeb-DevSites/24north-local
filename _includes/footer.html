@@ -29,25 +29,25 @@
 <footer>
   <div class="footer-wrapper four-coloumn">
     <div class="container">
-      <div class="col-md-3 col-sm-6 no-padding v-top" tabindex="0">
+      <div class="col-md-3 col-sm-6 no-padding v-top">
         <div class="footer-grid no-padding-left">
-          <h2>Contact Us</h2>
-          <p><span class="block-element">3820 North Roosevelt Blvd</span>
+          <p class="h2" tabindex="0">Contact Us</p>
+          <p tabindex="0"><span class="block-element">3820 North Roosevelt Blvd</span>
             <span class="block-element">Key West, FL 33040</span>
             <span class="block-element">(305) 320-0940</span>
             <span class="block-element"><a href="mailto:reservations@hotel24north.com" title="reservations@hotel24north.com">reservations@hotel24north.com</a></span>
           </p>
           <br>
-          <p><strong>General Manager:</strong>
+          <p tabindex="0"><strong>General Manager:</strong>
             <br><a href="mailto:esimons@24northhotel.com" title="Eugenia Simons">Eugenia Simons</a></p>
           <br>
-          <p><strong>Director of Sales &amp; Marketing:</strong>
+          <p tabindex="0"><strong>Director of Sales &amp; Marketing:</strong>
             <br><a href="mailto:lsheehan@thekeyscollection.com" title="Lee Sheehan">Lee Sheehan</a></p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 no-padding v-top" tabindex="0">
+      <div class="col-md-3 col-sm-6 no-padding v-top">
         <div class="footer-grid">
-          <h2>Links</h2>
+          <p class="h2" tabindex="0">Links</p>
           <ul>
             {% for items in site.data.navigation.footernav %}
             <li><a href="{{ items.url }}" title="{{ items.title }}" {% if items.newtab == "true" %} target="_blank" {% endif %}>{{ items.title }}</a></li>
@@ -55,9 +55,9 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-4 col-xs-12 no-padding v-top" tabindex="0">
+      <div class="col-md-4 col-xs-12 no-padding v-top">
         <div class="footer-grid">
-          <h2>Newsletter</h2>
+          <p class="h2" tabindex="0">Newsletter</p>
           <form class="jotform-form signup" action="https://web2.cendynhub.com/FormPost/FormPost.ashx" method="post" accept-charset="utf-8">
             <input type="hidden" name="formID" value="82EC76A7-C9EB-4A62-8065-EEF08FF74540" aria-label="form ID" title="form ID" />
             <div class="form-holder email">
@@ -75,30 +75,35 @@
           </form>
           {% if page_url contains "save-the-children" %}
           {% else %}
-          <h2 class="top-space">Reservations</h2>
+          <p class="h2 top-space">Reservations</p>
           <span class="block-element"><a href="tel:13053200940" title="305 320 0940"> 305 320 0940</a></span>
           {% endif %}
         </div>
       </div>
-      <div class="col-md-2 col-xs-12 no-padding v-top foot-v-center no-border" tabindex="0">
+      <div class="col-md-2 col-xs-12 no-padding v-top foot-v-center no-border">
         <div class="footer-grid no-padding-right">
-          <a href="/" title="24 North Hotel"><img src="/images/logo-footer.png" alt="24 North Hotel" /></a>
-          <br>
-          <br>
-          <a href="http://www.highgate.com/" target="_blank" title="highgate"><img src="/images/highgate-logo.png" alt="highgate" /></a>
-          <br>
-          <br>
+          <a href="/" title="24 North Hotel">
+            <img src="/images/logo-footer.png" alt="24 North Hotel" />
+          </a>
+          <div class="hcf-logo">
+            <a href="http://highgate.com/hcf" title="Highgate Charitable Foundation" target="_blank">
+              <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1573030132/jsmjxfcs1k49frwvszxv.jpg" alt="Highgate Charitable Foundation" class="img-responsive">
+            </a>
+          </div>
+          <a href="http://www.highgate.com/" target="_blank" title="highgate">
+            <img src="/images/highgate-logo.png" alt="highgate" />
+          </a>
           <a href="/accessibility/" title="Accessibility Statement">
-            <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1561440425/hljeiocreazas7ozwjlb.png" alt="ADA Badge Travel Tripper">
+            <img src="//res.cloudinary.com/traveltripperweb/raw/upload/v1573025065/v8xgxmj5t986pa66g4bt.svg" alt="ADA Badge Travel Tripper">
           </a>
         </div>
       </div>
     </div>
   </div>
-  <div class="container" tabindex="-1">
+  <div class="container">
     <div class="footer-bottom-wrapper">
       <div class="col-sm-4 no-padding">
-        <div class="footer-copyright">24NORTHHOTEL &copy; {{ site.time | date: '%Y' }}</div>
+        <div class="footer-copyright" tabindex="0">24NORTHHOTEL &copy; {{ site.time | date: '%Y' }}</div>
       </div>
       <div class="col-sm-4 no-padding"></div>
       <div class="col-sm-4 no-padding">

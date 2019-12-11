@@ -6,12 +6,17 @@ layout: default
 <div class="loading" style="display:block;">Loading&#8230;</div>
 <section class="container no-padding mb-50" tabindex="0">
   <div class="page-banner eat-drink-banner">
-  	{% region dining-banner-content %}
+    {% regionblock hero-heading, type:text %}
+		<h1 class="page-title" tabindex="0">Eat & Drink</h1>
+    {% endregionblock %}
+    <div class="graphic" tabindex="-1">
+			<img src="/images/floating/stamp-1.png" alt="24 north stamp" tabindex="-1" />
+		</div>
   </div>
 </section>
 
 <!-- Eat & Drink Intro -->
-<div class="intro">
+<div class="intro" tabindex="0">
   {% regionblock eat_drink_intro, type:text %}
     <p>Eat, drink, and be merry at our beautiful Key West hotel. At 24 North, we offer multiple dining options, from our poolside oasis, Toasted Coconut, to our Havana-esque craft cocktail bar, Republica, as well as everyone’s favorite morning brew — Starbucks Coffee.</p>
   {% endregionblock %}
@@ -36,8 +41,8 @@ layout: default
           </div>
           <div class="col-sm-6 sp-content v-center">
 
-            <p class="title">{{ venue.name }}</p>
-            <div class="desp">
+            <h2 class="h2" tabindex="0">{{ venue.name }}</h2>
+            <div class="desp" tabindex="0">
               {{ venue.description }}
             </div>
 
