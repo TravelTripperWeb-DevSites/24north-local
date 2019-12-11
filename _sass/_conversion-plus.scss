@@ -1,0 +1,110 @@
+.conversion-plus-banner {
+  .fallback-content {
+    display: none;
+  }
+}
+
+.ttweb-conversion-plus-banner {
+  font-family: $main-font-regular !important;
+  color: $white !important;
+  background-color: $bg-blue-3 !important;
+
+  .fallback-content {
+    display: block;
+  }
+
+  .ttweb-booking-button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-family: 'brandon_grotesquemedium';
+    font-size: 14px;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: transparent;
+    border: 2px solid $white;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $bg-blue-2;
+      border-color: $bg-blue-2;
+    }
+  }
+
+  .ttweb-banner {
+    &__column {
+      margin: 0;
+    }
+  }
+
+  .ttweb-cross-out-rate {
+    &__actual {
+      line-height: 1em;
+      color: $white !important;
+    }
+  }
+}
+
+.ttweb-ota-rate-table {
+  &__row {
+    min-width: 19%;
+    padding-right: 0;
+    font-size: 14px;
+    @media (min-width: 1200px) {
+      padding-right: 10px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+    @media (min-width: 991px) and (max-width: 1200px) {
+      min-width: 48%;
+    }
+  }
+
+  &__label {
+    @media (min-width: 991px) and (max-width: 1200px) {
+      width: 45%;
+      text-align: center;
+    }
+  }
+
+  &__cost {
+    padding: 4px 0 4px 5px;
+    @media (min-width: 991px) and (max-width: 1200px) {
+      width: 45%;
+      text-align: center;
+    }
+
+    span {
+      @media (min-width: 991px) and (max-width: 1200px) {
+        text-align: center;
+      }
+    }
+  }
+}
+// Booking widget css
+.ttweb-calendar-month .ttweb-calendar-month__grid .ttweb-day--in-selection {
+  background-color: $tc-dark-blue;
+}
+
+.ttweb-booking-widget {
+  a {
+    &.ttweb-booking-widget__submit {
+      background-color: $tc-dark-blue;
+    }
+  }
+}
+
+.ttweb-slide-out-widget__header {
+  background-color: $tc-dark-blue;
+}
+
+
+@media (min-width: 1200px) {
+  @media all and (-ms-high-contrast:none) {
+     *::-ms-backdrop, :last-child.ttweb-ota-rate-table__row {
+       padding-right: 20px;
+      } /* IE11 */
+   }
+}
