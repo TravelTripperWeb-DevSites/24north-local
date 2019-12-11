@@ -31,28 +31,7 @@ function getIp(data){
 
 <!--New booking widget-->
 
-<script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
-<script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
-<script>
-   TTWeb.Config.configure({
-      hotelId: 'KEY24N', //'orwhatever your values are',
-      portalId: '24northhotel',
-      defaultTimezone: 'America/New_York', // timezone of site
-      ipAddress: sessionStorage.ip_add,
-      defaultCurrency: 'USD',
-    });
-    var booking = new TTWeb.Booking({
-       showRateCalendar: false,
-       showOfferCode: true
-    });
-    $("[show-booking-widget]").click(function(e) {
-      if ($(window).width() >= 768) {
-        booking.showWidget();
-        e.preventDefault();
-      }
-    });
-
-</script>
+{% include reztrip/setup-ttweb-plugins.html %}
 
 <script>
 	$(document).ready(function($) {
