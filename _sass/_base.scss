@@ -36,3 +36,16 @@ html input[disabled] {
     border-radius: 15px;
   }
 }
+
+.ttweb-ota-rate-table {
+
+  &__row {
+    justify-content: center !important;
+    width: 120px !important;
+  }
+
+  &__label {
+    flex: none !important;
+  }
+
+}
