@@ -1,0 +1,68 @@
+---
+show_ota: true
+allow_equal_ota_rates: true
+show_scarcity: true
+find_lowest_rate_range: 7
+recent_booking_min: ''
+min_rate: ''
+fallback_content: 'DON’T MISS OUT! – SAVINGS UP TO 25% - AVAILABLE ONLY ON OUR WEBSITE.'
+on_fallback_button_click: 'open:https://24northhotel.reztrip.com/ext/promoRate?property=986&mode=b&pm=true&sr=287793&vr=3'
+on_button_click: 'open-booking-widget'
+max_rooms_available: ''
+show_activity: true
+__EDITABLE_FIELDS__:
+  min_rate:
+    label: Minimum Rate $
+    instructions: Minimum Rate that is allowed to display in the conversion plus banner
+    type: float
+  find_lowest_rate_range:
+    label: Days to look ahead for lowest rate
+    type: integer
+    instructions: Number of days to look forward to find the lowest rate to display
+      (if a user hasn't selected dates)
+  fallback_content:
+    type: rich_text
+    instructions: Content to display in banner when price is not shown
+  show_ota:
+    label: Show OTA
+    instructions: Show OTA Rates when direct booking pricing is competitive
+    type: boolean
+  allow_equal_ota_rates:
+    label: Show OTA rates when equal to direct rate
+    type: boolean
+  
+  show_scarcity:
+    label: Show Scarcity Message
+    instructions: Show messages when availability is below a threshold (5 rooms unless
+      otherwise specified)
+    type: boolean
+  max_rooms_available:
+    label: Max Rooms allowed to show in the scarcity message
+    type: integer
+  show_activity:
+    label: Show Activity Message
+    instructions: Show recent bookings if above threshold (default is at least 100
+      in the last 48 hours)
+    type: boolean
+  recent_booking_min:
+    label: Min number of recent bookings in last 48 hours to show
+    type: integer
+  on_select_dates_click:
+    label: Select Dates Click
+    instructions: What happens when user hasn't yet selected dates and clicks the banner's button (default is to show booking widget)
+    type: select
+    options: 
+      open-reztrip-link: Open Reztrip URL
+      open-booking-widget: Show the booking widget
+  on_button_click:
+    label: Booking Button Click
+    instructions: What should happen when a user has previously selected dates and clicks the banner's button (default is to open link to reztrip booking engine)
+    type: select
+    options: 
+      open-reztrip-link: Open Reztrip URL
+      open-booking-widget: Show the booking widget
+  on_fallback_button_click:
+    label: Fallback Button Click
+    instructions: What should happen when a rate isn't shown and the user clicks the banner's button (default is to show the booking widget). Could be 'open-reztrip-link' or 'open-booking-widget' or 'open:https://mycustomurl'
+    type: string
+    

@@ -68,7 +68,7 @@ $(window)
 
 function sizeContent() {
   var newHeight = $(window)
-    .height() - 123;
+    .height() - 50;
   if ($(window)
     .width() >= 768) {
     $("#homeCarousel .item")
