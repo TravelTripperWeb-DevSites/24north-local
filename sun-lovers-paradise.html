@@ -53,10 +53,12 @@ permalink_localized:
   <section class="lifestyle">
     <div class="container-fluid">
       <h3>About the offer</h3>
-      <p>Looking for deals to take a vacation, unwind and take a load off your shoulder? Somewhere to find your freedom?<br/>
-        Look no longer! Here is a special deal available only for you!!<br/>
-        Save up to 25% + 3 Free Rewards when you stay with us!<br/>
-        Your Search is finally over!<br/></p>
+      <p>Looking for deals to take a vacation, unwind and take a load off your shoulder? Somewhere to find your freedom?</p>
+
+      <p>Look no longer! Here is a special deal available only for you!!</p>
+
+      <p>Save up to 25% + 3 Free Rewards when you stay with us!</p>
+      <p>Your Search is finally over!</p>
       <p>Travel Dates: Mar 1, 2020 - Dec 31, 2020<br/>
       Book Dates: Now - Jan 31, 2020</p>
     </div>
@@ -118,32 +120,16 @@ permalink_localized:
     </div>
   </section>
 
-  <section class="rooms-section">
-    <div class="container">
-      <div class="col-md-4 no-padding">
-        <div class="new-caption-area " id="odscroll" class="carousel slide" data-ride="carousel">
-          <p>VIEW MORE SPECIAL OFFERS</p>
-          <div class="carousel-controls">
-            <a class="left nav-control" href="#od-carousel" data-slide="prev" title="Prevoius"> </a>
-            <a class="right nav-control" href="#od-carousel" data-slide="next" title="Next"> </a> </div>
-          <div class="carousel-inner ">
-            <div class="item " ng-repeat="offer in offers.special_rates" ng-class='{active:$first}'>
-              <h3 ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></h3>
-              <div class="links"> <a href="/offer-details/#[[offer.rate_plan_name | formatNameForLink ]]" class="button-common-2 btn-spacing button-blue" title="VIEW THIS OFFER">VIEW THIS OFFER</a><br/> <a href="/offers/" class="button-common-2 button-blue" title="VIEW ALL OFFERS">VIEW ALL OFFERS</a> </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-8 no-padding">
-        <div class="rooms-carousel">
-          <div id="od-carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="item" ng-repeat="offer in offers.special_rates" ng-class='{active:$first}'>
-                <img alt="Room large image" ng-src="[[offer.lead_photo_url.large]]" class="width-full">
-              </div>
-            </div>
-          </div>
-        </div>
+  <section class="more-spls">
+    <!--<div class="graphics"></div>-->
+    <div class="container-fluid no-padding home-specials-wrap">
+      <div class="container">
+        <h2 class="heading-large" tabindex="0">More Specials</h2>
+
+        {%  include special-offers.html %}
+
+        <div class="stamp-blue"><img src="../../images/specials/special-details/stamp-blue.png" alt="24North-stamp"/></div>
+        <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue">View all Specials<i class="fa fa-play"></i></a></div>
       </div>
     </div>
   </section>
