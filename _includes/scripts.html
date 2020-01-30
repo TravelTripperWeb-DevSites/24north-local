@@ -75,36 +75,36 @@ function getIp(data){
 </script>
 <script src="/js/plugins/rt-widget.js"></script>
 
-{% if site.data.special_popup_modal.publish == true || site.data.special_popup_modal_2.publish == true %}
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $.ajax({
-        url: "https://geoip-db.com/jsonp",
-        jsonpCallback: "callback",
-        dataType: "jsonp",
-        success: function( location ) { console.log('location-', location);
-            if(location.state == 'New York') {
-              $('body').RTwidgets({
-                offer_popup_widget: {
-                  show: true,
-                  offer_data_url: '/js/api/special-offer-popup.json',
-                  timeout: 3000,
-                  // start_date: '{{ site.data.special_popup_modal.start_date }}',
-                  // end_date: '{{ site.data.special_popup_modal.end_date }}'
-                }
-              });
-            } else if(location.state == 'Florida') {
-              $('body').RTwidgets({
-                offer_popup_widget: {
-                  show: true,
-                  offer_data_url: '/js/api/special-offer-popup-2.json',
-                  timeout: 3000,
-                }
-              });
-            }
-        }
-    });
+<script type="text/javascript">
+  var publishNewYorkPopup = {{ site.data.special_popup_modal.publish }};
+  var publishFloridaPopup = {{ site.data.special_popup_modal_2.publish }};
+  $(document).ready(function() {
+    $.ajax({
+      url: "https://geoip-db.com/jsonp",
+      jsonpCallback: "callback",
+      dataType: "jsonp",
+      success: function( location ) { console.log('location-', location);
+          if(location.state == 'New York' && publishNewYorkPopup) {
+            $('body').RTwidgets({
+              offer_popup_widget: {
+                show: true,
+                offer_data_url: '/js/api/special-offer-popup.json',
+                timeout: 3000,
+                // start_date: '{{ site.data.special_popup_modal.start_date }}',
+                // end_date: '{{ site.data.special_popup_modal.end_date }}'
+              }
+            });
+          } else if(location.state == 'Florida' && publishFloridaPopup) {
+            $('body').RTwidgets({
+              offer_popup_widget: {
+                show: true,
+                offer_data_url: '/js/api/special-offer-popup-2.json',
+                timeout: 3000,
+              }
+            });
+          }
+      }
+  });
 
-    });
-  </script>
-  {% endif %}
+  });
+</script>
