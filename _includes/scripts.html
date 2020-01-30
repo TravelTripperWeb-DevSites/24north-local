@@ -75,7 +75,7 @@ function getIp(data){
 </script>
 <script src="/js/plugins/rt-widget.js"></script>
 
-{% if site.data.special_popup_modal.publish == true%}
+{% if site.data.special_popup_modal.publish == true || site.data.special_popup_modal_2.publish == true %}
   <script type="text/javascript">
     $(document).ready(function() {
       $.ajax({
@@ -93,10 +93,18 @@ function getIp(data){
                   // end_date: '{{ site.data.special_popup_modal.end_date }}'
                 }
               });
+            } else if(location.state == 'Florida') {
+              $('body').RTwidgets({
+                offer_popup_widget: {
+                  show: true,
+                  offer_data_url: '/js/api/special-offer-popup-2.json',
+                  timeout: 3000,
+                }
+              });
             }
         }
     });
 
     });
   </script>
-{% endif %}
+  {% endif %}
